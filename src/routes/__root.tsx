@@ -27,7 +27,7 @@ function NotFoundComponent() {
           <span className="font-serif text-[clamp(6rem,15vw,12rem)] leading-none tracking-tight text-ink/10">
             404
           </span>
-          <h1 className="mt-6 font-serif text-[clamp(2rem,5vw,3.5rem)] leading-[1.1] tracking-tight italic">
+          <h1 className="mt-6 font-serif text-[clamp(2rem,5vw,3.5rem)] leading-[1.1] tracking-tight">
             Esta página no genera tráfico ni conversión.
           </h1>
           <p className="mt-6 text-lg leading-relaxed text-muted-ink md:text-xl">
@@ -122,7 +122,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=swap",
+        href: "https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap",
       },
     ],
     scripts: [

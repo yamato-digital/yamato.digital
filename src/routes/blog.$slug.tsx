@@ -90,7 +90,7 @@ function BlogPostPage() {
             </p>
           ) : null}
           <div
-            className="prose-blog mt-12 space-y-6 text-lg leading-relaxed text-ink [&_a]:underline [&_a]:underline-offset-4 [&_h2]:mt-12 [&_h2]:font-serif [&_h2]:text-3xl [&_h2]:tracking-[-0.01em] [&_h3]:mt-8 [&_h3]:font-serif [&_h3]:text-2xl [&_strong]:font-semibold [&_ul]:list-disc [&_ul]:pl-6 [&_ol]:list-decimal [&_ol]:pl-6"
+            className="prose-blog mt-12 space-y-6 text-lg leading-relaxed text-ink [&_a]:underline [&_a]:underline-offset-4 [&_h2]:mt-12 [&_h2]:font-serif [&_h2]:text-3xl [&_h2]:tracking-[-0.01em] [&_h3]:mt-8 [&_h3]:font-serif [&_h3]:text-2xl [&_strong]:font-semibold [&_em]:not-italic [&_i]:not-italic [&_ul]:list-disc [&_ul]:pl-6 [&_ol]:list-decimal [&_ol]:pl-6"
             dangerouslySetInnerHTML={{ __html: html }}
           />
         </article>

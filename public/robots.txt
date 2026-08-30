@@ -1,41 +1,71 @@
-# Bots de busqueda y citacion - acceso completo
+# Dos cosas distintas, dos respuestas distintas.
+#
+#   Leerte para responder y citarte  →  sí.
+#   Entrenar un modelo con esto      →  no.
+#
+# La preferencia se declara con Content-Signal, no se fuerza con Disallow.
+# Un crawler con grupo propio solo lee SU bloque, no el de User-agent: *,
+# así que la señal se repite en cada grupo.
+
+# --- Busqueda, citacion y asistentes ---
 
 User-agent: Googlebot
 Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=no
 
 User-agent: Bingbot
 Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=no
 
 User-agent: OAI-SearchBot
 Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=no
 
 User-agent: Claude-SearchBot
 Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=no
 
 User-agent: Claude-User
 Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=no
 
 User-agent: PerplexityBot
 Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=no
 
-# Entrenamiento de IA - bloqueado
+User-agent: meta-webindexer
+Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+
+# --- Crawlers de entrenamiento ---
+# Pueden entrar. La señal les dice que no entrenen.
 
 User-agent: GPTBot
-Disallow: /
+Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=no
 
 User-agent: ClaudeBot
-Disallow: /
+Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=no
 
 User-agent: Google-Extended
-Disallow: /
+Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=no
 
 User-agent: CCBot
-Disallow: /
+Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=no
 
 User-agent: Bytespider
-Disallow: /
+Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=no
 
 User-agent: meta-externalagent
-Disallow: /
+Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+
+User-agent: *
+Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=no
 
 Sitemap: https://yamato.digital/sitemap.xml
