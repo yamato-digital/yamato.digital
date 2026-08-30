@@ -1,5 +1,6 @@
 import "./lib/error-capture";
 
+import { handleAgentRequest, withDiscoveryHeaders } from "./lib/agent-request";
 import { consumeLastCapturedError } from "./lib/error-capture";
 import { renderErrorPage } from "./lib/error-page";
 
@@ -40,9 +41,13 @@ async function normalizeCatastrophicSsrResponse(response: Response): Promise<Res
 export default {
   async fetch(request: Request, env: unknown, ctx: unknown) {
     try {
+      const agentResponse = handleAgentRequest(request);
+      if (agentResponse) return agentResponse;
+
       const handler = await getServerEntry();
       const response = await handler.fetch(request, env, ctx);
-      return await normalizeCatastrophicSsrResponse(response);
+      const normalized = await normalizeCatastrophicSsrResponse(response);
+      return withDiscoveryHeaders(request, normalized);
     } catch (error) {
       console.error(error);
       return new Response(renderErrorPage(), {
