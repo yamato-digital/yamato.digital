@@ -1,51 +1,71 @@
-# Preferencias de uso para IA (Content Signals)
-# Entrenar: no. Buscar y citar / usar como input: sí.
+# Dos cosas distintas, dos respuestas distintas.
+#
+#   Leerte para responder y citarte  →  sí.
+#   Entrenar un modelo con esto      →  no.
+#
+# La preferencia se declara con Content-Signal, no se fuerza con Disallow.
+# Un crawler con grupo propio solo lee SU bloque, no el de User-agent: *,
+# así que la señal se repite en cada grupo.
 
-User-agent: *
-Content-Signal: ai-train=no, search=yes, ai-input=yes
-Allow: /
-
-# Bots de busqueda y citacion - acceso completo
+# --- Busqueda, citacion y asistentes ---
 
 User-agent: Googlebot
 Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=no
 
 User-agent: Bingbot
 Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=no
 
 User-agent: OAI-SearchBot
 Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=no
 
 User-agent: Claude-SearchBot
 Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=no
 
 User-agent: Claude-User
 Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=no
 
 User-agent: PerplexityBot
 Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=no
 
 User-agent: meta-webindexer
 Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=no
 
-# Entrenamiento de IA - bloqueado
+# --- Crawlers de entrenamiento ---
+# Pueden entrar. La señal les dice que no entrenen.
 
 User-agent: GPTBot
-Disallow: /
+Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=no
 
 User-agent: ClaudeBot
-Disallow: /
+Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=no
 
 User-agent: Google-Extended
-Disallow: /
+Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=no
 
 User-agent: CCBot
-Disallow: /
+Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=no
 
 User-agent: Bytespider
-Disallow: /
+Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=no
 
 User-agent: meta-externalagent
-Disallow: /
+Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+
+User-agent: *
+Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=no
 
 Sitemap: https://yamato.digital/sitemap.xml
