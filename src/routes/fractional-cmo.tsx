@@ -104,7 +104,7 @@ function FractionalCmoPage() {
         <section className="pt-20 pb-24 md:pt-28 md:pb-32">
           <div className="mx-auto max-w-3xl">
             <h1 className="font-serif text-[clamp(2rem,4.5vw,4rem)] leading-[1.05] tracking-[-0.01em]">
-              Fractional CMO. <span className="italic">Dirección de marketing sin contratar a un CMO.</span>
+              Fractional CMO. Dirección de marketing sin contratar a un CMO.
             </h1>
             <p className="mt-8 text-lg leading-relaxed text-muted-ink md:text-xl">
               Un Fractional CMO es un director de marketing externo que trabaja para tu empresa unos días

@@ -99,7 +99,7 @@ function Cta({ children, href = "/contacto" }: { children: React.ReactNode; href
   return (
     <a
       href={href}
-      className="group inline-flex items-baseline font-serif text-[clamp(1.25rem,2vw,1.75rem)] leading-tight italic link-underline link-underline-hover"
+      className="group inline-flex items-baseline font-serif text-[clamp(1.25rem,2vw,1.75rem)] leading-tight link-underline link-underline-hover"
     >
       {children}
       <Arrow />
@@ -208,7 +208,7 @@ function About() {
         <Reveal
           as="h3"
           delay={120}
-          className="mt-10 font-serif text-[clamp(2rem,4.5vw,4rem)] leading-[1.05] tracking-tight italic"
+          className="mt-10 font-serif text-[clamp(2rem,4.5vw,4rem)] leading-[1.05] tracking-tight"
         >
           Tu dirección de marketing.
           <br />
@@ -225,7 +225,7 @@ function About() {
             piensa tu estrategia es quien la firma, y se sienta en tu comité de dirección.
           </Reveal>
           <Reveal as="p" delay={360}>
-            Trabajamos como <em className="font-serif">Growth Partner</em>: solo ganamos cuando tú ganas. Incómodo para
+            Trabajamos como <span className="font-serif">Growth Partner</span>: solo ganamos cuando tú ganas. Incómodo para
             el resto del sector. Cómodo para ti.
           </Reveal>
         </div>
@@ -258,7 +258,7 @@ function Services() {
           <div className="mt-10 md:col-span-8 md:col-start-5">
             <Link
               to="/servicios"
-              className="group inline-flex items-baseline font-serif text-[clamp(1.25rem,2vw,1.75rem)] leading-tight italic link-underline link-underline-hover"
+              className="group inline-flex items-baseline font-serif text-[clamp(1.25rem,2vw,1.75rem)] leading-tight link-underline link-underline-hover"
             >
               Ver en detalle
               <span aria-hidden className="ml-2 inline-block transition-transform group-hover:translate-x-1">
@@ -306,7 +306,7 @@ function Process() {
         </div>
         <Reveal
           as="p"
-          className="mt-20 max-w-3xl font-serif text-[clamp(1.75rem,3.5vw,3rem)] leading-[1.1] tracking-tight italic"
+          className="mt-20 max-w-3xl font-serif text-[clamp(1.75rem,3.5vw,3rem)] leading-[1.1] tracking-tight"
         >
           “Te diremos 3 cosas: lo que haces bien, lo que no haces tan bien y, sobre todo, lo que no haces.”
         </Reveal>
@@ -330,7 +330,7 @@ function PriceQuote() {
           delay={120}
           className="mt-6 max-w-4xl font-serif text-[clamp(2rem,4.5vw,4rem)] leading-[1.05] tracking-tight"
         >
-          Un CMO por el precio de un <span className="italic text-muted-ink">junior</span>.
+          Un CMO por el precio de un <span className="text-muted-ink">junior</span>.
         </Reveal>
         <Reveal as="p" delay={220} className="mt-8 max-w-2xl text-lg leading-relaxed text-muted-ink md:text-xl">
           Por lo mismo que te cuesta un perfil junior, YAMATO te pone un CMO con más de una década dirigiendo marketing.
@@ -352,7 +352,7 @@ function EnterpriseBlock() {
           <Reveal variant="fade-right" className="md:col-span-4">
             <Eyebrow>Para empresas grandes</Eyebrow>
             <h3 className="mt-6 font-serif text-[clamp(2.25rem,4.5vw,4rem)] leading-[1] tracking-tight">
-              ¿Y si ya tienes un <span className="italic">CMO?</span>
+              ¿Y si ya tienes un CMO?
             </h3>
           </Reveal>
           <Reveal
@@ -389,7 +389,7 @@ function Fit() {
       <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
         <Eyebrow>No perdamos el tiempo</Eyebrow>
         <h3 className="mt-6 max-w-3xl font-serif text-[clamp(2.25rem,4.5vw,4rem)] leading-[1] tracking-tight">
-          Encajarás con YAMATO <span className="italic">si…</span>
+          Encajarás con YAMATO si…
         </h3>
 
         <div className="mt-16 grid gap-16 md:grid-cols-2">
@@ -402,7 +402,7 @@ function Fit() {
             ))}
           </ul>
           <div>
-            <Reveal as="p" className="font-serif text-2xl italic text-muted-ink">
+            <Reveal as="p" className="font-serif text-2xl text-muted-ink">
               No encajarás si…
             </Reveal>
             <ul className="mt-6 space-y-5">
@@ -444,7 +444,7 @@ function Closing() {
         <Reveal delay={300} className="mt-12">
           <a
             href="/contacto"
-            className="group inline-flex items-baseline font-serif text-[clamp(1.25rem,2vw,1.75rem)] leading-tight italic link-underline link-underline-hover"
+            className="group inline-flex items-baseline font-serif text-[clamp(1.25rem,2vw,1.75rem)] leading-tight link-underline link-underline-hover"
           >
             Hablemos pues
             <Arrow />

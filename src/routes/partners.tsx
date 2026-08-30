@@ -138,13 +138,13 @@ function Hero() {
       <Eyebrow>Partners</Eyebrow>
       <h1 className="mt-10 max-w-[18ch] font-serif text-[clamp(2.75rem,8vw,7.5rem)] leading-[0.95] tracking-[-0.02em]">
         Conoces a alguien que necesita un CMO.
-        <span className="italic"> Nos lo presentas. Cobras. Fin.</span>
+        Nos lo presentas. Cobras. Fin.
       </h1>
       <div className="mt-16 mb-24 grid gap-12 md:grid-cols-12">
         <div className="md:col-span-7 md:col-start-6 space-y-8 text-lg leading-relaxed md:text-xl">
           <p>
             Sin pipeline, sin reuniones, sin seguimientos. Tú haces la intro, nosotros hacemos el
-            resto. Si firma, te llevas un <em className="font-serif">15% del primer pago</em>. Si
+            resto. Si firma, te llevas un <span className="font-serif">15% del primer pago</span>. Si
             traes 3 en un trimestre, los 3 van al 20%.
           </p>
           <div>
@@ -152,7 +152,7 @@ function Hero() {
               href={TALLY_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="group inline-flex items-baseline font-serif text-[clamp(1.25rem,2vw,1.75rem)] leading-tight italic link-underline link-underline-hover"
+              className="group inline-flex items-baseline font-serif text-[clamp(1.25rem,2vw,1.75rem)] leading-tight link-underline link-underline-hover"
             >
               Quiero entrar
               <Arrow />
@@ -173,14 +173,14 @@ function Why() {
             <Eyebrow>Por qué existe esto</Eyebrow>
             <h3 className="mt-6 font-serif text-[clamp(2.25rem,4.5vw,4rem)] leading-[1] tracking-tight">
               No queremos vendedores.
-              <span className="block italic text-muted-ink">Queremos a gente con contactos.</span>
+              <span className="block text-muted-ink">Queremos a gente con contactos.</span>
             </h3>
           </div>
           <div className="md:col-span-7 md:col-start-6 space-y-6 text-lg leading-relaxed md:text-xl">
             <p>
               Tienes una agenda llena de fundadores, CEOs y directores que en algún momento te van a
-              soltar la frase: <em className="font-serif">“necesito a alguien que se ocupe del
-              marketing en serio”</em>.
+              soltar la frase: <span className="font-serif">“necesito a alguien que se ocupe del
+              marketing en serio”</span>.
             </p>
             <p>
               Hasta hoy esa frase no te servía para nada. A partir de hoy, sí.
@@ -202,7 +202,7 @@ function How() {
       <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
         <Eyebrow>Cómo funciona</Eyebrow>
         <h3 className="mt-8 max-w-4xl font-serif text-[clamp(2.25rem,5vw,4.5rem)] leading-[1.05] tracking-tight">
-          Tres pasos. <span className="italic">Nada más.</span>
+          Tres pasos. Nada más.
         </h3>
         <ol className="mt-20">
           {STEPS.map((s) => (
@@ -233,7 +233,7 @@ function Money() {
           <span className="text-paper/60">Cuánto se gana</span>
         </Eyebrow>
         <h3 className="mt-8 max-w-4xl font-serif text-[clamp(2.25rem,5vw,4.5rem)] leading-[1.05] tracking-tight">
-          Las cuentas, <span className="italic">claras.</span>
+          Las cuentas, claras.
         </h3>
         <div className="mt-16 grid gap-12 md:grid-cols-3">
           <div className="space-y-3">
@@ -251,7 +251,7 @@ function Money() {
         </div>
         <p className="mt-20 max-w-3xl text-lg leading-relaxed text-paper/80 md:text-xl">
           No hay comisiones recurrentes, no hay residuales, no hay esquemas multinivel.
-          <span className="font-serif italic"> Una intro, un cobro. Limpio.</span>
+          <span className="font-serif"> Una intro, un cobro. Limpio.</span>
         </p>
       </div>
     </section>
@@ -264,11 +264,11 @@ function Fit() {
       <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
         <Eyebrow>Quién sí y quién no</Eyebrow>
         <h3 className="mt-6 max-w-4xl font-serif text-[clamp(2.25rem,4.5vw,4rem)] leading-[1] tracking-tight">
-          Esto no es <span className="italic">para todo el mundo.</span>
+          Esto no es para todo el mundo.
         </h3>
         <div className="mt-16 grid gap-12 md:grid-cols-2">
           <div>
-            <p className="font-serif text-2xl italic">Sí encajas si:</p>
+            <p className="font-serif text-2xl">Sí encajas si:</p>
             <ul className="mt-6 space-y-5">
               {[
                 "Tienes red en startups, scale-ups o empresas con producto validado.",
@@ -283,7 +283,7 @@ function Fit() {
             </ul>
           </div>
           <div>
-            <p className="font-serif text-2xl italic text-muted-ink">No encajas si:</p>
+            <p className="font-serif text-2xl text-muted-ink">No encajas si:</p>
             <ul className="mt-6 space-y-5">
               {[
                 "Quieres pasarnos 50 emails fríos a ver cuál pica.",
@@ -298,7 +298,7 @@ function Fit() {
             </ul>
           </div>
         </div>
-        <p className="mt-16 max-w-3xl font-serif text-[clamp(1.5rem,3vw,2.25rem)] leading-[1.2] italic">
+        <p className="mt-16 max-w-3xl font-serif text-[clamp(1.5rem,3vw,2.25rem)] leading-[1.2]">
           Si te ofende lo de arriba, este programa no es para ti. Y nuestros clientes tampoco.
         </p>
       </div>
@@ -312,7 +312,7 @@ function FaqSection() {
       <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
         <Eyebrow>FAQ</Eyebrow>
         <h3 className="mt-8 max-w-4xl font-serif text-[clamp(2.25rem,5vw,4.5rem)] leading-[1.05] tracking-tight">
-          Lo que <span className="italic">vas a preguntar.</span>
+          Lo que vas a preguntar.
         </h3>
         <dl className="mt-16">
           {FAQ.map((item) => (
@@ -341,14 +341,14 @@ function Closing() {
         <Eyebrow>¿Tienes a alguien en mente ahora mismo?</Eyebrow>
         <h3 className="mt-8 max-w-5xl font-serif text-[clamp(2.5rem,6vw,6rem)] leading-[1] tracking-tight">
           Pues no esperes. Cuanto antes registres la intro,{" "}
-          <span className="italic">antes empieza a contar el reloj.</span>
+          antes empieza a contar el reloj.
         </h3>
         <div className="mt-12">
           <a
             href={TALLY_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="group inline-flex items-baseline font-serif text-[clamp(1.25rem,2vw,1.75rem)] leading-tight italic link-underline link-underline-hover"
+            className="group inline-flex items-baseline font-serif text-[clamp(1.25rem,2vw,1.75rem)] leading-tight link-underline link-underline-hover"
           >
             Quiero entrar
             <Arrow />

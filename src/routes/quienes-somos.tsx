@@ -108,7 +108,7 @@ function Hero() {
       <Eyebrow>Quiénes somos</Eyebrow>
       <h1 className="mt-10 max-w-[20ch] font-serif text-[clamp(2.75rem,8vw,7.5rem)] leading-[0.95] tracking-[-0.02em]">
         Un CMO que firma lo que piensa.
-        <span className="italic"> Y un equipo que no tienes que fichar.</span>
+        Y un equipo que no tienes que fichar.
       </h1>
       <div className="mt-16 mb-24 grid gap-12 md:grid-cols-12">
         <div className="md:col-span-7 md:col-start-6 space-y-6 text-lg leading-relaxed md:text-xl">
@@ -120,12 +120,12 @@ function Hero() {
           </p>
           <p>Así que montamos lo contrario.</p>
           <p className="text-muted-ink">
-            Somos una <em className="font-serif">consultora de marketing independiente</em>. Entramos en tu empresa como
+            Somos una <span className="font-serif">consultora de marketing independiente</span>. Entramos en tu empresa como
             entraría un director de marketing —pensamos la estrategia, marcamos los KPIs, lideramos la operación— pero
             sin que tengas que ficharlo ni pagarle 100.000 € al año. La cabeza de un CMO con las manos de un equipo
             senior. Las horas que necesites. Ni una más.
           </p>
-          <p className="font-serif text-2xl italic">De la startup a la corporación.</p>
+          <p className="font-serif text-2xl">De la startup a la corporación.</p>
         </div>
       </div>
     </section>
@@ -155,7 +155,7 @@ function Founder() {
           <div className="md:col-span-7 md:pt-2">
             <h3 className="font-serif text-[clamp(2.25rem,4.5vw,4rem)] leading-[1] tracking-tight">
               Ignacio Goñi
-              <span className="block italic text-muted-ink">Fundador</span>
+              <span className="block text-muted-ink">Fundador</span>
             </h3>
             <div className="mt-10 space-y-6 text-lg leading-relaxed md:text-xl">
               <p className="text-muted-ink">
@@ -183,7 +183,7 @@ function Team() {
       <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
         <Eyebrow>El equipo de verdad</Eyebrow>
         <h3 className="mt-6 max-w-4xl font-serif text-[clamp(2.25rem,4.5vw,4rem)] leading-[1] tracking-tight">
-          Aquí es donde la mayoría de webs <span className="italic">mienten.</span>
+          Aquí es donde la mayoría de webs mienten.
         </h3>
         <div className="mt-16 grid gap-12 md:grid-cols-12">
           <div className="md:col-span-7 space-y-6 text-lg leading-relaxed md:text-xl">
@@ -192,7 +192,7 @@ function Team() {
               eso.
             </p>
             <p className="text-muted-ink">
-              YAMATO funciona con una <em className="font-serif">red de más de 50 colaboradores senior</em>{" "}
+              YAMATO funciona con una <span className="font-serif">red de más de 50 colaboradores senior</span>{" "}
               —especialistas en SEO, CRM, contenido, datos, desarrollo, IA, redes sociales— que entran en cada proyecto
               según lo que ese proyecto necesita. No son una plantilla. Son los mejores en lo suyo, y solo trabajan
               cuando hace falta lo suyo.
@@ -212,7 +212,7 @@ function Team() {
             ))}
           </ul>
         </div>
-        <p className="mt-20 max-w-4xl font-serif text-[clamp(1.5rem,3vw,2.25rem)] leading-[1.2] italic">
+        <p className="mt-20 max-w-4xl font-serif text-[clamp(1.5rem,3vw,2.25rem)] leading-[1.2]">
           Una agencia te vende su organigrama. Nosotros te vendemos exactamente el talento que tu problema requiere,
           dirigido por alguien que responde con su nombre.
         </p>
@@ -240,7 +240,7 @@ function Advisor() {
             </p>
             <h3 className="font-serif text-[clamp(2rem,4vw,3.5rem)] leading-[1] tracking-tight">
               Elena González-Blanco
-              <span className="block italic text-muted-ink">Advisor</span>
+              <span className="block text-muted-ink">Advisor</span>
             </h3>
             <p className="text-muted-ink">
               Head of AI for Digital Natives en Microsoft EMEA. Cofundadora de Clibrain, PhD por Harvard y una de las
@@ -262,7 +262,7 @@ function Code() {
           <span className="text-paper/60">Nuestro código</span>
         </Eyebrow>
         <h3 className="mt-8 max-w-4xl font-serif text-[clamp(2.25rem,5vw,4.5rem)] leading-[1.05] tracking-tight">
-          Ocho cosas que <span className="italic">no negociamos.</span>
+          Ocho cosas que no negociamos.
         </h3>
         <p className="mt-6 max-w-2xl text-lg leading-relaxed text-paper/70 md:text-xl">
           Si alguna te chirría, probablemente no somos para ti. Y no pasa nada.
@@ -289,7 +289,7 @@ function Closing() {
       <div className="px-6 sm:px-10 lg:px-20 xl:px-28 py-32">
         <Eyebrow>¿Hablamos?</Eyebrow>
         <h3 className="mt-8 max-w-5xl font-serif text-[clamp(2.5rem,6vw,6rem)] leading-[1] tracking-tight">
-          Treinta minutos. Te hacemos una <span className="italic">Radiografía gratis</span> de tu marketing.
+          Treinta minutos. Te hacemos una Radiografía gratis de tu marketing.
         </h3>
         <p className="mt-8 max-w-3xl text-lg leading-relaxed text-muted-ink md:text-xl">
           Las tres cosas, sin compromiso. Si en media hora no te convencemos, te lo diremos nosotros antes de que
@@ -298,7 +298,7 @@ function Closing() {
         <div className="mt-12">
           <a
             href="mailto:hola@yamato.digital"
-            className="group inline-flex items-baseline font-serif text-[clamp(1.25rem,2vw,1.75rem)] leading-tight italic link-underline link-underline-hover"
+            className="group inline-flex items-baseline font-serif text-[clamp(1.25rem,2vw,1.75rem)] leading-tight link-underline link-underline-hover"
           >
             Pide tu Radiografía gratis
             <Arrow />

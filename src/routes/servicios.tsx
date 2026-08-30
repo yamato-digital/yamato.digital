@@ -65,7 +65,7 @@ function ServiciosPage() {
         <section className="pt-20 pb-24 md:pt-28 md:pb-32">
           <div className="mx-auto max-w-3xl">
             <h1 className="font-serif text-[clamp(2rem,4vw,3.25rem)] leading-tight tracking-[-0.01em]">
-              Cinco cosas, <span className="italic">no cuarenta.</span>
+              Cinco cosas, no cuarenta.
             </h1>
             <div className="mt-10 space-y-7 font-serif text-[clamp(1.5rem,2.4vw,2.25rem)] leading-[1.15] tracking-[-0.01em] text-muted-ink">
               <p>
@@ -98,7 +98,7 @@ function ServiciosPage() {
         <section className="pt-20 pb-28 md:pt-28 md:pb-36">
           <div className="mx-auto max-w-3xl">
             <h2 className="font-serif text-[clamp(2rem,4vw,3.25rem)] leading-tight tracking-[-0.01em]">
-              Vale. ¿Pero qué hacéis <span className="italic">exactamente?</span>
+              Vale. ¿Pero qué hacéis exactamente?
             </h2>
 
             <div className="mt-12 space-y-8 max-w-xl text-lg leading-relaxed text-muted-ink md:text-xl">
