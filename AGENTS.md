@@ -1,10 +1,7 @@
-<!-- LOVABLE:BEGIN -->
-> [!IMPORTANT]
-> This project is connected to [Lovable](https://lovable.dev). Avoid rewriting
-> published git history — force pushing, or rebasing/amending/squashing commits
-> that are already pushed — as it rewrites history on Lovable's side and the
-> user will likely lose their project history.
->
-> Commits you push to the connected branch sync back to Lovable and show up in
-> the editor, so keep the branch in a working state.
-<!-- LOVABLE:END -->
+## Notas del proyecto
+
+> [!NOTE]
+> **Lovable ya no está conectado a este repositorio.** La carpeta `.lovable/` y referencias
+> heredadas en el código (p. ej. `@lovable.dev/vite-tanstack-config`, `lovable-error-reporting.ts`,
+> dominio `yamato-digital.lovable.app`) son restos antiguos del setup original. No asumir
+> sincronización con Lovable ni restricciones de historial git por ese motivo.

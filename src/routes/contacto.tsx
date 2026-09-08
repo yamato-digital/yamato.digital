@@ -8,7 +8,7 @@ export const Route = createFileRoute("/contacto")({
       { title: "Contacto — YAMATO — Consultora de marketing" },
       {
         name: "description",
-        content: "Hablemos. YAMATO es tu dirección de marketing independiente. Email, LinkedIn y newsletter.",
+        content: "Hablemos. YAMATO es tu dirección de marketing independiente. Email y LinkedIn.",
       },
       { property: "og:title", content: "Contacto — YAMATO — Consultora de marketing" },
       {
@@ -49,14 +49,6 @@ function ContactoPage() {
             rel="noopener noreferrer"
           >
             LinkedIn.
-          </a>
-          <a
-            href="https://pulsodiario.igonigonzalez.com/"
-            className="link-underline link-underline-hover"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Newsletter.
           </a>
         </div>
       </main>

@@ -226,7 +226,7 @@ Sin pipeline, sin reuniones, sin seguimientos. Tú haces la intro, nosotros el r
   },
   "/contacto": {
     title: "Contacto — YAMATO",
-    description: "Hablemos. Email, LinkedIn y newsletter.",
+    description: "Hablemos. Email y LinkedIn.",
     body: `# Contacto — YAMATO
 
 Hablemos.
@@ -234,7 +234,6 @@ Hablemos.
 - [Reservar consulta](https://tally.so/r/rjgEpL)
 - Email: [hola@yamato.digital](mailto:hola@yamato.digital)
 - [LinkedIn](https://www.linkedin.com/company/yamatodigital/)
-- [Newsletter](https://pulsodiario.igonigonzalez.com/)
 `,
   },
 };
