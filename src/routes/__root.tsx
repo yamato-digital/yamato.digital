@@ -94,6 +94,7 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
 }
 
 const SITE_URL = "https://yamato.digital";
+const OG_IMAGE_URL = `${SITE_URL}/yamato-digital-consultora-marketing-og-image.png`;
 
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
   head: () => ({
@@ -110,8 +111,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:title", content: "YAMATO — Consultora de marketing independiente" },
       { property: "og:description", content: "Dirigimos, asesoramos y ejecutamos lo que mueve tu negocio. De la startup a la corporación." },
       { name: "twitter:description", content: "Dirigimos, asesoramos y ejecutamos lo que mueve tu negocio. De la startup a la corporación." },
-      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/aykRTjElrvhS78u5RDiqYqG9ItB2/social-images/social-1782230154804-YAMATO-2_-_1920x1080.webp" },
-      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/aykRTjElrvhS78u5RDiqYqG9ItB2/social-images/social-1782230154804-YAMATO-2_-_1920x1080.webp" },
+      { property: "og:image", content: OG_IMAGE_URL },
+      { property: "og:image:width", content: "1024" },
+      { property: "og:image:height", content: "535" },
+      { property: "og:image:alt", content: "YAMATO — Consultora de marketing independiente" },
+      { name: "twitter:image", content: OG_IMAGE_URL },
     ],
     links: [
       { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
