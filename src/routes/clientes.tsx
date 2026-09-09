@@ -25,7 +25,7 @@ export const Route = createFileRoute("/clientes")({
 const clients = [
   {
     name: "APODEMIA",
-    description: "Marca española de joyería y lifestyle. Entramos a dirigir su marketing de punta a punta: estrategia, Paid Media, SEO, CRM y desarrollo web, además de acompañar su expansión a nuevos mercados. +30% de GMV en 2025, con el objetivo puesto en duplicarlo en 2026.",
+    description: "Marca española de joyería y lifestyle. Entramos a dirigir su marketing de punta a punta: estrategia, Paid Media, SEO, CRM y desarrollo web, además de acompañar su expansión a nuevos mercados. +34% de GMV en 2025, con el objetivo puesto en duplicarlo en 2026.",
   },
   {
     name: "Cegid",
