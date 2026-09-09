@@ -182,7 +182,7 @@ Red de más de 50 colaboradores senior (SEO, CRM, contenido, datos, desarrollo, 
 
 Algunos de ellos.
 
-- **APODEMIA** — Marca española de joyería y lifestyle. Marketing de punta a punta: estrategia, Paid Media, SEO, CRM y web. +30% de GMV en 2025.
+- **APODEMIA** — Marca española de joyería y lifestyle. Marketing de punta a punta: estrategia, Paid Media, SEO, CRM y web. +34% de GMV en 2025.
 - **Cegid** — Software de gestión en la nube. Diagnóstico y estrategia de canales para Contasimple, con foco en Verifactu.
 - **IEB** — Escuela de finanzas. Auditoría del marketing y la comunicación global.
 - **Beedigital** — Lanzamiento de un nuevo programa: propuesta de valor, early adopters, funnel, KPIs y campaña piloto.
