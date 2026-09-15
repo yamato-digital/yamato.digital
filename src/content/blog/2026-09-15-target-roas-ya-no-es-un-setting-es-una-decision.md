@@ -1,7 +1,7 @@
 ---
 slug: "target-roas-ya-no-es-un-setting-es-una-decision"
 title: "El target ROAS ya no es un setting. Es una decisión."
-date: "2026-09-21"
+date: "2026-09-15"
 cover: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.1.0&q=90&fm=jpg&crop=entropy&cs=srgb&w=1920"
 excerpt: "Tras el 17 de agosto, el target ROAS deja de ser un campo olvidado: Google lo trata como orden. Quién decide el número es la pregunta."
 keywords: "Target ROAS, Target CPA, Smart Bidding, Google Ads, pujas por objetivo, ROAS, paid media, Google Ads 2026"
