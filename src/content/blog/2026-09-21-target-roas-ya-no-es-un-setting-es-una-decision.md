@@ -3,60 +3,72 @@ slug: "target-roas-ya-no-es-un-setting-es-una-decision"
 title: "El target ROAS ya no es un setting. Es una decisión."
 date: "2026-09-21"
 cover: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.1.0&q=90&fm=jpg&crop=entropy&cs=srgb&w=1920"
-excerpt: "Tras el 17 de agosto, el target ROAS deja de ser un campo olvidado: Google lo trata como orden. Quién decide el número es la pregunta."
+excerpt: "Tras el 17 de agosto, el target ROAS deja de ser un campo olvidado: Google lo trata como una orden. La pregunta es quién decide el número."
 keywords: "Target ROAS, Target CPA, Smart Bidding, Google Ads, pujas por objetivo, ROAS, paid media, Google Ads 2026"
 ---
 
-El 17 de agosto de 2026 ya pasó. El target ROAS que alguien escribió en un campo de Google Ads dejó de ser un margen de error. Ahora es una orden.
+El 17 de agosto de 2026 ya pasó. Ese día, el target ROAS que alguien escribió una vez en un campo de Google Ads dejó de ser un margen de error y se convirtió en una orden.
 
-Si tu campaña limitada por presupuesto llevaba meses batiendo el objetivo "porque el presupuesto no daba para más", esa fiesta se acabó. Google lo documentó en su <a href="https://support.google.com/google-ads/answer/17061251?hl=en" target="_blank" rel="noopener noreferrer">ayuda oficial sobre cambios en pujas por objetivo</a>: el sistema entrega más cerca del número que tú pusiste. Ginny Marvin lo resumió en agosto sin poesía: el target es la palanca de eficiencia, no un checkbox que el algoritmo interpreta con cariño.
+Si tu campaña limitada por presupuesto llevaba meses batiendo el objetivo "porque el presupuesto no daba para más", se acabó la fiesta. Lo dice la <a href="https://support.google.com/google-ads/answer/17061251?hl=en" target="_blank" rel="noopener noreferrer">ayuda oficial de Google</a>: el sistema entrega más cerca del número que tú pusiste. Ginny Marvin lo resumió en agosto sin poesía: el target es la palanca de eficiencia, no un checkbox que el algoritmo interpreta con cariño.
 
-La pregunta útil ya no es "¿qué cambió Google?". Es: ¿quién es dueño de ese número en tu empresa?
+Así que la pregunta ya no es qué ha cambiado Google. Es más incómoda: ¿de quién es ese número en tu empresa?
 
-## El número que nadie firmó
+## Un mes después, los datos
 
-En agosto avisamos: el 17 te darían exactamente lo que pediste. La pieza de [advertencia sobre el cambio de pujas por objetivo](https://yamato.digital/blog/google-ads-pujas-objetivo-cambio-agosto-2026) era eso — un check previo. Un mes después, el patrón se confirma en la calle.
+En agosto avisamos de que [el 17 te darían exactamente lo que pediste](https://yamato.digital/blog/google-ads-pujas-objetivo-cambio-agosto-2026). Aquello era un check previo. Esto es la factura.
 
-<a href="https://www.amsive.com/insights/digital-media/google-changed-the-rules-on-tcpa-and-troas-the-auction-is-still-catching-up/" target="_blank" rel="noopener noreferrer">Amsive</a>, el 28 de agosto de 2026, midió la primera semana post-cambio sobre millones en gasto: en Search con Target ROAS, el ROAS cayó un 32% frente a la línea base. En retail comparable, el descenso rondó el 29–35%. No es "Google te odia". Es lo que pasa cuando un target flojo deja de ser un suelo que se puede batir y pasa a ser el punto al que el sistema apunta.
+<a href="https://www.amsive.com/insights/digital-media/google-changed-the-rules-on-tcpa-and-troas-the-auction-is-still-catching-up/" target="_blank" rel="noopener noreferrer">Amsive</a> midió el 28 de agosto la primera semana sobre millones en gasto: en Search con Target ROAS, el ROAS cayó un 32% frente a la línea base. En retail comparable, entre un 29% y un 35%.
 
-La segunda semana, publicada el 9 de septiembre, no resuelve el cuento de la predictibilidad. <a href="https://www.amsive.com/insights/digital-media/two-weeks-into-googles-tcpa-and-troas-change-is-performance-getting-more-predictable/" target="_blank" rel="noopener noreferrer">Amsive</a> lo dice claro: aún no hay evidencia sólida de que el CPA o el ROAS reales se peguen de forma más estable al target. Lo que sí se sostiene es otra cosa: en varios segmentos el problema no era solo el CPC; era la tasa de conversión. Traducción para un fundador: si el clic es más barato y el ROAS baja, mira la calidad del tráfico y del tracking antes de pelearte con el slider.
+No es que Google te odie. Es lo que pasa cuando un target flojo deja de ser un suelo que se puede superar y pasa a ser el punto exacto al que apunta el sistema.
 
-## Lo que los practicantes están haciendo de verdad
+La segunda semana no arregla el cuento de la predictibilidad. <a href="https://www.amsive.com/insights/digital-media/two-weeks-into-googles-tcpa-and-troas-change-is-performance-getting-more-predictable/" target="_blank" rel="noopener noreferrer">Amsive</a>, el 9 de septiembre, lo dice claro: todavía no hay evidencia sólida de que el CPA y el ROAS reales se peguen de forma más estable al target. Lo que sí aparece es algo más útil: en varios segmentos el problema no era el CPC, era la tasa de conversión.
 
-<a href="https://www.ppc.live/post/after-google-s-august-17-smart-bidding-update-what-ppc-practitioners-are-actually-doing" target="_blank" rel="noopener noreferrer">PPC Live</a> (~9 de septiembre de 2026) recogió lo que Reva Minkoff y Craig Graham están viendo en cuentas reales. El consejo más directo de Minkoff: si tu Target ROAS es 400% y el ROAS real lleva meses en 550%, sube el target hacia el real. Con las reglas nuevas, Google ya no prioriza superar tu objetivo; tienes que decirle dónde quieres estar.
+Traducción para un fundador: si el clic es más barato y el ROAS baja, mira la calidad del tráfico y el tracking antes de pelearte con el slider.
 
-Graham añade el antídoto al drama de LinkedIn: antes de culpar al 17 de agosto, abre el historial de cambios. En las cuentas donde ya habían acercado el target a la realidad las dos semanas previas, el día D fue aburrido. Aburrido era el objetivo. Si alguien subió el tROAS el 10 de agosto y el gráfico se movió el 18, puedes inventarte una narrativa de plataforma… o mirar el change history.
+## Lo que hace la gente que toca cuentas de verdad
 
-<a href="https://searchengineland.com/googles-target-bidding-shake-up-why-ppc-marketers-have-been-here-before-487704" target="_blank" rel="noopener noreferrer">Search Engine Land</a> (9 de septiembre de 2026) enmarca el mismo tema con Minkoff: esto no es apocalipsis; es volver a un Target CPA/ROAS que se comporta como target de verdad — algo que el sector ya vivió hace una década. Volumen o eficiencia. Elige. Mezclarlos en una sola frase de comité ("quiero más y más barato") no es una estrategia. Es una reunión.
+<a href="https://www.ppc.live/post/after-google-s-august-17-smart-bidding-update-what-ppc-practitioners-are-actually-doing" target="_blank" rel="noopener noreferrer">PPC Live</a> recogió alrededor del 9 de septiembre de 2026 lo que están viendo Reva Minkoff y Craig Graham.
 
-## Quién decide el ROAS (spoiler: no es el junior del Ads)
+Minkoff, directa: si tu Target ROAS es 400% y el real lleva meses en 550%, sube el target hasta acercarlo al real. Con las reglas nuevas, Google ya no premia superarte. Hay que decirle dónde quieres estar.
 
-Aquí está el corte YAMATO.
+Graham aporta el antídoto contra el drama de LinkedIn: antes de culpar al 17 de agosto, abre el historial de cambios. En las cuentas donde ya habían acercado el target a la realidad las dos semanas previas, el día D fue aburrido. Aburrido era el objetivo. Si alguien subió el tROAS el 10 de agosto y el gráfico se movió el 18, tienes dos opciones: inventarte una narrativa sobre la plataforma o mirar el change history.
 
-Un Target ROAS no es un setting de UI. Es una afirmación sobre margen, recurrencia y coste de adquisición que tu negocio puede aguantar. Si ese número lo puso un junior en 2024 para poder guardar la campaña, o lo copió de la sugerencia automática de Google, no tienes Smart Bidding. Tienes un random number generator con presupuesto.
+<a href="https://searchengineland.com/googles-target-bidding-shake-up-why-ppc-marketers-have-been-here-before-487704" target="_blank" rel="noopener noreferrer">Search Engine Land</a>, también el 9 de septiembre, lo enmarca con Minkoff: esto no es un apocalipsis, es volver a un Target CPA/ROAS que se comporta como un target. El sector ya lo vivió hace una década.
 
-<a href="https://searchengineland.com/ginny-marvin-on-smart-bidding-ai-and-why-ppc-fundamentals-still-matter-485132" target="_blank" rel="noopener noreferrer">Ginny Marvin</a> (17 de agosto de 2026) lo dijo sin rodeos: el target es una palanca atada a objetivos de negocio, no "otro setting más". Y <a href="https://searchengineland.com/google-explains-what-advertisers-should-expect-from-smart-bidding-changes-484410" target="_blank" rel="noopener noreferrer">Search Engine Land</a> (6 de agosto) ya adelantaba el marco: en campañas limitadas por presupuesto que superaban el objetivo, el sistema pasa a optimizar hacia el target declarado. Google no te ajusta el número. Tú decides si lo dejas, si lo bajas al rendimiento real o si cambias a Maximizar conversiones / valor sin target — y asumes que entonces el CPA/ROAS bailará cada vez que muevas el presupuesto.
+Volumen o eficiencia. Elige. "Quiero más y más barato" no es una estrategia. Es una reunión.
 
-Misma lógica que vimos con [AI Max y la migración automática](https://yamato.digital/blog/google-ads-ai-max-migracion-automatica-2026): la plataforma automatiza la ejecución; lo que no puede inventar es criterio. Si nadie en el comité puede decir en una frase "este ROAS es rentable porque X", el target es folklore con facturación.
+## El corte: ese número no es un ajuste
 
-## Tres preguntas que un CMO hace esta semana
+Un Target ROAS no es un campo de la interfaz. Es una afirmación sobre tu margen, tu recurrencia y lo que tu negocio aguanta pagar por un cliente.
 
-**1. ¿Cuál es el delta target vs real?** Campaña a campaña, últimos 30–60 días. Si el gap es grande y estás Limited by Budget, ese gap ya no es un "bonus": es exposición.
+Si lo puso un junior en 2024 para poder darle a Guardar, o si es la sugerencia automática de Google copiada tal cual, no tienes Smart Bidding. Tienes un generador de números aleatorios con presupuesto.
 
-**2. ¿El target sale de economía o de costumbre?** Margen bruto, tasa de cierre, LTV. Sin eso, cualquier tROAS es opinión. Las opiniones, desde agosto, cuestan.
+<a href="https://searchengineland.com/ginny-marvin-on-smart-bidding-ai-and-why-ppc-fundamentals-still-matter-485132" target="_blank" rel="noopener noreferrer">Ginny Marvin</a> lo dijo el mismo 17 de agosto: el target va atado a objetivos de negocio, no es "otro setting más". Y <a href="https://searchengineland.com/google-explains-what-advertisers-should-expect-from-smart-bidding-changes-484410" target="_blank" rel="noopener noreferrer">Search Engine Land</a> ya lo adelantaba el 6: en campañas limitadas por presupuesto que superaban el objetivo, el sistema pasa a optimizar hacia el target declarado.
 
-**3. ¿Quién puede cambiarlo sin una reunión de una hora?** Si el número solo se toca cuando el mes ya está rojo, no hay ownership. Hay pánico.
+Google no te va a corregir el número. Tú decides si lo dejas, si lo bajas a tu rendimiento real, o si te pasas a Maximizar conversiones sin target y asumes que el CPA bailará cada vez que toques el presupuesto.
 
-Una nota práctica que Minkoff y Graham repiten: no pongas el presupuesto diario por debajo del CPA objetivo (o de lo que implica tu ROAS mínimo). Pedirle al sistema un cliente a 100 € con 50 € al día no es optimización. Es incongruencia aritmética.
+Mismo patrón que con [AI Max y la migración automática](https://yamato.digital/blog/google-ads-ai-max-migracion-automatica-2026): la plataforma automatiza la ejecución. Lo que no puede inventar es criterio.
 
-## El target no es el negocio. El negocio es el target
+## Tres preguntas, y ninguna es técnica
 
-Google ha vendido predictibilidad. Amsive aún no la ve de forma consistente a dos semanas. Da igual: el efecto cultural ya está. El campo "Target ROAS" dejó de ser un detalle técnico que el algoritmo interpretaba con generosidad. Es la instrucción que le das a una máquina que, por fin, te hace caso.
+**¿Cuánto hay entre tu target y tu rendimiento real?** Campaña a campaña, últimos 30-60 días. Si el hueco es grande y estás Limited by Budget, ese hueco ya no es un bonus. Es exposición.
 
-Eso obliga a lo que muchas startups posponen: decidir cuánto vale un cliente y quién responde de ese número. No un porcentaje de la inversión publicitaria. Criterio. Dirección. Un CMO por el precio de un junior, no un gestor de pujas que gana más cuando tú gastas más.
+**¿El target sale de la economía o de la costumbre?** Margen bruto, tasa de cierre, LTV. Sin esas tres cifras, cualquier tROAS es una opinión. Y las opiniones, desde agosto, se facturan.
 
-Si quieres una segunda opinión honesta sobre qué targets tienen dueño y cuáles son plantillas de 2023, llama. La Radiografía es gratis. Arrancamos en una semana. Sin permanencias.
+**¿Quién puede cambiarlo sin convocar a nadie?** Si el número solo se toca cuando el mes ya está en rojo, no hay ownership. Hay pánico.
+
+Un apunte operativo que repiten Minkoff y Graham: no pongas el presupuesto diario por debajo del CPA objetivo, ni por debajo de lo que implica tu ROAS mínimo. Pedir un cliente de 100 € con 50 € al día no es optimizar. Es no saber sumar.
+
+## El target es tu modelo de negocio escrito en una casilla
+
+Google prometió predictibilidad. A dos semanas, Amsive todavía no la ve de forma consistente. Da igual: el efecto cultural ya está.
+
+El campo "Target ROAS" ha dejado de ser un detalle técnico que el algoritmo interpretaba con generosidad. Es la instrucción que le das a una máquina que, por fin, te hace caso.
+
+Y eso obliga a lo que muchas startups llevan años posponiendo: decidir cuánto vale un cliente y que alguien responda de ese número. No un porcentaje de la inversión publicitaria. Criterio. Un CMO por el precio de un junior, en vez de un gestor de pujas que gana más cuanto más gastas tú.
+
+Si quieres saber cuáles de tus targets tienen dueño y cuáles son una plantilla de 2023, te lo decimos en media hora y gratis. Sin permanencias, porque tampoco hacen falta.
 
 [¿Hablamos?](https://yamato.digital/contacto)
 
-*Escrito con IA. Le pedimos un ROAS del 400% al borrador; nos entregó un post. Aceptamos el trade-off.*
+*Escrito con IA. Le pedimos un ROAS del 400% al borrador y nos entregó un post. Aceptamos el trade-off.*
