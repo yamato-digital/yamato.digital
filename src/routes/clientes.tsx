@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
+import { Testimonials, type Testimonial } from "@/components/Testimonials";
 
 export const Route = createFileRoute("/clientes")({
   head: () => ({
@@ -81,6 +82,16 @@ const clients = [
   },
 ];
 
+// Sin citas inventadas: cada hueco necesita cita literal y permiso del cliente.
+const TESTIMONIALS: Testimonial[] = [
+  // TODO(Ignacio): testimonio 1 — cita literal, nombre, cargo y empresa (candidatos: Apodemia, Cegid/Contasimple, 1forAll, Kincode).
+  { quote: "", name: "", role: "", company: "" },
+  // TODO(Ignacio): testimonio 2 — cita literal, nombre, cargo y empresa.
+  { quote: "", name: "", role: "", company: "" },
+  // TODO(Ignacio): testimonio 3 — cita literal, nombre, cargo y empresa.
+  { quote: "", name: "", role: "", company: "" },
+];
+
 function ClientesPage() {
   return (
     <div className="bg-paper text-ink">
@@ -109,6 +120,8 @@ function ClientesPage() {
               </div>
             ))}
           </div>
+
+          <Testimonials items={TESTIMONIALS} />
 
           <div className="mt-16 md:mt-24 text-center max-w-2xl mx-auto">
             <h2 className="font-serif text-[clamp(2rem,4vw,3.25rem)] leading-tight tracking-[-0.01em]">
