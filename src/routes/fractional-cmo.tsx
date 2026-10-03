@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 import { RadiografiaCta } from "@/components/RadiografiaCta";
+import { FIRST_90_DAYS } from "@/lib/fractional-cmo";
 
 const URL = "https://yamato.digital/fractional-cmo";
 
@@ -242,6 +243,45 @@ function FractionalCmoPage() {
                     <td className="py-4 pr-4">Indefinido</td>
                     <td className="py-4">Permanencia habitual</td>
                   </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <div className="mx-auto max-w-3xl">
+          <div className="border-t border-ink/20" />
+        </div>
+
+        {/* Primeros 90 días */}
+        <section className="pt-20 pb-24 md:pt-28 md:pb-28">
+          <div className="mx-auto max-w-3xl">
+            <Eyebrow>Los primeros 90 días</Eyebrow>
+            <h3 className="font-serif text-[clamp(1.75rem,3.5vw,2.75rem)] leading-tight tracking-[-0.01em]">
+              Qué pasa desde el día uno.
+            </h3>
+            <div className="mt-10 overflow-x-auto">
+              <table className="w-full min-w-[560px] border-collapse text-left text-base">
+                <thead>
+                  <tr className="border-b border-ink/20 text-sm uppercase tracking-[0.12em]">
+                    <th scope="col" className="py-4 pr-4 font-semibold">Periodo</th>
+                    <th scope="col" className="py-4 pr-4 font-semibold">Qué hacemos</th>
+                    <th scope="col" className="py-4 font-semibold">Qué tienes al final</th>
+                  </tr>
+                </thead>
+                <tbody className="text-muted-ink">
+                  {FIRST_90_DAYS.map((row, i) => (
+                    <tr
+                      key={row.period}
+                      className={i < FIRST_90_DAYS.length - 1 ? "border-b border-hairline" : undefined}
+                    >
+                      <th scope="row" className="py-4 pr-4 font-semibold text-ink whitespace-nowrap">
+                        {row.period}
+                      </th>
+                      <td className="py-4 pr-4">{row.work}</td>
+                      <td className="py-4">{row.outcome}</td>
+                    </tr>
+                  ))}
                 </tbody>
               </table>
             </div>

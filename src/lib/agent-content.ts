@@ -2,6 +2,7 @@ import { getAllPosts, getPost } from "@/lib/blog";
 import { SERVICE_LEVERS, SERVICE_MODES, SERVICES_INTRO } from "@/lib/services";
 import { DIRECTION_CASES, OTHER_PROJECTS } from "@/lib/clients";
 import { CONTACT_BOOKING_LABEL, CTA_LINKS } from "@/lib/cta";
+import { FIRST_90_DAYS } from "@/lib/fractional-cmo";
 
 export const SITE_URL = "https://yamato.digital";
 
@@ -133,6 +134,12 @@ Cada CMO lleva dos clientes como máximo. Con más, nadie piensa tu marketing: s
 | Dirige a tu equipo | Sí | Sí | No |
 | Tiempo de arranque | Días | 3–6 meses | Semanas |
 | Compromiso | El que necesites | Indefinido | Permanencia habitual |
+
+## Los primeros 90 días
+
+| Periodo | Qué hacemos | Qué tienes al final |
+|---|---|---|
+${FIRST_90_DAYS.map((r) => `| ${r.period} | ${r.work} | ${r.outcome} |`).join("\n")}
 
 ## Preguntas frecuentes
 
