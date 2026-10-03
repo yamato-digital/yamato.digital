@@ -60,7 +60,6 @@ export const Route = createFileRoute("/")({
   component: Home,
 });
 
-// TODO(Ignacio): LOEWE sale en el carrusel pero no en /clientes, y en /quienes-somos aparece como trayectoria ("la expansión global de LOEWE"). Confirmar si es cliente de YAMATO o ex-empresa.
 const CLIENTS_ROW_1 = ["LOEWE", "Cedrion", "Kincode", "Bindu Events", "Beedigital", "Cegid"];
 const CLIENTS_ROW_2 = ["APODEMIA", "Airamana", "1forAll", "IEB", "Grupo Alquila"];
 const CLIENTS_ROW_3 = ["Clicollege", "Vivas Psicología", "SomosNLP", "Rem83"];
@@ -101,7 +100,6 @@ function Eyebrow({ children }: { children: React.ReactNode }) {
 function Hero() {
   return (
     <section id="top" className="px-6 sm:px-10 lg:px-20 xl:px-28">
-      {/* TODO(Ignacio): confirmar que "sin juniors" es cierto en la ejecución. Si no lo es, deja solo "Sin nómina, sin comisiones." */}
       <Reveal
         as="h1"
         className="mt-16 max-w-[18ch] font-serif text-[clamp(2.75rem,8vw,7.5rem)] leading-[0.95] tracking-[-0.02em] md:mt-24"

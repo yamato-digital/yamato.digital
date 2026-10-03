@@ -184,12 +184,10 @@ function Team() {
               Montan una cuadrícula de treinta caras sonrientes y la llaman “nuestro equipo”. Nosotros no vamos a hacer
               eso.
             </p>
-            {/* TODO(Ignacio): confirmar la cifra "más de 50 colaboradores senior" (también en la lista de abajo y en agent-content.ts). */}
-            {/* TODO(Ignacio): "Son los mejores en lo suyo" incumple la regla de voz (superlativo). Propuesta: "No son una plantilla. Llevan años haciendo lo suyo, y solo trabajan cuando hace falta lo suyo." */}
             <p className="text-muted-ink">
               YAMATO funciona con una <span className="font-serif">red de más de 50 colaboradores senior</span>{" "}
               —especialistas en SEO, CRM, contenido, datos, desarrollo, IA, redes sociales— que entran en cada proyecto
-              según lo que ese proyecto necesita. No son una plantilla. Son los mejores en lo suyo, y solo trabajan
+              según lo que ese proyecto necesita. No son una plantilla. Llevan años haciendo lo suyo, y solo trabajan
               cuando hace falta lo suyo.
             </p>
             <p className="text-muted-ink">Esto no es un parche. Es el modelo, y es mejor para ti:</p>
