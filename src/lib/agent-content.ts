@@ -1,11 +1,5 @@
 import { getAllPosts, getPost } from "@/lib/blog";
-import {
-  SERVICE_LEVERS,
-  SERVICE_MODES,
-  SERVICES_INTRO,
-  STRATEGIC_PROJECT,
-  STRATEGIC_PROJECT_ANCHOR,
-} from "@/lib/services";
+import { SERVICE_LEVERS, SERVICE_MODES, SERVICES_INTRO } from "@/lib/services";
 import { DIRECTION_CASES, OTHER_PROJECTS } from "@/lib/clients";
 import { CONTACT_BOOKING_LABEL, CTA_LINKS, RADIOGRAFIA_LABEL } from "@/lib/cta";
 import { FIRST_90_DAYS } from "@/lib/fractional-cmo";
@@ -87,25 +81,10 @@ Más detalle: [Servicios](${SITE_URL}/servicios/index.md) · [Fractional CMO](${
 ## Las tres formas de trabajar
 
 ${SERVICE_MODES.map(
-  (m, i) =>
-    `### ${String(i + 1).padStart(2, "0")} · ${m.name}\n\n**${m.problem}**\n\n${m.body}\n\n*Ejemplo: ${m.example}*\n\n${
-      m.id === STRATEGIC_PROJECT_ANCHOR
-        ? "Detalle: más abajo, en «Cómo trabajamos un proyecto estratégico»."
-        : `[Así trabajamos como Fractional CMO](${SITE_URL}/fractional-cmo/index.md)`
-    }`,
+  (m, i) => `### ${String(i + 1).padStart(2, "0")} · ${m.name}\n\n**${m.problem}**\n\n${m.body}\n\n*Ejemplo: ${m.example}*`,
 ).join("\n\n")}
 
-## ${STRATEGIC_PROJECT.title}
-
-${STRATEGIC_PROJECT.intro}
-
-**Proyectos habituales**
-
-${STRATEGIC_PROJECT.typical.map((t) => `- ${t}`).join("\n")}
-
-**Cómo funciona**
-
-${STRATEGIC_PROJECT.steps.map((s, i) => `${i + 1}. ${s}`).join("\n")}
+[Así trabajamos como Fractional CMO](${SITE_URL}/fractional-cmo/index.md)
 
 ## Las seis palancas
 

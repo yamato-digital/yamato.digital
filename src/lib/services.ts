@@ -53,27 +53,8 @@ export const SERVICE_MODES: ServiceMode[] = [
   },
 ];
 
-/** Ancla de la sección de detalle del proyecto estratégico en /servicios. */
+/** Ancla de la tarjeta del proyecto estratégico en /servicios; la usa la puerta B de la home. */
 export const STRATEGIC_PROJECT_ANCHOR = "proyecto-estrategico";
-
-export const STRATEGIC_PROJECT = {
-  title: "Cómo trabajamos un proyecto estratégico",
-  intro:
-    "Tu CMO y tu equipo llevan el día a día. Pero hay un proyecto que no cabe en su agenda o que pide a alguien que ya lo haya hecho antes. Lo lideramos de principio a fin, con un responsable, un plazo y un resultado que se puede medir.",
-  typical: [
-    "Lanzar un producto o una línea de negocio.",
-    "Entrar en un mercado nuevo.",
-    "Dar foco a una unidad de negocio que no termina de arrancar.",
-    "Implantar IA en marketing con un caso de uso medible.",
-    "Una segunda opinión independiente antes de una decisión grande.",
-  ],
-  steps: [
-    "Acordamos el reto, el entregable y la fecha de cierre.",
-    "Diagnóstico con tus datos y tu equipo.",
-    "Plan y ejecución, coordinados con tu CMO, que sigue al mando de su área.",
-    "Cierre: resultados, documentación y traspaso a tu equipo.",
-  ],
-};
 
 export const SERVICES_INTRO = "Sea cual sea la modalidad, tu responsable decide qué palancas activar. Y quién las ejecuta.";
 

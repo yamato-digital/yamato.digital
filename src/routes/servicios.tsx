@@ -3,13 +3,7 @@ import type { ReactNode } from "react";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 import { RadiografiaCta } from "@/components/RadiografiaCta";
-import {
-  SERVICE_LEVERS,
-  SERVICE_MODES,
-  SERVICES_INTRO,
-  STRATEGIC_PROJECT,
-  STRATEGIC_PROJECT_ANCHOR,
-} from "@/lib/services";
+import { SERVICE_LEVERS, SERVICE_MODES, SERVICES_INTRO, STRATEGIC_PROJECT_ANCHOR } from "@/lib/services";
 
 const DESCRIPTION =
   "Tres formas de trabajar y seis palancas. Eliges cómo trabajamos según lo que ya tienes; qué palancas se activan lo decide tu responsable.";
@@ -35,23 +29,6 @@ function Arrow() {
     <span aria-hidden className="ml-2 inline-block transition-transform group-hover:translate-x-1">
       →
     </span>
-  );
-}
-
-function ModeLink({ modeId }: { modeId: string }) {
-  if (modeId === STRATEGIC_PROJECT_ANCHOR) {
-    return (
-      <Link to="/servicios" hash={STRATEGIC_PROJECT_ANCHOR} className={ARROW_LINK}>
-        Cómo trabajamos un proyecto
-        <Arrow />
-      </Link>
-    );
-  }
-  return (
-    <Link to="/fractional-cmo" className={ARROW_LINK}>
-      Así trabajamos como Fractional CMO
-      <Arrow />
-    </Link>
   );
 }
 
@@ -108,58 +85,31 @@ function ServiciosPage() {
           <Eyebrow>Lo eliges tú</Eyebrow>
           <h2 className={SECTION_TITLE}>Las tres formas de trabajar</h2>
 
-          <ol className="mt-14 grid gap-6 md:grid-cols-3">
+          <ol className="mt-6 max-w-3xl">
             {SERVICE_MODES.map((m, i) => (
-              <li key={m.id} className="flex flex-col bg-cream p-8 md:p-10">
-                <p className={`${LABEL} md:min-h-[2.75rem]`}>
+              <li
+                key={m.id}
+                id={m.id === STRATEGIC_PROJECT_ANCHOR ? STRATEGIC_PROJECT_ANCHOR : undefined}
+                className="scroll-mt-24 py-10"
+              >
+                <p className={LABEL}>
                   <span className="tabular-nums">{String(i + 1).padStart(2, "0")}</span> · {m.name}
                 </p>
-                <h3 className="mt-4 font-serif text-[clamp(1.5rem,2.2vw,2rem)] leading-[1.1] tracking-[-0.01em]">
+                <h3 className="mt-4 font-serif text-[clamp(1.75rem,3vw,2.5rem)] leading-[1.1] tracking-[-0.01em]">
                   {m.problem}
                 </h3>
-                <p className="mt-5 text-lg leading-relaxed text-muted-ink">{m.body}</p>
-                <p className="mt-6 text-base leading-relaxed text-muted-ink">
-                  <span className="font-semibold text-ink">Ejemplo:</span> {m.example}
+                <p className="mt-4 max-w-xl text-lg leading-relaxed text-muted-ink md:text-xl">{m.body}</p>
+                <p className="mt-4 max-w-xl text-base italic leading-relaxed text-muted-ink md:text-lg">
+                  Ejemplo: {m.example}
                 </p>
-                <div className="mt-auto pt-8">
-                  <ModeLink modeId={m.id} />
-                </div>
               </li>
             ))}
           </ol>
-        </section>
 
-        <section id={STRATEGIC_PROJECT_ANCHOR} className={`${CONTAINER} scroll-mt-24 pb-24 md:pb-32`}>
-          <Eyebrow>03 · Proyecto estratégico, en detalle</Eyebrow>
-          <h2 className={SECTION_TITLE}>{STRATEGIC_PROJECT.title}</h2>
-          <p className={LEAD}>{STRATEGIC_PROJECT.intro}</p>
-
-          <div className="mt-14 grid gap-12 md:grid-cols-2 md:gap-16">
-            <div>
-              <h3 className={LABEL}>Proyectos habituales</h3>
-              <ul className="mt-6 space-y-4">
-                {STRATEGIC_PROJECT.typical.map((t) => (
-                  <li key={t} className="flex gap-4 text-lg leading-relaxed text-muted-ink">
-                    <span aria-hidden className="mt-3.5 inline-block h-px w-6 shrink-0 bg-current" />
-                    <span>{t}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div>
-              <h3 className={LABEL}>Cómo funciona</h3>
-              <ol className="mt-6 space-y-4">
-                {STRATEGIC_PROJECT.steps.map((step, i) => (
-                  <li key={step} className="grid grid-cols-[2.5rem_1fr] text-lg leading-relaxed">
-                    <span className="font-serif text-xl text-muted-ink tabular-nums">
-                      {String(i + 1).padStart(2, "0")}
-                    </span>
-                    <span className="text-muted-ink">{step}</span>
-                  </li>
-                ))}
-              </ol>
-            </div>
-          </div>
+          <Link to="/fractional-cmo" className={`mt-6 inline-block ${ARROW_LINK}`}>
+            Así trabajamos como Fractional CMO
+            <Arrow />
+          </Link>
         </section>
 
         <section className="bg-cream">
