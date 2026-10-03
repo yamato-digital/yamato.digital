@@ -9,7 +9,7 @@ const WHEN_IT_MAKES_SENSE = "¿Cuándo tiene sentido y cuándo no?";
 
 /*
  * Reglas de dedicación (internas; las horas no se publican).
- * - Máximo 2 clientes a la vez por CMO.
+ * - Máximo 2 clientes a la vez por CMO (esta sí se publica, en "Qué hace un Fractional CMO").
  * - Mínimo 10 h/mes por cliente. Por debajo no se puede mover el negocio.
  * - En el comité de dirección del cliente se sienta uno de nuestros CMO.
  */
@@ -184,6 +184,9 @@ function FractionalCmoPage() {
                 encuentren, da igual dónde busquen: buscadores, ChatGPT, Perplexity o lo que venga.
               </p>
             </div>
+            <p className="mt-12 max-w-2xl font-serif text-[clamp(1.5rem,2.6vw,2.25rem)] leading-[1.15] tracking-[-0.01em]">
+              Cada CMO lleva dos clientes como máximo. Con más, nadie piensa tu marketing: solo lo atiende.
+            </p>
           </div>
         </section>
 

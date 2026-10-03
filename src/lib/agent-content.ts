@@ -112,6 +112,8 @@ Contratar un CMO senior en plantilla cuesta entre 80.000 y 140.000 € al año, 
 - **Gestión de agencias y proveedores.** Elegimos, briefamos y exigimos.
 - **Visibilidad en Google y en IA.** Que te encuentren en buscadores, ChatGPT, Perplexity o lo que venga.
 
+Cada CMO lleva dos clientes como máximo. Con más, nadie piensa tu marketing: solo lo atiende.
+
 ## Comparativa
 
 | | Fractional CMO | CMO en plantilla | Agencia |
