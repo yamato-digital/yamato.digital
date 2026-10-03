@@ -59,7 +59,6 @@ export const DIRECTION_CASES: DirectionCase[] = [
   },
 ];
 
-// TODO(Ignacio): IEB, Cedrion y Rem83 no estaban en ninguno de los dos grupos del brief. Van aquí, primero; decidir si alguno sube a casos de dirección.
 export const OTHER_PROJECTS: OtherProject[] = [
   { name: "IEB", line: "Auditoría completa de su marketing y su comunicación global." },
   { name: "Cedrion", line: "Narrativa para su levantamiento de capital: investor deck, one-pager y pitch." },

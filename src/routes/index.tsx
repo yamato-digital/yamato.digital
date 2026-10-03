@@ -157,7 +157,6 @@ function Doors() {
   return (
     <section aria-label="Por dónde entrar" className="mt-16 px-6 sm:px-10 lg:px-20 xl:px-28">
       <div className="grid gap-6 md:grid-cols-2">
-        {/* TODO(Ignacio): umbral que descalifica en la puerta A (tamaño de equipo, facturación o ronda). No publicar hasta decidirlo. */}
         <Reveal className="h-full">
           <Link to="/fractional-cmo" data-door="sin-cmo" className={cardClass}>
             <div>
@@ -167,6 +166,10 @@ function Doors() {
               <p className="mt-4 text-lg leading-relaxed text-muted-ink">
                 Hay campañas, hay agencia, hay hasta un junior espabilado. Falta quien decida. Ese es el hueco que
                 ocupamos.
+              </p>
+              <p className="mt-4 text-base leading-relaxed text-muted-ink">
+                Para empresas que ya venden y tienen con qué ejecutar. Si aún buscas tu primer cliente, no te hace falta
+                un CMO: te hace falta vender.
               </p>
             </div>
             <span className="font-serif text-xl link-underline link-underline-hover self-start">
