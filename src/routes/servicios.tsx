@@ -1,6 +1,7 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+﻿import { createFileRoute, Link } from "@tanstack/react-router";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
+import { SERVICE_LEVERS, SERVICE_MODES, SERVICES_INTRO } from "@/lib/services";
 
 export const Route = createFileRoute("/servicios")({
   head: () => ({
@@ -9,23 +10,26 @@ export const Route = createFileRoute("/servicios")({
       {
         name: "description",
         content:
-          "Cinco cosas, no cuarenta. Estrategia, mentoría, Go-to-Market, IA aplicada y ejecución para empresas que quieren resultados.",
+          "Seis cosas. Bien hechas. Estrategia, mentoría, Go-to-Market, Growth, IA aplicada y ejecución para empresas que quieren resultados.",
       },
       { property: "og:title", content: "Servicios — YAMATO" },
       {
         property: "og:description",
-        content: "Cinco cosas, no cuarenta. Estrategia, mentoría, Go-to-Market, IA aplicada y ejecución.",
+        content: "Seis cosas. Bien hechas. Estrategia, mentoría, Go-to-Market, Growth, IA aplicada y ejecución.",
       },
       { property: "og:url", content: "https://yamato.digital/servicios" },
     ],
     links: [{ rel: "canonical", href: "https://yamato.digital/servicios" }],
-    scripts: SERVICES.map((s) => ({
+    scripts: [
+      ...SERVICE_MODES.map((m) => ({ name: m.name, description: `${m.problem} ${m.body}` })),
+      ...SERVICE_LEVERS.map((s) => ({ name: s.serviceName, description: `${s.problem} ${s.body}` })),
+    ].map((s) => ({
       type: "application/ld+json",
       children: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Service",
-        name: s.title.replace(/\.$/, ""),
-        description: s.body,
+        name: s.name,
+        description: s.description,
         provider: { "@type": "Organization", name: "YAMATO" },
       }),
     })),
@@ -33,28 +37,16 @@ export const Route = createFileRoute("/servicios")({
   component: ServiciosPage,
 });
 
-const SERVICES = [
-  {
-    title: "Estrategia y dirección.",
-    body: "Nadie piensa tu marketing más allá del mes que viene. Entramos como tu director: auditamos, fijamos estrategia, marcamos KPIs y lideramos la operación.",
-  },
-  {
-    title: "Mentoría y gestión de equipos.",
-    body: "Tienes gente que ejecuta mucho y avanza poco. No despedimos a nadie: les damos dirección, foco y un backlog priorizado por negocio.",
-  },
-  {
-    title: "Go-to-Market.",
-    body: "Hay fecha de lanzamiento y nadie ha pensado el cómo. Diseñamos y ejecutamos la entrada al mercado. Con plan y con plazos.",
-  },
-  {
-    title: "IA aplicada al marketing.",
-    body: "Todos hablan de IA, nadie la implanta. La metemos donde ahorra dinero de verdad: automatizaciones, agentes, análisis, reporting. La IA no va a acabar con el marketing, va a acabar con el marketing mediocre.",
-  },
-  {
-    title: "Ejecución.",
-    body: "SEO, GEO, CRM, web, automatización. Lo ejecutamos nosotros — y solo si la estrategia la hemos marcado nosotros. ¿Google Ads y Social Ads? Los dirigimos y elegimos a quién los toca. Un CMO no mueve pujas: dirige al que las mueve.",
-  },
-];
+function ItemLabel({ n, children }: { n: number; children: React.ReactNode }) {
+  return (
+    <div className="mb-6">
+      <p className="text-base font-semibold text-ink">
+        <span className="tabular-nums">{String(n).padStart(2, "0")}</span> · {children}
+      </p>
+      <span className="mt-3 block h-[2px] w-10 bg-current" />
+    </div>
+  );
+}
 
 function ServiciosPage() {
   return (
@@ -65,19 +57,20 @@ function ServiciosPage() {
         <section className="pt-20 pb-24 md:pt-28 md:pb-32">
           <div className="mx-auto max-w-3xl">
             <h1 className="font-serif text-[clamp(2rem,4vw,3.25rem)] leading-tight tracking-[-0.01em]">
-              Cinco cosas, no cuarenta.
+              Tres formas de trabajar. Seis palancas.
             </h1>
             <div className="mt-10 space-y-7 font-serif text-[clamp(1.5rem,2.4vw,2.25rem)] leading-[1.15] tracking-[-0.01em] text-muted-ink">
               <p>
-                No hacemos de todo. Hacemos lo que mueve el negocio. Estrategia, equipos, lanzamientos, IA y ejecución.
+                No hacemos de todo. Hacemos lo que mueve el negocio. Estrategia, equipos, lanzamientos, crecimiento, IA y
+                ejecución.
               </p>
               <p>
-                Si necesitas a alguien que te haga cuarenta cosas regulares, no somos nosotros. Si quieres a alguien que
-                haga cinco bien y te diga la verdad por el camino, sigue leyendo.
+                Hacemos seis cosas y las hacemos a fondo. Y te decimos la verdad por el camino.
               </p>
+              {/* Pendiente de la decisión sobre paid: ver TODO(Ignacio) en src/lib/services.ts. */}
               <p>
-                Y si lo único que necesitas en hacer campañas de Paid Media, no te preocupes, te pondremos en contacto
-                con nuestros partners. Saben hacerlo mucho mejor que nosotros.
+                Y si lo único que necesitas es hacer campañas de Paid Media, te ponemos en contacto con nuestros
+                partners.
               </p>
               <p>
                 ¿Buscas quien dirija todo esto sin contratar a un CMO en plantilla?{" "}
@@ -90,24 +83,53 @@ function ServiciosPage() {
           </div>
         </section>
 
-        <div className="mx-auto max-w-3xl">
-          <div className="border-t border-ink/20" />
-        </div>
-
         {/* What we actually do */}
         <section className="pt-20 pb-28 md:pt-28 md:pb-36">
           <div className="mx-auto max-w-3xl">
             <h2 className="font-serif text-[clamp(2rem,4vw,3.25rem)] leading-tight tracking-[-0.01em]">
-              Vale. ¿Pero qué hacéis exactamente?
+              Tres formas de trabajar, según lo que ya tienes.
             </h2>
 
-            <div className="mt-12 space-y-8 max-w-xl text-lg leading-relaxed text-muted-ink md:text-xl">
-              {SERVICES.map((s) => (
-                <p key={s.title}>
-                  <strong className="font-semibold text-ink">{s.title}</strong> {s.body}
-                </p>
+            <ol className="mt-14">
+              {SERVICE_MODES.map((m, i) => (
+                <li key={m.id} id={m.id} className="scroll-mt-24 py-10">
+                  <ItemLabel n={i + 1}>{m.name}</ItemLabel>
+                  <h3 className="font-serif text-[clamp(1.75rem,3vw,2.5rem)] leading-[1.1] tracking-[-0.01em]">
+                    {m.problem}
+                  </h3>
+                  <p className="mt-4 max-w-xl text-lg leading-relaxed text-muted-ink md:text-xl">{m.body}</p>
+                </li>
               ))}
-            </div>
+            </ol>
+          </div>
+        </section>
+
+        <section className="pt-20 pb-28 md:pt-28 md:pb-36">
+          <div className="mx-auto max-w-3xl">
+            <h2 className="font-serif text-[clamp(2rem,4vw,3.25rem)] leading-tight tracking-[-0.01em]">
+              Las palancas
+            </h2>
+
+            <p className="mt-8 font-serif text-[clamp(1.5rem,2.4vw,2.25rem)] leading-[1.15] tracking-[-0.01em] text-muted-ink">
+              {SERVICES_INTRO}
+            </p>
+
+            <ol className="mt-14">
+              {SERVICE_LEVERS.map((s, i) => (
+                <li key={s.lever} className="py-10">
+                  <ItemLabel n={i + 1}>{s.lever}</ItemLabel>
+                  <h3 className="font-serif text-[clamp(1.75rem,3vw,2.5rem)] leading-[1.1] tracking-[-0.01em]">
+                    {s.problem}
+                  </h3>
+                  <p className="mt-4 max-w-xl text-lg leading-relaxed text-muted-ink md:text-xl">{s.body}</p>
+                  {s.moves ? (
+                    <p className="mt-4 text-base">
+                      <span className="font-semibold">Mueve:</span> <span className="font-serif text-xl">{s.moves}</span>
+                    </p>
+                  ) : null}
+                </li>
+              ))}
+            </ol>
           </div>
         </section>
       </main>

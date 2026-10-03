@@ -3,8 +3,9 @@ import { useState } from "react";
 import logoBlack from "@/assets/logo-yamato-black.png";
 
 const navItems = [
-  { label: "Quiénes somos", to: "/quienes-somos" },
+  { label: "Fractional CMO", to: "/fractional-cmo" },
   { label: "Servicios", to: "/servicios" },
+  { label: "Quiénes somos", to: "/quienes-somos" },
   { label: "Clientes", to: "/clientes" },
   { label: "Blog", to: "/blog" },
   { label: "Contacto", to: "/contacto" },
@@ -20,7 +21,7 @@ export function Nav() {
           <img src={logoBlack} alt="YAMATO" className="h-8 w-auto" />
         </Link>
         <nav className="hidden min-w-0 items-center justify-end gap-4 text-xs md:flex lg:gap-6 lg:text-sm">
-          {navItems.slice(0, 4).map((item) => (
+          {navItems.map((item) => (
             <Link
               key={item.to}
               to={item.to}
@@ -30,17 +31,6 @@ export function Nav() {
               {item.label}
             </Link>
           ))}
-          <a
-            href="https://pulsodiario.igonigonzalez.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="link-underline link-underline-hover whitespace-nowrap"
-          >
-            Newsletter
-          </a>
-          <Link to="/contacto" activeProps={{ className: "font-semibold" }} className="link-underline link-underline-hover whitespace-nowrap">
-            Contacto
-          </Link>
         </nav>
         <button
           type="button"
@@ -57,7 +47,7 @@ export function Nav() {
         </button>
       </div>
       {isOpen ? (
-        <nav className="border-t border-hairline px-6 py-5 text-sm md:hidden">
+        <nav className="px-6 py-5 text-sm md:hidden">
           <div className="grid gap-4">
             {navItems.map((item) => (
               <Link
@@ -70,15 +60,6 @@ export function Nav() {
                 {item.label}
               </Link>
             ))}
-            <a
-              href="https://pulsodiario.igonigonzalez.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="link-underline link-underline-hover w-fit"
-              onClick={() => setIsOpen(false)}
-            >
-              Newsletter
-            </a>
           </div>
         </nav>
       ) : null}

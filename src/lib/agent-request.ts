@@ -5,6 +5,7 @@ import {
   markdownPathForPage,
   pagePathFromRequestPath,
 } from "@/lib/agent-content";
+import { getPostRedirect } from "@/lib/blog";
 
 const MARKDOWN_TYPE = "text/markdown; charset=utf-8";
 const TEXT_TYPE = "text/plain; charset=utf-8";
@@ -63,9 +64,13 @@ function textResponse(
   return new Response(body, { status: 200, headers });
 }
 
-function markdownForPath(pathname: string): Response | null {
+function markdownForPath(pathname: string, origin: string): Response | null {
   const pagePath = pagePathFromRequestPath(pathname);
   if (!pagePath) return null;
+  if (pagePath.startsWith("/blog/")) {
+    const target = getPostRedirect(pagePath.slice("/blog/".length));
+    if (target) return Response.redirect(new URL(markdownPathForPage(target), origin).toString(), 301);
+  }
   const doc = getPageDocument(pagePath);
   if (!doc) return null;
   return textResponse(doc.markdown, MARKDOWN_TYPE, pagePath);
@@ -91,7 +96,7 @@ export function handleAgentRequest(request: Request): Response | null {
 
   const isMarkdownPath = pathname.endsWith(".md");
   if (isMarkdownPath || prefersMarkdown(request)) {
-    const md = markdownForPath(pathname);
+    const md = markdownForPath(pathname, url.origin);
     if (md) return md;
     return new Response("Not found\n", {
       status: 404,

@@ -76,7 +76,7 @@ Vamos a lo práctico. Esto es lo que funciona ahora mismo, basado en datos y en 
 
 Cada página importante de tu web debería tener lo que en el sector se llama "answer capsule": una respuesta directa, clara y completa de unas 20-25 palabras, colocada justo debajo del titular. Sin rodeos, sin introducción, sin "en el mundo actual del marketing digital...". La respuesta primero, el contexto después.
 
-Piensa en cómo te preguntaría tu madre: "Hijo, ¿qué es eso del CMO as a Service?". Tu web debería responder así de directo.
+Piensa en cómo te preguntaría tu madre: "Hijo, ¿qué es eso de un Fractional CMO?". Tu web debería responder así de directo.
 
 ### 2. Haz que otros hablen de ti
 

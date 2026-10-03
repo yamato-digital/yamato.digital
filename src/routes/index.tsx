@@ -1,9 +1,13 @@
+import { useLayoutEffect, useRef, useState } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 import { Reveal } from "@/components/Reveal";
+import { RadiografiaCta } from "@/components/RadiografiaCta";
+import { SERVICE_LEVERS, SERVICE_MODES, SERVICES_INTRO } from "@/lib/services";
 import heroVideoMp4 from "@/assets/yamato-hero.mp4.asset.json";
 import heroPoster from "@/assets/yamato-hero-poster.jpg.asset.json";
+import { IGNACIO_PHOTO } from "@/lib/images";
 
 const SITE_URL = "https://yamato.digital";
 const ASSET_ORIGIN = "https://yamato-digital.lovable.app";
@@ -12,18 +16,18 @@ const assetUrl = (url: string) => `${ASSET_ORIGIN}${url}`;
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "YAMATO — Consultora de marketing independiente" },
+      { title: "YAMATO | Agencia de Fractional CMO" },
       {
         name: "description",
         content:
-          "YAMATO es una consultora de marketing independiente (y sincera): dirección de marketing externa y Fractional CMO desde Madrid. Dirigimos, asesoramos y ejecutamos lo que mueve tu negocio.",
+          "Fractional CMO independiente en Madrid. Un director de marketing a tiempo parcial que se sienta en tu comité y responde del número. Sin nómina, sin comisiones.",
       },
       { property: "og:site_name", content: "YAMATO" },
-      { property: "og:title", content: "YAMATO — Consultora de marketing independiente" },
+      { property: "og:title", content: "YAMATO | Agencia de Fractional CMO" },
       {
         property: "og:description",
         content:
-          "YAMATO es una consultora de marketing independiente (y sincera): dirección de marketing externa y Fractional CMO desde Madrid. Dirigimos, asesoramos y ejecutamos lo que mueve tu negocio.",
+          "Fractional CMO independiente en Madrid. Un director de marketing a tiempo parcial que se sienta en tu comité y responde del número. Sin nómina, sin comisiones.",
       },
 
 
@@ -44,7 +48,7 @@ export const Route = createFileRoute("/")({
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "VideoObject",
-          name: "YAMATO — Consultora de marketing independiente",
+          name: "YAMATO | Fractional CMO independiente en Madrid",
           description: "Dirigimos, asesoramos y ejecutamos lo que mueve tu negocio. De la startup a la corporación.",
           thumbnailUrl: assetUrl(heroPoster.url),
           contentUrl: assetUrl(heroVideoMp4.url),
@@ -59,21 +63,13 @@ export const Route = createFileRoute("/")({
   component: Home,
 });
 
-const CLIENTS_ROW_1 = ["LOEWE", "Cedrion", "Kincode", "Bindu Events", "Beedigital", "Cegid"];
-const CLIENTS_ROW_2 = ["APODEMIA", "Airamana", "1forAll", "IEB", "Grupo Alquila"];
+const CLIENTS_ROW_1 = ["Cedrion", "Kincode", "Bindu Events", "Beedigital", "Cegid"];
+const CLIENTS_ROW_2 = ["LOEWE", "APODEMIA", "Airamana", "1forAll", "IEB", "Grupo Alquila"];
 const CLIENTS_ROW_3 = ["Clicollege", "Vivas Psicología", "SomosNLP", "Rem83"];
-
-const SERVICES = [
-  "Estrategia y dirección",
-  "Mentoría y gestión de equipos",
-  "Go-to-Market",
-  "IA aplicada al marketing",
-  "Ejecución",
-];
 
 const FIT_YES = [
   "Quieres crecer y nadie piensa tu marketing a nivel estratégico.",
-  "Estás harto de agencias que prometen la luna y entregan un PowerPoint.",
+  "Quieres un plan con números y alguien que responda de ellos.",
   "Prefieres honestidad brutal a informes bonitos que no dicen nada.",
   "Tienes equipo y presupuesto, pero los proyectos importantes nunca tienen dueño.",
   "Quieres ganar dinero.",
@@ -81,37 +77,18 @@ const FIT_YES = [
 
 const FIT_NO = [
   "Buscas marketing barato.",
+  // Pendiente de la decisión sobre paid: ver TODO(Ignacio) en src/lib/services.ts.
   "Necesitas una agencia para poner en marcha las campañas de Paid.",
   "Quieres resultados mágicos en 2 semanas.",
   "Te ofende que te digan lo que no funciona.",
-  "Regateas. No somos un mercadillo.",
+  "Regateas.",
 ];
-
-function Arrow() {
-  return (
-    <span aria-hidden className="ml-2 inline-block transition-transform group-hover:translate-x-1">
-      →
-    </span>
-  );
-}
-
-function Cta({ children, href = "/contacto" }: { children: React.ReactNode; href?: string }) {
-  return (
-    <a
-      href={href}
-      className="group inline-flex items-baseline font-serif text-[clamp(1.25rem,2vw,1.75rem)] leading-tight link-underline link-underline-hover"
-    >
-      {children}
-      <Arrow />
-    </a>
-  );
-}
 
 function Eyebrow({ children }: { children: React.ReactNode }) {
   return (
     <div>
-      <h2 className="text-base font-semibold uppercase tracking-[0.14em] text-ink">{children}</h2>
-      <div className="mt-2 h-[2px] w-10 bg-current opacity-40" />
+      <h2 className="text-base font-semibold text-ink">{children}</h2>
+      <span className="mt-3 block h-[2px] w-10 bg-current" />
     </div>
   );
 }
@@ -123,13 +100,14 @@ function Hero() {
         as="h1"
         className="mt-16 max-w-[18ch] font-serif text-[clamp(2.75rem,8vw,7.5rem)] leading-[0.95] tracking-[-0.02em] md:mt-24"
       >
-        Hola. Somos una consultora de marketing independiente (y sincera).
+        Tu Fractional CMO.
       </Reveal>
       <Reveal as="p" delay={150} className="mt-10 max-w-2xl text-lg leading-relaxed text-muted-ink md:text-xl">
-        Dirigimos, asesoramos y ejecutamos lo que mueve tu negocio. De la startup a la corporación.
+        Un director de marketing senior dentro de tu comité. Decide la estrategia, dirige a tu equipo y responde de los
+        números. Las horas que necesites.
       </Reveal>
       <Reveal delay={300} className="mt-10 mb-20">
-        <Cta>Llamar es gratis (aún)</Cta>
+        <RadiografiaCta location="hero" microcopy="Llamar es gratis (aún)." />
       </Reveal>
     </section>
   );
@@ -141,7 +119,7 @@ function HeroMedia() {
       <Reveal variant="scale" className="relative aspect-[16/9] w-full overflow-hidden bg-ink/95">
         <img
           src={assetUrl(heroPoster.url)}
-          alt="YAMATO — Consultora de marketing independiente"
+          alt="YAMATO | Fractional CMO independiente en Madrid"
           className="absolute inset-0 h-full w-full object-cover"
           loading="eager"
         />
@@ -155,7 +133,7 @@ function HeroMedia() {
           loop
           playsInline
           preload="auto"
-          aria-label="YAMATO — Consultora de marketing independiente"
+          aria-label="YAMATO | Fractional CMO independiente en Madrid"
         >
           <source src={assetUrl(heroVideoMp4.url)} type="video/mp4" />
         </video>
@@ -164,32 +142,92 @@ function HeroMedia() {
   );
 }
 
+function DoorArrow() {
+  return (
+    <span aria-hidden className="ml-2 inline-block transition-transform group-hover:translate-x-1">
+      →
+    </span>
+  );
+}
+
 function Marquee() {
+  const viewportRef = useRef<HTMLDivElement>(null);
+  const trackRef = useRef<HTMLDivElement>(null);
+  const loeweRef = useRef<HTMLSpanElement>(null);
+  const [shift, setShift] = useState(0);
+  // Copias por mitad de la fila central. LOEWE se centra en una copia interior, no en la primera,
+  // para que el desplazamiento no deje un tramo vacío a la izquierda.
+  const [setsPerHalf, setSetsPerHalf] = useState(2);
   const rows = [
-    { items: CLIENTS_ROW_1, reverse: false },
-    { items: CLIENTS_ROW_2, reverse: true },
-    { items: CLIENTS_ROW_3, reverse: false },
+    { items: CLIENTS_ROW_1, reverse: true },
+    { items: CLIENTS_ROW_2, reverse: false, featured: true },
+    { items: CLIENTS_ROW_3, reverse: true },
   ];
+
+  useLayoutEffect(() => {
+    const measure = () => {
+      const viewport = viewportRef.current;
+      const track = trackRef.current;
+      const loewe = loeweRef.current;
+      if (!viewport || !track || !loewe) return;
+
+      const animation = track.style.animation;
+      track.style.animation = "none";
+      const loeweRect = loewe.getBoundingClientRect();
+      const loeweX = loeweRect.left - track.getBoundingClientRect().left;
+      const viewportWidth = viewport.clientWidth;
+      const wordWidth = loeweRect.width;
+      const copyIndex = Math.floor(setsPerHalf / 2);
+      const setWidth = copyIndex > 0 ? loeweX / copyIndex : 0;
+      track.style.animation = animation;
+      if (setWidth <= 0) return;
+
+      const half = setsPerHalf * setWidth;
+      const coversLeft = loeweX >= viewportWidth / 2 - wordWidth / 2;
+      const coversRight = half - loeweX >= viewportWidth / 2 + wordWidth / 2;
+      if (!coversLeft || !coversRight) {
+        const next = Math.max(setsPerHalf + 2, Math.ceil((viewportWidth + wordWidth) / setWidth) + 1);
+        if (next !== setsPerHalf) setSetsPerHalf(next);
+        return;
+      }
+      setShift(viewportWidth / 2 - wordWidth / 2 - loeweX);
+    };
+    measure();
+    document.fonts.ready.then(measure);
+    window.addEventListener("resize", measure);
+    return () => window.removeEventListener("resize", measure);
+  }, [setsPerHalf]);
+
   return (
     <section aria-label="Trabajamos con" className="py-12">
       <div>
         {rows.map((row, idx) => {
-          const doubled = [...row.items, ...row.items, ...row.items, ...row.items];
-          const isLast = idx === rows.length - 1;
-          return (
-            <div key={idx} className={`overflow-hidden py-4 ${isLast ? "" : "border-b border-ink/15"}`}>
-              <div
-                className={`${row.reverse ? "marquee-track-reverse" : "marquee-track"} font-serif text-[clamp(1.75rem,4.5vw,3.5rem)] leading-[1.2] whitespace-nowrap py-1`}
-              >
-                {doubled.map((c, i) => (
-                  <span key={i} className="flex items-center gap-10">
-                    {c}
-                    <span aria-hidden className="text-muted-ink">
-                      ◦
-                    </span>
+          const sets = row.featured ? setsPerHalf * 2 : 4;
+          const doubled = Array.from({ length: sets }, () => row.items).flat();
+          const loeweIndex = row.featured ? Math.floor(setsPerHalf / 2) * row.items.length : -1;
+          const track = (
+            <div
+              ref={row.featured ? trackRef : undefined}
+              className={`${row.reverse ? "marquee-track-reverse" : "marquee-track"} font-serif text-[clamp(1.75rem,4.5vw,3.5rem)] leading-[1.2] whitespace-nowrap py-1`}
+            >
+              {doubled.map((c, i) => (
+                <span key={i} className="flex items-center gap-10">
+                  {i === loeweIndex ? <span ref={loeweRef}>{c}</span> : c}
+                  <span aria-hidden className="text-muted-ink">
+                    ◦
                   </span>
-                ))}
-              </div>
+                </span>
+              ))}
+            </div>
+          );
+          return (
+            <div
+              key={idx}
+              ref={row.featured ? viewportRef : undefined}
+              data-marquee={row.featured ? "featured" : undefined}
+              className="overflow-hidden py-4"
+            >
+              {row.featured ? <div style={{ transform: `translateX(${shift}px)` }}>{track}</div> : track}
             </div>
           );
         })}
@@ -217,18 +255,70 @@ function About() {
         <div className="mt-10 space-y-6 text-lg leading-relaxed md:text-xl text-muted-ink">
           <Reveal as="p" delay={200}>
             La cabeza de un CMO con más de una década dirigiendo + las manos de un equipo senior. Dentro de tu empresa,
-            las horas que necesites. Ni un freelance que hace campañas sueltas, ni un consultor que suelta el informe y
-            desaparece.
+            las horas que necesites.
           </Reveal>
           <Reveal as="p" delay={280}>
-            No somos una agencia. Nadie te venderá la moto en la primera reunión para pasarte luego con un junior: quien
-            piensa tu estrategia es quien la firma, y se sienta en tu comité de dirección.
+            Quien piensa tu estrategia es quien la firma, y se sienta en tu comité de dirección.
           </Reveal>
           <Reveal as="p" delay={360}>
-            Trabajamos como <span className="font-serif">Growth Partner</span>: solo ganamos cuando tú ganas. Incómodo para
-            el resto del sector. Cómodo para ti.
+            Nos medimos por lo que mueves en tu negocio.
           </Reveal>
         </div>
+      </div>
+    </section>
+  );
+}
+
+function Signature() {
+  return (
+    <section className="px-6 py-28 sm:px-10 lg:px-20 xl:px-28">
+      <div className="mx-auto grid max-w-7xl items-center gap-12 md:grid-cols-12">
+        <Reveal className="md:col-span-4">
+          <img
+            src={IGNACIO_PHOTO.src}
+            srcSet={IGNACIO_PHOTO.srcSet}
+            sizes="(min-width: 768px) 360px, 280px"
+            alt={IGNACIO_PHOTO.alt}
+            width={IGNACIO_PHOTO.width}
+            height={IGNACIO_PHOTO.height}
+            loading="lazy"
+            decoding="async"
+            className="aspect-[4/5] w-full max-w-[280px] object-cover object-center md:max-w-[360px]"
+          />
+        </Reveal>
+        <Reveal delay={120} className="md:col-span-7 md:col-start-6">
+          <Eyebrow>Quién firma tu estrategia</Eyebrow>
+          <h3 className="mt-10 font-serif text-[clamp(2rem,4.5vw,4rem)] leading-[1.05] tracking-tight">
+            Un responsable con nombre y apellido. Y un equipo detrás.
+          </h3>
+          <div className="mt-6 space-y-4 text-lg leading-relaxed text-muted-ink md:text-xl">
+            <p>Desde el primer día sabes quién dirige tu marketing y responde de él.</p>
+            <p>
+              Las decisiones importantes las revisa el equipo de YAMATO: nadie decide solo lo que te juegas. La
+              ejecución la hace el especialista que tu problema necesita.
+            </p>
+          </div>
+          <div className="mt-10">
+            <p className="font-serif text-2xl">Lo dirige Ignacio Goñi, fundador.</p>
+            <p className="mt-3 text-lg leading-relaxed text-muted-ink">
+              Ingeniero mecánico: siete años diseñando sistemas de automatización para Airbus y Boeing antes de
+              pasarse al marketing.
+              <br />
+              Ha dirigido el marketing global de LOEWE (LVMH) en cuatro mercados y ha sido CMO de Clibrain, la primera
+              compañía de modelos de lenguaje de España, y de Clidrive, una fintech que pasó de cero a más de 10 M€ de
+              ARR en su primer año.
+              <br />
+              Más de diez años dirigiendo marketing dentro de empresas: lujo, IA, fintech y SaaS.
+            </p>
+          </div>
+          <Link
+            to="/quienes-somos"
+            className="group mt-8 inline-flex items-baseline font-serif text-[clamp(1.25rem,2vw,1.75rem)] leading-tight link-underline link-underline-hover"
+          >
+            Quiénes somos
+            <DoorArrow />
+          </Link>
+        </Reveal>
       </div>
     </section>
   );
@@ -242,28 +332,35 @@ function Services() {
           <div className="md:col-span-4">
             <Eyebrow>Nuestros servicios</Eyebrow>
           </div>
-          <ol className="md:col-span-8 md:col-start-5">
-            {SERVICES.map((s, i) => (
-              <Reveal
-                as="li"
-                delay={i * 80}
-                key={s}
-                className="flex items-baseline gap-6 border-t border-ink/15 py-6 last:border-b"
-              >
-                <span className="text-sm tabular-nums text-muted-ink">{String(i + 1).padStart(2, "0")}</span>
-                <span className="font-serif text-[clamp(1.75rem,3.5vw,3rem)] leading-tight">{s}</span>
-              </Reveal>
-            ))}
-          </ol>
+          <div className="md:col-span-8 md:col-start-5">
+            <p className="font-serif text-[clamp(1.5rem,2.6vw,2.25rem)] leading-[1.15] tracking-tight text-muted-ink">
+              Tres formas de trabajar, según lo que ya tienes.
+            </p>
+            <ol className="mt-12">
+              {SERVICE_MODES.map((m, i) => (
+                <Reveal as="li" delay={i * 80} key={m.id} className="py-6">
+                  <span className="text-base font-semibold text-ink">
+                    <span className="tabular-nums">{String(i + 1).padStart(2, "0")}</span> · {m.name}
+                  </span>
+                  <span className="mt-3 block h-[2px] w-10 bg-current" />
+                  <span className="mt-4 block font-serif text-[clamp(1.5rem,2.8vw,2.5rem)] leading-[1.1]">
+                    {m.problem}
+                  </span>
+                </Reveal>
+              ))}
+            </ol>
+            <p className="mt-10 text-lg leading-relaxed text-muted-ink md:text-xl">{SERVICES_INTRO}</p>
+            <p className="mt-4 text-base font-semibold leading-relaxed text-ink">
+              {SERVICE_LEVERS.map((s) => s.lever).join(" · ")}
+            </p>
+          </div>
           <div className="mt-10 md:col-span-8 md:col-start-5">
             <Link
               to="/servicios"
               className="group inline-flex items-baseline font-serif text-[clamp(1.25rem,2vw,1.75rem)] leading-tight link-underline link-underline-hover"
             >
               Ver en detalle
-              <span aria-hidden className="ml-2 inline-block transition-transform group-hover:translate-x-1">
-                →
-              </span>
+              <DoorArrow />
             </Link>
           </div>
         </div>
@@ -282,12 +379,18 @@ function Process() {
     {
       n: "02",
       title: "Radiografía (gratis)",
-      body: "Analizamos tu marketing de arriba a abajo y te presentamos qué cambiaríamos y por qué.",
+      // TODO(Ignacio): confirmar alcance de la Radiografía (30 minutos y tres conclusiones por escrito).
+      body: "30 minutos y tres conclusiones por escrito: lo que haces bien, lo que no tanto y lo que todavía no haces. La auditoría con tus datos es la primera fase del trabajo.",
     },
     {
       n: "03",
       title: "Arrancamos",
       body: "Si aceptas, cosa que suele ser lo habitual, estamos trabajando en tu proyecto en 1 semana.",
+    },
+    {
+      n: "04",
+      title: "Nos vamos",
+      body: "Cuando sobremos, te lo diremos nosotros. Y te ayudamos a fichar a quien nos sustituya.",
     },
   ];
 
@@ -295,7 +398,7 @@ function Process() {
     <section id="proceso">
       <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
         <Eyebrow>Cómo lo hacemos</Eyebrow>
-        <div className="mt-20 grid gap-12 md:grid-cols-3">
+        <div className="mt-20 grid gap-12 sm:grid-cols-2 lg:grid-cols-4 lg:gap-10">
           {steps.map((s, i) => (
             <Reveal key={s.n} delay={i * 120}>
               <span className="font-serif text-5xl text-muted-ink">{s.n}</span>
@@ -311,7 +414,7 @@ function Process() {
           “Te diremos 3 cosas: lo que haces bien, lo que no haces tan bien y, sobre todo, lo que no haces.”
         </Reveal>
         <Reveal delay={150} className="mt-16">
-          <Cta>¿Nos sentamos?</Cta>
+          <RadiografiaCta location="proceso" microcopy="¿Nos sentamos?" microcopyPosition="before" />
         </Reveal>
       </div>
     </section>
@@ -320,7 +423,7 @@ function Process() {
 
 function PriceQuote() {
   return (
-    <section className="border-y border-hairline bg-paper">
+    <section className="bg-paper">
       <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
         <Reveal>
           <Eyebrow>Inversión</Eyebrow>
@@ -336,9 +439,6 @@ function PriceQuote() {
           Por lo mismo que te cuesta un perfil junior, YAMATO te pone un CMO con más de una década dirigiendo marketing.
           Menos horas, sí. Pero ninguna se pierde en que un junior aprenda a tu costa.
         </Reveal>
-        <Reveal delay={320} className="mt-10">
-          <Cta>Si llamas, respondemos</Cta>
-        </Reveal>
       </div>
     </section>
   );
@@ -346,7 +446,7 @@ function PriceQuote() {
 
 function EnterpriseBlock() {
   return (
-    <section>
+    <section id="ya-tienes-cmo" className="scroll-mt-24">
       <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
         <div className="grid gap-12 md:grid-cols-12">
           <Reveal variant="fade-right" className="md:col-span-4">
@@ -363,8 +463,8 @@ function EnterpriseBlock() {
             <p className="text-muted-ink">No venimos a quitarle la silla a nadie.</p>
             <p className="text-muted-ink">
               En empresas grandes entramos donde la estructura no llega: el lanzamiento que nadie tiene tiempo de
-              liderar, la unidad de negocio sin foco, la IA de la que todo el comité habla y nadie implanta, la segunda
-              opinión que tu agencia no te va a dar…
+              liderar, la unidad de negocio sin foco, la IA de la que todo el comité habla y nadie implanta, una segunda
+              opinión independiente sobre lo que ya haces…
             </p>
             <p className="text-muted-ink">
               Proyectos con principio, fin y resultado. No nos quedamos a vivir en tu nómina.
@@ -373,9 +473,6 @@ function EnterpriseBlock() {
               Sí, suena a lo que te prometió la gran consultora. La diferencia: aquí, el que te lo vende es el que
               trabaja.
             </p>
-            <div className="pt-4">
-              <Cta>Cuéntanos el proyecto</Cta>
-            </div>
           </Reveal>
         </div>
       </div>
@@ -442,13 +539,13 @@ function Closing() {
           ¿Qué tal si hacemos una, o dos, cosas juntos?
         </Reveal>
         <Reveal delay={300} className="mt-12">
-          <a
-            href="/contacto"
-            className="group inline-flex items-baseline font-serif text-[clamp(1.25rem,2vw,1.75rem)] leading-tight link-underline link-underline-hover"
-          >
-            Hablemos pues
-            <Arrow />
-          </a>
+          <RadiografiaCta
+            location="cierre"
+            microcopy="Hablemos pues."
+            microcopyPosition="before"
+            microcopyClassName="text-paper/60"
+            whatsapp
+          />
         </Reveal>
       </div>
     </section>
@@ -464,11 +561,11 @@ function Home() {
       <div className="mt-24" />
       <Marquee />
       <About />
+      <Signature />
       <Services />
       <Process />
       <PriceQuote />
       <EnterpriseBlock />
-      <div className="border-t border-hairline" />
       <Fit />
       <Closing />
 

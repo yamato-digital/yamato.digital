@@ -4,7 +4,7 @@ title: "El Fortune 500 está borrando el título de CMO. Y tú ni siquiera lo te
 date: "2026-08-06"
 cover: "https://images.unsplash.com/photo-1517502884422-41eaead166d4?ixlib=rb-4.1.0&q=90&fm=jpg&crop=entropy&cs=srgb&w=1920"
 excerpt: "Solo el 36% de las Fortune 500 mantiene el cargo de CMO, frente al 49% hace un año. No es rotación: es borrado. Y lo que dice de tu empresa incomoda más."
-keywords: "CMO, fractional CMO, CMO as a service, dirección de marketing, Fortune 500, organigrama de marketing, chief growth officer, marketing B2B"
+keywords: "CMO, fractional CMO, dirección de marketing, Fortune 500, organigrama de marketing, chief growth officer, marketing B2B"
 ---
 
 Todos los años sale el mismo titular: los CMO duran poco. Rotación, carrusel, tenure de tres años y pico. El sector lo lee como quien mira el parte meteorológico y sigue con su día.
@@ -65,7 +65,7 @@ Que esta conversación llega tarde a tu casa, porque tú nunca tuviste el proble
 
 Ejecución te sobra. Una agencia de paid, alguien llevando redes, una web que se rehace cada dos años y un CRM a medio configurar. Lo que no tienes es a nadie con criterio decidiendo qué de todo eso hay que matar.
 
-Lo interesante es que el Fortune 500 acaba de validar, sin querer, la parte que importa. No hace falta una nómina de seis cifras para tener dirección de marketing. Hace falta que alguien con criterio se siente donde se toman las decisiones. Sea interno, sea externo, sea unas horas al mes. [Eso es exactamente lo que hacemos](https://yamato.digital/blog/cmo-as-a-service), y lo que lo separa de una agencia más no son las horas. Es la silla.
+Lo interesante es que el Fortune 500 acaba de validar, sin querer, la parte que importa. No hace falta una nómina de seis cifras para tener dirección de marketing. Hace falta que alguien con criterio se siente donde se toman las decisiones. Sea interno, sea externo, sea unas horas al mes. [Eso es exactamente lo que hacemos](https://yamato.digital/fractional-cmo), y lo que lo separa de una agencia más no son las horas. Es la silla.
 
 Si tu responsable de marketing —interno, externo o inexistente— no se sienta en el comité de dirección, tu empresa ya ha borrado el cargo. Solo que no ha salido en Forrester.
 

@@ -1,12 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
-import ignacioAsset from "@/assets/ignacio-goni-yamato.webp.asset.json";
+import { RadiografiaCta } from "@/components/RadiografiaCta";
+import { IGNACIO_PHOTO } from "@/lib/images";
+import { EXECUTION_MODEL } from "@/lib/services";
 
 const elenaAsset = { url: "/assets/elena-gonzalez-blanco-advisor.jpeg" };
-const ASSET_ORIGIN = "https://yamato-digital.lovable.app";
-const assetUrl = (url: string) => `${ASSET_ORIGIN}${url}`;
-
 export const Route = createFileRoute("/quienes-somos")({
   head: () => ({
     meta: [
@@ -14,7 +13,7 @@ export const Route = createFileRoute("/quienes-somos")({
       {
         name: "description",
         content:
-          "Un CMO que firma lo que piensa y un equipo senior que no tienes que fichar. Consultora de marketing independiente.",
+          "Un CMO que firma lo que piensa y un equipo senior que no tienes que fichar. Fractional CMO independiente en Madrid.",
       },
       { property: "og:title", content: "Quiénes somos — YAMATO" },
       {
@@ -34,7 +33,9 @@ export const Route = createFileRoute("/quienes-somos")({
           "name": "Ignacio Goñi",
           "jobTitle": "Fundador, CMO",
           "worksFor": { "@type": "Organization", "name": "YAMATO" },
-          "description": "Ingeniero industrial con más de 15 años dirigiendo marketing. Ex-LOEWE.",
+          "description":
+            "Ingeniero mecánico que pasó de diseñar máquinas para fabricar aviones para Airbus y Boeing al marketing. Ha dirigido el marketing global de LOEWE (LVMH) y ha sido CMO de Clibrain y Clidrive. Más de diez años dirigiendo marketing dentro de empresas: lujo, IA, fintech y SaaS.",
+          "image": `https://yamato.digital${IGNACIO_PHOTO.src}`,
         }),
       },
     ],
@@ -42,19 +43,11 @@ export const Route = createFileRoute("/quienes-somos")({
   component: QuienesSomos,
 });
 
-function Arrow() {
-  return (
-    <span aria-hidden className="ml-2 inline-block transition-transform group-hover:translate-x-1">
-      →
-    </span>
-  );
-}
-
 function Eyebrow({ children }: { children: React.ReactNode }) {
   return (
     <div>
-      <h2 className="text-base font-semibold uppercase tracking-[0.14em] text-ink">{children}</h2>
-      <div className="mt-2 h-[2px] w-10 bg-current opacity-40" />
+      <h2 className="text-base font-semibold text-ink">{children}</h2>
+      <span className="mt-3 block h-[2px] w-10 bg-current" />
     </div>
   );
 }
@@ -67,18 +60,18 @@ const PRINCIPLES = [
   },
   {
     n: "02",
-    title: "Cinco cosas, no cuarenta.",
-    body: "No hacemos de todo. Hacemos lo que mueve la aguja y dejamos fuera lo que solo engorda la factura. Si alguien te ofrece cuarenta servicios, no hace ninguno bien.",
+    title: "Seis cosas. Bien hechas.",
+    body: "Hacemos lo que mueve la aguja y lo hacemos a fondo. Lo que solo engorda la factura se queda fuera.",
   },
   {
     n: "03",
     title: "Independientes de verdad.",
-    body: "No cobramos un porcentaje de lo que inviertes en publicidad. Cuanto más gastas, no ganamos más. Trabajamos como Growth Partner: solo ganamos cuando tú ganas. Punto.",
+    body: "Nuestros honorarios no dependen de lo que inviertes en medios. Nos medimos por lo que mueves en tu negocio.",
   },
   {
     n: "04",
     title: "Quien piensa, firma.",
-    body: "El que diseña la estrategia es el que la ejecuta. No te vendemos un PowerPoint en la reunión de ventas para luego desaparecer y mandar al becario.",
+    body: "El que diseña la estrategia es el que responde de ella. Y quien te la presenta es quien la defiende en tu comité.",
   },
   {
     n: "05",
@@ -88,7 +81,8 @@ const PRINCIPLES = [
   {
     n: "06",
     title: "Solo ejecutamos lo que hemos marcado.",
-    body: "Hacemos Google Ads, SEO, CRM, web. Lo mismo que las agencias, con un pero: solo ejecutamos la estrategia que hemos definido nosotros. Ejecutar a ciegas el plan de otro es como operar con los ojos cerrados.",
+    // Pendiente de la decisión sobre paid: ver TODO(Ignacio) en src/lib/services.ts.
+    body: `${EXECUTION_MODEL} Y siempre sobre la estrategia que hemos definido: ejecutar a ciegas el plan de otro es como operar con los ojos cerrados.`,
   },
   {
     n: "07",
@@ -115,12 +109,12 @@ function Hero() {
           <p>YAMATO no nació de una pasión por el marketing. Nació de un cabreo.</p>
           <p className="text-muted-ink">
             Después de más de una década dirigiendo marketing en cabeza ajena, el patrón siempre era el mismo: empresas
-            con buen producto pagando a agencias que vendían humo y delegaban el trabajo en un becario. Nadie pensaba el
+            con buen producto y nadie dirigiendo su marketing. Mucho ejecutar, poco decidir. Nadie pensaba el
             marketing más allá del mes que viene. Y cuando alguien lo pensaba, no era quien lo ejecutaba.
           </p>
           <p>Así que montamos lo contrario.</p>
           <p className="text-muted-ink">
-            Somos una <span className="font-serif">consultora de marketing independiente</span>. Entramos en tu empresa como
+            Somos tu <span className="font-serif">Fractional CMO independiente</span>. Entramos en tu empresa como
             entraría un director de marketing —pensamos la estrategia, marcamos los KPIs, lideramos la operación— pero
             sin que tengas que ficharlo ni pagarle 100.000 € al año. La cabeza de un CMO con las manos de un equipo
             senior. Las horas que necesites. Ni una más.
@@ -134,21 +128,22 @@ function Hero() {
 
 function Founder() {
   return (
-    <section className="border-t border-hairline overflow-hidden">
+    <section className="overflow-hidden">
       <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-20 xl:px-28 py-24 md:py-28">
         <div className="grid items-start gap-12 md:grid-cols-12 lg:gap-16">
           <div className="md:col-span-5">
             <Eyebrow>Quién dirige esto</Eyebrow>
             <figure className="mt-10">
               <img
-                src={assetUrl(ignacioAsset.url)}
-                alt="Ignacio Goñi, fundador de YAMATO"
-                width="1600"
-                height="1600"
+                src={IGNACIO_PHOTO.src}
+                srcSet={IGNACIO_PHOTO.srcSet}
+                sizes="(min-width: 768px) 456px, 100vw"
+                alt={IGNACIO_PHOTO.alt}
+                width={IGNACIO_PHOTO.width}
+                height={IGNACIO_PHOTO.height}
                 loading="lazy"
                 decoding="async"
-                sizes="(min-width: 1024px) 36vw, (min-width: 768px) 42vw, 100vw"
-                className="aspect-[4/5] w-full max-h-[520px] object-cover object-center grayscale"
+                className="aspect-[4/5] w-full max-w-[456px] max-h-[570px] object-cover object-center"
               />
             </figure>
           </div>
@@ -159,9 +154,10 @@ function Founder() {
             </h3>
             <div className="mt-10 space-y-6 text-lg leading-relaxed md:text-xl">
               <p className="text-muted-ink">
-                Ingeniero industrial que viene del sector aeronáutico, ha pasado por la expansión global de LOEWE y está
-                metido en la IA hasta las entrañas, he pasado más de quince años dirigiendo marketing dentro de empresas,
-                no asesorándolas desde fuera. He cometido los errores caros en presupuestos que no eran míos, lo cual
+                Ingeniero mecánico que pasó de diseñar máquinas para fabricar aviones para Airbus y Boeing al marketing.
+                Ha dirigido el marketing global de LOEWE (LVMH) y ha sido CMO de Clibrain y Clidrive.
+                Más de diez años dirigiendo marketing dentro de empresas: lujo, IA, fintech y SaaS.
+                He cometido los errores caros en presupuestos que no eran míos, lo cual
                 significa una cosa para ti: cuando trabajamos juntos, esos errores ya no los pagas tú.
               </p>
               <p className="text-muted-ink">
@@ -183,18 +179,19 @@ function Team() {
       <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
         <Eyebrow>El equipo de verdad</Eyebrow>
         <h3 className="mt-6 max-w-4xl font-serif text-[clamp(2.25rem,4.5vw,4rem)] leading-[1] tracking-tight">
-          Aquí es donde la mayoría de webs mienten.
+          Un equipo con nombre y responsabilidad.
         </h3>
         <div className="mt-16 grid gap-12 md:grid-cols-12">
           <div className="md:col-span-7 space-y-6 text-lg leading-relaxed md:text-xl">
             <p className="text-muted-ink">
-              Montan una cuadrícula de treinta caras sonrientes y la llaman “nuestro equipo”. Nosotros no vamos a hacer
-              eso.
+              YAMATO no es solo su fundador. Hay más <span className="font-serif">CMO senior, totalmente
+              independientes</span>: cada uno firma la estrategia de sus clientes y responde por ella. Las decisiones
+              importantes se consensúan dentro de YAMATO. Tu CMO decide; no decide a solas.
             </p>
             <p className="text-muted-ink">
-              YAMATO funciona con una <span className="font-serif">red de más de 50 colaboradores senior</span>{" "}
+              Y debajo, una <span className="font-serif">red de más de 50 colaboradores senior</span>{" "}
               —especialistas en SEO, CRM, contenido, datos, desarrollo, IA, redes sociales— que entran en cada proyecto
-              según lo que ese proyecto necesita. No son una plantilla. Son los mejores en lo suyo, y solo trabajan
+              según lo que ese proyecto necesita. No son una plantilla. Llevan años haciendo lo suyo, y solo trabajan
               cuando hace falta lo suyo.
             </p>
             <p className="text-muted-ink">Esto no es un parche. Es el modelo, y es mejor para ti:</p>
@@ -213,8 +210,7 @@ function Team() {
           </ul>
         </div>
         <p className="mt-20 max-w-4xl font-serif text-[clamp(1.5rem,3vw,2.25rem)] leading-[1.2]">
-          Una agencia te vende su organigrama. Nosotros te vendemos exactamente el talento que tu problema requiere,
-          dirigido por alguien que responde con su nombre.
+          Te ponemos exactamente el talento que tu problema requiere, dirigido por alguien que responde con su nombre.
         </p>
       </div>
     </section>
@@ -265,11 +261,11 @@ function Code() {
           Ocho cosas que no negociamos.
         </h3>
         <p className="mt-6 max-w-2xl text-lg leading-relaxed text-paper/70 md:text-xl">
-          Si alguna te chirría, probablemente no somos para ti. Y no pasa nada.
+          Si las compartes, vamos a entendernos bien.
         </p>
         <ol className="mt-20">
           {PRINCIPLES.map((p) => (
-            <li key={p.n} className="grid gap-6 border-t border-paper/15 py-10 last:border-b md:grid-cols-12">
+            <li key={p.n} className="grid gap-6 py-10 md:grid-cols-12">
               <div className="md:col-span-3">
                 <span className="font-serif text-4xl text-paper/50">{p.n}</span>
                 <h3 className="mt-3 font-serif text-2xl leading-tight md:text-3xl">{p.title}</h3>
@@ -295,15 +291,7 @@ function Closing() {
           Las tres cosas, sin compromiso. Si en media hora no te convencemos, te lo diremos nosotros antes de que
           cuelgues.
         </p>
-        <div className="mt-12">
-          <a
-            href="mailto:hola@yamato.digital"
-            className="group inline-flex items-baseline font-serif text-[clamp(1.25rem,2vw,1.75rem)] leading-tight link-underline link-underline-hover"
-          >
-            Pide tu Radiografía gratis
-            <Arrow />
-          </a>
-        </div>
+        <RadiografiaCta location="quienes-somos-cierre" className="mt-12" whatsapp />
       </div>
     </section>
   );

@@ -1,4 +1,8 @@
 import { getAllPosts, getPost } from "@/lib/blog";
+import { SERVICE_LEVERS, SERVICE_MODES, SERVICES_INTRO } from "@/lib/services";
+import { DIRECTION_CASES, OTHER_PROJECTS } from "@/lib/clients";
+import { CONTACT_BOOKING_LABEL, CTA_LINKS } from "@/lib/cta";
+import { FIRST_90_DAYS } from "@/lib/fractional-cmo";
 
 export const SITE_URL = "https://yamato.digital";
 
@@ -9,41 +13,42 @@ export interface AgentDocument {
 
 const PAGES: Record<string, { title: string; description: string; body: string }> = {
   "/": {
-    title: "YAMATO — Consultora de marketing independiente",
+    title: "YAMATO | Agencia de Fractional CMO",
     description:
-      "Consultora de marketing independiente (y sincera): dirección de marketing externa y Fractional CMO desde Madrid.",
-    body: `# YAMATO — Consultora de marketing independiente
+      "Fractional CMO independiente en Madrid. Un director de marketing a tiempo parcial que se sienta en tu comité y responde del número.",
+    body: `# Tu Fractional CMO.
 
-> Dirigimos, asesoramos y ejecutamos lo que mueve tu negocio. De la startup a la corporación.
+> Un director de marketing senior dentro de tu comité. Decide la estrategia, dirige a tu equipo y responde de los números. Las horas que necesites.
 
-Hola. Somos una consultora de marketing independiente (y sincera).
+La cabeza de un CMO con más de una década dirigiendo, más las manos de un equipo senior. Dentro de tu empresa, las horas que necesites.
 
-La cabeza de un CMO con más de una década dirigiendo, más las manos de un equipo senior. Dentro de tu empresa, las horas que necesites. Ni un freelance que hace campañas sueltas, ni un consultor que suelta el informe y desaparece.
+Quien piensa tu estrategia es quien la firma, y se sienta en tu comité de dirección.
 
-No somos una agencia. Quien piensa tu estrategia es quien la firma, y se sienta en tu comité de dirección.
-
-Trabajamos como *Growth Partner*: solo ganamos cuando tú ganas.
+Nos medimos por lo que mueves en tu negocio.
 
 ## Servicios
 
-- Estrategia y dirección
-- Mentoría y gestión de equipos
-- Go-to-Market
-- IA aplicada al marketing
-- Ejecución
+Tres formas de trabajar, según lo que ya tienes.
+
+${SERVICE_MODES.map((m) => `- **${m.name}.** ${m.problem}`).join("\n")}
+
+${SERVICES_INTRO}
+
+**Palancas:** ${SERVICE_LEVERS.map((s) => s.lever).join(" · ")}.
 
 Más detalle: [Servicios](${SITE_URL}/servicios/index.md) · [Fractional CMO](${SITE_URL}/fractional-cmo/index.md)
 
 ## Cómo lo hacemos
 
 1. **Llamada** — 30 minutos. Si en ese tiempo no te convencemos, YAMATO no es para ti.
-2. **Radiografía (gratis)** — Analizamos tu marketing y te presentamos qué cambiaríamos y por qué.
+2. **Radiografía (gratis)** — 30 minutos y tres conclusiones por escrito: lo que haces bien, lo que no tanto y lo que todavía no haces. La auditoría con tus datos es la primera fase del trabajo.
 3. **Arrancamos** — Si aceptas, estamos en tu proyecto en 1 semana.
+4. **Nos vamos** — Cuando sobremos, te lo diremos nosotros. Y te ayudamos a fichar a quien nos sustituya.
 
 ## Encajarás si
 
 - Quieres crecer y nadie piensa tu marketing a nivel estratégico.
-- Estás harto de agencias que prometen la luna y entregan un PowerPoint.
+- Quieres un plan con números y alguien que responda de ellos.
 - Prefieres honestidad brutal a informes bonitos que no dicen nada.
 - Tienes equipo y presupuesto, pero los proyectos importantes nunca tienen dueño.
 - Quieres ganar dinero.
@@ -58,37 +63,38 @@ Más detalle: [Servicios](${SITE_URL}/servicios/index.md) · [Fractional CMO](${
 
 ## Contacto
 
-- [Reservar consulta](https://tally.so/r/rjgEpL)
+- [${CONTACT_BOOKING_LABEL.replace(/\.$/, "")}](${CTA_LINKS.bookingUrl})
+- [WhatsApp](${CTA_LINKS.whatsappUrl})
 - Email: [hola@yamato.digital](mailto:hola@yamato.digital)
 - [LinkedIn](https://www.linkedin.com/company/yamatodigital/)
 `,
   },
   "/servicios": {
     title: "Servicios — YAMATO",
-    description: "Cinco cosas, no cuarenta. Estrategia, mentoría, Go-to-Market, IA aplicada y ejecución.",
+    description: "Seis cosas. Bien hechas. Estrategia, mentoría, Go-to-Market, Growth, IA aplicada y ejecución.",
     body: `# Servicios — YAMATO
 
-Cinco cosas, *no cuarenta.*
+Tres formas de trabajar. *Seis palancas.*
 
-No hacemos de todo. Hacemos lo que mueve el negocio: estrategia, equipos, lanzamientos, IA y ejecución.
+No hacemos de todo. Hacemos lo que mueve el negocio: estrategia, equipos, lanzamientos, crecimiento, IA y ejecución.
 
-Si necesitas a alguien que te haga cuarenta cosas regulares, no somos nosotros. Si quieres a alguien que haga cinco bien y te diga la verdad por el camino, sigue leyendo.
+Hacemos seis cosas y las hacemos a fondo. Y te decimos la verdad por el camino.
 
-Si lo único que necesitas es Paid Media, te pondremos en contacto con partners que lo hacen mejor que nosotros.
+Si lo único que necesitas es hacer campañas de Paid Media, te ponemos en contacto con nuestros partners.
 
 ¿Buscas quien dirija todo esto sin contratar a un CMO en plantilla? [Así trabajamos como Fractional CMO](${SITE_URL}/fractional-cmo/index.md).
 
-## Qué hacemos exactamente
+## Tres formas de trabajar, según lo que ya tienes.
 
-**Estrategia y dirección.** Nadie piensa tu marketing más allá del mes que viene. Entramos como tu director: auditamos, fijamos estrategia, marcamos KPIs y lideramos la operación.
+${SERVICE_MODES.map((m) => `### ${m.problem}\n\n*${m.name}.* ${m.body}`).join("\n\n")}
 
-**Mentoría y gestión de equipos.** Tienes gente que ejecuta mucho y avanza poco. No despedimos a nadie: les damos dirección, foco y un backlog priorizado por negocio.
+## Las palancas
 
-**Go-to-Market.** Hay fecha de lanzamiento y nadie ha pensado el cómo. Diseñamos y ejecutamos la entrada al mercado. Con plan y con plazos.
+${SERVICES_INTRO}
 
-**IA aplicada al marketing.** La metemos donde ahorra dinero de verdad: automatizaciones, agentes, análisis, reporting. La IA no va a acabar con el marketing, va a acabar con el marketing mediocre.
-
-**Ejecución.** SEO, GEO, CRM, web, automatización. Lo ejecutamos nosotros — y solo si la estrategia la hemos marcado nosotros. Google Ads y Social Ads: los dirigimos y elegimos a quién los toca. Un CMO no mueve pujas: dirige al que las mueve.
+${SERVICE_LEVERS.map(
+  (s) => `### ${s.problem}\n\n*${s.lever}.* ${s.body}${s.moves ? `\n\n**Mueve:** ${s.moves}.` : ""}`,
+).join("\n\n")}
 `,
   },
   "/fractional-cmo": {
@@ -97,7 +103,7 @@ Si lo único que necesitas es Paid Media, te pondremos en contacto con partners 
       "Qué es un Fractional CMO, cuánto cuesta en España y cuándo compensa frente a un CMO en plantilla o una agencia.",
     body: `# Fractional CMO. Dirección de marketing sin contratar a un CMO.
 
-Un Fractional CMO es un director de marketing externo que trabaja para tu empresa unos días al mes, con responsabilidad real sobre la estrategia, el equipo y los números. Ni un consultor que entrega un informe, ni una agencia que ejecuta lo que le mandas: alguien que dirige.
+Un Fractional CMO es un director de marketing externo que trabaja para tu empresa unos días al mes, con responsabilidad real sobre la estrategia, el equipo y los números. Alguien que dirige: decide qué se hace, con quién y por qué, y responde del resultado.
 
 ## El problema
 
@@ -115,6 +121,8 @@ Contratar un CMO senior en plantilla cuesta entre 80.000 y 140.000 € al año, 
 - **Gestión de agencias y proveedores.** Elegimos, briefamos y exigimos.
 - **Visibilidad en Google y en IA.** Que te encuentren en buscadores, ChatGPT, Perplexity o lo que venga.
 
+Cada CMO lleva dos clientes como máximo. Con más, nadie piensa tu marketing: solo lo atiende.
+
 ## Comparativa
 
 | | Fractional CMO | CMO en plantilla | Agencia |
@@ -125,15 +133,21 @@ Contratar un CMO senior en plantilla cuesta entre 80.000 y 140.000 € al año, 
 | Tiempo de arranque | Días | 3–6 meses | Semanas |
 | Compromiso | El que necesites | Indefinido | Permanencia habitual |
 
+## Los primeros 90 días
+
+| Periodo | Qué hacemos | Qué tienes al final |
+|---|---|---|
+${FIRST_90_DAYS.map((r) => `| ${r.period} | ${r.work} | ${r.outcome} |`).join("\n")}
+
 ## Preguntas frecuentes
 
 **¿Qué es un Fractional CMO?** Un director de marketing externo a tiempo parcial, con responsabilidad real sobre estrategia, equipo y resultados. No es un consultor que entrega un PDF: dirige.
 
 **¿Cuánto cuesta en España?** Un CMO en plantilla cuesta 80.000–140.000 € al año más variable. Un Fractional CMO se contrata por días al mes, normalmente entre el 20% y el 40% de ese coste, sin indemnizaciones ni proceso de selección.
 
-**¿Cuándo tiene sentido?** Si facturas lo suficiente para invertir en marketing pero no para pagar un CMO senior, si tienes equipo que ejecuta sin dirección, o si vas a lanzar producto o mercado. No tiene sentido si solo necesitas manos para campañas: eso es una agencia.
+**¿Cuándo tiene sentido?** Si facturas lo suficiente para invertir en marketing pero no para pagar un CMO senior, si tienes equipo que ejecuta sin dirección, o si vas a lanzar producto o mercado. Si solo necesitas manos para campañas, lo que te hace falta es ejecución, y te lo decimos en la primera llamada. ¿Y si ya tienes un CMO? [Así entramos sin quitarle la silla](${SITE_URL}/index.md).
 
-**¿En qué se diferencia de una agencia?** Una agencia ejecuta lo que le pides. Un Fractional CMO decide qué hay que pedir, a quién y por qué — y responde del número.
+**¿Qué hace un Fractional CMO con mis agencias?** Decide qué hay que pedir, a quién y por qué, y las dirige. También a tus proveedores actuales. Y responde del número.
 
 **¿Cuánto dura?** Lo normal son 6–12 meses. Si a los 12 meses seguimos siendo imprescindibles, algo hemos hecho mal.
 
@@ -147,17 +161,19 @@ Contratar un CMO senior en plantilla cuesta entre 80.000 y 140.000 € al año, 
 
 Un CMO que firma lo que piensa. Y un equipo que no tienes que fichar.
 
-YAMATO no nació de una pasión por el marketing. Nació de un cabreo: empresas con buen producto pagando a agencias que vendían humo. Montamos lo contrario.
+YAMATO no nació de una pasión por el marketing. Nació de un cabreo: empresas con buen producto y nadie dirigiendo su marketing. Montamos lo contrario.
 
-Somos una consultora de marketing independiente. Entramos como un director de marketing —estrategia, KPIs, operación— sin que tengas que ficharlo ni pagarle 100.000 € al año.
+Somos tu Fractional CMO independiente. Entramos como un director de marketing —estrategia, KPIs, operación— sin que tengas que ficharlo ni pagarle 100.000 € al año.
 
 ## Quién dirige esto
 
-**Ignacio Goñi**, fundador. Ingeniero industrial, expansión global de LOEWE, más de quince años dirigiendo marketing *dentro* de empresas. YAMATO es bootstrapped: sin inversores a los que rendir cuentas, sin comercial cobrando comisión por venderte horas que no necesitas.
+**Ignacio Goñi**, fundador. Ingeniero mecánico que pasó de diseñar máquinas para fabricar aviones para Airbus y Boeing al marketing. Ha dirigido el marketing global de LOEWE (LVMH) y ha sido CMO de Clibrain y Clidrive. Más de diez años dirigiendo marketing dentro de empresas: lujo, IA, fintech y SaaS. YAMATO es bootstrapped: sin inversores a los que rendir cuentas, sin comercial cobrando comisión por venderte horas que no necesitas.
 
 ## El equipo
 
-Red de más de 50 colaboradores senior (SEO, CRM, contenido, datos, desarrollo, IA, redes) que entran según lo que el proyecto necesita. No pagas una estructura de 50 personas. Te toca el especialista adecuado.
+YAMATO no es solo su fundador. Hay más CMO senior, totalmente independientes: cada uno firma la estrategia de sus clientes y responde por ella. Las decisiones importantes se consensúan dentro de YAMATO.
+
+Debajo, una red de más de 50 colaboradores senior (SEO, CRM, contenido, datos, desarrollo, IA, redes) que entran según lo que el proyecto necesita. No pagas una estructura de 50 personas. Te toca el especialista adecuado.
 
 ## Advisor
 
@@ -166,8 +182,8 @@ Red de más de 50 colaboradores senior (SEO, CRM, contenido, datos, desarrollo, 
 ## Código
 
 1. Te decimos las tres cosas: lo que haces bien, lo que no, y lo que no haces.
-2. Cinco cosas, no cuarenta.
-3. Independientes de verdad: no cobramos un porcentaje de tu inversión publicitaria.
+2. Seis cosas. Bien hechas.
+3. Independientes de verdad: nuestros honorarios no dependen de lo que inviertes en medios. Nos medimos por lo que mueves en tu negocio.
 4. Quien piensa, firma.
 5. La IA es para lo aburrido.
 6. Solo ejecutamos lo que hemos marcado.
@@ -182,20 +198,16 @@ Red de más de 50 colaboradores senior (SEO, CRM, contenido, datos, desarrollo, 
 
 Algunos de ellos.
 
-- **APODEMIA** — Marca española de joyería y lifestyle. Marketing de punta a punta: estrategia, Paid Media, SEO, CRM y web. +34% de GMV en 2025.
-- **Cegid** — Software de gestión en la nube. Diagnóstico y estrategia de canales para Contasimple, con foco en Verifactu.
-- **IEB** — Escuela de finanzas. Auditoría del marketing y la comunicación global.
-- **Beedigital** — Lanzamiento de un nuevo programa: propuesta de valor, early adopters, funnel, KPIs y campaña piloto.
-- **Fundación Airamana** — Web corporativa y comunicación de Airamana ESCUCHA.
-- **Bindu Events** — Rediseño integral de web: diseño, contenidos, UX e implementación.
-- **1forAll** — Estrategia de marketing, transición de marca desde Voicegen y CRM.
-- **Kincode** — Web bilingüe, propuesta de valor, thought leadership y operación (RACI).
-- **Cedrion** — Narrative de fundraising: investor deck, one-pager y pitch.
-- **Clicollege** — Campañas digitales en los picos de captación (verano y curso escolar).
-- **SomosNLP** — Logo y comunicación del evento SomosNLP.
-- **Rem83** — Consultoría estratégica y de comunicación de marca para hardware técnico.
-- **Vivas Psicología** — Logo e identidad corporativa.
-- **Grupo Alquila** — Paid Media, SEO, landings y dashboard de rendimiento.
+## Donde dirigimos
+
+${DIRECTION_CASES.map(
+  (c) =>
+    `### ${c.name}\n\n${c.context}\n\n- **Reto:** ${c.challenge}\n- **Decisión:** ${c.decision}${c.result ? `\n- **Resultado:** ${c.result}` : ""}`,
+).join("\n\n")}
+
+## Otros proyectos
+
+${OTHER_PROJECTS.map((p) => `- **${p.name}** — ${p.line}`).join("\n")}
 
 ¿No ves tu nombre? [Llámanos](${SITE_URL}/contacto/index.md).
 `,
@@ -225,13 +237,14 @@ Sin pipeline, sin reuniones, sin seguimientos. Tú haces la intro, nosotros el r
 `,
   },
   "/contacto": {
-    title: "Contacto — YAMATO",
-    description: "Hablemos. Email y LinkedIn.",
+    title: "Contacto | Fractional CMO independiente | YAMATO",
+    description: "Hablemos. Reserva, WhatsApp, email y LinkedIn.",
     body: `# Contacto — YAMATO
 
-Hablemos.
+Hablemos. Te responde Ignacio. En la llamada vemos tu situación y te decimos qué haríamos primero.
 
-- [Reservar consulta](https://tally.so/r/rjgEpL)
+- [${CONTACT_BOOKING_LABEL.replace(/\.$/, "")}](${CTA_LINKS.bookingUrl})
+- [WhatsApp](${CTA_LINKS.whatsappUrl})
 - Email: [hola@yamato.digital](mailto:hola@yamato.digital)
 - [LinkedIn](https://www.linkedin.com/company/yamatodigital/)
 `,
@@ -316,7 +329,7 @@ export function buildLlmsTxt(): string {
 
   return `# YAMATO
 
-> YAMATO es una consultora de marketing independiente que actúa como dirección de marketing (CMO) externa para empresas con producto validado: estrategia, mentoría de equipos, Go-to-Market, IA aplicada y ejecución.
+> YAMATO es un Fractional CMO independiente en Madrid: un director de marketing a tiempo parcial para empresas con producto validado. Desde ahí activa lo que haga falta: mentoría de equipos, Go-to-Market, Growth, IA aplicada y ejecución.
 
 Si eres un agente o un LLM, pide las páginas en Markdown: añade \`/index.md\` a la URL o envía \`Accept: text/markdown\`. Índice ampliado: ${SITE_URL}/llms-full.txt
 

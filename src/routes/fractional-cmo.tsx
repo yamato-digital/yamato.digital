@@ -1,8 +1,19 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
+import { RadiografiaCta } from "@/components/RadiografiaCta";
+import { FIRST_90_DAYS } from "@/lib/fractional-cmo";
 
 const URL = "https://yamato.digital/fractional-cmo";
+
+const WHEN_IT_MAKES_SENSE = "¿Cuándo tiene sentido y cuándo no?";
+
+/*
+ * Reglas de dedicación (internas; las horas no se publican).
+ * - Máximo 2 clientes a la vez por CMO (esta sí se publica, en "Qué hace un Fractional CMO").
+ * - Mínimo 10 h/mes por cliente. Por debajo no se puede mover el negocio.
+ * - En el comité de dirección del cliente se sienta uno de nuestros CMO.
+ */
 
 const FAQ = [
   {
@@ -14,12 +25,12 @@ const FAQ = [
     a: "Un CMO en plantilla en España cuesta entre 80.000 y 140.000 € al año más variable. Un Fractional CMO se contrata por días al mes, lo que suele situar la inversión entre el 20% y el 40% de ese coste, sin indemnizaciones ni proceso de selección.",
   },
   {
-    q: "¿Cuándo tiene sentido y cuándo no?",
-    a: "Tiene sentido si facturas lo suficiente para invertir en marketing pero no para pagar un CMO senior, si tienes equipo que ejecuta sin dirección, o si vas a lanzar producto o mercado. No tiene sentido si lo que necesitas son manos para ejecutar campañas: eso es una agencia, no un director.",
+    q: WHEN_IT_MAKES_SENSE,
+    a: "Tiene sentido si facturas lo suficiente para invertir en marketing pero no para pagar un CMO senior, si tienes equipo que ejecuta sin dirección, o si vas a lanzar producto o mercado. Si lo que necesitas son manos para ejecutar campañas, lo que te hace falta es ejecución, y te lo decimos en la primera llamada.",
   },
   {
-    q: "¿En qué se diferencia de una agencia?",
-    a: "Una agencia ejecuta lo que le pides. Un Fractional CMO decide qué hay que pedir, a quién y por qué — y responde del número. Nosotros dirigimos también a tus agencias y proveedores actuales.",
+    q: "¿Qué hace un Fractional CMO con mis agencias?",
+    a: "Decide qué hay que pedir, a quién y por qué, y las dirige. También a tus proveedores actuales. Y responde del número.",
   },
   {
     q: "¿Cuánto dura la colaboración?",
@@ -39,7 +50,7 @@ export const Route = createFileRoute("/fractional-cmo")({
       {
         name: "keywords",
         content:
-          "fractional CMO, CMO as a service, director de marketing externo, dirección de marketing externa, CMO externo España, cuánto cuesta un CMO",
+          "fractional CMO, director de marketing externo, director de marketing a tiempo parcial, CMO externo España, cuánto cuesta un CMO",
       },
       { property: "og:title", content: "Fractional CMO en España — Dirección de marketing externa" },
       {
@@ -108,29 +119,12 @@ function FractionalCmoPage() {
             </h1>
             <p className="mt-8 text-lg leading-relaxed text-muted-ink md:text-xl">
               Un Fractional CMO es un director de marketing externo que trabaja para tu empresa unos días
-              al mes, con responsabilidad real sobre la estrategia, el equipo y los números. Ni un consultor
-              que entrega un informe, ni una agencia que ejecuta lo que le mandas: alguien que dirige.
+              al mes, con responsabilidad real sobre la estrategia, el equipo y los números. Alguien que dirige:
+              decide qué se hace, con quién y por qué, y responde del resultado.
             </p>
-            <div className="mt-10 flex flex-wrap gap-4">
-              <Link
-                to="/contacto"
-                className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
-              >
-                Cuéntanos tu caso
-              </Link>
-              <Link
-                to="/servicios"
-                className="inline-flex items-center justify-center rounded-md border border-input bg-background px-6 py-3 text-sm font-medium text-foreground transition-colors hover:bg-accent"
-              >
-                Ver servicios
-              </Link>
-            </div>
+            <RadiografiaCta location="fractional-hero" className="mt-10" />
           </div>
         </section>
-
-        <div className="mx-auto max-w-3xl">
-          <div className="border-t border-ink/20" />
-        </div>
 
         {/* El problema */}
         <section className="pt-20 pb-24 md:pt-28 md:pb-28">
@@ -153,10 +147,6 @@ function FractionalCmoPage() {
             </div>
           </div>
         </section>
-
-        <div className="mx-auto max-w-3xl">
-          <div className="border-t border-ink/20" />
-        </div>
 
         {/* Qué hace */}
         <section className="pt-20 pb-24 md:pt-28 md:pb-28">
@@ -187,12 +177,11 @@ function FractionalCmoPage() {
                 encuentren, da igual dónde busquen: buscadores, ChatGPT, Perplexity o lo que venga.
               </p>
             </div>
+            <p className="mt-12 max-w-2xl font-serif text-[clamp(1.5rem,2.6vw,2.25rem)] leading-[1.15] tracking-[-0.01em]">
+              Cada CMO lleva dos clientes como máximo. Con más, nadie piensa tu marketing: solo lo atiende.
+            </p>
           </div>
         </section>
-
-        <div className="mx-auto max-w-3xl">
-          <div className="border-t border-ink/20" />
-        </div>
 
         {/* Comparativa */}
         <section className="pt-20 pb-24 md:pt-28 md:pb-28">
@@ -204,7 +193,7 @@ function FractionalCmoPage() {
             <div className="mt-10 overflow-x-auto">
               <table className="w-full min-w-[560px] border-collapse text-left text-base">
                 <thead>
-                  <tr className="border-b border-ink/20 text-sm uppercase tracking-[0.12em]">
+                  <tr className="text-sm uppercase tracking-[0.12em]">
                     <th scope="col" className="py-4 pr-4 font-semibold"></th>
                     <th scope="col" className="py-4 pr-4 font-semibold">Fractional CMO</th>
                     <th scope="col" className="py-4 pr-4 font-semibold">CMO en plantilla</th>
@@ -212,25 +201,25 @@ function FractionalCmoPage() {
                   </tr>
                 </thead>
                 <tbody className="text-muted-ink">
-                  <tr className="border-b border-hairline">
+                  <tr>
                     <th scope="row" className="py-4 pr-4 font-semibold text-ink">Coste anual</th>
                     <td className="py-4 pr-4">Fracción del salario</td>
                     <td className="py-4 pr-4">80–140k € + variable</td>
                     <td className="py-4">Fee mensual por ejecución</td>
                   </tr>
-                  <tr className="border-b border-hairline">
+                  <tr>
                     <th scope="row" className="py-4 pr-4 font-semibold text-ink">Decide la estrategia</th>
                     <td className="py-4 pr-4">Sí</td>
                     <td className="py-4 pr-4">Sí</td>
                     <td className="py-4">No</td>
                   </tr>
-                  <tr className="border-b border-hairline">
+                  <tr>
                     <th scope="row" className="py-4 pr-4 font-semibold text-ink">Dirige a tu equipo</th>
                     <td className="py-4 pr-4">Sí</td>
                     <td className="py-4 pr-4">Sí</td>
                     <td className="py-4">No</td>
                   </tr>
-                  <tr className="border-b border-hairline">
+                  <tr>
                     <th scope="row" className="py-4 pr-4 font-semibold text-ink">Tiempo de arranque</th>
                     <td className="py-4 pr-4">Días</td>
                     <td className="py-4 pr-4">3–6 meses</td>
@@ -248,9 +237,37 @@ function FractionalCmoPage() {
           </div>
         </section>
 
-        <div className="mx-auto max-w-3xl">
-          <div className="border-t border-ink/20" />
-        </div>
+        {/* Primeros 90 días */}
+        <section className="pt-20 pb-24 md:pt-28 md:pb-28">
+          <div className="mx-auto max-w-3xl">
+            <Eyebrow>Los primeros 90 días</Eyebrow>
+            <h3 className="font-serif text-[clamp(1.75rem,3.5vw,2.75rem)] leading-tight tracking-[-0.01em]">
+              Qué pasa desde el día uno.
+            </h3>
+            <div className="mt-10 overflow-x-auto">
+              <table className="w-full min-w-[560px] border-collapse text-left text-base">
+                <thead>
+                  <tr className="text-sm uppercase tracking-[0.12em]">
+                    <th scope="col" className="py-4 pr-4 font-semibold">Periodo</th>
+                    <th scope="col" className="py-4 pr-4 font-semibold">Qué hacemos</th>
+                    <th scope="col" className="py-4 font-semibold">Qué tienes al final</th>
+                  </tr>
+                </thead>
+                <tbody className="text-muted-ink">
+                  {FIRST_90_DAYS.map((row) => (
+                    <tr key={row.period}>
+                      <th scope="row" className="py-4 pr-4 font-semibold text-ink whitespace-nowrap">
+                        {row.period}
+                      </th>
+                      <td className="py-4 pr-4">{row.work}</td>
+                      <td className="py-4">{row.outcome}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
 
         {/* FAQ */}
         <section className="pt-20 pb-24 md:pt-28 md:pb-28">
@@ -261,15 +278,23 @@ function FractionalCmoPage() {
                 <div key={f.q}>
                   <h3 className="font-serif text-2xl leading-tight tracking-[-0.01em]">{f.q}</h3>
                   <p className="mt-4 text-lg leading-relaxed text-muted-ink">{f.a}</p>
+                  {f.q === WHEN_IT_MAKES_SENSE ? (
+                    <Link
+                      to="/"
+                      hash="ya-tienes-cmo"
+                      className="group mt-4 inline-flex items-baseline font-serif text-xl link-underline link-underline-hover"
+                    >
+                      ¿Y si ya tienes un CMO? Así entramos sin quitarle la silla
+                      <span aria-hidden className="ml-2 inline-block transition-transform group-hover:translate-x-1">
+                        →
+                      </span>
+                    </Link>
+                  ) : null}
                 </div>
               ))}
             </div>
           </div>
         </section>
-
-        <div className="mx-auto max-w-3xl">
-          <div className="border-t border-ink/20" />
-        </div>
 
         {/* CTA */}
         <section className="pt-20 pb-28 md:pt-28 md:pb-36">
@@ -280,12 +305,7 @@ function FractionalCmoPage() {
             <p className="mt-6 text-lg leading-relaxed text-muted-ink md:text-xl">
               Nos sentamos, lo miramos y te lo decimos claro. Si no lo necesitas, te lo diremos también.
             </p>
-            <Link
-              to="/contacto"
-              className="mt-10 inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
-            >
-              Hablemos
-            </Link>
+            <RadiografiaCta location="fractional-cierre" className="mt-10" whatsapp />
           </div>
         </section>
       </main>

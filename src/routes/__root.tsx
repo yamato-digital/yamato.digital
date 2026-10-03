@@ -6,6 +6,7 @@ import {
   useRouter,
   HeadContent,
   Scripts,
+  type ErrorComponentProps,
 } from "@tanstack/react-router";
 import { useEffect, type ReactNode } from "react";
 
@@ -55,7 +56,7 @@ function NotFoundComponent() {
   );
 }
 
-function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
+function ErrorComponent({ error, reset }: ErrorComponentProps) {
   console.error(error);
   const router = useRouter();
   useEffect(() => {
@@ -102,19 +103,19 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { name: "google-site-verification", content: "5hVSqmWNzF9ywzhbG4ZEgOwMJRqbmILlYqtYf92Jm-c" },
-      { title: "YAMATO — Consultora de marketing independiente" },
+      { title: "YAMATO | Fractional CMO independiente en Madrid" },
       { name: "description", content: "Dirigimos, asesoramos y ejecutamos lo que mueve tu negocio. De la startup a la corporación." },
       { property: "og:type", content: "website" },
       { property: "og:site_name", content: "YAMATO" },
       { name: "twitter:card", content: "summary_large_image" },
-      { property: "og:title", content: "YAMATO — Consultora de marketing independiente" },
-      { name: "twitter:title", content: "YAMATO — Consultora de marketing independiente" },
+      { property: "og:title", content: "YAMATO | Fractional CMO independiente en Madrid" },
+      { name: "twitter:title", content: "YAMATO | Fractional CMO independiente en Madrid" },
       { property: "og:description", content: "Dirigimos, asesoramos y ejecutamos lo que mueve tu negocio. De la startup a la corporación." },
       { name: "twitter:description", content: "Dirigimos, asesoramos y ejecutamos lo que mueve tu negocio. De la startup a la corporación." },
       { property: "og:image", content: OG_IMAGE_URL },
       { property: "og:image:width", content: "1024" },
       { property: "og:image:height", content: "535" },
-      { property: "og:image:alt", content: "YAMATO — Consultora de marketing independiente" },
+      { property: "og:image:alt", content: "YAMATO | Fractional CMO independiente en Madrid" },
       { name: "twitter:image", content: OG_IMAGE_URL },
     ],
     links: [
@@ -140,7 +141,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
               "name": "YAMATO",
               "alternateName": ["YAMATO Digital", "Yamato Consultora de Marketing"],
               "url": SITE_URL,
-              "description": "Consultora de marketing independiente. CMO externo para startups y corporaciones.",
+              "description": "Fractional CMO independiente en Madrid. Dirección de marketing a tiempo parcial para startups y corporaciones.",
               "contactPoint": { "@type": "ContactPoint", "email": "hola@yamato.digital" },
             },
             {
