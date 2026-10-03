@@ -13,7 +13,7 @@ export interface AgentDocument {
 
 const PAGES: Record<string, { title: string; description: string; body: string }> = {
   "/": {
-    title: "Fractional CMO independiente | YAMATO",
+    title: "YAMATO | The Fractional Agency",
     description:
       "Fractional CMO independiente en Madrid. Un director de marketing a tiempo parcial que se sienta en tu comité y responde del número.",
     body: `# Tu Fractional CMO independiente.
