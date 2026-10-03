@@ -1,7 +1,7 @@
 import { getAllPosts, getPost } from "@/lib/blog";
 import { SERVICE_LEVERS, SERVICE_MODES, SERVICES_INTRO } from "@/lib/services";
 import { DIRECTION_CASES, OTHER_PROJECTS } from "@/lib/clients";
-import { CONTACT_BOOKING_LABEL, CTA_LINKS, RADIOGRAFIA_LABEL } from "@/lib/cta";
+import { CONTACT_BOOKING_LABEL, CTA_LINKS } from "@/lib/cta";
 import { FIRST_90_DAYS } from "@/lib/fractional-cmo";
 
 export const SITE_URL = "https://yamato.digital";
@@ -71,35 +71,32 @@ Más detalle: [Servicios](${SITE_URL}/servicios/index.md) · [Fractional CMO](${
   },
   "/servicios": {
     title: "Servicios — YAMATO",
-    description:
-      "Tres formas de trabajar y seis palancas. Eliges cómo trabajamos según lo que ya tienes; qué palancas se activan lo decide tu responsable.",
-    body: `# Tres formas de trabajar. Seis palancas.
+    description: "Seis cosas. Bien hechas. Estrategia, mentoría, Go-to-Market, Growth, IA aplicada y ejecución.",
+    body: `# Servicios — YAMATO
 
-- **La forma de trabajar:** la eliges tú, según lo que ya tienes.
-- **Las palancas:** las decide tu responsable, según lo que pide tu negocio.
+Tres formas de trabajar. *Seis palancas.*
 
-## Las tres formas de trabajar
+No hacemos de todo. Hacemos lo que mueve el negocio: estrategia, equipos, lanzamientos, crecimiento, IA y ejecución.
 
-${SERVICE_MODES.map(
-  (m, i) => `### ${String(i + 1).padStart(2, "0")} · ${m.name}\n\n**${m.problem}**\n\n${m.body}\n\n*Ejemplo: ${m.example}*`,
-).join("\n\n")}
+Hacemos seis cosas y las hacemos a fondo. Y te decimos la verdad por el camino.
 
-[Así trabajamos como Fractional CMO](${SITE_URL}/fractional-cmo/index.md)
+Si lo único que necesitas es hacer campañas de Paid Media, te ponemos en contacto con nuestros partners.
 
-## Las seis palancas
+¿Buscas quien dirija todo esto sin contratar a un CMO en plantilla? [Así trabajamos como Fractional CMO](${SITE_URL}/fractional-cmo/index.md).
+
+## Qué hacemos exactamente
+
+Tres formas de trabajar, según lo que ya tienes.
+
+${SERVICE_MODES.map((m) => `### ${m.problem}\n\n*${m.name}.* ${m.body}`).join("\n\n")}
+
+## Las palancas
 
 ${SERVICES_INTRO}
 
 ${SERVICE_LEVERS.map(
-  (s) =>
-    `### ${s.lever}\n\n**${s.problem}**\n\n${s.body}${s.moves ? `\n\n**Mueve:** ${s.moves}.` : ""}`,
+  (s) => `### ${s.problem}\n\n*${s.lever}.* ${s.body}${s.moves ? `\n\n**Mueve:** ${s.moves}.` : ""}`,
 ).join("\n\n")}
-
-## ¿Cuál de las tres es la tuya?
-
-30 minutos y tres conclusiones por escrito. Te decimos qué modalidad encaja y qué palanca activaríamos primero.
-
-[${RADIOGRAFIA_LABEL}](${CTA_LINKS.bookingUrl})
 `,
   },
   "/fractional-cmo": {
