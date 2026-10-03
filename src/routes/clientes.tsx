@@ -1,7 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
-import { Testimonials, type Testimonial } from "@/components/Testimonials";
 import { DIRECTION_CASES, OTHER_PROJECTS } from "@/lib/clients";
 
 export const Route = createFileRoute("/clientes")({
@@ -23,16 +22,6 @@ export const Route = createFileRoute("/clientes")({
   }),
   component: ClientesPage,
 });
-
-// Sin citas inventadas: cada hueco necesita cita literal y permiso del cliente.
-const TESTIMONIALS: Testimonial[] = [
-  // TODO(Ignacio): testimonio 1 — cita literal, nombre, cargo y empresa (candidatos: Apodemia, Cegid/Contasimple, 1forAll, Kincode).
-  { quote: "", name: "", role: "", company: "" },
-  // TODO(Ignacio): testimonio 2 — cita literal, nombre, cargo y empresa.
-  { quote: "", name: "", role: "", company: "" },
-  // TODO(Ignacio): testimonio 3 — cita literal, nombre, cargo y empresa.
-  { quote: "", name: "", role: "", company: "" },
-];
 
 function CaseRow({ label, children }: { label: string; children: React.ReactNode }) {
   return (
@@ -88,10 +77,6 @@ function ClientesPage() {
             ))}
           </div>
         </section>
-
-        <div className="mx-auto max-w-5xl">
-          <Testimonials items={TESTIMONIALS} />
-        </div>
 
         <section aria-labelledby="otros-proyectos" className="mx-auto mt-24 max-w-5xl md:mt-32">
           <h2
