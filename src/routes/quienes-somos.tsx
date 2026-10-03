@@ -2,12 +2,9 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 import { RadiografiaCta } from "@/components/RadiografiaCta";
-import ignacioAsset from "@/assets/ignacio-goni-yamato.webp.asset.json";
+import { IGNACIO_PHOTO } from "@/lib/images";
 
 const elenaAsset = { url: "/assets/elena-gonzalez-blanco-advisor.jpeg" };
-const ASSET_ORIGIN = "https://yamato-digital.lovable.app";
-const assetUrl = (url: string) => `${ASSET_ORIGIN}${url}`;
-
 export const Route = createFileRoute("/quienes-somos")({
   head: () => ({
     meta: [
@@ -36,6 +33,7 @@ export const Route = createFileRoute("/quienes-somos")({
           "jobTitle": "Fundador, CMO",
           "worksFor": { "@type": "Organization", "name": "YAMATO" },
           "description": "Ingeniero industrial con más de 15 años dirigiendo marketing. Ex-LOEWE.",
+          "image": `https://yamato.digital${IGNACIO_PHOTO.src}`,
         }),
       },
     ],
@@ -134,14 +132,15 @@ function Founder() {
             <Eyebrow>Quién dirige esto</Eyebrow>
             <figure className="mt-10">
               <img
-                src={assetUrl(ignacioAsset.url)}
-                alt="Ignacio Goñi, fundador de YAMATO"
-                width="1600"
-                height="1600"
+                src={IGNACIO_PHOTO.src}
+                srcSet={IGNACIO_PHOTO.srcSet}
+                sizes="(min-width: 768px) 456px, 100vw"
+                alt={IGNACIO_PHOTO.alt}
+                width={IGNACIO_PHOTO.width}
+                height={IGNACIO_PHOTO.height}
                 loading="lazy"
                 decoding="async"
-                sizes="(min-width: 1024px) 36vw, (min-width: 768px) 42vw, 100vw"
-                className="aspect-[4/5] w-full max-h-[520px] object-cover object-center grayscale"
+                className="aspect-[4/5] w-full max-w-[456px] max-h-[570px] object-cover object-center"
               />
             </figure>
           </div>
@@ -185,7 +184,12 @@ function Team() {
               eso.
             </p>
             <p className="text-muted-ink">
-              YAMATO funciona con una <span className="font-serif">red de más de 50 colaboradores senior</span>{" "}
+              YAMATO no es solo su fundador. Hay más <span className="font-serif">CMO senior, totalmente
+              independientes</span>: cada uno firma la estrategia de sus clientes y responde por ella. Las decisiones
+              importantes se consensúan dentro de YAMATO. Tu CMO decide; no decide a solas.
+            </p>
+            <p className="text-muted-ink">
+              Y debajo, una <span className="font-serif">red de más de 50 colaboradores senior</span>{" "}
               —especialistas en SEO, CRM, contenido, datos, desarrollo, IA, redes sociales— que entran en cada proyecto
               según lo que ese proyecto necesita. No son una plantilla. Llevan años haciendo lo suyo, y solo trabajan
               cuando hace falta lo suyo.

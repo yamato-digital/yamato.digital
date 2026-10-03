@@ -6,7 +6,7 @@ import { RadiografiaCta } from "@/components/RadiografiaCta";
 import { SERVICE_LEVERS, SERVICES_INTRO } from "@/lib/services";
 import heroVideoMp4 from "@/assets/yamato-hero.mp4.asset.json";
 import heroPoster from "@/assets/yamato-hero-poster.jpg.asset.json";
-import ignacioAsset from "@/assets/ignacio-goni-yamato.webp.asset.json";
+import { IGNACIO_PHOTO } from "@/lib/images";
 
 const SITE_URL = "https://yamato.digital";
 const ASSET_ORIGIN = "https://yamato-digital.lovable.app";
@@ -275,14 +275,15 @@ function Signature() {
       <div className="mx-auto grid max-w-7xl items-center gap-12 md:grid-cols-12">
         <Reveal className="md:col-span-4">
           <img
-            src={assetUrl(ignacioAsset.url)}
-            alt="Ignacio Goñi, fundador de YAMATO"
-            width="1600"
-            height="1600"
+            src={IGNACIO_PHOTO.src}
+            srcSet={IGNACIO_PHOTO.srcSet}
+            sizes="(min-width: 768px) 360px, 280px"
+            alt={IGNACIO_PHOTO.alt}
+            width={IGNACIO_PHOTO.width}
+            height={IGNACIO_PHOTO.height}
             loading="lazy"
             decoding="async"
-            sizes="(min-width: 768px) 30vw, 100vw"
-            className="aspect-[4/5] w-full max-w-[280px] object-cover md:max-w-[360px] object-center grayscale"
+            className="aspect-[4/5] w-full max-w-[280px] object-cover object-center md:max-w-[360px]"
           />
         </Reveal>
         <Reveal delay={120} className="md:col-span-7 md:col-start-6">
@@ -290,9 +291,13 @@ function Signature() {
           <h3 className="mt-10 font-serif text-[clamp(2rem,4.5vw,4rem)] leading-[1.05] tracking-tight">
             Una persona, con nombre y apellido.
           </h3>
-          <p className="mt-6 text-lg leading-relaxed text-muted-ink md:text-xl">
-            Detrás, el especialista que tu problema necesita, no el que estaba libre.
-          </p>
+          <div className="mt-6 space-y-4 text-lg leading-relaxed text-muted-ink md:text-xl">
+            <p>
+              Tu CMO. Senior, independiente y con su firma en cada decisión. Las importantes, además, pasan por el
+              consenso interno de YAMATO: nadie decide solo lo que te juegas.
+            </p>
+            <p>Detrás, el especialista que tu problema necesita, no el que estaba libre.</p>
+          </div>
           <div className="mt-10 border-t border-ink/15 pt-6">
             <p className="font-serif text-2xl">Ignacio Goñi, fundador</p>
             <p className="mt-3 text-lg leading-relaxed text-muted-ink">

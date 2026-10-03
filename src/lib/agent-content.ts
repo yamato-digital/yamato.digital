@@ -156,7 +156,9 @@ Somos tu Fractional CMO independiente. Entramos como un director de marketing �
 
 ## El equipo
 
-Red de más de 50 colaboradores senior (SEO, CRM, contenido, datos, desarrollo, IA, redes) que entran según lo que el proyecto necesita. No pagas una estructura de 50 personas. Te toca el especialista adecuado.
+YAMATO no es solo su fundador. Hay más CMO senior, totalmente independientes: cada uno firma la estrategia de sus clientes y responde por ella. Las decisiones importantes se consensúan dentro de YAMATO.
+
+Debajo, una red de más de 50 colaboradores senior (SEO, CRM, contenido, datos, desarrollo, IA, redes) que entran según lo que el proyecto necesita. No pagas una estructura de 50 personas. Te toca el especialista adecuado.
 
 ## Advisor
 
