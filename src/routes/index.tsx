@@ -153,7 +153,7 @@ function DoorArrow() {
 
 function Doors() {
   const cardClass =
-    "group flex h-full flex-col justify-between gap-10 border border-ink/15 p-8 transition-colors hover:bg-cream md:p-10";
+    "group flex h-full flex-col justify-between gap-10 border border-ink/15 p-6 transition-colors hover:bg-cream sm:p-8 md:p-10";
   return (
     <section aria-label="Por dónde entrar" className="mt-16 px-6 sm:px-10 lg:px-20 xl:px-28">
       <div className="grid gap-6 md:grid-cols-2">
@@ -279,7 +279,7 @@ function Signature() {
             loading="lazy"
             decoding="async"
             sizes="(min-width: 768px) 30vw, 100vw"
-            className="aspect-[4/5] w-full max-w-[360px] object-cover object-center grayscale"
+            className="aspect-[4/5] w-full max-w-[280px] object-cover md:max-w-[360px] object-center grayscale"
           />
         </Reveal>
         <Reveal delay={120} className="md:col-span-7 md:col-start-6">
