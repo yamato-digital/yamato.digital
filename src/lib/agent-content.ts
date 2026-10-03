@@ -128,7 +128,7 @@ Contratar un CMO senior en plantilla cuesta entre 80.000 y 140.000 € al año, 
 
 **¿Cuánto cuesta en España?** Un CMO en plantilla cuesta 80.000–140.000 € al año más variable. Un Fractional CMO se contrata por días al mes, normalmente entre el 20% y el 40% de ese coste, sin indemnizaciones ni proceso de selección.
 
-**¿Cuándo tiene sentido?** Si facturas lo suficiente para invertir en marketing pero no para pagar un CMO senior, si tienes equipo que ejecuta sin dirección, o si vas a lanzar producto o mercado. No tiene sentido si solo necesitas manos para campañas: eso es una agencia.
+**¿Cuándo tiene sentido?** Si facturas lo suficiente para invertir en marketing pero no para pagar un CMO senior, si tienes equipo que ejecuta sin dirección, o si vas a lanzar producto o mercado. No tiene sentido si solo necesitas manos para campañas: eso es una agencia. ¿Y si ya tienes un CMO? [Así entramos sin quitarle la silla](${SITE_URL}/index.md).
 
 **¿En qué se diferencia de una agencia?** Una agencia ejecuta lo que le pides. Un Fractional CMO decide qué hay que pedir, a quién y por qué — y responde del número.
 

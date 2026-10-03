@@ -101,7 +101,11 @@ function Hero() {
         Tu Fractional CMO. Sin nómina, sin comisiones, sin juniors.
       </Reveal>
       <Reveal as="p" delay={150} className="mt-10 max-w-2xl text-lg leading-relaxed text-muted-ink md:text-xl">
-        Un director de marketing con más de diez años al mando, dentro de tu comité, las horas que necesites.
+        Un director de marketing con más de diez años al mando, dentro de tu comité, las horas que necesites.{" "}
+        <Link to="/fractional-cmo" className="text-ink link-underline link-underline-hover">
+          Qué es un Fractional CMO
+        </Link>
+        .
       </Reveal>
       <Reveal delay={300} className="mt-10 mb-20">
         <RadiografiaCta location="hero" microcopy="Llamar es gratis (aún)." whatsapp />
@@ -332,15 +336,20 @@ function Services() {
               ))}
             </ol>
           </div>
-          <div className="mt-10 md:col-span-8 md:col-start-5">
+          <div className="mt-10 flex flex-wrap gap-x-10 gap-y-4 md:col-span-8 md:col-start-5">
+            <Link
+              to="/fractional-cmo"
+              className="group inline-flex items-baseline font-serif text-[clamp(1.25rem,2vw,1.75rem)] leading-tight link-underline link-underline-hover"
+            >
+              Cómo trabaja tu Fractional CMO
+              <DoorArrow />
+            </Link>
             <Link
               to="/servicios"
               className="group inline-flex items-baseline font-serif text-[clamp(1.25rem,2vw,1.75rem)] leading-tight link-underline link-underline-hover"
             >
               Ver en detalle
-              <span aria-hidden className="ml-2 inline-block transition-transform group-hover:translate-x-1">
-                →
-              </span>
+              <DoorArrow />
             </Link>
           </div>
         </div>

@@ -5,6 +5,8 @@ import { RadiografiaCta } from "@/components/RadiografiaCta";
 
 const URL = "https://yamato.digital/fractional-cmo";
 
+const WHEN_IT_MAKES_SENSE = "¿Cuándo tiene sentido y cuándo no?";
+
 const FAQ = [
   {
     q: "¿Qué es un Fractional CMO?",
@@ -15,7 +17,7 @@ const FAQ = [
     a: "Un CMO en plantilla en España cuesta entre 80.000 y 140.000 € al año más variable. Un Fractional CMO se contrata por días al mes, lo que suele situar la inversión entre el 20% y el 40% de ese coste, sin indemnizaciones ni proceso de selección.",
   },
   {
-    q: "¿Cuándo tiene sentido y cuándo no?",
+    q: WHEN_IT_MAKES_SENSE,
     a: "Tiene sentido si facturas lo suficiente para invertir en marketing pero no para pagar un CMO senior, si tienes equipo que ejecuta sin dirección, o si vas a lanzar producto o mercado. No tiene sentido si lo que necesitas son manos para ejecutar campañas: eso es una agencia, no un director.",
   },
   {
@@ -112,15 +114,7 @@ function FractionalCmoPage() {
               al mes, con responsabilidad real sobre la estrategia, el equipo y los números. Ni un consultor
               que entrega un informe, ni una agencia que ejecuta lo que le mandas: alguien que dirige.
             </p>
-            <div className="mt-10 flex flex-wrap items-start gap-4">
-              <RadiografiaCta location="fractional-hero" variant="button" />
-              <Link
-                to="/servicios"
-                className="inline-flex items-center justify-center rounded-md border border-input bg-background px-6 py-3 text-sm font-medium text-foreground transition-colors hover:bg-accent"
-              >
-                Ver servicios
-              </Link>
-            </div>
+            <RadiografiaCta location="fractional-hero" variant="button" className="mt-10" />
           </div>
         </section>
 
@@ -257,6 +251,18 @@ function FractionalCmoPage() {
                 <div key={f.q}>
                   <h3 className="font-serif text-2xl leading-tight tracking-[-0.01em]">{f.q}</h3>
                   <p className="mt-4 text-lg leading-relaxed text-muted-ink">{f.a}</p>
+                  {f.q === WHEN_IT_MAKES_SENSE ? (
+                    <Link
+                      to="/"
+                      hash="ya-tienes-cmo"
+                      className="group mt-4 inline-flex items-baseline font-serif text-xl link-underline link-underline-hover"
+                    >
+                      ¿Y si ya tienes un CMO? Así entramos sin quitarle la silla
+                      <span aria-hidden className="ml-2 inline-block transition-transform group-hover:translate-x-1">
+                        →
+                      </span>
+                    </Link>
+                  ) : null}
                 </div>
               ))}
             </div>
