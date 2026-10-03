@@ -17,6 +17,7 @@ export function RadiografiaCta({
   microcopy,
   microcopyPosition = "after",
   microcopyClassName = "text-muted-ink",
+  whatsapp = false,
   className = "",
 }: {
   /** Sección de la página; llega a GTM como data-cta-location. */
@@ -25,6 +26,8 @@ export function RadiografiaCta({
   microcopy?: ReactNode;
   microcopyPosition?: "before" | "after";
   microcopyClassName?: string;
+  /** Muestra "O escríbenos por WhatsApp" debajo. Solo en hero y cierre, para no competir con el CTA principal. */
+  whatsapp?: boolean;
   className?: string;
 }) {
   const href = radiografiaHref();
@@ -51,7 +54,7 @@ export function RadiografiaCta({
         </span>
       </a>
       {microcopyPosition === "after" ? note : null}
-      {CTA_LINKS.whatsappUrl ? (
+      {whatsapp && CTA_LINKS.whatsappUrl ? (
         <a
           href={CTA_LINKS.whatsappUrl}
           data-cta="whatsapp"

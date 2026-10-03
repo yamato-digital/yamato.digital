@@ -276,7 +276,7 @@ function FractionalCmoPage() {
             <p className="mt-6 text-lg leading-relaxed text-muted-ink md:text-xl">
               Nos sentamos, lo miramos y te lo decimos claro. Si no lo necesitas, te lo diremos también.
             </p>
-            <RadiografiaCta location="fractional-cierre" variant="button" className="mt-10" />
+            <RadiografiaCta location="fractional-cierre" variant="button" className="mt-10" whatsapp />
           </div>
         </section>
       </main>

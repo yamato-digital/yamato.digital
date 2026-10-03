@@ -110,7 +110,7 @@ function Hero() {
         Un director de marketing con más de diez años al mando, dentro de tu comité, las horas que necesites.
       </Reveal>
       <Reveal delay={300} className="mt-10 mb-20">
-        <RadiografiaCta location="hero" microcopy="Llamar es gratis (aún)." />
+        <RadiografiaCta location="hero" microcopy="Llamar es gratis (aún)." whatsapp />
       </Reveal>
     </section>
   );
@@ -433,6 +433,7 @@ function Closing() {
             microcopy="Hablemos pues."
             microcopyPosition="before"
             microcopyClassName="text-paper/60"
+            whatsapp
           />
         </Reveal>
       </div>

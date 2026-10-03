@@ -288,7 +288,7 @@ function Closing() {
           Las tres cosas, sin compromiso. Si en media hora no te convencemos, te lo diremos nosotros antes de que
           cuelgues.
         </p>
-        <RadiografiaCta location="quienes-somos-cierre" className="mt-12" />
+        <RadiografiaCta location="quienes-somos-cierre" className="mt-12" whatsapp />
       </div>
     </section>
   );
