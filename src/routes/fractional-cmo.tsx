@@ -126,10 +126,6 @@ function FractionalCmoPage() {
           </div>
         </section>
 
-        <div className="mx-auto max-w-3xl">
-          <div className="border-t border-ink/20" />
-        </div>
-
         {/* El problema */}
         <section className="pt-20 pb-24 md:pt-28 md:pb-28">
           <div className="mx-auto max-w-3xl">
@@ -151,10 +147,6 @@ function FractionalCmoPage() {
             </div>
           </div>
         </section>
-
-        <div className="mx-auto max-w-3xl">
-          <div className="border-t border-ink/20" />
-        </div>
 
         {/* Qué hace */}
         <section className="pt-20 pb-24 md:pt-28 md:pb-28">
@@ -190,10 +182,6 @@ function FractionalCmoPage() {
             </p>
           </div>
         </section>
-
-        <div className="mx-auto max-w-3xl">
-          <div className="border-t border-ink/20" />
-        </div>
 
         {/* Comparativa */}
         <section className="pt-20 pb-24 md:pt-28 md:pb-28">
@@ -249,10 +237,6 @@ function FractionalCmoPage() {
           </div>
         </section>
 
-        <div className="mx-auto max-w-3xl">
-          <div className="border-t border-ink/20" />
-        </div>
-
         {/* Primeros 90 días */}
         <section className="pt-20 pb-24 md:pt-28 md:pb-28">
           <div className="mx-auto max-w-3xl">
@@ -288,10 +272,6 @@ function FractionalCmoPage() {
           </div>
         </section>
 
-        <div className="mx-auto max-w-3xl">
-          <div className="border-t border-ink/20" />
-        </div>
-
         {/* FAQ */}
         <section className="pt-20 pb-24 md:pt-28 md:pb-28">
           <div className="mx-auto max-w-3xl">
@@ -318,10 +298,6 @@ function FractionalCmoPage() {
             </div>
           </div>
         </section>
-
-        <div className="mx-auto max-w-3xl">
-          <div className="border-t border-ink/20" />
-        </div>
 
         {/* CTA */}
         <section className="pt-20 pb-28 md:pt-28 md:pb-36">
