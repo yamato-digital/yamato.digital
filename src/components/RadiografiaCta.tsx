@@ -26,7 +26,7 @@ export function RadiografiaCta({
   microcopy?: ReactNode;
   microcopyPosition?: "before" | "after";
   microcopyClassName?: string;
-  /** Muestra "O escríbenos por WhatsApp" debajo. Solo en hero y cierre, para no competir con el CTA principal. */
+  /** Muestra "O escríbenos por WhatsApp" debajo. Solo en los cierres de página, para no competir con el CTA principal. */
   whatsapp?: boolean;
   className?: string;
 }) {

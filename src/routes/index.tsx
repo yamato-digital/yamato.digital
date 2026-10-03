@@ -101,14 +101,10 @@ function Hero() {
         Tu Fractional CMO. Sin nómina, sin comisiones, sin juniors.
       </Reveal>
       <Reveal as="p" delay={150} className="mt-10 max-w-2xl text-lg leading-relaxed text-muted-ink md:text-xl">
-        Un director de marketing con más de diez años al mando, dentro de tu comité, las horas que necesites.{" "}
-        <Link to="/fractional-cmo" className="text-ink link-underline link-underline-hover">
-          Qué es un Fractional CMO
-        </Link>
-        .
+        Un director de marketing con más de diez años al mando, dentro de tu comité, las horas que necesites.
       </Reveal>
       <Reveal delay={300} className="mt-10 mb-20">
-        <RadiografiaCta location="hero" microcopy="Llamar es gratis (aún)." whatsapp />
+        <RadiografiaCta location="hero" microcopy="Llamar es gratis (aún)." />
       </Reveal>
     </section>
   );
@@ -344,14 +340,7 @@ function Services() {
               ))}
             </ol>
           </div>
-          <div className="mt-10 flex flex-wrap gap-x-10 gap-y-4 md:col-span-8 md:col-start-5">
-            <Link
-              to="/fractional-cmo"
-              className="group inline-flex items-baseline font-serif text-[clamp(1.25rem,2vw,1.75rem)] leading-tight link-underline link-underline-hover"
-            >
-              Cómo trabaja tu Fractional CMO
-              <DoorArrow />
-            </Link>
+          <div className="mt-10 md:col-span-8 md:col-start-5">
             <Link
               to="/servicios"
               className="group inline-flex items-baseline font-serif text-[clamp(1.25rem,2vw,1.75rem)] leading-tight link-underline link-underline-hover"
@@ -435,9 +424,6 @@ function PriceQuote() {
           Por lo mismo que te cuesta un perfil junior, YAMATO te pone un CMO con más de una década dirigiendo marketing.
           Menos horas, sí. Pero ninguna se pierde en que un junior aprenda a tu costa.
         </Reveal>
-        <Reveal delay={320} className="mt-10">
-          <RadiografiaCta location="inversion" microcopy="Si llamas, respondemos." />
-        </Reveal>
       </div>
     </section>
   );
@@ -472,9 +458,6 @@ function EnterpriseBlock() {
               Sí, suena a lo que te prometió la gran consultora. La diferencia: aquí, el que te lo vende es el que
               trabaja.
             </p>
-            <div className="pt-4">
-              <RadiografiaCta location="empresas" microcopy="Cuéntanos el proyecto." microcopyPosition="before" />
-            </div>
           </Reveal>
         </div>
       </div>
