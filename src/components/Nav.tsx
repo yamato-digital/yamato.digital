@@ -47,7 +47,7 @@ export function Nav() {
         </button>
       </div>
       {isOpen ? (
-        <nav className="border-t border-hairline px-6 py-5 text-sm md:hidden">
+        <nav className="px-6 py-5 text-sm md:hidden">
           <div className="grid gap-4">
             {navItems.map((item) => (
               <Link

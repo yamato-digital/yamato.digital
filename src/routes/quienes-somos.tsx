@@ -265,7 +265,7 @@ function Code() {
         </p>
         <ol className="mt-20">
           {PRINCIPLES.map((p) => (
-            <li key={p.n} className="grid gap-6 border-t border-paper/15 py-10 last:border-b md:grid-cols-12">
+            <li key={p.n} className="grid gap-6 py-10 md:grid-cols-12">
               <div className="md:col-span-3">
                 <span className="font-serif text-4xl text-paper/50">{p.n}</span>
                 <h3 className="mt-3 font-serif text-2xl leading-tight md:text-3xl">{p.title}</h3>

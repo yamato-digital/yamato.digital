@@ -164,7 +164,7 @@ function Hero() {
 
 function Why() {
   return (
-    <section className="border-t border-hairline">
+    <section>
       <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
         <div className="grid gap-12 md:grid-cols-12">
           <div className="md:col-span-4">
@@ -206,7 +206,7 @@ function How() {
           {STEPS.map((s) => (
             <li
               key={s.n}
-              className="grid gap-6 border-t border-ink/15 py-10 last:border-b md:grid-cols-12"
+              className="grid gap-6 py-10 md:grid-cols-12"
             >
               <div className="md:col-span-3">
                 <span className="font-serif text-4xl text-muted-ink">{s.n}</span>
@@ -316,7 +316,7 @@ function FaqSection() {
           {FAQ.map((item) => (
             <div
               key={item.q}
-              className="grid gap-4 border-t border-ink/15 py-8 last:border-b md:grid-cols-12"
+              className="grid gap-4 py-8 md:grid-cols-12"
             >
               <dt className="md:col-span-5 font-serif text-xl leading-tight md:text-2xl">
                 {item.q}

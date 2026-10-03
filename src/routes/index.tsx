@@ -150,54 +150,6 @@ function DoorArrow() {
   );
 }
 
-function Doors() {
-  const cardClass =
-    "group flex h-full flex-col justify-between gap-10 border border-ink/15 p-6 transition-colors hover:bg-cream sm:p-8 md:p-10";
-  return (
-    <section aria-label="Por dónde entrar" className="mt-16 px-6 sm:px-10 lg:px-20 xl:px-28">
-      <div className="grid gap-6 md:grid-cols-2">
-        <Reveal className="h-full">
-          <Link to="/fractional-cmo" data-door="sin-cmo" className={cardClass}>
-            <div>
-              <h2 className="font-serif text-[clamp(1.75rem,3vw,2.75rem)] leading-[1.05] tracking-tight">
-                No tienes director de marketing.
-              </h2>
-              <p className="mt-4 text-lg leading-relaxed text-muted-ink">
-                Hay campañas, hay agencia, hay hasta un junior espabilado. Falta quien decida. Ese es el hueco que
-                ocupamos.
-              </p>
-              <p className="mt-4 text-base leading-relaxed text-muted-ink">
-                Para empresas que ya venden y tienen con qué ejecutar. Si aún buscas tu primer cliente, no te hace falta
-                un CMO: te hace falta vender.
-              </p>
-            </div>
-            <span className="font-serif text-xl link-underline link-underline-hover self-start">
-              Así funciona un Fractional CMO
-              <DoorArrow />
-            </span>
-          </Link>
-        </Reveal>
-        <Reveal delay={120} className="h-full">
-          <Link to="/servicios" hash="proyecto-estrategico" data-door="con-cmo" className={cardClass}>
-            <div>
-              <h2 className="font-serif text-[clamp(1.75rem,3vw,2.75rem)] leading-[1.05] tracking-tight">
-                Ya tienes CMO.
-              </h2>
-              <p className="mt-4 text-lg leading-relaxed text-muted-ink">
-                No venimos a quitarle la silla a nadie. Entramos donde la estructura no llega.
-              </p>
-            </div>
-            <span className="font-serif text-xl link-underline link-underline-hover self-start">
-              Qué hacemos con él
-              <DoorArrow />
-            </span>
-          </Link>
-        </Reveal>
-      </div>
-    </section>
-  );
-}
-
 function Marquee() {
   const viewportRef = useRef<HTMLDivElement>(null);
   const trackRef = useRef<HTMLDivElement>(null);
@@ -253,7 +205,6 @@ function Marquee() {
           const sets = row.featured ? setsPerHalf * 2 : 4;
           const doubled = Array.from({ length: sets }, () => row.items).flat();
           const loeweIndex = row.featured ? Math.floor(setsPerHalf / 2) * row.items.length : -1;
-          const isLast = idx === rows.length - 1;
           const track = (
             <div
               ref={row.featured ? trackRef : undefined}
@@ -274,7 +225,7 @@ function Marquee() {
               key={idx}
               ref={row.featured ? viewportRef : undefined}
               data-marquee={row.featured ? "featured" : undefined}
-              className={`overflow-hidden py-4 ${isLast ? "" : "border-b border-ink/15"}`}
+              className="overflow-hidden py-4"
             >
               {row.featured ? <div style={{ transform: `translateX(${shift}px)` }}>{track}</div> : track}
             </div>
@@ -320,7 +271,7 @@ function About() {
 
 function Signature() {
   return (
-    <section className="border-t border-hairline px-6 py-28 sm:px-10 lg:px-20 xl:px-28">
+    <section className="px-6 py-28 sm:px-10 lg:px-20 xl:px-28">
       <div className="mx-auto grid max-w-7xl items-center gap-12 md:grid-cols-12">
         <Reveal className="md:col-span-4">
           <img
@@ -347,7 +298,7 @@ function Signature() {
               ejecución la hace el especialista que tu problema necesita.
             </p>
           </div>
-          <div className="mt-10 border-t border-ink/15 pt-6">
+          <div className="mt-10">
             <p className="font-serif text-2xl">Lo dirige Ignacio Goñi, fundador.</p>
             <p className="mt-3 text-lg leading-relaxed text-muted-ink">
               Ingeniero mecánico: siete años diseñando sistemas de automatización para Airbus y Boeing antes de
@@ -387,7 +338,7 @@ function Services() {
             </p>
             <ol className="mt-12">
               {SERVICE_MODES.map((m, i) => (
-                <Reveal as="li" delay={i * 80} key={m.id} className="border-t border-ink/15 py-6 last:border-b">
+                <Reveal as="li" delay={i * 80} key={m.id} className="py-6">
                   <span className="text-base font-semibold text-ink">
                     <span className="tabular-nums">{String(i + 1).padStart(2, "0")}</span> · {m.name}
                   </span>
@@ -472,7 +423,7 @@ function Process() {
 
 function PriceQuote() {
   return (
-    <section className="border-y border-hairline bg-paper">
+    <section className="bg-paper">
       <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
         <Reveal>
           <Eyebrow>Inversión</Eyebrow>
@@ -607,7 +558,6 @@ function Home() {
       <Nav />
       <Hero />
       <HeroMedia />
-      <Doors />
       <div className="mt-24" />
       <Marquee />
       <About />
@@ -616,7 +566,6 @@ function Home() {
       <Process />
       <PriceQuote />
       <EnterpriseBlock />
-      <div className="border-t border-hairline" />
       <Fit />
       <Closing />
 

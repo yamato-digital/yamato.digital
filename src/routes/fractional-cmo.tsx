@@ -193,7 +193,7 @@ function FractionalCmoPage() {
             <div className="mt-10 overflow-x-auto">
               <table className="w-full min-w-[560px] border-collapse text-left text-base">
                 <thead>
-                  <tr className="border-b border-ink/20 text-sm uppercase tracking-[0.12em]">
+                  <tr className="text-sm uppercase tracking-[0.12em]">
                     <th scope="col" className="py-4 pr-4 font-semibold"></th>
                     <th scope="col" className="py-4 pr-4 font-semibold">Fractional CMO</th>
                     <th scope="col" className="py-4 pr-4 font-semibold">CMO en plantilla</th>
@@ -201,25 +201,25 @@ function FractionalCmoPage() {
                   </tr>
                 </thead>
                 <tbody className="text-muted-ink">
-                  <tr className="border-b border-hairline">
+                  <tr>
                     <th scope="row" className="py-4 pr-4 font-semibold text-ink">Coste anual</th>
                     <td className="py-4 pr-4">Fracción del salario</td>
                     <td className="py-4 pr-4">80–140k € + variable</td>
                     <td className="py-4">Fee mensual por ejecución</td>
                   </tr>
-                  <tr className="border-b border-hairline">
+                  <tr>
                     <th scope="row" className="py-4 pr-4 font-semibold text-ink">Decide la estrategia</th>
                     <td className="py-4 pr-4">Sí</td>
                     <td className="py-4 pr-4">Sí</td>
                     <td className="py-4">No</td>
                   </tr>
-                  <tr className="border-b border-hairline">
+                  <tr>
                     <th scope="row" className="py-4 pr-4 font-semibold text-ink">Dirige a tu equipo</th>
                     <td className="py-4 pr-4">Sí</td>
                     <td className="py-4 pr-4">Sí</td>
                     <td className="py-4">No</td>
                   </tr>
-                  <tr className="border-b border-hairline">
+                  <tr>
                     <th scope="row" className="py-4 pr-4 font-semibold text-ink">Tiempo de arranque</th>
                     <td className="py-4 pr-4">Días</td>
                     <td className="py-4 pr-4">3–6 meses</td>
@@ -247,18 +247,15 @@ function FractionalCmoPage() {
             <div className="mt-10 overflow-x-auto">
               <table className="w-full min-w-[560px] border-collapse text-left text-base">
                 <thead>
-                  <tr className="border-b border-ink/20 text-sm uppercase tracking-[0.12em]">
+                  <tr className="text-sm uppercase tracking-[0.12em]">
                     <th scope="col" className="py-4 pr-4 font-semibold">Periodo</th>
                     <th scope="col" className="py-4 pr-4 font-semibold">Qué hacemos</th>
                     <th scope="col" className="py-4 font-semibold">Qué tienes al final</th>
                   </tr>
                 </thead>
                 <tbody className="text-muted-ink">
-                  {FIRST_90_DAYS.map((row, i) => (
-                    <tr
-                      key={row.period}
-                      className={i < FIRST_90_DAYS.length - 1 ? "border-b border-hairline" : undefined}
-                    >
+                  {FIRST_90_DAYS.map((row) => (
+                    <tr key={row.period}>
                       <th scope="row" className="py-4 pr-4 font-semibold text-ink whitespace-nowrap">
                         {row.period}
                       </th>

@@ -25,7 +25,7 @@ export const Route = createFileRoute("/clientes")({
 
 function CaseRow({ label, children }: { label: string; children: React.ReactNode }) {
   return (
-    <div className="grid gap-2 border-t border-ink/15 py-5 sm:grid-cols-[8rem_1fr] sm:gap-6">
+    <div className="grid gap-2 py-5 sm:grid-cols-[8rem_1fr] sm:gap-6">
       <dt className="text-sm font-semibold text-muted-ink">{label}</dt>
       <dd className="text-lg leading-relaxed md:text-xl">{children}</dd>
     </div>
@@ -88,7 +88,7 @@ function ClientesPage() {
           <span className="mt-3 block h-[2px] w-10 bg-current" />
           <ul className="mt-10 grid gap-x-10 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
             {OTHER_PROJECTS.map((p) => (
-              <li key={p.name} className="border-t border-ink/15 pt-4">
+              <li key={p.name}>
                 <p className="font-serif text-2xl leading-tight">{p.name}</p>
                 <p className="mt-2 leading-relaxed text-muted-ink">{p.line}</p>
               </li>
