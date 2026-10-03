@@ -9,7 +9,7 @@ export const Route = createFileRoute("/contacto")({
       { title: "Contacto — YAMATO | Fractional CMO independiente" },
       {
         name: "description",
-        content: "Hablemos. YAMATO es tu dirección de marketing independiente. Email y LinkedIn.",
+        content: "Hablemos. YAMATO es tu dirección de marketing independiente. Reserva, WhatsApp, email y LinkedIn.",
       },
       { property: "og:title", content: "Contacto — YAMATO | Fractional CMO independiente" },
       {
@@ -39,6 +39,14 @@ function ContactoPage() {
             className="link-underline link-underline-hover"
           >
             Reservar consulta.
+          </a>
+          <a
+            href={CTA_LINKS.whatsappUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="link-underline link-underline-hover"
+          >
+            WhatsApp.
           </a>
           <a href="mailto:hola@yamato.digital" className="link-underline link-underline-hover">
             Email.

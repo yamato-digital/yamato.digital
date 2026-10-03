@@ -61,6 +61,7 @@ Más detalle: [Servicios](${SITE_URL}/servicios/index.md) · [Fractional CMO](${
 ## Contacto
 
 - [Reservar consulta](${CTA_LINKS.bookingUrl})
+- [WhatsApp](${CTA_LINKS.whatsappUrl})
 - Email: [hola@yamato.digital](mailto:hola@yamato.digital)
 - [LinkedIn](https://www.linkedin.com/company/yamatodigital/)
 `,
@@ -224,12 +225,13 @@ Sin pipeline, sin reuniones, sin seguimientos. Tú haces la intro, nosotros el r
   },
   "/contacto": {
     title: "Contacto — YAMATO",
-    description: "Hablemos. Email y LinkedIn.",
+    description: "Hablemos. Reserva, WhatsApp, email y LinkedIn.",
     body: `# Contacto — YAMATO
 
 Hablemos.
 
 - [Reservar consulta](${CTA_LINKS.bookingUrl})
+- [WhatsApp](${CTA_LINKS.whatsappUrl})
 - Email: [hola@yamato.digital](mailto:hola@yamato.digital)
 - [LinkedIn](https://www.linkedin.com/company/yamatodigital/)
 `,
