@@ -21,7 +21,37 @@ export const EXECUTION_MODEL =
  * - No encajarás si: "Solo necesitas a alguien que lance campañas de Paid."
  */
 
-export const SERVICES_INTRO = "Primero entra el CMO. Luego decide qué hace falta: tu equipo, el nuestro o nada.";
+export interface ServiceMode {
+  /** Ancla en /servicios. */
+  id: string;
+  name: string;
+  /** Titular: la situación del cliente. */
+  problem: string;
+  body: string;
+}
+
+export const SERVICE_MODES: ServiceMode[] = [
+  {
+    id: "fractional-cmo",
+    name: "Fractional CMO",
+    problem: "Tienes equipo o proveedores y te falta dirección.",
+    body: "Un responsable senior que prioriza, lidera y mide. Se sienta en tu comité y responde de los números.",
+  },
+  {
+    id: "fractional-cmo-con-equipo",
+    name: "Fractional CMO con equipo",
+    problem: "Necesitas dirección y manos.",
+    body: "Tu CMO y los especialistas que pide el plan, con el alcance definido desde el primer día.",
+  },
+  {
+    id: "proyecto-estrategico",
+    name: "Proyecto estratégico",
+    problem: "Ya tienes liderazgo y un reto concreto.",
+    body: "Un lanzamiento, un mercado nuevo, una unidad de negocio sin foco. Entregables, plazo y cierre.",
+  },
+];
+
+export const SERVICES_INTRO = "Sea cual sea la modalidad, tu responsable decide qué palancas activar. Y quién las ejecuta.";
 
 export interface ServiceLever {
   /** Titular: el problema que resuelve. */

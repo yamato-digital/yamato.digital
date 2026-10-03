@@ -3,7 +3,7 @@ import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 import { Reveal } from "@/components/Reveal";
 import { RadiografiaCta } from "@/components/RadiografiaCta";
-import { SERVICE_LEVERS, SERVICES_INTRO } from "@/lib/services";
+import { SERVICE_LEVERS, SERVICE_MODES, SERVICES_INTRO } from "@/lib/services";
 import heroVideoMp4 from "@/assets/yamato-hero.mp4.asset.json";
 import heroPoster from "@/assets/yamato-hero-poster.jpg.asset.json";
 import { IGNACIO_PHOTO } from "@/lib/images";
@@ -177,7 +177,7 @@ function Doors() {
           </Link>
         </Reveal>
         <Reveal delay={120} className="h-full">
-          <a href="#ya-tienes-cmo" data-door="con-cmo" className={cardClass}>
+          <Link to="/servicios" hash="proyecto-estrategico" data-door="con-cmo" className={cardClass}>
             <div>
               <h2 className="font-serif text-[clamp(1.75rem,3vw,2.75rem)] leading-[1.05] tracking-tight">
                 Ya tienes CMO.
@@ -190,7 +190,7 @@ function Doors() {
               Qué hacemos con él
               <DoorArrow />
             </span>
-          </a>
+          </Link>
         </Reveal>
       </div>
     </section>
@@ -324,20 +324,24 @@ function Services() {
           </div>
           <div className="md:col-span-8 md:col-start-5">
             <p className="font-serif text-[clamp(1.5rem,2.6vw,2.25rem)] leading-[1.15] tracking-tight text-muted-ink">
-              {SERVICES_INTRO}
+              Tres formas de trabajar, según lo que ya tienes.
             </p>
             <ol className="mt-12">
-              {SERVICE_LEVERS.map((s, i) => (
-                <Reveal as="li" delay={i * 80} key={s.lever} className="border-t border-ink/15 py-6 last:border-b">
+              {SERVICE_MODES.map((m, i) => (
+                <Reveal as="li" delay={i * 80} key={m.id} className="border-t border-ink/15 py-6 last:border-b">
                   <span className="text-sm font-semibold uppercase tracking-[0.14em] text-muted-ink">
-                    <span className="tabular-nums">{String(i + 1).padStart(2, "0")}</span> · {s.lever}
+                    <span className="tabular-nums">{String(i + 1).padStart(2, "0")}</span> · {m.name}
                   </span>
                   <span className="mt-2 block font-serif text-[clamp(1.5rem,2.8vw,2.5rem)] leading-[1.1]">
-                    {s.problem}
+                    {m.problem}
                   </span>
                 </Reveal>
               ))}
             </ol>
+            <p className="mt-10 text-lg leading-relaxed text-muted-ink md:text-xl">{SERVICES_INTRO}</p>
+            <p className="mt-4 text-sm font-semibold uppercase leading-relaxed tracking-[0.14em] text-muted-ink">
+              {SERVICE_LEVERS.map((s) => s.lever).join(" · ")}
+            </p>
           </div>
           <div className="mt-10 md:col-span-8 md:col-start-5">
             <Link

@@ -1,5 +1,5 @@
 import { getAllPosts, getPost } from "@/lib/blog";
-import { SERVICE_LEVERS, SERVICES_INTRO } from "@/lib/services";
+import { SERVICE_LEVERS, SERVICE_MODES, SERVICES_INTRO } from "@/lib/services";
 import { DIRECTION_CASES, OTHER_PROJECTS } from "@/lib/clients";
 import { CTA_LINKS } from "@/lib/cta";
 
@@ -27,9 +27,13 @@ Nos medimos por lo que mueves en tu negocio.
 
 ## Servicios
 
+Tres formas de trabajar, según lo que ya tienes.
+
+${SERVICE_MODES.map((m) => `- **${m.name}.** ${m.problem}`).join("\n")}
+
 ${SERVICES_INTRO}
 
-${SERVICE_LEVERS.map((s) => `- **${s.lever}.** ${s.problem}`).join("\n")}
+**Palancas:** ${SERVICE_LEVERS.map((s) => s.lever).join(" · ")}.
 
 Más detalle: [Servicios](${SITE_URL}/servicios/index.md) · [Fractional CMO](${SITE_URL}/fractional-cmo/index.md)
 
@@ -80,6 +84,12 @@ Si lo único que necesitas es hacer campañas de Paid Media, te ponemos en conta
 ¿Buscas quien dirija todo esto sin contratar a un CMO en plantilla? [Así trabajamos como Fractional CMO](${SITE_URL}/fractional-cmo/index.md).
 
 ## Qué hacemos exactamente
+
+Tres formas de trabajar, según lo que ya tienes.
+
+${SERVICE_MODES.map((m) => `### ${m.problem}\n\n*${m.name}.* ${m.body}`).join("\n\n")}
+
+## Las palancas
 
 ${SERVICES_INTRO}
 
