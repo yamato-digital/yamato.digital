@@ -19,11 +19,11 @@ const PAGES: Record<string, { title: string; description: string; body: string }
 
 > Un director de marketing senior dentro de tu comité. Decide la estrategia, dirige a tu equipo y responde de los números. Las horas que necesites.
 
-La cabeza de un CMO con más de una década dirigiendo, más las manos de un equipo senior. Dentro de tu empresa, las horas que necesites. Ni un freelance que hace campañas sueltas, ni un consultor que suelta el informe y desaparece.
+La cabeza de un CMO con más de una década dirigiendo, más las manos de un equipo senior. Dentro de tu empresa, las horas que necesites.
 
-No somos una agencia. Quien piensa tu estrategia es quien la firma, y se sienta en tu comité de dirección.
+Quien piensa tu estrategia es quien la firma, y se sienta en tu comité de dirección.
 
-Trabajamos como *Growth Partner*: nos movemos por lo que tú ganas. Si ganas tú, ganamos nosotros. No conocemos otra forma de crecer.
+Nos medimos por lo que mueves en tu negocio.
 
 ## Servicios
 
@@ -94,7 +94,7 @@ ${SERVICE_LEVERS.map(
       "Qué es un Fractional CMO, cuánto cuesta en España y cuándo compensa frente a un CMO en plantilla o una agencia.",
     body: `# Fractional CMO. Dirección de marketing sin contratar a un CMO.
 
-Un Fractional CMO es un director de marketing externo que trabaja para tu empresa unos días al mes, con responsabilidad real sobre la estrategia, el equipo y los números. Ni un consultor que entrega un informe, ni una agencia que ejecuta lo que le mandas: alguien que dirige.
+Un Fractional CMO es un director de marketing externo que trabaja para tu empresa unos días al mes, con responsabilidad real sobre la estrategia, el equipo y los números. Alguien que dirige: decide qué se hace, con quién y por qué, y responde del resultado.
 
 ## El problema
 
@@ -168,7 +168,7 @@ Debajo, una red de más de 50 colaboradores senior (SEO, CRM, contenido, datos, 
 
 1. Te decimos las tres cosas: lo que haces bien, lo que no, y lo que no haces.
 2. Seis cosas, no cuarenta.
-3. Independientes de verdad: no cobramos un porcentaje de tu inversión publicitaria.
+3. Independientes de verdad: nuestros honorarios no dependen de lo que inviertes en medios. Nos medimos por lo que mueves en tu negocio.
 4. Quien piensa, firma.
 5. La IA es para lo aburrido.
 6. Solo ejecutamos lo que hemos marcado.

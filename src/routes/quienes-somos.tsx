@@ -64,7 +64,7 @@ const PRINCIPLES = [
   {
     n: "03",
     title: "Independientes de verdad.",
-    body: "No cobramos un porcentaje de lo que inviertes en publicidad. Cuanto más gastas, no ganamos más. Trabajamos como Growth Partner: nos movemos por lo que tú ganas. Si ganas tú, ganamos nosotros. No conocemos otra forma de crecer.",
+    body: "Nuestros honorarios no dependen de lo que inviertes en medios. Nos medimos por lo que mueves en tu negocio.",
   },
   {
     n: "04",
@@ -210,8 +210,7 @@ function Team() {
           </ul>
         </div>
         <p className="mt-20 max-w-4xl font-serif text-[clamp(1.5rem,3vw,2.25rem)] leading-[1.2]">
-          Una agencia te vende su organigrama. Nosotros te vendemos exactamente el talento que tu problema requiere,
-          dirigido por alguien que responde con su nombre.
+          Te ponemos exactamente el talento que tu problema requiere, dirigido por alguien que responde con su nombre.
         </p>
       </div>
     </section>

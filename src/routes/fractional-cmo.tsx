@@ -118,8 +118,8 @@ function FractionalCmoPage() {
             </h1>
             <p className="mt-8 text-lg leading-relaxed text-muted-ink md:text-xl">
               Un Fractional CMO es un director de marketing externo que trabaja para tu empresa unos días
-              al mes, con responsabilidad real sobre la estrategia, el equipo y los números. Ni un consultor
-              que entrega un informe, ni una agencia que ejecuta lo que le mandas: alguien que dirige.
+              al mes, con responsabilidad real sobre la estrategia, el equipo y los números. Alguien que dirige:
+              decide qué se hace, con quién y por qué, y responde del resultado.
             </p>
             <RadiografiaCta location="fractional-hero" variant="button" className="mt-10" />
           </div>
