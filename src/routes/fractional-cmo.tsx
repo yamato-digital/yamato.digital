@@ -8,11 +8,10 @@ const URL = "https://yamato.digital/fractional-cmo";
 const WHEN_IT_MAKES_SENSE = "¿Cuándo tiene sentido y cuándo no?";
 
 /*
- * Reglas de dedicación. No publicar nada de esto hasta decidirlo.
- * TODO(Ignacio): máximo de clientes a la vez.
- * TODO(Ignacio): horas mínimas por cliente.
- * TODO(Ignacio): quién se sienta en el comité de dirección del cliente (siempre Ignacio o también otros perfiles).
- * TODO(Ignacio): el paquete de 10 h/mes puede leerse como "asesoría, no fractional". Decidir cómo se nombra antes de publicarlo.
+ * Reglas de dedicación (internas; las horas no se publican).
+ * - Máximo 2 clientes a la vez por CMO.
+ * - Mínimo 10 h/mes por cliente. Por debajo no se puede mover el negocio.
+ * - En el comité de dirección del cliente se sienta uno de nuestros CMO.
  */
 
 const FAQ = [
