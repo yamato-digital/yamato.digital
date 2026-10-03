@@ -15,14 +15,6 @@ export function Footer() {
             hola@yamato.digital
           </a>
           <a
-            href="https://pulsodiario.igonigonzalez.com/"
-            className="link-underline link-underline-hover"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Newsletter
-          </a>
-          <a
             href="https://www.linkedin.com/company/yamatodigital/"
             className="link-underline link-underline-hover"
             target="_blank"
