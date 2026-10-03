@@ -3,6 +3,7 @@ import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 import { Reveal } from "@/components/Reveal";
 import { RadiografiaCta } from "@/components/RadiografiaCta";
+import { SERVICE_LEVERS, SERVICES_INTRO } from "@/lib/services";
 import heroVideoMp4 from "@/assets/yamato-hero.mp4.asset.json";
 import heroPoster from "@/assets/yamato-hero-poster.jpg.asset.json";
 
@@ -63,14 +64,6 @@ export const Route = createFileRoute("/")({
 const CLIENTS_ROW_1 = ["LOEWE", "Cedrion", "Kincode", "Bindu Events", "Beedigital", "Cegid"];
 const CLIENTS_ROW_2 = ["APODEMIA", "Airamana", "1forAll", "IEB", "Grupo Alquila"];
 const CLIENTS_ROW_3 = ["Clicollege", "Vivas Psicología", "SomosNLP", "Rem83"];
-
-const SERVICES = [
-  "Estrategia y dirección",
-  "Mentoría y gestión de equipos",
-  "Go-to-Market",
-  "IA aplicada al marketing",
-  "Ejecución",
-];
 
 const FIT_YES = [
   "Quieres crecer y nadie piensa tu marketing a nivel estratégico.",
@@ -276,19 +269,23 @@ function Services() {
           <div className="md:col-span-4">
             <Eyebrow>Nuestros servicios</Eyebrow>
           </div>
-          <ol className="md:col-span-8 md:col-start-5">
-            {SERVICES.map((s, i) => (
-              <Reveal
-                as="li"
-                delay={i * 80}
-                key={s}
-                className="flex items-baseline gap-6 border-t border-ink/15 py-6 last:border-b"
-              >
-                <span className="text-sm tabular-nums text-muted-ink">{String(i + 1).padStart(2, "0")}</span>
-                <span className="font-serif text-[clamp(1.75rem,3.5vw,3rem)] leading-tight">{s}</span>
-              </Reveal>
-            ))}
-          </ol>
+          <div className="md:col-span-8 md:col-start-5">
+            <p className="font-serif text-[clamp(1.5rem,2.6vw,2.25rem)] leading-[1.15] tracking-tight text-muted-ink">
+              {SERVICES_INTRO}
+            </p>
+            <ol className="mt-12">
+              {SERVICE_LEVERS.map((s, i) => (
+                <Reveal as="li" delay={i * 80} key={s.lever} className="border-t border-ink/15 py-6 last:border-b">
+                  <span className="text-sm font-semibold uppercase tracking-[0.14em] text-muted-ink">
+                    <span className="tabular-nums">{String(i + 1).padStart(2, "0")}</span> · {s.lever}
+                  </span>
+                  <span className="mt-2 block font-serif text-[clamp(1.5rem,2.8vw,2.5rem)] leading-[1.1]">
+                    {s.problem}
+                  </span>
+                </Reveal>
+              ))}
+            </ol>
+          </div>
           <div className="mt-10 md:col-span-8 md:col-start-5">
             <Link
               to="/servicios"

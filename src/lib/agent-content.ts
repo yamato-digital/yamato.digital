@@ -1,4 +1,5 @@
 import { getAllPosts, getPost } from "@/lib/blog";
+import { SERVICE_LEVERS, SERVICES_INTRO } from "@/lib/services";
 
 export const SITE_URL = "https://yamato.digital";
 
@@ -26,11 +27,9 @@ Trabajamos como *Growth Partner*: nos movemos por lo que tú ganas. Si ganas tú
 
 ## Servicios
 
-- Estrategia y dirección
-- Mentoría y gestión de equipos
-- Go-to-Market
-- IA aplicada al marketing
-- Ejecución
+${SERVICES_INTRO}
+
+${SERVICE_LEVERS.map((s) => `- **${s.lever}.** ${s.problem}`).join("\n")}
 
 Más detalle: [Servicios](${SITE_URL}/servicios/index.md) · [Fractional CMO](${SITE_URL}/fractional-cmo/index.md)
 
@@ -81,15 +80,9 @@ Si lo único que necesitas es Paid Media, te pondremos en contacto con partners 
 
 ## Qué hacemos exactamente
 
-**Estrategia y dirección.** Nadie piensa tu marketing más allá del mes que viene. Entramos como tu director: auditamos, fijamos estrategia, marcamos KPIs y lideramos la operación.
+${SERVICES_INTRO}
 
-**Mentoría y gestión de equipos.** Tienes gente que ejecuta mucho y avanza poco. No despedimos a nadie: les damos dirección, foco y un backlog priorizado por negocio.
-
-**Go-to-Market.** Hay fecha de lanzamiento y nadie ha pensado el cómo. Diseñamos y ejecutamos la entrada al mercado. Con plan y con plazos.
-
-**IA aplicada al marketing.** La metemos donde ahorra dinero de verdad: automatizaciones, agentes, análisis, reporting. La IA no va a acabar con el marketing, va a acabar con el marketing mediocre.
-
-**Ejecución.** SEO, GEO, CRM, web, automatización. Lo ejecutamos nosotros — y solo si la estrategia la hemos marcado nosotros. Google Ads y Social Ads: los dirigimos y elegimos a quién los toca. Un CMO no mueve pujas: dirige al que las mueve.
+${SERVICE_LEVERS.map((s) => `### ${s.problem}\n\n*${s.lever}.* ${s.body}`).join("\n\n")}
 `,
   },
   "/fractional-cmo": {

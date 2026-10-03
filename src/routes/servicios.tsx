@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
+import { SERVICE_LEVERS, SERVICES_INTRO } from "@/lib/services";
 
 export const Route = createFileRoute("/servicios")({
   head: () => ({
@@ -19,42 +20,19 @@ export const Route = createFileRoute("/servicios")({
       { property: "og:url", content: "https://yamato.digital/servicios" },
     ],
     links: [{ rel: "canonical", href: "https://yamato.digital/servicios" }],
-    scripts: SERVICES.map((s) => ({
+    scripts: SERVICE_LEVERS.map((s) => ({
       type: "application/ld+json",
       children: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "Service",
-        name: s.title.replace(/\.$/, ""),
-        description: s.body,
+        name: s.serviceName,
+        description: `${s.problem} ${s.body}`,
         provider: { "@type": "Organization", name: "YAMATO" },
       }),
     })),
   }),
   component: ServiciosPage,
 });
-
-const SERVICES = [
-  {
-    title: "Estrategia y dirección.",
-    body: "Nadie piensa tu marketing más allá del mes que viene. Entramos como tu director: auditamos, fijamos estrategia, marcamos KPIs y lideramos la operación.",
-  },
-  {
-    title: "Mentoría y gestión de equipos.",
-    body: "Tienes gente que ejecuta mucho y avanza poco. No despedimos a nadie: les damos dirección, foco y un backlog priorizado por negocio.",
-  },
-  {
-    title: "Go-to-Market.",
-    body: "Hay fecha de lanzamiento y nadie ha pensado el cómo. Diseñamos y ejecutamos la entrada al mercado. Con plan y con plazos.",
-  },
-  {
-    title: "IA aplicada al marketing.",
-    body: "Todos hablan de IA, nadie la implanta. La metemos donde ahorra dinero de verdad: automatizaciones, agentes, análisis, reporting. La IA no va a acabar con el marketing, va a acabar con el marketing mediocre.",
-  },
-  {
-    title: "Ejecución.",
-    body: "SEO, GEO, CRM, web, automatización. Lo ejecutamos nosotros — y solo si la estrategia la hemos marcado nosotros. ¿Google Ads y Social Ads? Los dirigimos y elegimos a quién los toca. Un CMO no mueve pujas: dirige al que las mueve.",
-  },
-];
 
 function ServiciosPage() {
   return (
@@ -101,13 +79,23 @@ function ServiciosPage() {
               Vale. ¿Pero qué hacéis exactamente?
             </h2>
 
-            <div className="mt-12 space-y-8 max-w-xl text-lg leading-relaxed text-muted-ink md:text-xl">
-              {SERVICES.map((s) => (
-                <p key={s.title}>
-                  <strong className="font-semibold text-ink">{s.title}</strong> {s.body}
-                </p>
+            <p className="mt-8 font-serif text-[clamp(1.5rem,2.4vw,2.25rem)] leading-[1.15] tracking-[-0.01em] text-muted-ink">
+              {SERVICES_INTRO}
+            </p>
+
+            <ol className="mt-14">
+              {SERVICE_LEVERS.map((s, i) => (
+                <li key={s.lever} className="border-t border-ink/15 py-10 last:border-b">
+                  <p className="text-sm font-semibold uppercase tracking-[0.14em] text-muted-ink">
+                    <span className="tabular-nums">{String(i + 1).padStart(2, "0")}</span> · {s.lever}
+                  </p>
+                  <h3 className="mt-4 font-serif text-[clamp(1.75rem,3vw,2.5rem)] leading-[1.1] tracking-[-0.01em]">
+                    {s.problem}
+                  </h3>
+                  <p className="mt-4 max-w-xl text-lg leading-relaxed text-muted-ink md:text-xl">{s.body}</p>
+                </li>
               ))}
-            </div>
+            </ol>
           </div>
         </section>
       </main>
