@@ -76,6 +76,7 @@ const FIT_YES = [
 
 const FIT_NO = [
   "Buscas marketing barato.",
+  // Pendiente de la decisión sobre paid: ver TODO(Ignacio) en src/lib/services.ts.
   "Necesitas una agencia para poner en marcha las campañas de Paid.",
   "Quieres resultados mágicos en 2 semanas.",
   "Te ofende que te digan lo que no funciona.",

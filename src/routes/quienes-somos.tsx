@@ -3,6 +3,7 @@ import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 import { RadiografiaCta } from "@/components/RadiografiaCta";
 import { IGNACIO_PHOTO } from "@/lib/images";
+import { EXECUTION_MODEL } from "@/lib/services";
 
 const elenaAsset = { url: "/assets/elena-gonzalez-blanco-advisor.jpeg" };
 export const Route = createFileRoute("/quienes-somos")({
@@ -69,7 +70,7 @@ const PRINCIPLES = [
   {
     n: "04",
     title: "Quien piensa, firma.",
-    body: "El que diseña la estrategia es el que la ejecuta. No te vendemos un PowerPoint en la reunión de ventas para luego desaparecer y mandar al becario.",
+    body: "El que diseña la estrategia es el que responde de ella. No te vendemos un PowerPoint en la reunión de ventas para luego desaparecer y mandar al becario.",
   },
   {
     n: "05",
@@ -79,7 +80,8 @@ const PRINCIPLES = [
   {
     n: "06",
     title: "Solo ejecutamos lo que hemos marcado.",
-    body: "Hacemos Google Ads, SEO, CRM, web. Lo mismo que las agencias, con un pero: solo ejecutamos la estrategia que hemos definido nosotros. Ejecutar a ciegas el plan de otro es como operar con los ojos cerrados.",
+    // Pendiente de la decisión sobre paid: ver TODO(Ignacio) en src/lib/services.ts.
+    body: `${EXECUTION_MODEL} Y siempre sobre la estrategia que hemos definido: ejecutar a ciegas el plan de otro es como operar con los ojos cerrados.`,
   },
   {
     n: "07",

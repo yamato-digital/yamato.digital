@@ -1,3 +1,26 @@
+export const EXECUTION_MODEL =
+  "Pensamos nosotros y respondemos nosotros. Ejecuta quien mejor lo haga: tu equipo, nuestros especialistas o partners que elegimos y dirigimos.";
+
+/*
+ * TODO(Ignacio): ¿YAMATO ejecuta paid directamente o solo lo dirige?
+ * Mientras no se decida, la web usa EXECUTION_MODEL, que no se moja sobre paid. Afecta a cuatro sitios:
+ * la palanca Ejecución (abajo), el párrafo de Paid Media de /servicios, el principio 06 de /quienes-somos
+ * y la línea de paid de "No encajarás si…" en la home.
+ *
+ * Variante A, ejecutamos paid:
+ * - Ejecución: "SEO, GEO, CRM, web, automatización y paid. Lo ejecutamos sobre la estrategia que hemos marcado."
+ * - /servicios: "¿Necesitas campañas de Paid Media? Las lanzamos dentro de la estrategia, con objetivos de negocio."
+ * - Principio 06: "Ejecutamos Google Ads, SEO, CRM y web, siempre sobre la estrategia que hemos marcado."
+ * - No encajarás si: "Quieres campañas de Paid sin una estrategia detrás."
+ *
+ * Variante B, dirigimos paid:
+ * - Ejecución: "SEO, GEO, CRM, web y automatización los ejecutamos. El paid lo dirigimos: elegimos al partner,
+ *   fijamos objetivos y respondemos del resultado."
+ * - /servicios: "¿Lo que necesitas es Paid Media? Te ponemos con un partner que elegimos y dirigimos."
+ * - Principio 06: "Ejecutamos SEO, CRM y web. El paid lo lleva un partner que elegimos y dirigimos."
+ * - No encajarás si: "Solo necesitas a alguien que lance campañas de Paid."
+ */
+
 export const SERVICES_INTRO = "Primero entra el CMO. Luego decide qué hace falta: tu equipo, el nuestro o nada.";
 
 export interface ServiceLever {
@@ -52,7 +75,7 @@ export const SERVICE_LEVERS: ServiceLever[] = [
     problem: "Solo ejecutamos lo que hemos marcado.",
     lever: "Ejecución",
     serviceName: "Ejecución",
-    body: "SEO, GEO, CRM, web, automatización. Lo ejecutamos nosotros — y solo si la estrategia la hemos marcado nosotros. ¿Google Ads y Social Ads? Los dirigimos y elegimos a quién los toca. Un CMO no mueve pujas: dirige al que las mueve.",
+    body: `${EXECUTION_MODEL} SEO, GEO, CRM, web, automatización: siempre sobre la estrategia que hemos marcado.`,
     moves: "conversión",
   },
 ];

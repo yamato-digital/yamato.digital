@@ -54,9 +54,10 @@ function ServiciosPage() {
                 Si necesitas a alguien que te haga cuarenta cosas regulares, no somos nosotros. Si quieres a alguien que
                 haga seis bien y te diga la verdad por el camino, sigue leyendo.
               </p>
+              {/* Pendiente de la decisión sobre paid: ver TODO(Ignacio) en src/lib/services.ts. */}
               <p>
-                Y si lo único que necesitas en hacer campañas de Paid Media, no te preocupes, te pondremos en contacto
-                con nuestros partners. Saben hacerlo mucho mejor que nosotros.
+                Y si lo único que necesitas es hacer campañas de Paid Media, te ponemos en contacto con nuestros
+                partners.
               </p>
               <p>
                 ¿Buscas quien dirija todo esto sin contratar a un CMO en plantilla?{" "}

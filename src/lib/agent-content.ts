@@ -75,7 +75,7 @@ No hacemos de todo. Hacemos lo que mueve el negocio: estrategia, equipos, lanzam
 
 Si necesitas a alguien que te haga cuarenta cosas regulares, no somos nosotros. Si quieres a alguien que haga seis bien y te diga la verdad por el camino, sigue leyendo.
 
-Si lo único que necesitas es Paid Media, te pondremos en contacto con partners que lo hacen mejor que nosotros.
+Si lo único que necesitas es hacer campañas de Paid Media, te ponemos en contacto con nuestros partners.
 
 ¿Buscas quien dirija todo esto sin contratar a un CMO en plantilla? [Así trabajamos como Fractional CMO](${SITE_URL}/fractional-cmo/index.md).
 
