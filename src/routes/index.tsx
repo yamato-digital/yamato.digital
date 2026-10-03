@@ -322,9 +322,14 @@ function Signature() {
           <div className="mt-10 border-t border-ink/15 pt-6">
             <p className="font-serif text-2xl">Lo dirige Ignacio Goñi, fundador.</p>
             <p className="mt-3 text-lg leading-relaxed text-muted-ink">
-              Ingeniero industrial que viene del sector aeronáutico y ha pasado por la expansión global de LOEWE.
+              Ingeniero mecánico: siete años diseñando sistemas de automatización para Airbus y Boeing antes de
+              pasarse al marketing.
               <br />
-              Más de quince años dirigiendo marketing dentro de empresas.
+              Ha dirigido el marketing global de LOEWE (LVMH) en cuatro mercados y ha sido CMO de Clibrain, la primera
+              compañía de modelos de lenguaje de España, y de Clidrive, una fintech que pasó de cero a más de 10 M€ de
+              ARR en su primer año.
+              <br />
+              Más de diez años dirigiendo marketing dentro de empresas: lujo, IA, fintech y SaaS.
             </p>
           </div>
           <Link

@@ -33,7 +33,8 @@ export const Route = createFileRoute("/quienes-somos")({
           "name": "Ignacio Goñi",
           "jobTitle": "Fundador, CMO",
           "worksFor": { "@type": "Organization", "name": "YAMATO" },
-          "description": "Ingeniero industrial con más de 15 años dirigiendo marketing. Ex-LOEWE.",
+          "description":
+            "Ingeniero mecánico que pasó de diseñar máquinas para fabricar aviones para Airbus y Boeing al marketing. Ha dirigido el marketing global de LOEWE (LVMH) y ha sido CMO de Clibrain y Clidrive. Más de diez años dirigiendo marketing dentro de empresas: lujo, IA, fintech y SaaS.",
           "image": `https://yamato.digital${IGNACIO_PHOTO.src}`,
         }),
       },
@@ -153,8 +154,9 @@ function Founder() {
             </h3>
             <div className="mt-10 space-y-6 text-lg leading-relaxed md:text-xl">
               <p className="text-muted-ink">
-                Ingeniero industrial que viene del sector aeronáutico, ha pasado por la expansión global de LOEWE y está
-                metido en la IA hasta las entrañas, he pasado más de quince años dirigiendo marketing dentro de empresas.
+                Ingeniero mecánico que pasó de diseñar máquinas para fabricar aviones para Airbus y Boeing al marketing.
+                Ha dirigido el marketing global de LOEWE (LVMH) y ha sido CMO de Clibrain y Clidrive.
+                Más de diez años dirigiendo marketing dentro de empresas: lujo, IA, fintech y SaaS.
                 He cometido los errores caros en presupuestos que no eran míos, lo cual
                 significa una cosa para ti: cuando trabajamos juntos, esos errores ya no los pagas tú.
               </p>

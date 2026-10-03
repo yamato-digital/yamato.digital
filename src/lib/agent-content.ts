@@ -169,7 +169,7 @@ Somos tu Fractional CMO independiente. Entramos como un director de marketing �
 
 ## Quién dirige esto
 
-**Ignacio Goñi**, fundador. Ingeniero industrial, expansión global de LOEWE, más de quince años dirigiendo marketing *dentro* de empresas. YAMATO es bootstrapped: sin inversores a los que rendir cuentas, sin comercial cobrando comisión por venderte horas que no necesitas.
+**Ignacio Goñi**, fundador. Ingeniero mecánico que pasó de diseñar máquinas para fabricar aviones para Airbus y Boeing al marketing. Ha dirigido el marketing global de LOEWE (LVMH) y ha sido CMO de Clibrain y Clidrive. Más de diez años dirigiendo marketing dentro de empresas: lujo, IA, fintech y SaaS. YAMATO es bootstrapped: sin inversores a los que rendir cuentas, sin comercial cobrando comisión por venderte horas que no necesitas.
 
 ## El equipo
 
