@@ -15,14 +15,14 @@ const assetUrl = (url: string) => `${ASSET_ORIGIN}${url}`;
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "YAMATO | Fractional CMO independiente en Madrid" },
+      { title: "Fractional CMO independiente | YAMATO" },
       {
         name: "description",
         content:
           "Fractional CMO independiente en Madrid. Un director de marketing a tiempo parcial que se sienta en tu comité y responde del número. Sin nómina, sin comisiones.",
       },
       { property: "og:site_name", content: "YAMATO" },
-      { property: "og:title", content: "YAMATO | Fractional CMO independiente en Madrid" },
+      { property: "og:title", content: "Fractional CMO independiente | YAMATO" },
       {
         property: "og:description",
         content:
@@ -98,10 +98,11 @@ function Hero() {
         as="h1"
         className="mt-16 max-w-[18ch] font-serif text-[clamp(2.75rem,8vw,7.5rem)] leading-[0.95] tracking-[-0.02em] md:mt-24"
       >
-        Tu Fractional CMO. Sin nómina, sin comisiones, sin juniors.
+        Tu Fractional CMO independiente.
       </Reveal>
       <Reveal as="p" delay={150} className="mt-10 max-w-2xl text-lg leading-relaxed text-muted-ink md:text-xl">
-        Un director de marketing con más de diez años al mando, dentro de tu comité, las horas que necesites.
+        Un director de marketing senior dentro de tu comité. Decide la estrategia, dirige a tu equipo y responde de los
+        números. Las horas que necesites.
       </Reveal>
       <Reveal delay={300} className="mt-10 mb-20">
         <RadiografiaCta location="hero" microcopy="Llamar es gratis (aún)." />
@@ -292,7 +293,7 @@ function Signature() {
               Tu CMO. Senior, independiente y con su firma en cada decisión. Las importantes, además, pasan por el
               consenso interno de YAMATO: nadie decide solo lo que te juegas.
             </p>
-            <p>Detrás, el especialista que tu problema necesita, no el que estaba libre.</p>
+            <p>Detrás, el especialista que tu problema necesita.</p>
           </div>
           <div className="mt-10 border-t border-ink/15 pt-6">
             <p className="font-serif text-2xl">Ignacio Goñi, fundador</p>

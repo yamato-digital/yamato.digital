@@ -12,14 +12,12 @@ export interface AgentDocument {
 
 const PAGES: Record<string, { title: string; description: string; body: string }> = {
   "/": {
-    title: "YAMATO | Fractional CMO independiente en Madrid",
+    title: "Fractional CMO independiente | YAMATO",
     description:
       "Fractional CMO independiente en Madrid. Un director de marketing a tiempo parcial que se sienta en tu comité y responde del número.",
-    body: `# YAMATO | Fractional CMO independiente en Madrid
+    body: `# Tu Fractional CMO independiente.
 
-> Un director de marketing con más de diez años al mando, dentro de tu comité, las horas que necesites.
-
-Tu Fractional CMO. Sin nómina, sin comisiones, sin juniors.
+> Un director de marketing senior dentro de tu comité. Decide la estrategia, dirige a tu equipo y responde de los números. Las horas que necesites.
 
 La cabeza de un CMO con más de una década dirigiendo, más las manos de un equipo senior. Dentro de tu empresa, las horas que necesites. Ni un freelance que hace campañas sueltas, ni un consultor que suelta el informe y desaparece.
 
