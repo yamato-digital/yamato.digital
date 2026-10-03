@@ -25,7 +25,7 @@ export const SERVICE_LEVERS: ServiceLever[] = [
     lever: "Mentoría y gestión de equipos",
     serviceName: "Mentoría y gestión de equipos",
     body: "No despedimos a nadie: les damos dirección, foco y un backlog priorizado por negocio.",
-    // TODO(Ignacio): qué métrica de negocio mueve la mentoría de equipos (¿conversión, pipeline?). La descripción no la deja clara.
+    moves: "lo que de verdad mueve tu aguja. Lo definimos contigo, y no siempre es lo que crees",
   },
   {
     problem: "Hay fecha de lanzamiento y nadie ha pensado el cómo.",
