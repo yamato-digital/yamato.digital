@@ -154,8 +154,8 @@ function Founder() {
             <div className="mt-10 space-y-6 text-lg leading-relaxed md:text-xl">
               <p className="text-muted-ink">
                 Ingeniero industrial que viene del sector aeronáutico, ha pasado por la expansión global de LOEWE y está
-                metido en la IA hasta las entrañas, he pasado más de quince años dirigiendo marketing dentro de empresas,
-                no asesorándolas desde fuera. He cometido los errores caros en presupuestos que no eran míos, lo cual
+                metido en la IA hasta las entrañas, he pasado más de quince años dirigiendo marketing dentro de empresas.
+                He cometido los errores caros en presupuestos que no eran míos, lo cual
                 significa una cosa para ti: cuando trabajamos juntos, esos errores ya no los pagas tú.
               </p>
               <p className="text-muted-ink">

@@ -310,21 +310,21 @@ function Signature() {
         <Reveal delay={120} className="md:col-span-7 md:col-start-6">
           <Eyebrow>Quién firma tu estrategia</Eyebrow>
           <h3 className="mt-10 font-serif text-[clamp(2rem,4.5vw,4rem)] leading-[1.05] tracking-tight">
-            Una persona, con nombre y apellido.
+            Un responsable con nombre y apellido. Y un equipo detrás.
           </h3>
           <div className="mt-6 space-y-4 text-lg leading-relaxed text-muted-ink md:text-xl">
+            <p>Desde el primer día sabes quién dirige tu marketing y responde de él.</p>
             <p>
-              Tu CMO. Senior, independiente y con su firma en cada decisión. Las importantes, además, pasan por el
-              consenso interno de YAMATO: nadie decide solo lo que te juegas.
+              Las decisiones importantes las revisa el equipo de YAMATO: nadie decide solo lo que te juegas. La
+              ejecución la hace el especialista que tu problema necesita.
             </p>
-            <p>Detrás, el especialista que tu problema necesita.</p>
           </div>
           <div className="mt-10 border-t border-ink/15 pt-6">
-            <p className="font-serif text-2xl">Ignacio Goñi, fundador</p>
+            <p className="font-serif text-2xl">Lo dirige Ignacio Goñi, fundador.</p>
             <p className="mt-3 text-lg leading-relaxed text-muted-ink">
               Ingeniero industrial que viene del sector aeronáutico y ha pasado por la expansión global de LOEWE.
               <br />
-              Más de quince años dirigiendo marketing dentro de empresas, no asesorándolas desde fuera.
+              Más de quince años dirigiendo marketing dentro de empresas.
             </p>
           </div>
           <Link
