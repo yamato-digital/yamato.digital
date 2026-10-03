@@ -83,7 +83,9 @@ Si lo único que necesitas es Paid Media, te pondremos en contacto con partners 
 
 ${SERVICES_INTRO}
 
-${SERVICE_LEVERS.map((s) => `### ${s.problem}\n\n*${s.lever}.* ${s.body}`).join("\n\n")}
+${SERVICE_LEVERS.map(
+  (s) => `### ${s.problem}\n\n*${s.lever}.* ${s.body}${s.moves ? `\n\n**Mueve:** ${s.moves}.` : ""}`,
+).join("\n\n")}
 `,
   },
   "/fractional-cmo": {

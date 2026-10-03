@@ -93,6 +93,11 @@ function ServiciosPage() {
                     {s.problem}
                   </h3>
                   <p className="mt-4 max-w-xl text-lg leading-relaxed text-muted-ink md:text-xl">{s.body}</p>
+                  {s.moves ? (
+                    <p className="mt-4 text-base">
+                      <span className="font-semibold">Mueve:</span> <span className="font-serif text-xl">{s.moves}</span>
+                    </p>
+                  ) : null}
                 </li>
               ))}
             </ol>
