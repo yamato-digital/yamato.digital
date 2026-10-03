@@ -40,6 +40,7 @@ Más detalle: [Servicios](${SITE_URL}/servicios/index.md) · [Fractional CMO](${
 1. **Llamada** — 30 minutos. Si en ese tiempo no te convencemos, YAMATO no es para ti.
 2. **Radiografía (gratis)** — Analizamos tu marketing y te presentamos qué cambiaríamos y por qué.
 3. **Arrancamos** — Si aceptas, estamos en tu proyecto en 1 semana.
+4. **Nos vamos** — Cuando sobremos, te lo diremos nosotros. Y te ayudamos a fichar a quien nos sustituya.
 
 ## Encajarás si
 

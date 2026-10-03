@@ -271,13 +271,18 @@ function Process() {
       title: "Arrancamos",
       body: "Si aceptas, cosa que suele ser lo habitual, estamos trabajando en tu proyecto en 1 semana.",
     },
+    {
+      n: "04",
+      title: "Nos vamos",
+      body: "Cuando sobremos, te lo diremos nosotros. Y te ayudamos a fichar a quien nos sustituya.",
+    },
   ];
 
   return (
     <section id="proceso">
       <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
         <Eyebrow>Cómo lo hacemos</Eyebrow>
-        <div className="mt-20 grid gap-12 md:grid-cols-3">
+        <div className="mt-20 grid gap-12 sm:grid-cols-2 lg:grid-cols-4 lg:gap-10">
           {steps.map((s, i) => (
             <Reveal key={s.n} delay={i * 120}>
               <span className="font-serif text-5xl text-muted-ink">{s.n}</span>
