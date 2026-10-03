@@ -128,7 +128,7 @@ function Hero() {
 
 function Founder() {
   return (
-    <section className="border-t border-hairline overflow-hidden">
+    <section className="overflow-hidden">
       <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-20 xl:px-28 py-24 md:py-28">
         <div className="grid items-start gap-12 md:grid-cols-12 lg:gap-16">
           <div className="md:col-span-5">
