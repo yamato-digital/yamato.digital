@@ -47,7 +47,7 @@ Más detalle: [Servicios](${SITE_URL}/servicios/index.md) · [Fractional CMO](${
 ## Encajarás si
 
 - Quieres crecer y nadie piensa tu marketing a nivel estratégico.
-- Estás harto de agencias que prometen la luna y entregan un PowerPoint.
+- Quieres un plan con números y alguien que responda de ellos.
 - Prefieres honestidad brutal a informes bonitos que no dicen nada.
 - Tienes equipo y presupuesto, pero los proyectos importantes nunca tienen dueño.
 - Quieres ganar dinero.
@@ -70,14 +70,14 @@ Más detalle: [Servicios](${SITE_URL}/servicios/index.md) · [Fractional CMO](${
   },
   "/servicios": {
     title: "Servicios — YAMATO",
-    description: "Seis cosas, no cuarenta. Estrategia, mentoría, Go-to-Market, Growth, IA aplicada y ejecución.",
+    description: "Seis cosas. Bien hechas. Estrategia, mentoría, Go-to-Market, Growth, IA aplicada y ejecución.",
     body: `# Servicios — YAMATO
 
-Seis cosas, *no cuarenta.*
+Seis cosas. *Bien hechas.*
 
 No hacemos de todo. Hacemos lo que mueve el negocio: estrategia, equipos, lanzamientos, crecimiento, IA y ejecución.
 
-Si necesitas a alguien que te haga cuarenta cosas regulares, no somos nosotros. Si quieres a alguien que haga seis bien y te diga la verdad por el camino, sigue leyendo.
+Hacemos seis cosas y las hacemos a fondo. Y te decimos la verdad por el camino.
 
 Si lo único que necesitas es hacer campañas de Paid Media, te ponemos en contacto con nuestros partners.
 
@@ -140,9 +140,9 @@ Cada CMO lleva dos clientes como máximo. Con más, nadie piensa tu marketing: s
 
 **¿Cuánto cuesta en España?** Un CMO en plantilla cuesta 80.000–140.000 € al año más variable. Un Fractional CMO se contrata por días al mes, normalmente entre el 20% y el 40% de ese coste, sin indemnizaciones ni proceso de selección.
 
-**¿Cuándo tiene sentido?** Si facturas lo suficiente para invertir en marketing pero no para pagar un CMO senior, si tienes equipo que ejecuta sin dirección, o si vas a lanzar producto o mercado. No tiene sentido si solo necesitas manos para campañas: eso es una agencia. ¿Y si ya tienes un CMO? [Así entramos sin quitarle la silla](${SITE_URL}/index.md).
+**¿Cuándo tiene sentido?** Si facturas lo suficiente para invertir en marketing pero no para pagar un CMO senior, si tienes equipo que ejecuta sin dirección, o si vas a lanzar producto o mercado. Si solo necesitas manos para campañas, lo que te hace falta es ejecución, y te lo decimos en la primera llamada. ¿Y si ya tienes un CMO? [Así entramos sin quitarle la silla](${SITE_URL}/index.md).
 
-**¿En qué se diferencia de una agencia?** Una agencia ejecuta lo que le pides. Un Fractional CMO decide qué hay que pedir, a quién y por qué — y responde del número.
+**¿Qué hace un Fractional CMO con mis agencias?** Decide qué hay que pedir, a quién y por qué, y las dirige. También a tus proveedores actuales. Y responde del número.
 
 **¿Cuánto dura?** Lo normal son 6–12 meses. Si a los 12 meses seguimos siendo imprescindibles, algo hemos hecho mal.
 
@@ -156,7 +156,7 @@ Cada CMO lleva dos clientes como máximo. Con más, nadie piensa tu marketing: s
 
 Un CMO que firma lo que piensa. Y un equipo que no tienes que fichar.
 
-YAMATO no nació de una pasión por el marketing. Nació de un cabreo: empresas con buen producto pagando a agencias que vendían humo. Montamos lo contrario.
+YAMATO no nació de una pasión por el marketing. Nació de un cabreo: empresas con buen producto y nadie dirigiendo su marketing. Montamos lo contrario.
 
 Somos tu Fractional CMO independiente. Entramos como un director de marketing —estrategia, KPIs, operación— sin que tengas que ficharlo ni pagarle 100.000 € al año.
 
@@ -177,7 +177,7 @@ Debajo, una red de más de 50 colaboradores senior (SEO, CRM, contenido, datos, 
 ## Código
 
 1. Te decimos las tres cosas: lo que haces bien, lo que no, y lo que no haces.
-2. Seis cosas, no cuarenta.
+2. Seis cosas. Bien hechas.
 3. Independientes de verdad: nuestros honorarios no dependen de lo que inviertes en medios. Nos medimos por lo que mueves en tu negocio.
 4. Quien piensa, firma.
 5. La IA es para lo aburrido.

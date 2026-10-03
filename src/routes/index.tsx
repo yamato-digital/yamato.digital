@@ -68,7 +68,7 @@ const CLIENTS_ROW_3 = ["Clicollege", "Vivas Psicología", "SomosNLP", "Rem83"];
 
 const FIT_YES = [
   "Quieres crecer y nadie piensa tu marketing a nivel estratégico.",
-  "Estás harto de agencias que prometen la luna y entregan un PowerPoint.",
+  "Quieres un plan con números y alguien que responda de ellos.",
   "Prefieres honestidad brutal a informes bonitos que no dicen nada.",
   "Tienes equipo y presupuesto, pero los proyectos importantes nunca tienen dueño.",
   "Quieres ganar dinero.",
@@ -80,7 +80,7 @@ const FIT_NO = [
   "Necesitas una agencia para poner en marcha las campañas de Paid.",
   "Quieres resultados mágicos en 2 semanas.",
   "Te ofende que te digan lo que no funciona.",
-  "Regateas. No somos un mercadillo.",
+  "Regateas.",
 ];
 
 function Eyebrow({ children }: { children: React.ReactNode }) {
@@ -452,8 +452,8 @@ function EnterpriseBlock() {
             <p className="text-muted-ink">No venimos a quitarle la silla a nadie.</p>
             <p className="text-muted-ink">
               En empresas grandes entramos donde la estructura no llega: el lanzamiento que nadie tiene tiempo de
-              liderar, la unidad de negocio sin foco, la IA de la que todo el comité habla y nadie implanta, la segunda
-              opinión que tu agencia no te va a dar…
+              liderar, la unidad de negocio sin foco, la IA de la que todo el comité habla y nadie implanta, una segunda
+              opinión independiente sobre lo que ya haces…
             </p>
             <p className="text-muted-ink">
               Proyectos con principio, fin y resultado. No nos quedamos a vivir en tu nómina.

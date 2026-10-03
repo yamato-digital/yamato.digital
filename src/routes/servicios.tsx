@@ -10,12 +10,12 @@ export const Route = createFileRoute("/servicios")({
       {
         name: "description",
         content:
-          "Seis cosas, no cuarenta. Estrategia, mentoría, Go-to-Market, Growth, IA aplicada y ejecución para empresas que quieren resultados.",
+          "Seis cosas. Bien hechas. Estrategia, mentoría, Go-to-Market, Growth, IA aplicada y ejecución para empresas que quieren resultados.",
       },
       { property: "og:title", content: "Servicios — YAMATO" },
       {
         property: "og:description",
-        content: "Seis cosas, no cuarenta. Estrategia, mentoría, Go-to-Market, Growth, IA aplicada y ejecución.",
+        content: "Seis cosas. Bien hechas. Estrategia, mentoría, Go-to-Market, Growth, IA aplicada y ejecución.",
       },
       { property: "og:url", content: "https://yamato.digital/servicios" },
     ],
@@ -46,7 +46,7 @@ function ServiciosPage() {
         <section className="pt-20 pb-24 md:pt-28 md:pb-32">
           <div className="mx-auto max-w-3xl">
             <h1 className="font-serif text-[clamp(2rem,4vw,3.25rem)] leading-tight tracking-[-0.01em]">
-              Seis cosas, no cuarenta.
+              Seis cosas. Bien hechas.
             </h1>
             <div className="mt-10 space-y-7 font-serif text-[clamp(1.5rem,2.4vw,2.25rem)] leading-[1.15] tracking-[-0.01em] text-muted-ink">
               <p>
@@ -54,8 +54,7 @@ function ServiciosPage() {
                 ejecución.
               </p>
               <p>
-                Si necesitas a alguien que te haga cuarenta cosas regulares, no somos nosotros. Si quieres a alguien que
-                haga seis bien y te diga la verdad por el camino, sigue leyendo.
+                Hacemos seis cosas y las hacemos a fondo. Y te decimos la verdad por el camino.
               </p>
               {/* Pendiente de la decisión sobre paid: ver TODO(Ignacio) en src/lib/services.ts. */}
               <p>

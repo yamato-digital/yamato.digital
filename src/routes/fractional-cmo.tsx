@@ -25,11 +25,11 @@ const FAQ = [
   },
   {
     q: WHEN_IT_MAKES_SENSE,
-    a: "Tiene sentido si facturas lo suficiente para invertir en marketing pero no para pagar un CMO senior, si tienes equipo que ejecuta sin dirección, o si vas a lanzar producto o mercado. No tiene sentido si lo que necesitas son manos para ejecutar campañas: eso es una agencia, no un director.",
+    a: "Tiene sentido si facturas lo suficiente para invertir en marketing pero no para pagar un CMO senior, si tienes equipo que ejecuta sin dirección, o si vas a lanzar producto o mercado. Si lo que necesitas son manos para ejecutar campañas, lo que te hace falta es ejecución, y te lo decimos en la primera llamada.",
   },
   {
-    q: "¿En qué se diferencia de una agencia?",
-    a: "Una agencia ejecuta lo que le pides. Un Fractional CMO decide qué hay que pedir, a quién y por qué — y responde del número. Nosotros dirigimos también a tus agencias y proveedores actuales.",
+    q: "¿Qué hace un Fractional CMO con mis agencias?",
+    a: "Decide qué hay que pedir, a quién y por qué, y las dirige. También a tus proveedores actuales. Y responde del número.",
   },
   {
     q: "¿Cuánto dura la colaboración?",

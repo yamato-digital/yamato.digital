@@ -59,8 +59,8 @@ const PRINCIPLES = [
   },
   {
     n: "02",
-    title: "Seis cosas, no cuarenta.",
-    body: "No hacemos de todo. Hacemos lo que mueve la aguja y dejamos fuera lo que solo engorda la factura. Si alguien te ofrece cuarenta servicios, no hace ninguno bien.",
+    title: "Seis cosas. Bien hechas.",
+    body: "Hacemos lo que mueve la aguja y lo hacemos a fondo. Lo que solo engorda la factura se queda fuera.",
   },
   {
     n: "03",
@@ -70,7 +70,7 @@ const PRINCIPLES = [
   {
     n: "04",
     title: "Quien piensa, firma.",
-    body: "El que diseña la estrategia es el que responde de ella. No te vendemos un PowerPoint en la reunión de ventas para luego desaparecer y mandar al becario.",
+    body: "El que diseña la estrategia es el que responde de ella. Y quien te la presenta es quien la defiende en tu comité.",
   },
   {
     n: "05",
@@ -108,7 +108,7 @@ function Hero() {
           <p>YAMATO no nació de una pasión por el marketing. Nació de un cabreo.</p>
           <p className="text-muted-ink">
             Después de más de una década dirigiendo marketing en cabeza ajena, el patrón siempre era el mismo: empresas
-            con buen producto pagando a agencias que vendían humo y delegaban el trabajo en un becario. Nadie pensaba el
+            con buen producto y nadie dirigiendo su marketing. Mucho ejecutar, poco decidir. Nadie pensaba el
             marketing más allá del mes que viene. Y cuando alguien lo pensaba, no era quien lo ejecutaba.
           </p>
           <p>Así que montamos lo contrario.</p>
@@ -177,14 +177,10 @@ function Team() {
       <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
         <Eyebrow>El equipo de verdad</Eyebrow>
         <h3 className="mt-6 max-w-4xl font-serif text-[clamp(2.25rem,4.5vw,4rem)] leading-[1] tracking-tight">
-          Aquí es donde la mayoría de webs mienten.
+          Un equipo con nombre y responsabilidad.
         </h3>
         <div className="mt-16 grid gap-12 md:grid-cols-12">
           <div className="md:col-span-7 space-y-6 text-lg leading-relaxed md:text-xl">
-            <p className="text-muted-ink">
-              Montan una cuadrícula de treinta caras sonrientes y la llaman “nuestro equipo”. Nosotros no vamos a hacer
-              eso.
-            </p>
             <p className="text-muted-ink">
               YAMATO no es solo su fundador. Hay más <span className="font-serif">CMO senior, totalmente
               independientes</span>: cada uno firma la estrategia de sus clientes y responde por ella. Las decisiones
@@ -263,7 +259,7 @@ function Code() {
           Ocho cosas que no negociamos.
         </h3>
         <p className="mt-6 max-w-2xl text-lg leading-relaxed text-paper/70 md:text-xl">
-          Si alguna te chirría, probablemente no somos para ti. Y no pasa nada.
+          Si las compartes, vamos a entendernos bien.
         </p>
         <ol className="mt-20">
           {PRINCIPLES.map((p) => (

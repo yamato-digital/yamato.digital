@@ -71,11 +71,11 @@ Lo que sí toca es contestar a nuestras tres preguntas. Si las hacemos, nos las 
 
 **Apagar sin pedir permiso.** Entramos [como dirección, no como proveedor](https://yamato.digital/servicios): auditamos, fijamos la estrategia, marcamos los KPIs y dirigimos también a las agencias que ya tienes. Eso incluye cerrar canales, parar la web que se iba a rehacer otra vez y decirle a un proveedor que este trimestre no. Un CMO no mueve pujas: dirige a quien las mueve.
 
-**Equivocarse y que duela.** No cobramos un porcentaje de lo que inviertes en publicidad, porque entonces nos interesa que gastes más. Trabajamos [como Growth Partner](https://yamato.digital/quienes-somos): si tú no ganas, nosotros tampoco. No es generosidad, es lo que hace que nuestro "no" valga algo.
+**Equivocarse y que duela.** Nuestros honorarios no dependen de lo que inviertes en medios. [Nos medimos por lo que mueves en tu negocio](https://yamato.digital/quienes-somos). Es lo que hace que nuestro "no" valga algo.
 
 **Autoridad, no tareas.** El [Fractional CMO](https://yamato.digital/fractional-cmo) va unos días al mes con firma, prioridad y silla en el comité — ese sitio donde se discute con finanzas y a veces se pierde. Y con fecha de caducidad: entre seis y doce meses. Si al año seguimos siendo imprescindibles, lo hemos hecho mal.
 
-Quien diseña eso es quien lo firma. Ni PowerPoint en la reunión de ventas ni becario en la ejecución.
+Quien lo diseña lo firma y responde de ello.
 
 Lo que no sale en las landings del sector es la otra mitad: lo difícil de este modelo no es encontrar al senior. Es el día en que el fundador tiene que dejar que alguien de fuera apague algo que él puso en marcha. Ese día se ve si contrataste dirección o compañía.
 
