@@ -1,7 +1,7 @@
 import { getAllPosts, getPost } from "@/lib/blog";
 import { SERVICE_LEVERS, SERVICE_MODES, SERVICES_INTRO } from "@/lib/services";
 import { DIRECTION_CASES, OTHER_PROJECTS } from "@/lib/clients";
-import { CTA_LINKS } from "@/lib/cta";
+import { CONTACT_BOOKING_LABEL, CTA_LINKS } from "@/lib/cta";
 
 export const SITE_URL = "https://yamato.digital";
 
@@ -40,7 +40,7 @@ Más detalle: [Servicios](${SITE_URL}/servicios/index.md) · [Fractional CMO](${
 ## Cómo lo hacemos
 
 1. **Llamada** — 30 minutos. Si en ese tiempo no te convencemos, YAMATO no es para ti.
-2. **Radiografía (gratis)** — Analizamos tu marketing y te presentamos qué cambiaríamos y por qué.
+2. **Radiografía (gratis)** — 30 minutos y tres conclusiones por escrito: lo que haces bien, lo que no tanto y lo que todavía no haces. La auditoría con tus datos es la primera fase del trabajo.
 3. **Arrancamos** — Si aceptas, estamos en tu proyecto en 1 semana.
 4. **Nos vamos** — Cuando sobremos, te lo diremos nosotros. Y te ayudamos a fichar a quien nos sustituya.
 
@@ -62,7 +62,7 @@ Más detalle: [Servicios](${SITE_URL}/servicios/index.md) · [Fractional CMO](${
 
 ## Contacto
 
-- [Reservar consulta](${CTA_LINKS.bookingUrl})
+- [${CONTACT_BOOKING_LABEL.replace(/\.$/, "")}](${CTA_LINKS.bookingUrl})
 - [WhatsApp](${CTA_LINKS.whatsappUrl})
 - Email: [hola@yamato.digital](mailto:hola@yamato.digital)
 - [LinkedIn](https://www.linkedin.com/company/yamatodigital/)
@@ -232,13 +232,13 @@ Sin pipeline, sin reuniones, sin seguimientos. Tú haces la intro, nosotros el r
 `,
   },
   "/contacto": {
-    title: "Contacto — YAMATO",
+    title: "Contacto | Fractional CMO independiente | YAMATO",
     description: "Hablemos. Reserva, WhatsApp, email y LinkedIn.",
     body: `# Contacto — YAMATO
 
-Hablemos.
+Hablemos. Te responde Ignacio. En la llamada vemos tu situación y te decimos qué haríamos primero.
 
-- [Reservar consulta](${CTA_LINKS.bookingUrl})
+- [${CONTACT_BOOKING_LABEL.replace(/\.$/, "")}](${CTA_LINKS.bookingUrl})
 - [WhatsApp](${CTA_LINKS.whatsappUrl})
 - Email: [hola@yamato.digital](mailto:hola@yamato.digital)
 - [LinkedIn](https://www.linkedin.com/company/yamatodigital/)

@@ -1,17 +1,24 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
-import { CTA_LINKS } from "@/lib/cta";
+import { CONTACT_BOOKING_LABEL, CTA_LINKS } from "@/lib/cta";
+
+/*
+ * TODO(Ignacio): en el formulario de reserva, sustituir las opciones de disciplinas por situaciones:
+ * "Tenemos equipo, pero falta dirección" / "Necesitamos dirección y manos" /
+ * "Tenemos un lanzamiento o un reto concreto" / "No sabemos por dónde empezar".
+ * Hoy la reserva va a Calendly (CTA_LINKS.bookingUrl), no a Tally: sería una pregunta obligatoria del evento.
+ */
 
 export const Route = createFileRoute("/contacto")({
   head: () => ({
     meta: [
-      { title: "Contacto — YAMATO | Fractional CMO independiente" },
+      { title: "Contacto | Fractional CMO independiente | YAMATO" },
       {
         name: "description",
         content: "Hablemos. YAMATO es tu dirección de marketing independiente. Reserva, WhatsApp, email y LinkedIn.",
       },
-      { property: "og:title", content: "Contacto — YAMATO | Fractional CMO independiente" },
+      { property: "og:title", content: "Contacto | Fractional CMO independiente | YAMATO" },
       {
         property: "og:description",
         content: "Hablemos. YAMATO es tu dirección de marketing independiente.",
@@ -38,7 +45,7 @@ function ContactoPage() {
             rel="noopener noreferrer"
             className="link-underline link-underline-hover"
           >
-            Reservar consulta.
+            {CONTACT_BOOKING_LABEL}
           </a>
           <a
             href={CTA_LINKS.whatsappUrl}
@@ -60,6 +67,9 @@ function ContactoPage() {
             LinkedIn.
           </a>
         </div>
+        <p className="mt-8 max-w-xl text-center text-base leading-relaxed text-muted-ink md:text-lg">
+          Te responde Ignacio. En la llamada vemos tu situación y te decimos qué haríamos primero.
+        </p>
       </main>
       <Footer />
     </div>

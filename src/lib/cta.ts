@@ -1,10 +1,16 @@
 export const CTA_LINKS = {
   bookingUrl: "https://calendly.com/ignacio-yamato/30min",
+  /** "calendar" si bookingUrl abre una agenda; "form" si abre un formulario (Tally, etc.). Cambia los textos. */
+  bookingType: "calendar" as "calendar" | "form",
   whatsappUrl: "https://wa.me/34696977968",
   fallback: "/contacto",
 } as const;
 
-export const RADIOGRAFIA_LABEL = "Pide tu Radiografía gratis";
+const IS_FORM = CTA_LINKS.bookingType === "form";
+
+export const RADIOGRAFIA_LABEL = IS_FORM ? "Solicita tu Radiografía gratis" : "Pide tu Radiografía gratis";
+
+export const CONTACT_BOOKING_LABEL = IS_FORM ? "Solicitar una primera conversación." : "Reservar consulta.";
 
 export function radiografiaHref(): string {
   return CTA_LINKS.bookingUrl || CTA_LINKS.fallback;

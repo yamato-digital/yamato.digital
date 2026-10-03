@@ -368,7 +368,8 @@ function Process() {
     {
       n: "02",
       title: "Radiografía (gratis)",
-      body: "Analizamos tu marketing de arriba a abajo y te presentamos qué cambiaríamos y por qué.",
+      // TODO(Ignacio): confirmar alcance de la Radiografía (30 minutos y tres conclusiones por escrito).
+      body: "30 minutos y tres conclusiones por escrito: lo que haces bien, lo que no tanto y lo que todavía no haces. La auditoría con tus datos es la primera fase del trabajo.",
     },
     {
       n: "03",
