@@ -9,6 +9,7 @@ export interface AgentDocument {
 
 const PAGES: Record<string, { title: string; description: string; body: string }> = {
   // TODO(Ignacio): el titular repite "sin juniors" de la home. Si no se confirma, quitarlo aquí también.
+  // TODO(Ignacio): "Growth Partner: solo ganamos cuando tú ganas" sigue la misma decisión que en la home (index.tsx, About).
   "/": {
     title: "YAMATO | Fractional CMO independiente en Madrid",
     description:

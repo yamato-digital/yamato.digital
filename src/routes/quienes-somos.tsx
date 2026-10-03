@@ -64,6 +64,7 @@ const PRINCIPLES = [
     body: "No hacemos de todo. Hacemos lo que mueve la aguja y dejamos fuera lo que solo engorda la factura. Si alguien te ofrece cuarenta servicios, no hace ninguno bien.",
   },
   {
+    // TODO(Ignacio): decidir si el modelo Growth Partner es variable real. Si no lo es, la alternativa aprobada es: "Nos medimos por lo que mueves, no por las horas que facturamos."
     n: "03",
     title: "Independientes de verdad.",
     body: "No cobramos un porcentaje de lo que inviertes en publicidad. Cuanto más gastas, no ganamos más. Trabajamos como Growth Partner: solo ganamos cuando tú ganas. Punto.",
