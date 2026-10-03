@@ -145,6 +145,59 @@ function HeroMedia() {
   );
 }
 
+function DoorArrow() {
+  return (
+    <span aria-hidden className="ml-2 inline-block transition-transform group-hover:translate-x-1">
+      →
+    </span>
+  );
+}
+
+function Doors() {
+  const cardClass =
+    "group flex h-full flex-col justify-between gap-10 border border-ink/15 p-8 transition-colors hover:bg-cream md:p-10";
+  return (
+    <section aria-label="Por dónde entrar" className="mt-16 px-6 sm:px-10 lg:px-20 xl:px-28">
+      <div className="grid gap-6 md:grid-cols-2">
+        {/* TODO(Ignacio): umbral que descalifica en la puerta A (tamaño de equipo, facturación o ronda). No publicar hasta decidirlo. */}
+        <Reveal className="h-full">
+          <Link to="/fractional-cmo" data-door="sin-cmo" className={cardClass}>
+            <div>
+              <h2 className="font-serif text-[clamp(1.75rem,3vw,2.75rem)] leading-[1.05] tracking-tight">
+                No tienes director de marketing.
+              </h2>
+              <p className="mt-4 text-lg leading-relaxed text-muted-ink">
+                Hay campañas, hay agencia, hay hasta un junior espabilado. Falta quien decida. Ese es el hueco que
+                ocupamos.
+              </p>
+            </div>
+            <span className="font-serif text-xl link-underline link-underline-hover self-start">
+              Así funciona un Fractional CMO
+              <DoorArrow />
+            </span>
+          </Link>
+        </Reveal>
+        <Reveal delay={120} className="h-full">
+          <a href="#ya-tienes-cmo" data-door="con-cmo" className={cardClass}>
+            <div>
+              <h2 className="font-serif text-[clamp(1.75rem,3vw,2.75rem)] leading-[1.05] tracking-tight">
+                Ya tienes CMO.
+              </h2>
+              <p className="mt-4 text-lg leading-relaxed text-muted-ink">
+                No venimos a quitarle la silla a nadie. Entramos donde la estructura no llega.
+              </p>
+            </div>
+            <span className="font-serif text-xl link-underline link-underline-hover self-start">
+              Qué hacemos con él
+              <DoorArrow />
+            </span>
+          </a>
+        </Reveal>
+      </div>
+    </section>
+  );
+}
+
 function Marquee() {
   const rows = [
     { items: CLIENTS_ROW_1, reverse: false },
@@ -332,7 +385,7 @@ function PriceQuote() {
 
 function EnterpriseBlock() {
   return (
-    <section>
+    <section id="ya-tienes-cmo" className="scroll-mt-24">
       <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
         <div className="grid gap-12 md:grid-cols-12">
           <Reveal variant="fade-right" className="md:col-span-4">
@@ -447,6 +500,7 @@ function Home() {
       <Nav />
       <Hero />
       <HeroMedia />
+      <Doors />
       <div className="mt-24" />
       <Marquee />
       <About />
