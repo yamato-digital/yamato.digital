@@ -1,3 +1,4 @@
+import { useLayoutEffect, useRef, useState } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
@@ -62,8 +63,8 @@ export const Route = createFileRoute("/")({
   component: Home,
 });
 
-const CLIENTS_ROW_1 = ["LOEWE", "Cedrion", "Kincode", "Bindu Events", "Beedigital", "Cegid"];
-const CLIENTS_ROW_2 = ["APODEMIA", "Airamana", "1forAll", "IEB", "Grupo Alquila"];
+const CLIENTS_ROW_1 = ["Cedrion", "Kincode", "Bindu Events", "Beedigital", "Cegid"];
+const CLIENTS_ROW_2 = ["LOEWE", "APODEMIA", "Airamana", "1forAll", "IEB", "Grupo Alquila"];
 const CLIENTS_ROW_3 = ["Clicollege", "Vivas Psicología", "SomosNLP", "Rem83"];
 
 const FIT_YES = [
@@ -99,7 +100,7 @@ function Hero() {
         as="h1"
         className="mt-16 max-w-[18ch] font-serif text-[clamp(2.75rem,8vw,7.5rem)] leading-[0.95] tracking-[-0.02em] md:mt-24"
       >
-        Tu Fractional CMO independiente.
+        Tu Fractional CMO.
       </Reveal>
       <Reveal as="p" delay={150} className="mt-10 max-w-2xl text-lg leading-relaxed text-muted-ink md:text-xl">
         Un director de marketing senior dentro de tu comité. Decide la estrategia, dirige a tu equipo y responde de los
@@ -198,31 +199,56 @@ function Doors() {
 }
 
 function Marquee() {
+  const viewportRef = useRef<HTMLDivElement>(null);
+  const loeweRef = useRef<HTMLSpanElement>(null);
+  const [shift, setShift] = useState(0);
   const rows = [
-    { items: CLIENTS_ROW_1, reverse: false },
-    { items: CLIENTS_ROW_2, reverse: true },
-    { items: CLIENTS_ROW_3, reverse: false },
+    { items: CLIENTS_ROW_1, reverse: true },
+    { items: CLIENTS_ROW_2, reverse: false, featured: true },
+    { items: CLIENTS_ROW_3, reverse: true },
   ];
+
+  useLayoutEffect(() => {
+    const measure = () => {
+      const viewport = viewportRef.current;
+      const loewe = loeweRef.current;
+      if (!viewport || !loewe) return;
+      setShift(viewport.clientWidth / 2 - loewe.getBoundingClientRect().width / 2);
+    };
+    measure();
+    document.fonts.ready.then(measure);
+    window.addEventListener("resize", measure);
+    return () => window.removeEventListener("resize", measure);
+  }, []);
+
   return (
     <section aria-label="Trabajamos con" className="py-12">
       <div>
         {rows.map((row, idx) => {
           const doubled = [...row.items, ...row.items, ...row.items, ...row.items];
           const isLast = idx === rows.length - 1;
-          return (
-            <div key={idx} className={`overflow-hidden py-4 ${isLast ? "" : "border-b border-ink/15"}`}>
-              <div
-                className={`${row.reverse ? "marquee-track-reverse" : "marquee-track"} font-serif text-[clamp(1.75rem,4.5vw,3.5rem)] leading-[1.2] whitespace-nowrap py-1`}
-              >
-                {doubled.map((c, i) => (
-                  <span key={i} className="flex items-center gap-10">
-                    {c}
-                    <span aria-hidden className="text-muted-ink">
-                      ◦
-                    </span>
+          const track = (
+            <div
+              className={`${row.reverse ? "marquee-track-reverse" : "marquee-track"} font-serif text-[clamp(1.75rem,4.5vw,3.5rem)] leading-[1.2] whitespace-nowrap py-1`}
+            >
+              {doubled.map((c, i) => (
+                <span key={i} className="flex items-center gap-10">
+                  {row.featured && i === 0 ? <span ref={loeweRef}>{c}</span> : c}
+                  <span aria-hidden className="text-muted-ink">
+                    ◦
                   </span>
-                ))}
-              </div>
+                </span>
+              ))}
+            </div>
+          );
+          return (
+            <div
+              key={idx}
+              ref={row.featured ? viewportRef : undefined}
+              data-marquee={row.featured ? "featured" : undefined}
+              className={`overflow-hidden py-4 ${isLast ? "" : "border-b border-ink/15"}`}
+            >
+              {row.featured ? <div style={{ transform: `translateX(${shift}px)` }}>{track}</div> : track}
             </div>
           );
         })}
