@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 import { Reveal } from "@/components/Reveal";
+import { RadiografiaCta } from "@/components/RadiografiaCta";
 import heroVideoMp4 from "@/assets/yamato-hero.mp4.asset.json";
 import heroPoster from "@/assets/yamato-hero-poster.jpg.asset.json";
 
@@ -87,26 +88,6 @@ const FIT_NO = [
   "Regateas. No somos un mercadillo.",
 ];
 
-function Arrow() {
-  return (
-    <span aria-hidden className="ml-2 inline-block transition-transform group-hover:translate-x-1">
-      →
-    </span>
-  );
-}
-
-function Cta({ children, href = "/contacto" }: { children: React.ReactNode; href?: string }) {
-  return (
-    <a
-      href={href}
-      className="group inline-flex items-baseline font-serif text-[clamp(1.25rem,2vw,1.75rem)] leading-tight link-underline link-underline-hover"
-    >
-      {children}
-      <Arrow />
-    </a>
-  );
-}
-
 function Eyebrow({ children }: { children: React.ReactNode }) {
   return (
     <div>
@@ -130,7 +111,7 @@ function Hero() {
         Un director de marketing con más de diez años al mando, dentro de tu comité, las horas que necesites.
       </Reveal>
       <Reveal delay={300} className="mt-10 mb-20">
-        <Cta>Llamar es gratis (aún)</Cta>
+        <RadiografiaCta location="hero" microcopy="Llamar es gratis (aún)." />
       </Reveal>
     </section>
   );
@@ -312,7 +293,7 @@ function Process() {
           “Te diremos 3 cosas: lo que haces bien, lo que no haces tan bien y, sobre todo, lo que no haces.”
         </Reveal>
         <Reveal delay={150} className="mt-16">
-          <Cta>¿Nos sentamos?</Cta>
+          <RadiografiaCta location="proceso" microcopy="¿Nos sentamos?" microcopyPosition="before" />
         </Reveal>
       </div>
     </section>
@@ -338,7 +319,7 @@ function PriceQuote() {
           Menos horas, sí. Pero ninguna se pierde en que un junior aprenda a tu costa.
         </Reveal>
         <Reveal delay={320} className="mt-10">
-          <Cta>Si llamas, respondemos</Cta>
+          <RadiografiaCta location="inversion" microcopy="Si llamas, respondemos." />
         </Reveal>
       </div>
     </section>
@@ -375,7 +356,7 @@ function EnterpriseBlock() {
               trabaja.
             </p>
             <div className="pt-4">
-              <Cta>Cuéntanos el proyecto</Cta>
+              <RadiografiaCta location="empresas" microcopy="Cuéntanos el proyecto." microcopyPosition="before" />
             </div>
           </Reveal>
         </div>
@@ -443,13 +424,12 @@ function Closing() {
           ¿Qué tal si hacemos una, o dos, cosas juntos?
         </Reveal>
         <Reveal delay={300} className="mt-12">
-          <a
-            href="/contacto"
-            className="group inline-flex items-baseline font-serif text-[clamp(1.25rem,2vw,1.75rem)] leading-tight link-underline link-underline-hover"
-          >
-            Hablemos pues
-            <Arrow />
-          </a>
+          <RadiografiaCta
+            location="cierre"
+            microcopy="Hablemos pues."
+            microcopyPosition="before"
+            microcopyClassName="text-paper/60"
+          />
         </Reveal>
       </div>
     </section>

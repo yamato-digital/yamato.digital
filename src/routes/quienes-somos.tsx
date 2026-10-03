@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
+import { RadiografiaCta } from "@/components/RadiografiaCta";
 import ignacioAsset from "@/assets/ignacio-goni-yamato.webp.asset.json";
 
 const elenaAsset = { url: "/assets/elena-gonzalez-blanco-advisor.jpeg" };
@@ -41,14 +42,6 @@ export const Route = createFileRoute("/quienes-somos")({
   }),
   component: QuienesSomos,
 });
-
-function Arrow() {
-  return (
-    <span aria-hidden className="ml-2 inline-block transition-transform group-hover:translate-x-1">
-      →
-    </span>
-  );
-}
 
 function Eyebrow({ children }: { children: React.ReactNode }) {
   return (
@@ -295,15 +288,7 @@ function Closing() {
           Las tres cosas, sin compromiso. Si en media hora no te convencemos, te lo diremos nosotros antes de que
           cuelgues.
         </p>
-        <div className="mt-12">
-          <a
-            href="mailto:hola@yamato.digital"
-            className="group inline-flex items-baseline font-serif text-[clamp(1.25rem,2vw,1.75rem)] leading-tight link-underline link-underline-hover"
-          >
-            Pide tu Radiografía gratis
-            <Arrow />
-          </a>
-        </div>
+        <RadiografiaCta location="quienes-somos-cierre" className="mt-12" />
       </div>
     </section>
   );

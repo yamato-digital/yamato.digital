@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
+import { RadiografiaCta } from "@/components/RadiografiaCta";
 
 const URL = "https://yamato.digital/fractional-cmo";
 
@@ -111,13 +112,8 @@ function FractionalCmoPage() {
               al mes, con responsabilidad real sobre la estrategia, el equipo y los números. Ni un consultor
               que entrega un informe, ni una agencia que ejecuta lo que le mandas: alguien que dirige.
             </p>
-            <div className="mt-10 flex flex-wrap gap-4">
-              <Link
-                to="/contacto"
-                className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
-              >
-                Cuéntanos tu caso
-              </Link>
+            <div className="mt-10 flex flex-wrap items-start gap-4">
+              <RadiografiaCta location="fractional-hero" variant="button" />
               <Link
                 to="/servicios"
                 className="inline-flex items-center justify-center rounded-md border border-input bg-background px-6 py-3 text-sm font-medium text-foreground transition-colors hover:bg-accent"
@@ -280,12 +276,7 @@ function FractionalCmoPage() {
             <p className="mt-6 text-lg leading-relaxed text-muted-ink md:text-xl">
               Nos sentamos, lo miramos y te lo decimos claro. Si no lo necesitas, te lo diremos también.
             </p>
-            <Link
-              to="/contacto"
-              className="mt-10 inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
-            >
-              Hablemos
-            </Link>
+            <RadiografiaCta location="fractional-cierre" variant="button" className="mt-10" />
           </div>
         </section>
       </main>
