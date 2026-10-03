@@ -1,8 +1,6 @@
-// TODO(Ignacio): URL de agenda directa (Cal.com o Calendly) y enlace de WhatsApp (formato https://wa.me/34XXXXXXXXX).
-// Mientras bookingUrl esté vacío, el CTA principal apunta a /contacto. El enlace de WhatsApp solo se pinta si existe.
 export const CTA_LINKS = {
-  bookingUrl: "",
-  whatsappUrl: "",
+  bookingUrl: "https://calendly.com/ignacio-yamato/30min",
+  whatsappUrl: "https://wa.me/34696977968",
   fallback: "/contacto",
 } as const;
 
