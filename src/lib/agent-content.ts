@@ -8,8 +8,6 @@ export interface AgentDocument {
 }
 
 const PAGES: Record<string, { title: string; description: string; body: string }> = {
-  // TODO(Ignacio): el titular repite "sin juniors" de la home. Si no se confirma, quitarlo aquí también.
-  // TODO(Ignacio): "Growth Partner: solo ganamos cuando tú ganas" sigue la misma decisión que en la home (index.tsx, About).
   "/": {
     title: "YAMATO | Fractional CMO independiente en Madrid",
     description:
@@ -24,7 +22,7 @@ La cabeza de un CMO con más de una década dirigiendo, más las manos de un equ
 
 No somos una agencia. Quien piensa tu estrategia es quien la firma, y se sienta en tu comité de dirección.
 
-Trabajamos como *Growth Partner*: solo ganamos cuando tú ganas.
+Trabajamos como *Growth Partner*: nos movemos por lo que tú ganas. Si ganas tú, ganamos nosotros. No conocemos otra forma de crecer.
 
 ## Servicios
 

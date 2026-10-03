@@ -207,10 +207,9 @@ function About() {
             No somos una agencia. Nadie te venderá la moto en la primera reunión para pasarte luego con un junior: quien
             piensa tu estrategia es quien la firma, y se sienta en tu comité de dirección.
           </Reveal>
-          {/* TODO(Ignacio): decidir si el modelo Growth Partner es variable real. Si no lo es, la alternativa aprobada es: "Nos medimos por lo que mueves, no por las horas que facturamos." */}
           <Reveal as="p" delay={360}>
-            Trabajamos como <span className="font-serif">Growth Partner</span>: solo ganamos cuando tú ganas. Incómodo para
-            el resto del sector. Cómodo para ti.
+            Trabajamos como <span className="font-serif">Growth Partner</span>: nos movemos por lo que tú ganas. Si ganas
+            tú, ganamos nosotros. No conocemos otra forma de crecer.
           </Reveal>
         </div>
       </div>
