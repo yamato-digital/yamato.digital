@@ -15,14 +15,14 @@ const assetUrl = (url: string) => `${ASSET_ORIGIN}${url}`;
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "YAMATO | The Fractional Agency" },
+      { title: "YAMATO | Agencia de Fractional CMO" },
       {
         name: "description",
         content:
           "Fractional CMO independiente en Madrid. Un director de marketing a tiempo parcial que se sienta en tu comité y responde del número. Sin nómina, sin comisiones.",
       },
       { property: "og:site_name", content: "YAMATO" },
-      { property: "og:title", content: "YAMATO | The Fractional Agency" },
+      { property: "og:title", content: "YAMATO | Agencia de Fractional CMO" },
       {
         property: "og:description",
         content:
