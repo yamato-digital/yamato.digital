@@ -12,7 +12,6 @@ export interface OtherProject {
   line: string;
 }
 
-// TODO(Ignacio): LOEWE es cliente pero no tiene caso en /clientes. Pasar reto, decisión y resultado (o una línea) para añadirlo.
 export const DIRECTION_CASES: DirectionCase[] = [
   {
     name: "APODEMIA",
@@ -23,27 +22,32 @@ export const DIRECTION_CASES: DirectionCase[] = [
     result: "+34% de GMV en 2025, con el objetivo puesto en duplicarlo en 2026.",
   },
   {
+    name: "LOEWE",
+    context: "Casa española de lujo.",
+    challenge: "Entrar en nuevos mercados.",
+    decision: "Les ayudamos con la estrategia Go-to-Market de esos nuevos mercados.",
+  },
+  {
     name: "Cegid · Contasimple",
     context: "Grupo europeo de software de gestión en la nube.",
     challenge: "Abrir nuevos canales para Contasimple y posicionarlo como SaaS de referencia en Verifactu.",
     decision: "Diagnóstico a fondo, detección de oportunidades de crecimiento y estrategia de nuevos canales.",
-    // TODO(Ignacio): resultado publicable de Cegid/Contasimple, si lo hay.
+    result: "Del top 10 al top 3 en clientes entre los SaaS de Verifactu, facturación y finanzas.",
   },
   {
     name: "1forAll",
     context: "Plataforma de IA todo-en-uno para generar voz, imagen y vídeo (antes Voice-Gen.ai).",
     challenge: "Hacer crecer el ARR y pasar de Voicegen a 1forAll.",
     decision:
-      "Dirigimos su estrategia de marketing y comunicación, pilotamos la transición de marca y montamos su CRM.",
-    // TODO(Ignacio): resultado publicable de 1forAll (ARR u otro), si lo hay.
+      "Dirigimos su estrategia de marketing y comunicación, cambiamos el naming y las funcionalidades de la app, pilotamos la transición de marca y montamos su CRM.",
+    result: "De unos pocos euros de MRR a más de 20.000 € al mes.",
   },
   {
     name: "Kincode",
     context: "Plataforma SaaS que mide y optimiza la cultura organizacional con IA.",
-    challenge: "Necesitaba un equipo de marketing estratégico.",
+    challenge: "Vender mejor en B2B.",
     decision:
-      "Hicimos de ese equipo: reestructuramos su web bilingüe y su copy, definimos propuesta de valor e ICP, construimos su thought leadership y ordenamos la operación con RACI y project tracking.",
-    // TODO(Ignacio): resultado publicable de Kincode, si lo hay.
+      "Hicimos de equipo de marketing estratégico: cambiamos su comunicación y su wording, reestructuramos su web bilingüe, definimos propuesta de valor e ICP, construimos su thought leadership y ordenamos la operación con RACI y project tracking.",
   },
   {
     name: "Beedigital",
@@ -51,7 +55,7 @@ export const DIRECTION_CASES: DirectionCase[] = [
     challenge: "Lanzar un nuevo programa.",
     decision:
       "Diseñamos y validamos el lanzamiento: propuesta de valor, segmentos early adopter, funnel de validación, KPIs y quick wins, con una campaña piloto para medir CPL.",
-    // TODO(Ignacio): resultado publicable del piloto de Beedigital (CPL u otro), si lo hay.
+    result: "Primera versión de la web de Beesible.",
   },
 ];
 
