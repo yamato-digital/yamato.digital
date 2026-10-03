@@ -1,5 +1,6 @@
 import { getAllPosts, getPost } from "@/lib/blog";
 import { SERVICE_LEVERS, SERVICES_INTRO } from "@/lib/services";
+import { DIRECTION_CASES, OTHER_PROJECTS } from "@/lib/clients";
 
 export const SITE_URL = "https://yamato.digital";
 
@@ -176,20 +177,16 @@ Red de más de 50 colaboradores senior (SEO, CRM, contenido, datos, desarrollo, 
 
 Algunos de ellos.
 
-- **APODEMIA** — Marca española de joyería y lifestyle. Marketing de punta a punta: estrategia, Paid Media, SEO, CRM y web. +34% de GMV en 2025.
-- **Cegid** — Software de gestión en la nube. Diagnóstico y estrategia de canales para Contasimple, con foco en Verifactu.
-- **IEB** — Escuela de finanzas. Auditoría del marketing y la comunicación global.
-- **Beedigital** — Lanzamiento de un nuevo programa: propuesta de valor, early adopters, funnel, KPIs y campaña piloto.
-- **Fundación Airamana** — Web corporativa y comunicación de Airamana ESCUCHA.
-- **Bindu Events** — Rediseño integral de web: diseño, contenidos, UX e implementación.
-- **1forAll** — Estrategia de marketing, transición de marca desde Voicegen y CRM.
-- **Kincode** — Web bilingüe, propuesta de valor, thought leadership y operación (RACI).
-- **Cedrion** — Narrative de fundraising: investor deck, one-pager y pitch.
-- **Clicollege** — Campañas digitales en los picos de captación (verano y curso escolar).
-- **SomosNLP** — Logo y comunicación del evento SomosNLP.
-- **Rem83** — Consultoría estratégica y de comunicación de marca para hardware técnico.
-- **Vivas Psicología** — Logo e identidad corporativa.
-- **Grupo Alquila** — Paid Media, SEO, landings y dashboard de rendimiento.
+## Donde dirigimos
+
+${DIRECTION_CASES.map(
+  (c) =>
+    `### ${c.name}\n\n${c.context}\n\n- **Reto:** ${c.challenge}\n- **Decisión:** ${c.decision}${c.result ? `\n- **Resultado:** ${c.result}` : ""}`,
+).join("\n\n")}
+
+## Otros proyectos
+
+${OTHER_PROJECTS.map((p) => `- **${p.name}** — ${p.line}`).join("\n")}
 
 ¿No ves tu nombre? [Llámanos](${SITE_URL}/contacto/index.md).
 `,
