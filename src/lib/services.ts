@@ -3,31 +3,30 @@ export const EXECUTION_MODEL =
 
 /*
  * TODO(Ignacio): ¿YAMATO ejecuta paid directamente o solo lo dirige?
- * Mientras no se decida, la web usa EXECUTION_MODEL, que no se moja sobre paid. Afecta a cuatro sitios:
- * la palanca Ejecución (abajo), el párrafo de Paid Media de /servicios, el principio 06 de /quienes-somos
- * y la línea de paid de "No encajarás si…" en la home.
+ * Mientras no se decida, la web usa EXECUTION_MODEL, que no se moja sobre paid. Afecta a tres sitios:
+ * la palanca Ejecución (abajo), el principio 06 de /quienes-somos y la línea de paid de "No encajarás si…"
+ * en la home.
  *
  * Variante A, ejecutamos paid:
  * - Ejecución: "SEO, GEO, CRM, web, automatización y paid. Lo ejecutamos sobre la estrategia que hemos marcado."
- * - /servicios: "¿Necesitas campañas de Paid Media? Las lanzamos dentro de la estrategia, con objetivos de negocio."
  * - Principio 06: "Ejecutamos Google Ads, SEO, CRM y web, siempre sobre la estrategia que hemos marcado."
  * - No encajarás si: "Quieres campañas de Paid sin una estrategia detrás."
  *
  * Variante B, dirigimos paid:
  * - Ejecución: "SEO, GEO, CRM, web y automatización los ejecutamos. El paid lo dirigimos: elegimos al partner,
  *   fijamos objetivos y respondemos del resultado."
- * - /servicios: "¿Lo que necesitas es Paid Media? Te ponemos con un partner que elegimos y dirigimos."
  * - Principio 06: "Ejecutamos SEO, CRM y web. El paid lo lleva un partner que elegimos y dirigimos."
  * - No encajarás si: "Solo necesitas a alguien que lance campañas de Paid."
  */
 
 export interface ServiceMode {
-  /** Ancla en /servicios. */
   id: string;
   name: string;
   /** Titular: la situación del cliente. */
   problem: string;
   body: string;
+  /** Cliente real que ilustra la modalidad. */
+  example: string;
 }
 
 export const SERVICE_MODES: ServiceMode[] = [
@@ -36,20 +35,45 @@ export const SERVICE_MODES: ServiceMode[] = [
     name: "Fractional CMO",
     problem: "Tienes equipo o proveedores y te falta dirección.",
     body: "Un responsable senior que prioriza, lidera y mide. Se sienta en tu comité y responde de los números.",
+    example: "1forAll. Dirigimos su estrategia de marketing y comunicación, y su cambio de marca.",
   },
   {
     id: "fractional-cmo-con-equipo",
     name: "Fractional CMO con equipo",
     problem: "Necesitas dirección y manos.",
     body: "Tu CMO y los especialistas que pide el plan, con el alcance definido desde el primer día.",
+    example: "Apodemia. Estrategia, paid, SEO, CRM y web, de punta a punta.",
   },
   {
     id: "proyecto-estrategico",
     name: "Proyecto estratégico",
     problem: "Ya tienes liderazgo y un reto concreto.",
     body: "Un lanzamiento, un mercado nuevo, una unidad de negocio sin foco. Entregables, plazo y cierre.",
+    example: "Contasimple (Cegid). Diagnóstico y estrategia para abrir canales nuevos y posicionarlo en Verifactu.",
   },
 ];
+
+/** Ancla de la sección de detalle del proyecto estratégico en /servicios. */
+export const STRATEGIC_PROJECT_ANCHOR = "proyecto-estrategico";
+
+export const STRATEGIC_PROJECT = {
+  title: "Cómo trabajamos un proyecto estratégico",
+  intro:
+    "Tu CMO y tu equipo llevan el día a día. Pero hay un proyecto que no cabe en su agenda o que pide a alguien que ya lo haya hecho antes. Lo lideramos de principio a fin, con un responsable, un plazo y un resultado que se puede medir.",
+  typical: [
+    "Lanzar un producto o una línea de negocio.",
+    "Entrar en un mercado nuevo.",
+    "Dar foco a una unidad de negocio que no termina de arrancar.",
+    "Implantar IA en marketing con un caso de uso medible.",
+    "Una segunda opinión independiente antes de una decisión grande.",
+  ],
+  steps: [
+    "Acordamos el reto, el entregable y la fecha de cierre.",
+    "Diagnóstico con tus datos y tu equipo.",
+    "Plan y ejecución, coordinados con tu CMO, que sigue al mando de su área.",
+    "Cierre: resultados, documentación y traspaso a tu equipo.",
+  ],
+};
 
 export const SERVICES_INTRO = "Sea cual sea la modalidad, tu responsable decide qué palancas activar. Y quién las ejecuta.";
 
@@ -77,15 +101,15 @@ export const SERVICE_LEVERS: ServiceLever[] = [
     problem: "Tu equipo ejecuta mucho y avanza poco.",
     lever: "Mentoría y gestión de equipos",
     serviceName: "Mentoría y gestión de equipos",
-    body: "No despedimos a nadie: les damos dirección, foco y un backlog priorizado por negocio.",
-    moves: "lo que de verdad mueve tu aguja. Lo definimos contigo, y no siempre es lo que crees",
+    body: "Tu equipo se queda. Le damos dirección, foco y un backlog priorizado por negocio.",
+    moves: "el resultado que saca tu equipo con la misma gente",
   },
   {
     problem: "Hay fecha de lanzamiento y nadie ha pensado el cómo.",
     lever: "Go-to-Market",
     serviceName: "Go-to-Market",
     body: "Diseñamos y ejecutamos la entrada al mercado. Con plan y con plazos.",
-    moves: "pipeline",
+    moves: "pipeline y primeras ventas",
   },
   {
     problem: "Creces, pero no sabes por qué. Ni cómo repetirlo.",
@@ -98,14 +122,14 @@ export const SERVICE_LEVERS: ServiceLever[] = [
     problem: "Todo el comité habla de IA y nadie la implanta.",
     lever: "IA aplicada",
     serviceName: "IA aplicada al marketing",
-    body: "La metemos donde ahorra dinero de verdad: automatizaciones, agentes, análisis, reporting. La IA no va a acabar con el marketing, va a acabar con el marketing mediocre.",
-    moves: "CAC",
+    body: "La metemos donde ahorra dinero de verdad: automatizaciones, agentes, análisis y reporting. La IA no va a acabar con el marketing; va a acabar con el marketing mediocre.",
+    moves: "horas y coste operativo",
   },
   {
-    problem: "Solo ejecutamos lo que hemos marcado.",
+    problem: "Ejecutamos lo que hemos marcado.",
     lever: "Ejecución",
     serviceName: "Ejecución",
-    body: `${EXECUTION_MODEL} SEO, GEO, CRM, web, automatización: siempre sobre la estrategia que hemos marcado.`,
+    body: `${EXECUTION_MODEL} SEO, GEO, CRM, web y automatización.`,
     moves: "conversión",
   },
 ];
