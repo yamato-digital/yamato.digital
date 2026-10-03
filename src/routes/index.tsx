@@ -87,8 +87,8 @@ const FIT_NO = [
 function Eyebrow({ children }: { children: React.ReactNode }) {
   return (
     <div>
-      <h2 className="text-base font-semibold uppercase tracking-[0.14em] text-ink">{children}</h2>
-      <div className="mt-2 h-[2px] w-10 bg-current opacity-40" />
+      <h2 className="text-base font-semibold text-ink">{children}</h2>
+      <span className="mt-3 block h-[2px] w-10 bg-current" />
     </div>
   );
 }
@@ -360,17 +360,18 @@ function Services() {
             <ol className="mt-12">
               {SERVICE_MODES.map((m, i) => (
                 <Reveal as="li" delay={i * 80} key={m.id} className="border-t border-ink/15 py-6 last:border-b">
-                  <span className="text-sm font-semibold uppercase tracking-[0.14em] text-muted-ink">
+                  <span className="text-base font-semibold text-ink">
                     <span className="tabular-nums">{String(i + 1).padStart(2, "0")}</span> · {m.name}
                   </span>
-                  <span className="mt-2 block font-serif text-[clamp(1.5rem,2.8vw,2.5rem)] leading-[1.1]">
+                  <span className="mt-3 block h-[2px] w-10 bg-current" />
+                  <span className="mt-4 block font-serif text-[clamp(1.5rem,2.8vw,2.5rem)] leading-[1.1]">
                     {m.problem}
                   </span>
                 </Reveal>
               ))}
             </ol>
             <p className="mt-10 text-lg leading-relaxed text-muted-ink md:text-xl">{SERVICES_INTRO}</p>
-            <p className="mt-4 text-sm font-semibold uppercase leading-relaxed tracking-[0.14em] text-muted-ink">
+            <p className="mt-4 text-base font-semibold leading-relaxed text-ink">
               {SERVICE_LEVERS.map((s) => s.lever).join(" · ")}
             </p>
           </div>

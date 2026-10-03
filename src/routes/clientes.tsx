@@ -26,7 +26,7 @@ export const Route = createFileRoute("/clientes")({
 function CaseRow({ label, children }: { label: string; children: React.ReactNode }) {
   return (
     <div className="grid gap-2 border-t border-ink/15 py-5 sm:grid-cols-[8rem_1fr] sm:gap-6">
-      <dt className="text-sm font-semibold uppercase tracking-[0.14em] text-muted-ink">{label}</dt>
+      <dt className="text-sm font-semibold text-muted-ink">{label}</dt>
       <dd className="text-lg leading-relaxed md:text-xl">{children}</dd>
     </div>
   );
@@ -49,11 +49,11 @@ function ClientesPage() {
         <section aria-labelledby="casos-direccion" className="mx-auto mt-16 max-w-5xl md:mt-24">
           <h2
             id="casos-direccion"
-            className="text-base font-semibold uppercase tracking-[0.14em] text-ink"
+            className="text-base font-semibold text-ink"
           >
             Donde dirigimos
           </h2>
-          <div className="mt-2 h-[2px] w-10 bg-current opacity-40" />
+          <span className="mt-3 block h-[2px] w-10 bg-current" />
 
           <div className="mt-12 space-y-20">
             {DIRECTION_CASES.map((c) => (
@@ -81,11 +81,11 @@ function ClientesPage() {
         <section aria-labelledby="otros-proyectos" className="mx-auto mt-24 max-w-5xl md:mt-32">
           <h2
             id="otros-proyectos"
-            className="text-base font-semibold uppercase tracking-[0.14em] text-ink"
+            className="text-base font-semibold text-ink"
           >
             Otros proyectos
           </h2>
-          <div className="mt-2 h-[2px] w-10 bg-current opacity-40" />
+          <span className="mt-3 block h-[2px] w-10 bg-current" />
           <ul className="mt-10 grid gap-x-10 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
             {OTHER_PROJECTS.map((p) => (
               <li key={p.name} className="border-t border-ink/15 pt-4">

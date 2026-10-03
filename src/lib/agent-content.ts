@@ -84,9 +84,7 @@ Si lo único que necesitas es hacer campañas de Paid Media, te ponemos en conta
 
 ¿Buscas quien dirija todo esto sin contratar a un CMO en plantilla? [Así trabajamos como Fractional CMO](${SITE_URL}/fractional-cmo/index.md).
 
-## Qué hacemos exactamente
-
-Tres formas de trabajar, según lo que ya tienes.
+## Tres formas de trabajar, según lo que ya tienes.
 
 ${SERVICE_MODES.map((m) => `### ${m.problem}\n\n*${m.name}.* ${m.body}`).join("\n\n")}
 

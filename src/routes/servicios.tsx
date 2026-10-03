@@ -87,12 +87,8 @@ function ServiciosPage() {
         <section className="pt-20 pb-28 md:pt-28 md:pb-36">
           <div className="mx-auto max-w-3xl">
             <h2 className="font-serif text-[clamp(2rem,4vw,3.25rem)] leading-tight tracking-[-0.01em]">
-              Vale. ¿Pero qué hacéis exactamente?
-            </h2>
-
-            <p className="mt-8 font-serif text-[clamp(1.5rem,2.4vw,2.25rem)] leading-[1.15] tracking-[-0.01em] text-muted-ink">
               Tres formas de trabajar, según lo que ya tienes.
-            </p>
+            </h2>
 
             <ol className="mt-14">
               {SERVICE_MODES.map((m, i) => (
