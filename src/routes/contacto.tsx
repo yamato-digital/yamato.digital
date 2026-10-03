@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
+import { CTA_LINKS } from "@/lib/cta";
 
 export const Route = createFileRoute("/contacto")({
   head: () => ({
@@ -32,7 +33,7 @@ function ContactoPage() {
         </h1>
         <div className="mt-12 flex flex-wrap items-center justify-center gap-6 text-lg font-medium md:gap-10 md:text-xl">
           <a
-            href="https://tally.so/r/rjgEpL"
+            href={CTA_LINKS.bookingUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="link-underline link-underline-hover"

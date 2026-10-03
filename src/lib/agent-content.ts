@@ -1,6 +1,7 @@
 import { getAllPosts, getPost } from "@/lib/blog";
 import { SERVICE_LEVERS, SERVICES_INTRO } from "@/lib/services";
 import { DIRECTION_CASES, OTHER_PROJECTS } from "@/lib/clients";
+import { CTA_LINKS } from "@/lib/cta";
 
 export const SITE_URL = "https://yamato.digital";
 
@@ -59,7 +60,7 @@ Más detalle: [Servicios](${SITE_URL}/servicios/index.md) · [Fractional CMO](${
 
 ## Contacto
 
-- [Reservar consulta](https://tally.so/r/rjgEpL)
+- [Reservar consulta](${CTA_LINKS.bookingUrl})
 - Email: [hola@yamato.digital](mailto:hola@yamato.digital)
 - [LinkedIn](https://www.linkedin.com/company/yamatodigital/)
 `,
@@ -228,7 +229,7 @@ Sin pipeline, sin reuniones, sin seguimientos. Tú haces la intro, nosotros el r
 
 Hablemos.
 
-- [Reservar consulta](https://tally.so/r/rjgEpL)
+- [Reservar consulta](${CTA_LINKS.bookingUrl})
 - Email: [hola@yamato.digital](mailto:hola@yamato.digital)
 - [LinkedIn](https://www.linkedin.com/company/yamatodigital/)
 `,
