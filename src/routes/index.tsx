@@ -6,6 +6,7 @@ import { RadiografiaCta } from "@/components/RadiografiaCta";
 import { SERVICE_LEVERS, SERVICES_INTRO } from "@/lib/services";
 import heroVideoMp4 from "@/assets/yamato-hero.mp4.asset.json";
 import heroPoster from "@/assets/yamato-hero-poster.jpg.asset.json";
+import ignacioAsset from "@/assets/ignacio-goni-yamato.webp.asset.json";
 
 const SITE_URL = "https://yamato.digital";
 const ASSET_ORIGIN = "https://yamato-digital.lovable.app";
@@ -261,6 +262,51 @@ function About() {
   );
 }
 
+function Signature() {
+  return (
+    <section className="border-t border-hairline px-6 py-28 sm:px-10 lg:px-20 xl:px-28">
+      <div className="mx-auto grid max-w-7xl items-center gap-12 md:grid-cols-12">
+        <Reveal className="md:col-span-4">
+          <img
+            src={assetUrl(ignacioAsset.url)}
+            alt="Ignacio Goñi, fundador de YAMATO"
+            width="1600"
+            height="1600"
+            loading="lazy"
+            decoding="async"
+            sizes="(min-width: 768px) 30vw, 100vw"
+            className="aspect-[4/5] w-full max-w-[360px] object-cover object-center grayscale"
+          />
+        </Reveal>
+        <Reveal delay={120} className="md:col-span-7 md:col-start-6">
+          <Eyebrow>Quién firma tu estrategia</Eyebrow>
+          <h3 className="mt-10 font-serif text-[clamp(2rem,4.5vw,4rem)] leading-[1.05] tracking-tight">
+            Una persona, con nombre y apellido.
+          </h3>
+          <p className="mt-6 text-lg leading-relaxed text-muted-ink md:text-xl">
+            Detrás, el especialista que tu problema necesita, no el que estaba libre.
+          </p>
+          <div className="mt-10 border-t border-ink/15 pt-6">
+            <p className="font-serif text-2xl">Ignacio Goñi, fundador</p>
+            <p className="mt-3 text-lg leading-relaxed text-muted-ink">
+              Ingeniero industrial que viene del sector aeronáutico y ha pasado por la expansión global de LOEWE.
+              <br />
+              Más de quince años dirigiendo marketing dentro de empresas, no asesorándolas desde fuera.
+            </p>
+          </div>
+          <Link
+            to="/quienes-somos"
+            className="group mt-8 inline-flex items-baseline font-serif text-[clamp(1.25rem,2vw,1.75rem)] leading-tight link-underline link-underline-hover"
+          >
+            Quiénes somos
+            <DoorArrow />
+          </Link>
+        </Reveal>
+      </div>
+    </section>
+  );
+}
+
 function Services() {
   return (
     <section id="servicios" className="bg-cream">
@@ -501,6 +547,7 @@ function Home() {
       <div className="mt-24" />
       <Marquee />
       <About />
+      <Signature />
       <Services />
       <Process />
       <PriceQuote />
