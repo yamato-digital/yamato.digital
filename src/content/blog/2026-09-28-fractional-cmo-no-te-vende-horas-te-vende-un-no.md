@@ -65,7 +65,7 @@ Y una cuarta, sobre el comité: si tu responsable de marketing externo no pierde
 
 ## La parte que nos incomoda a nosotros
 
-Esto lo firma una consultora que vende exactamente eso. [Ya explicamos en su día cómo funciona el modelo y cuánto cuesta](https://yamato.digital/blog/cmo-as-a-service), así que no vamos a repetir el catálogo.
+Esto lo firma una consultora que vende exactamente eso. [Cómo funciona el modelo y cuánto cuesta un CMO en plantilla ya lo contamos aquí](https://yamato.digital/fractional-cmo), así que no vamos a repetir el catálogo.
 
 Lo que sí toca es contestar a nuestras tres preguntas. Si las hacemos, nos las aplicamos.
 

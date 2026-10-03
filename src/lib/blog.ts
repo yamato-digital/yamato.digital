@@ -70,6 +70,15 @@ export function getPost(slug: string): BlogPost | undefined {
   return posts.find((p) => p.slug === slug);
 }
 
+// Posts retirados: el slug antiguo responde con 301 al destino para no perder enlaces ni posicionamiento.
+const REDIRECTED_POSTS: Record<string, string> = {
+  "cmo-as-a-service": "/fractional-cmo",
+};
+
+export function getPostRedirect(slug: string): string | undefined {
+  return REDIRECTED_POSTS[slug];
+}
+
 export function formatDate(iso: string): string {
   const d = new Date(iso);
   if (Number.isNaN(d.getTime())) return iso;

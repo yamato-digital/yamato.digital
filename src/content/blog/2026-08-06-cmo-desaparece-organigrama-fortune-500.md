@@ -65,7 +65,7 @@ Que esta conversación llega tarde a tu casa, porque tú nunca tuviste el proble
 
 Ejecución te sobra. Una agencia de paid, alguien llevando redes, una web que se rehace cada dos años y un CRM a medio configurar. Lo que no tienes es a nadie con criterio decidiendo qué de todo eso hay que matar.
 
-Lo interesante es que el Fortune 500 acaba de validar, sin querer, la parte que importa. No hace falta una nómina de seis cifras para tener dirección de marketing. Hace falta que alguien con criterio se siente donde se toman las decisiones. Sea interno, sea externo, sea unas horas al mes. [Eso es exactamente lo que hacemos](https://yamato.digital/blog/cmo-as-a-service), y lo que lo separa de una agencia más no son las horas. Es la silla.
+Lo interesante es que el Fortune 500 acaba de validar, sin querer, la parte que importa. No hace falta una nómina de seis cifras para tener dirección de marketing. Hace falta que alguien con criterio se siente donde se toman las decisiones. Sea interno, sea externo, sea unas horas al mes. [Eso es exactamente lo que hacemos](https://yamato.digital/fractional-cmo), y lo que lo separa de una agencia más no son las horas. Es la silla.
 
 Si tu responsable de marketing —interno, externo o inexistente— no se sienta en el comité de dirección, tu empresa ya ha borrado el cargo. Solo que no ha salido en Forrester.
 

@@ -1,11 +1,13 @@
-import { createFileRoute, Link, notFound } from "@tanstack/react-router";
+import { createFileRoute, Link, notFound, redirect } from "@tanstack/react-router";
 import { marked } from "marked";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
-import { getPost, formatDate } from "@/lib/blog";
+import { getPost, getPostRedirect, formatDate } from "@/lib/blog";
 
 export const Route = createFileRoute("/blog/$slug")({
   loader: ({ params }) => {
+    const target = getPostRedirect(params.slug);
+    if (target) throw redirect({ href: target, statusCode: 301 });
     const post = getPost(params.slug);
     if (!post) throw notFound();
     return { post };
