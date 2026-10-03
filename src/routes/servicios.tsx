@@ -29,14 +29,6 @@ function Arrow() {
   );
 }
 
-function Divider() {
-  return (
-    <div className="mx-auto max-w-3xl">
-      <div className="border-t border-ink/20" />
-    </div>
-  );
-}
-
 function Ordinal({ i }: { i: number }) {
   return <span className="tabular-nums">{String(i + 1).padStart(2, "0")}</span>;
 }
@@ -86,15 +78,13 @@ function ServiciosPage() {
           </div>
         </section>
 
-        <Divider />
-
         <section className="pt-20 pb-28 md:pt-28 md:pb-36">
           <div className="mx-auto max-w-3xl">
             <h2 className={H2}>Las tres formas de trabajar</h2>
 
             <ol className="mt-14">
               {SERVICE_MODES.map((m, i) => (
-                <li key={m.id} className="border-t border-ink/15 py-10 last:border-b">
+                <li key={m.id} className="py-10">
                   <p className={EYEBROW}>
                     <Ordinal i={i} /> · {m.name}
                   </p>
@@ -114,8 +104,6 @@ function ServiciosPage() {
           </div>
         </section>
 
-        <Divider />
-
         <section id={STRATEGIC_PROJECT_ANCHOR} className="scroll-mt-24 pt-20 pb-28 md:pt-28 md:pb-36">
           <div className="mx-auto max-w-3xl">
             <h2 className={H2}>{STRATEGIC_PROJECT.title}</h2>
@@ -124,7 +112,7 @@ function ServiciosPage() {
             <h3 className={`mt-14 ${EYEBROW}`}>Proyectos habituales</h3>
             <ul className="mt-6">
               {STRATEGIC_PROJECT.typical.map((t) => (
-                <li key={t} className={`border-t border-ink/15 py-4 last:border-b ${BODY}`}>
+                <li key={t} className={`py-2 ${BODY}`}>
                   {t}
                 </li>
               ))}
@@ -133,7 +121,7 @@ function ServiciosPage() {
             <h3 className={`mt-14 ${EYEBROW}`}>Cómo funciona</h3>
             <ol className="mt-6">
               {STRATEGIC_PROJECT.steps.map((step, i) => (
-                <li key={step} className="grid grid-cols-[3rem_1fr] border-t border-ink/15 py-4 last:border-b">
+                <li key={step} className="grid grid-cols-[3rem_1fr] py-2">
                   <span className="font-serif text-xl text-muted-ink">
                     <Ordinal i={i} />
                   </span>
@@ -144,8 +132,6 @@ function ServiciosPage() {
           </div>
         </section>
 
-        <Divider />
-
         <section className="pt-20 pb-28 md:pt-28 md:pb-36">
           <div className="mx-auto max-w-3xl">
             <h2 className={H2}>Las palancas</h2>
@@ -153,7 +139,7 @@ function ServiciosPage() {
 
             <ol className="mt-14">
               {SERVICE_LEVERS.map((s, i) => (
-                <li key={s.lever} className="border-t border-ink/15 py-10 last:border-b">
+                <li key={s.lever} className="py-10">
                   <p className={EYEBROW}>
                     <Ordinal i={i} /> · {s.lever}
                   </p>
@@ -170,8 +156,6 @@ function ServiciosPage() {
             </ol>
           </div>
         </section>
-
-        <Divider />
 
         <section className="pt-20 pb-28 md:pt-28 md:pb-36">
           <div className="mx-auto max-w-3xl">
