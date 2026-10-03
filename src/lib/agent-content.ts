@@ -1,5 +1,11 @@
 import { getAllPosts, getPost } from "@/lib/blog";
-import { SERVICE_LEVERS, SERVICE_MODES, SERVICES_INTRO, STRATEGIC_PROJECT } from "@/lib/services";
+import {
+  SERVICE_LEVERS,
+  SERVICE_MODES,
+  SERVICES_INTRO,
+  STRATEGIC_PROJECT,
+  STRATEGIC_PROJECT_ANCHOR,
+} from "@/lib/services";
 import { DIRECTION_CASES, OTHER_PROJECTS } from "@/lib/clients";
 import { CONTACT_BOOKING_LABEL, CTA_LINKS, RADIOGRAFIA_LABEL } from "@/lib/cta";
 import { FIRST_90_DAYS } from "@/lib/fractional-cmo";
@@ -75,14 +81,18 @@ Más detalle: [Servicios](${SITE_URL}/servicios/index.md) · [Fractional CMO](${
       "Tres formas de trabajar y seis palancas. Eliges cómo trabajamos según lo que ya tienes; qué palancas se activan lo decide tu responsable.",
     body: `# Tres formas de trabajar. Seis palancas.
 
-Eliges cómo trabajamos según lo que ya tienes. Qué palancas se activan lo decide tu responsable.
-
-[Así trabajamos como Fractional CMO](${SITE_URL}/fractional-cmo/index.md)
+- **La forma de trabajar:** la eliges tú, según lo que ya tienes.
+- **Las palancas:** las decide tu responsable, según lo que pide tu negocio.
 
 ## Las tres formas de trabajar
 
 ${SERVICE_MODES.map(
-  (m, i) => `### ${String(i + 1).padStart(2, "0")} · ${m.name}\n\n**${m.problem}**\n\n${m.body}\n\n*Ejemplo: ${m.example}*`,
+  (m, i) =>
+    `### ${String(i + 1).padStart(2, "0")} · ${m.name}\n\n**${m.problem}**\n\n${m.body}\n\n*Ejemplo: ${m.example}*\n\n${
+      m.id === STRATEGIC_PROJECT_ANCHOR
+        ? "Detalle: más abajo, en «Cómo trabajamos un proyecto estratégico»."
+        : `[Así trabajamos como Fractional CMO](${SITE_URL}/fractional-cmo/index.md)`
+    }`,
 ).join("\n\n")}
 
 ## ${STRATEGIC_PROJECT.title}
@@ -97,13 +107,13 @@ ${STRATEGIC_PROJECT.typical.map((t) => `- ${t}`).join("\n")}
 
 ${STRATEGIC_PROJECT.steps.map((s, i) => `${i + 1}. ${s}`).join("\n")}
 
-## Las palancas
+## Las seis palancas
 
 ${SERVICES_INTRO}
 
 ${SERVICE_LEVERS.map(
-  (s, i) =>
-    `### ${String(i + 1).padStart(2, "0")} · ${s.lever}\n\n**${s.problem}**\n\n${s.body}${s.moves ? `\n\n**Mueve:** ${s.moves}.` : ""}`,
+  (s) =>
+    `### ${s.lever}\n\n**${s.problem}**\n\n${s.body}${s.moves ? `\n\n**Mueve:** ${s.moves}.` : ""}`,
 ).join("\n\n")}
 
 ## ¿Cuál de las tres es la tuya?
