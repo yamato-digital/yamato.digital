@@ -4,8 +4,8 @@ import logoBlack from "@/assets/logo-yamato-black.png";
 
 const navItems = [
   { label: "Fractional CMO", to: "/fractional-cmo" },
-  { label: "Quiénes somos", to: "/quienes-somos" },
   { label: "Servicios", to: "/servicios" },
+  { label: "Quiénes somos", to: "/quienes-somos" },
   { label: "Clientes", to: "/clientes" },
   { label: "Blog", to: "/blog" },
   { label: "Contacto", to: "/contacto" },
