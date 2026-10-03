@@ -35,6 +35,13 @@ export const SERVICE_LEVERS: ServiceLever[] = [
     moves: "pipeline",
   },
   {
+    problem: "Creces, pero no sabes por qué. Ni cómo repetirlo.",
+    lever: "Growth",
+    serviceName: "Growth",
+    body: "Buscamos la palanca que de verdad hace crecer tu negocio, la probamos rápido y escalamos solo lo que funciona. Experimentos con hipótesis y número, no ocurrencias de lunes por la mañana.",
+    moves: "adquisición, conversión y retención",
+  },
+  {
     problem: "Todo el comité habla de IA y nadie la implanta.",
     lever: "IA aplicada",
     serviceName: "IA aplicada al marketing",

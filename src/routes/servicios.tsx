@@ -10,12 +10,12 @@ export const Route = createFileRoute("/servicios")({
       {
         name: "description",
         content:
-          "Cinco cosas, no cuarenta. Estrategia, mentoría, Go-to-Market, IA aplicada y ejecución para empresas que quieren resultados.",
+          "Seis cosas, no cuarenta. Estrategia, mentoría, Go-to-Market, Growth, IA aplicada y ejecución para empresas que quieren resultados.",
       },
       { property: "og:title", content: "Servicios — YAMATO" },
       {
         property: "og:description",
-        content: "Cinco cosas, no cuarenta. Estrategia, mentoría, Go-to-Market, IA aplicada y ejecución.",
+        content: "Seis cosas, no cuarenta. Estrategia, mentoría, Go-to-Market, Growth, IA aplicada y ejecución.",
       },
       { property: "og:url", content: "https://yamato.digital/servicios" },
     ],
@@ -43,15 +43,16 @@ function ServiciosPage() {
         <section className="pt-20 pb-24 md:pt-28 md:pb-32">
           <div className="mx-auto max-w-3xl">
             <h1 className="font-serif text-[clamp(2rem,4vw,3.25rem)] leading-tight tracking-[-0.01em]">
-              Cinco cosas, no cuarenta.
+              Seis cosas, no cuarenta.
             </h1>
             <div className="mt-10 space-y-7 font-serif text-[clamp(1.5rem,2.4vw,2.25rem)] leading-[1.15] tracking-[-0.01em] text-muted-ink">
               <p>
-                No hacemos de todo. Hacemos lo que mueve el negocio. Estrategia, equipos, lanzamientos, IA y ejecución.
+                No hacemos de todo. Hacemos lo que mueve el negocio. Estrategia, equipos, lanzamientos, crecimiento, IA y
+                ejecución.
               </p>
               <p>
                 Si necesitas a alguien que te haga cuarenta cosas regulares, no somos nosotros. Si quieres a alguien que
-                haga cinco bien y te diga la verdad por el camino, sigue leyendo.
+                haga seis bien y te diga la verdad por el camino, sigue leyendo.
               </p>
               <p>
                 Y si lo único que necesitas en hacer campañas de Paid Media, no te preocupes, te pondremos en contacto

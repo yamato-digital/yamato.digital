@@ -66,14 +66,14 @@ Más detalle: [Servicios](${SITE_URL}/servicios/index.md) · [Fractional CMO](${
   },
   "/servicios": {
     title: "Servicios — YAMATO",
-    description: "Cinco cosas, no cuarenta. Estrategia, mentoría, Go-to-Market, IA aplicada y ejecución.",
+    description: "Seis cosas, no cuarenta. Estrategia, mentoría, Go-to-Market, Growth, IA aplicada y ejecución.",
     body: `# Servicios — YAMATO
 
-Cinco cosas, *no cuarenta.*
+Seis cosas, *no cuarenta.*
 
-No hacemos de todo. Hacemos lo que mueve el negocio: estrategia, equipos, lanzamientos, IA y ejecución.
+No hacemos de todo. Hacemos lo que mueve el negocio: estrategia, equipos, lanzamientos, crecimiento, IA y ejecución.
 
-Si necesitas a alguien que te haga cuarenta cosas regulares, no somos nosotros. Si quieres a alguien que haga cinco bien y te diga la verdad por el camino, sigue leyendo.
+Si necesitas a alguien que te haga cuarenta cosas regulares, no somos nosotros. Si quieres a alguien que haga seis bien y te diga la verdad por el camino, sigue leyendo.
 
 Si lo único que necesitas es Paid Media, te pondremos en contacto con partners que lo hacen mejor que nosotros.
 
@@ -167,7 +167,7 @@ Debajo, una red de más de 50 colaboradores senior (SEO, CRM, contenido, datos, 
 ## Código
 
 1. Te decimos las tres cosas: lo que haces bien, lo que no, y lo que no haces.
-2. Cinco cosas, no cuarenta.
+2. Seis cosas, no cuarenta.
 3. Independientes de verdad: no cobramos un porcentaje de tu inversión publicitaria.
 4. Quien piensa, firma.
 5. La IA es para lo aburrido.
@@ -313,7 +313,7 @@ export function buildLlmsTxt(): string {
 
   return `# YAMATO
 
-> YAMATO es un Fractional CMO independiente en Madrid: un director de marketing a tiempo parcial para empresas con producto validado. Desde ahí activa lo que haga falta: mentoría de equipos, Go-to-Market, IA aplicada y ejecución.
+> YAMATO es un Fractional CMO independiente en Madrid: un director de marketing a tiempo parcial para empresas con producto validado. Desde ahí activa lo que haga falta: mentoría de equipos, Go-to-Market, Growth, IA aplicada y ejecución.
 
 Si eres un agente o un LLM, pide las páginas en Markdown: añade \`/index.md\` a la URL o envía \`Accept: text/markdown\`. Índice ampliado: ${SITE_URL}/llms-full.txt
 

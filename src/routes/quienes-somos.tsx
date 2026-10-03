@@ -58,7 +58,7 @@ const PRINCIPLES = [
   },
   {
     n: "02",
-    title: "Cinco cosas, no cuarenta.",
+    title: "Seis cosas, no cuarenta.",
     body: "No hacemos de todo. Hacemos lo que mueve la aguja y dejamos fuera lo que solo engorda la factura. Si alguien te ofrece cuarenta servicios, no hace ninguno bien.",
   },
   {
