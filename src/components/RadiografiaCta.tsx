@@ -43,7 +43,10 @@ export function RadiografiaCta({
         {...externalProps(href)}
       >
         {RADIOGRAFIA_LABEL}
-        <span aria-hidden className="ml-2 inline-block transition-transform group-hover:translate-x-1">
+        <span
+          aria-hidden
+          className="ml-2 inline-block transition-transform group-hover:translate-x-1"
+        >
           →
         </span>
       </a>
