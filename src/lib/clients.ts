@@ -22,13 +22,7 @@ export const DIRECTION_CASES: DirectionCase[] = [
     result: "+34% de GMV en 2025, con el objetivo puesto en duplicarlo en 2026.",
   },
   {
-    name: "LOEWE",
-    context: "Casa española de lujo.",
-    challenge: "Entrar en nuevos mercados.",
-    decision: "Les ayudamos con la estrategia Go-to-Market de esos nuevos mercados.",
-  },
-  {
-    name: "Cegid · Contasimple",
+    name: "Contasimple by Shine",
     context: "Grupo europeo de software de gestión en la nube.",
     challenge: "Abrir nuevos canales para Contasimple y posicionarlo como SaaS de referencia en Verifactu.",
     decision: "Diagnóstico a fondo, detección de oportunidades de crecimiento y estrategia de nuevos canales.",
