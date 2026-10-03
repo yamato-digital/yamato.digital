@@ -7,6 +7,14 @@ const URL = "https://yamato.digital/fractional-cmo";
 
 const WHEN_IT_MAKES_SENSE = "¿Cuándo tiene sentido y cuándo no?";
 
+/*
+ * Reglas de dedicación. No publicar nada de esto hasta decidirlo.
+ * TODO(Ignacio): máximo de clientes a la vez.
+ * TODO(Ignacio): horas mínimas por cliente.
+ * TODO(Ignacio): quién se sienta en el comité de dirección del cliente (siempre Ignacio o también otros perfiles).
+ * TODO(Ignacio): el paquete de 10 h/mes puede leerse como "asesoría, no fractional". Decidir cómo se nombra antes de publicarlo.
+ */
+
 const FAQ = [
   {
     q: "¿Qué es un Fractional CMO?",
