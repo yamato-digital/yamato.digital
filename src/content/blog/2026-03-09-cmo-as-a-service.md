@@ -1,4 +1,5 @@
 ---
+# TODO(Ignacio): decidir si este post se actualiza a "Fractional CMO" o se redirige a /fractional-cmo. Es el único sitio donde queda "CMO as a Service".
 slug: "cmo-as-a-service"
 title: "CMO as a service: qué es, cuánto cuesta y por qué está reemplazando a las agencias"
 date: "2026-03-09"

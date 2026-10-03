@@ -39,7 +39,7 @@ export const Route = createFileRoute("/fractional-cmo")({
       {
         name: "keywords",
         content:
-          "fractional CMO, CMO as a service, director de marketing externo, dirección de marketing externa, CMO externo España, cuánto cuesta un CMO",
+          "fractional CMO, director de marketing externo, director de marketing a tiempo parcial, CMO externo España, cuánto cuesta un CMO",
       },
       { property: "og:title", content: "Fractional CMO en España — Dirección de marketing externa" },
       {

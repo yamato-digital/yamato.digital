@@ -12,18 +12,18 @@ const assetUrl = (url: string) => `${ASSET_ORIGIN}${url}`;
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "YAMATO — Consultora de marketing independiente" },
+      { title: "YAMATO | Fractional CMO independiente en Madrid" },
       {
         name: "description",
         content:
-          "YAMATO es una consultora de marketing independiente (y sincera): dirección de marketing externa y Fractional CMO desde Madrid. Dirigimos, asesoramos y ejecutamos lo que mueve tu negocio.",
+          "Fractional CMO independiente en Madrid. Un director de marketing a tiempo parcial que se sienta en tu comité y responde del número. Sin nómina, sin comisiones.",
       },
       { property: "og:site_name", content: "YAMATO" },
-      { property: "og:title", content: "YAMATO — Consultora de marketing independiente" },
+      { property: "og:title", content: "YAMATO | Fractional CMO independiente en Madrid" },
       {
         property: "og:description",
         content:
-          "YAMATO es una consultora de marketing independiente (y sincera): dirección de marketing externa y Fractional CMO desde Madrid. Dirigimos, asesoramos y ejecutamos lo que mueve tu negocio.",
+          "Fractional CMO independiente en Madrid. Un director de marketing a tiempo parcial que se sienta en tu comité y responde del número. Sin nómina, sin comisiones.",
       },
 
 
@@ -44,7 +44,7 @@ export const Route = createFileRoute("/")({
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "VideoObject",
-          name: "YAMATO — Consultora de marketing independiente",
+          name: "YAMATO | Fractional CMO independiente en Madrid",
           description: "Dirigimos, asesoramos y ejecutamos lo que mueve tu negocio. De la startup a la corporación.",
           thumbnailUrl: assetUrl(heroPoster.url),
           contentUrl: assetUrl(heroVideoMp4.url),
@@ -141,7 +141,7 @@ function HeroMedia() {
       <Reveal variant="scale" className="relative aspect-[16/9] w-full overflow-hidden bg-ink/95">
         <img
           src={assetUrl(heroPoster.url)}
-          alt="YAMATO — Consultora de marketing independiente"
+          alt="YAMATO | Fractional CMO independiente en Madrid"
           className="absolute inset-0 h-full w-full object-cover"
           loading="eager"
         />
@@ -155,7 +155,7 @@ function HeroMedia() {
           loop
           playsInline
           preload="auto"
-          aria-label="YAMATO — Consultora de marketing independiente"
+          aria-label="YAMATO | Fractional CMO independiente en Madrid"
         >
           <source src={assetUrl(heroVideoMp4.url)} type="video/mp4" />
         </video>

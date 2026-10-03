@@ -14,7 +14,7 @@ export const Route = createFileRoute("/quienes-somos")({
       {
         name: "description",
         content:
-          "Un CMO que firma lo que piensa y un equipo senior que no tienes que fichar. Consultora de marketing independiente.",
+          "Un CMO que firma lo que piensa y un equipo senior que no tienes que fichar. Fractional CMO independiente en Madrid.",
       },
       { property: "og:title", content: "Quiénes somos — YAMATO" },
       {
@@ -120,7 +120,7 @@ function Hero() {
           </p>
           <p>Así que montamos lo contrario.</p>
           <p className="text-muted-ink">
-            Somos una <span className="font-serif">consultora de marketing independiente</span>. Entramos en tu empresa como
+            Somos tu <span className="font-serif">Fractional CMO independiente</span>. Entramos en tu empresa como
             entraría un director de marketing —pensamos la estrategia, marcamos los KPIs, lideramos la operación— pero
             sin que tengas que ficharlo ni pagarle 100.000 € al año. La cabeza de un CMO con las manos de un equipo
             senior. Las horas que necesites. Ni una más.

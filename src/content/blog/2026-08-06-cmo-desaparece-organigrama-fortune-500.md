@@ -4,7 +4,7 @@ title: "El Fortune 500 está borrando el título de CMO. Y tú ni siquiera lo te
 date: "2026-08-06"
 cover: "https://images.unsplash.com/photo-1517502884422-41eaead166d4?ixlib=rb-4.1.0&q=90&fm=jpg&crop=entropy&cs=srgb&w=1920"
 excerpt: "Solo el 36% de las Fortune 500 mantiene el cargo de CMO, frente al 49% hace un año. No es rotación: es borrado. Y lo que dice de tu empresa incomoda más."
-keywords: "CMO, fractional CMO, CMO as a service, dirección de marketing, Fortune 500, organigrama de marketing, chief growth officer, marketing B2B"
+keywords: "CMO, fractional CMO, dirección de marketing, Fortune 500, organigrama de marketing, chief growth officer, marketing B2B"
 ---
 
 Todos los años sale el mismo titular: los CMO duran poco. Rotación, carrusel, tenure de tres años y pico. El sector lo lee como quien mira el parte meteorológico y sigue con su día.

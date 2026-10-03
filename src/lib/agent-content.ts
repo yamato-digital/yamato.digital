@@ -9,10 +9,10 @@ export interface AgentDocument {
 
 const PAGES: Record<string, { title: string; description: string; body: string }> = {
   "/": {
-    title: "YAMATO — Consultora de marketing independiente",
+    title: "YAMATO | Fractional CMO independiente en Madrid",
     description:
-      "Consultora de marketing independiente (y sincera): dirección de marketing externa y Fractional CMO desde Madrid.",
-    body: `# YAMATO — Consultora de marketing independiente
+      "Fractional CMO independiente en Madrid. Un director de marketing a tiempo parcial que se sienta en tu comité y responde del número.",
+    body: `# YAMATO | Fractional CMO independiente en Madrid
 
 > Dirigimos, asesoramos y ejecutamos lo que mueve tu negocio. De la startup a la corporación.
 
@@ -149,7 +149,7 @@ Un CMO que firma lo que piensa. Y un equipo que no tienes que fichar.
 
 YAMATO no nació de una pasión por el marketing. Nació de un cabreo: empresas con buen producto pagando a agencias que vendían humo. Montamos lo contrario.
 
-Somos una consultora de marketing independiente. Entramos como un director de marketing —estrategia, KPIs, operación— sin que tengas que ficharlo ni pagarle 100.000 € al año.
+Somos tu Fractional CMO independiente. Entramos como un director de marketing —estrategia, KPIs, operación— sin que tengas que ficharlo ni pagarle 100.000 € al año.
 
 ## Quién dirige esto
 
@@ -316,7 +316,7 @@ export function buildLlmsTxt(): string {
 
   return `# YAMATO
 
-> YAMATO es una consultora de marketing independiente que actúa como dirección de marketing (CMO) externa para empresas con producto validado: estrategia, mentoría de equipos, Go-to-Market, IA aplicada y ejecución.
+> YAMATO es un Fractional CMO independiente en Madrid: un director de marketing a tiempo parcial para empresas con producto validado. Desde ahí activa lo que haga falta: mentoría de equipos, Go-to-Market, IA aplicada y ejecución.
 
 Si eres un agente o un LLM, pide las páginas en Markdown: añade \`/index.md\` a la URL o envía \`Accept: text/markdown\`. Índice ampliado: ${SITE_URL}/llms-full.txt
 

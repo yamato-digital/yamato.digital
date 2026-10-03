@@ -5,12 +5,12 @@ import { Footer } from "@/components/Footer";
 export const Route = createFileRoute("/contacto")({
   head: () => ({
     meta: [
-      { title: "Contacto — YAMATO — Consultora de marketing" },
+      { title: "Contacto — YAMATO | Fractional CMO independiente" },
       {
         name: "description",
         content: "Hablemos. YAMATO es tu dirección de marketing independiente. Email y LinkedIn.",
       },
-      { property: "og:title", content: "Contacto — YAMATO — Consultora de marketing" },
+      { property: "og:title", content: "Contacto — YAMATO | Fractional CMO independiente" },
       {
         property: "og:description",
         content: "Hablemos. YAMATO es tu dirección de marketing independiente.",
