@@ -8,15 +8,16 @@ export interface AgentDocument {
 }
 
 const PAGES: Record<string, { title: string; description: string; body: string }> = {
+  // TODO(Ignacio): el titular repite "sin juniors" de la home. Si no se confirma, quitarlo aquí también.
   "/": {
     title: "YAMATO | Fractional CMO independiente en Madrid",
     description:
       "Fractional CMO independiente en Madrid. Un director de marketing a tiempo parcial que se sienta en tu comité y responde del número.",
     body: `# YAMATO | Fractional CMO independiente en Madrid
 
-> Dirigimos, asesoramos y ejecutamos lo que mueve tu negocio. De la startup a la corporación.
+> Un director de marketing con más de diez años al mando, dentro de tu comité, las horas que necesites.
 
-Hola. Somos una consultora de marketing independiente (y sincera).
+Tu Fractional CMO. Sin nómina, sin comisiones, sin juniors.
 
 La cabeza de un CMO con más de una década dirigiendo, más las manos de un equipo senior. Dentro de tu empresa, las horas que necesites. Ni un freelance que hace campañas sueltas, ni un consultor que suelta el informe y desaparece.
 
