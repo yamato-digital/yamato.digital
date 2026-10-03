@@ -60,6 +60,7 @@ export const Route = createFileRoute("/")({
   component: Home,
 });
 
+// TODO(Ignacio): LOEWE sale en el carrusel pero no en /clientes, y en /quienes-somos aparece como trayectoria ("la expansión global de LOEWE"). Confirmar si es cliente de YAMATO o ex-empresa.
 const CLIENTS_ROW_1 = ["LOEWE", "Cedrion", "Kincode", "Bindu Events", "Beedigital", "Cegid"];
 const CLIENTS_ROW_2 = ["APODEMIA", "Airamana", "1forAll", "IEB", "Grupo Alquila"];
 const CLIENTS_ROW_3 = ["Clicollege", "Vivas Psicología", "SomosNLP", "Rem83"];
