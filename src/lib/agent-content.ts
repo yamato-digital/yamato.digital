@@ -30,7 +30,7 @@ No cobramos un porcentaje de lo que inviertes en publicidad. Ganamos cuando tú 
 
 ## Servicios
 
-Tres formas de trabajar, según lo que ya tienes.
+### Tres formas de trabajar, según lo que ya tienes.
 
 ${SERVICE_MODES.map((m) => `- **${m.name}.** ${m.problem}`).join("\n")}
 
