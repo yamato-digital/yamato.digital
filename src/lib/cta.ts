@@ -8,12 +8,12 @@ export const CTA_LINKS = {
 
 const IS_FORM = CTA_LINKS.bookingType === "form";
 
-export const RADIOGRAFIA_LABEL = IS_FORM ? "Solicita tu Radiografía gratis" : "Pide tu Radiografía gratis";
+export const RADIOGRAFIA_LABEL = "Quiero contactar";
 
-export const CONTACT_BOOKING_LABEL = IS_FORM ? "Solicitar una primera conversación." : "Reservar consulta.";
+export const CONTACT_BOOKING_LABEL = IS_FORM ? "Solicitar una primera conversación." : "Reservar llamada.";
 
 export function radiografiaHref(): string {
-  return CTA_LINKS.bookingUrl || CTA_LINKS.fallback;
+  return CTA_LINKS.fallback;
 }
 
 export function isExternalUrl(href: string): boolean {

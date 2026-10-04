@@ -26,6 +26,8 @@ Quien piensa tu estrategia es quien la firma, y se sienta en tu comité de direc
 
 Nos medimos por lo que mueves en tu negocio.
 
+No cobramos un porcentaje de lo que inviertes en publicidad. Ganamos cuando tú ganas.
+
 ## Servicios
 
 Tres formas de trabajar, según lo que ya tienes.
