@@ -1,3 +1,4 @@
+import { useLayoutEffect, useRef, useState } from "react";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
@@ -62,22 +63,9 @@ export const Route = createFileRoute("/")({
   component: Home,
 });
 
-const CLIENTS = [
-  "Cedrion",
-  "Kincode",
-  "Bindu Events",
-  "Beedigital",
-  "Contasimple by Shine",
-  "APODEMIA",
-  "Airamana",
-  "1forAll",
-  "IEB",
-  "Grupo Alquila",
-  "Clicollege",
-  "Vivas Psicología",
-  "SomosNLP",
-  "Rem83",
-];
+const CLIENTS_ROW_1 = ["Cedrion", "Kincode", "Bindu Events", "Beedigital", "Contasimple by Shine"];
+const CLIENTS_ROW_2 = ["LOEWE", "APODEMIA", "Airamana", "1forAll", "IEB", "Grupo Alquila"];
+const CLIENTS_ROW_3 = ["Clicollege", "Vivas Psicología", "SomosNLP", "Rem83"];
 
 const FIT_YES = [
   "Quieres crecer y nadie piensa tu marketing a nivel estratégico.",
@@ -163,22 +151,86 @@ function DoorArrow() {
 }
 
 function Marquee() {
-  const loop = [...CLIENTS, ...CLIENTS];
+  const viewportRef = useRef<HTMLDivElement>(null);
+  const trackRef = useRef<HTMLDivElement>(null);
+  const loeweRef = useRef<HTMLSpanElement>(null);
+  const [shift, setShift] = useState(0);
+  // Copias por mitad de la fila central. LOEWE se centra en una copia interior, no en la primera,
+  // para que el desplazamiento no deje un tramo vacío a la izquierda.
+  const [setsPerHalf, setSetsPerHalf] = useState(2);
+  const rows = [
+    { items: CLIENTS_ROW_1, reverse: true },
+    { items: CLIENTS_ROW_2, reverse: false, featured: true },
+    { items: CLIENTS_ROW_3, reverse: true },
+  ];
+
+  useLayoutEffect(() => {
+    const measure = () => {
+      const viewport = viewportRef.current;
+      const track = trackRef.current;
+      const loewe = loeweRef.current;
+      if (!viewport || !track || !loewe) return;
+
+      const animation = track.style.animation;
+      track.style.animation = "none";
+      const loeweRect = loewe.getBoundingClientRect();
+      const loeweX = loeweRect.left - track.getBoundingClientRect().left;
+      const viewportWidth = viewport.clientWidth;
+      const wordWidth = loeweRect.width;
+      const copyIndex = Math.floor(setsPerHalf / 2);
+      const setWidth = copyIndex > 0 ? loeweX / copyIndex : 0;
+      track.style.animation = animation;
+      if (setWidth <= 0) return;
+
+      const half = setsPerHalf * setWidth;
+      const coversLeft = loeweX >= viewportWidth / 2 - wordWidth / 2;
+      const coversRight = half - loeweX >= viewportWidth / 2 + wordWidth / 2;
+      if (!coversLeft || !coversRight) {
+        const next = Math.max(setsPerHalf + 2, Math.ceil((viewportWidth + wordWidth) / setWidth) + 1);
+        if (next !== setsPerHalf) setSetsPerHalf(next);
+        return;
+      }
+      setShift(viewportWidth / 2 - wordWidth / 2 - loeweX);
+    };
+    measure();
+    document.fonts.ready.then(measure);
+    window.addEventListener("resize", measure);
+    return () => window.removeEventListener("resize", measure);
+  }, [setsPerHalf]);
 
   return (
     <section aria-label="Han trabajado con nosotros" className="py-12">
       <p className="px-6 text-base font-semibold text-ink sm:px-10 lg:px-20 xl:px-28">Han trabajado con nosotros</p>
-      <div className="mt-6 overflow-hidden py-4">
-        <div className="marquee-track font-serif text-[clamp(1.75rem,4.5vw,3.5rem)] leading-[1.2] whitespace-nowrap py-1">
-          {loop.map((c, i) => (
-            <span key={i} className="flex items-center gap-10">
-              {c}
-              <span aria-hidden className="text-muted-ink">
-                ◦
-              </span>
-            </span>
-          ))}
-        </div>
+      <div className="mt-6">
+        {rows.map((row, idx) => {
+          const sets = row.featured ? setsPerHalf * 2 : 4;
+          const doubled = Array.from({ length: sets }, () => row.items).flat();
+          const loeweIndex = row.featured ? Math.floor(setsPerHalf / 2) * row.items.length : -1;
+          const track = (
+            <div
+              ref={row.featured ? trackRef : undefined}
+              className={`${row.reverse ? "marquee-track-reverse" : "marquee-track"} font-serif text-[clamp(1.75rem,4.5vw,3.5rem)] leading-[1.2] whitespace-nowrap py-1`}
+            >
+              {doubled.map((c, i) => (
+                <span key={i} className="flex items-center gap-10">
+                  {i === loeweIndex ? <span ref={loeweRef}>{c}</span> : c}
+                  <span aria-hidden className="text-muted-ink">
+                    ◦
+                  </span>
+                </span>
+              ))}
+            </div>
+          );
+          return (
+            <div
+              key={idx}
+              ref={row.featured ? viewportRef : undefined}
+              className="overflow-hidden py-4"
+            >
+              {row.featured ? <div style={{ transform: `translateX(${shift}px)` }}>{track}</div> : track}
+            </div>
+          );
+        })}
       </div>
     </section>
   );
@@ -279,9 +331,9 @@ function Services() {
             <Eyebrow>Nuestros servicios</Eyebrow>
           </div>
           <div className="md:col-span-8 md:col-start-5">
-            <p className="font-serif text-[clamp(1.5rem,2.6vw,2.25rem)] leading-[1.15] tracking-tight text-muted-ink">
+            <h3 className="font-serif text-[clamp(2rem,4.5vw,4rem)] leading-[1.05] tracking-tight">
               Tres formas de trabajar, según lo que ya tienes.
-            </p>
+            </h3>
             <ol className="mt-12">
               {SERVICE_MODES.map((m, i) => (
                 <Reveal as="li" delay={i * 80} key={m.id} className="py-6">
@@ -514,12 +566,12 @@ function Home() {
       <div className="mt-24" />
       <Marquee />
       <About />
-      <Signature />
       <Services />
       <Process />
       <PriceQuote />
       <EnterpriseBlock />
       <Fit />
+      <Signature />
       <Closing />
 
       <Footer />
