@@ -1,6 +1,8 @@
 {
   "redirects": [
     { "source": "/pulso-diario", "destination": "https://pulsodiario.igonigonzalez.com/", "permanent": true },
-    { "source": "/pulso-diario/", "destination": "https://pulsodiario.igonigonzalez.com/", "permanent": true }
+    { "source": "/pulso-diario/", "destination": "https://pulsodiario.igonigonzalez.com/", "permanent": true },
+    { "source": "/blog/blog-yamato", "destination": "/blog", "permanent": true },
+    { "source": "/clientes/:path+", "destination": "/clientes", "permanent": true }
   ]
 }
