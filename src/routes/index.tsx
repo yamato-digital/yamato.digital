@@ -62,9 +62,22 @@ export const Route = createFileRoute("/")({
   component: Home,
 });
 
-const CLIENTS_ROW_1 = ["Cedrion", "Kincode", "Bindu Events", "Beedigital", "Contasimple by Shine"];
-const CLIENTS_ROW_2 = ["APODEMIA", "Airamana", "1forAll", "IEB", "Grupo Alquila"];
-const CLIENTS_ROW_3 = ["Clicollege", "Vivas Psicología", "SomosNLP", "Rem83"];
+const CLIENTS = [
+  "Cedrion",
+  "Kincode",
+  "Bindu Events",
+  "Beedigital",
+  "Contasimple by Shine",
+  "APODEMIA",
+  "Airamana",
+  "1forAll",
+  "IEB",
+  "Grupo Alquila",
+  "Clicollege",
+  "Vivas Psicología",
+  "SomosNLP",
+  "Rem83",
+];
 
 const FIT_YES = [
   "Quieres crecer y nadie piensa tu marketing a nivel estratégico.",
@@ -150,34 +163,22 @@ function DoorArrow() {
 }
 
 function Marquee() {
-  const rows = [
-    { items: CLIENTS_ROW_1, reverse: true },
-    { items: CLIENTS_ROW_2, reverse: false },
-    { items: CLIENTS_ROW_3, reverse: true },
-  ];
+  const loop = [...CLIENTS, ...CLIENTS];
 
   return (
-    <section aria-label="Trabajamos con" className="py-12">
-      <div>
-        {rows.map((row, idx) => {
-          const doubled = Array.from({ length: 4 }, () => row.items).flat();
-          return (
-            <div key={idx} className="overflow-hidden py-4">
-              <div
-                className={`${row.reverse ? "marquee-track-reverse" : "marquee-track"} font-serif text-[clamp(1.75rem,4.5vw,3.5rem)] leading-[1.2] whitespace-nowrap py-1`}
-              >
-                {doubled.map((c, i) => (
-                  <span key={i} className="flex items-center gap-10">
-                    {c}
-                    <span aria-hidden className="text-muted-ink">
-                      ◦
-                    </span>
-                  </span>
-                ))}
-              </div>
-            </div>
-          );
-        })}
+    <section aria-label="Han trabajado con nosotros" className="py-12">
+      <p className="px-6 text-base font-semibold text-ink sm:px-10 lg:px-20 xl:px-28">Han trabajado con nosotros</p>
+      <div className="mt-6 overflow-hidden py-4">
+        <div className="marquee-track font-serif text-[clamp(1.75rem,4.5vw,3.5rem)] leading-[1.2] whitespace-nowrap py-1">
+          {loop.map((c, i) => (
+            <span key={i} className="flex items-center gap-10">
+              {c}
+              <span aria-hidden className="text-muted-ink">
+                ◦
+              </span>
+            </span>
+          ))}
+        </div>
       </div>
     </section>
   );
@@ -195,9 +196,7 @@ function About() {
           delay={120}
           className="mt-10 font-serif text-[clamp(2rem,4.5vw,4rem)] leading-[1.05] tracking-tight"
         >
-          Tu dirección de marketing.
-          <br />
-          Tu Fractional CMO.
+          Dirección de verdad, no un proveedor más.
         </Reveal>
         <div className="mt-10 space-y-6 text-lg leading-relaxed md:text-xl text-muted-ink">
           <Reveal as="p" delay={200}>
@@ -332,7 +331,7 @@ function Process() {
     {
       n: "03",
       title: "Arrancamos",
-      body: "Si aceptas, cosa que suele ser lo habitual, estamos trabajando en tu proyecto en 1 semana.",
+      body: "Si hay encaje, arrancamos en una semana. Sin permanencias.",
     },
     {
       n: "04",
@@ -385,6 +384,13 @@ function PriceQuote() {
         <Reveal as="p" delay={220} className="mt-8 max-w-2xl text-lg leading-relaxed text-muted-ink md:text-xl">
           Por lo mismo que te cuesta un perfil junior, YAMATO te pone un CMO con más de una década dirigiendo marketing.
           Menos horas, sí. Pero ninguna se pierde en que un junior aprenda a tu costa.
+        </Reveal>
+        <Reveal
+          as="p"
+          delay={320}
+          className="mt-10 max-w-3xl font-serif text-[clamp(1.5rem,2.4vw,2.25rem)] leading-[1.15] tracking-tight"
+        >
+          No cobramos un porcentaje de lo que inviertes en publicidad. Ganamos cuando tú ganas.
         </Reveal>
       </div>
     </section>
