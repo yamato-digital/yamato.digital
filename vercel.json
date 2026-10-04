@@ -1,0 +1,6 @@
+{
+  "redirects": [
+    { "source": "/pulso-diario", "destination": "https://pulsodiario.igonigonzalez.com/", "permanent": true },
+    { "source": "/pulso-diario/", "destination": "https://pulsodiario.igonigonzalez.com/", "permanent": true }
+  ]
+}
