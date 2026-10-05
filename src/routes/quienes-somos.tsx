@@ -61,18 +61,25 @@ const TEAM = [
     portrait: PORTRAITS.ignacio,
   },
   {
-    name: "José Luis García Benito",
-    role: "Business Development Representative",
-    bio: "Usa su red y sus contactos para identificar clientes potenciales y agendarles la reunión comercial.",
-    focus: "Desarrollo de negocio",
-    portrait: PORTRAITS.joseLuis,
-  },
-  {
     name: "Elena González-Blanco",
     role: "Advisor",
     bio: "Head of AI for Digital Natives en Microsoft EMEA. Cofundadora de Clibrain y PhD por Harvard. Nos lleva la contraria cuando nos equivocamos.",
     focus: "Inteligencia artificial",
     portrait: PORTRAITS.elena,
+  },
+  {
+    name: "Pedro Anós",
+    role: "Advisor",
+    bio: "Global Marketing Director en LOEWE Perfumes. Dirige el marketing de una marca de lujo en todo el mundo, y nos pone el listón ahí.",
+    focus: "Lujo · Perfumería · Marca",
+    portrait: PORTRAITS.pedro,
+  },
+  {
+    name: "José Luis García Benito",
+    role: "Business Development Representative",
+    bio: "Senior Associate en PwC. Usa su red y sus contactos para identificar clientes potenciales y agendarles la reunión comercial.",
+    focus: "Desarrollo de negocio",
+    portrait: PORTRAITS.joseLuis,
   },
 ] as const;
 
@@ -173,16 +180,16 @@ function Team() {
           </div>
           <p className="max-w-md text-lg leading-relaxed text-muted-ink">
             YAMATO no es solo su fundador. Cada uno responde de lo suyo con nombre y apellido: quien dirige tu
-            estrategia, quien te abre la puerta y quien nos lleva la contraria.
+            estrategia, quienes nos llevan la contraria y quien te abre la puerta.
           </p>
         </div>
-        <ul className="mt-20 grid gap-x-10 gap-y-16 sm:grid-cols-2 lg:grid-cols-3">
+        <ul className="mt-20 grid gap-x-8 gap-y-16 sm:grid-cols-2 lg:grid-cols-4">
           {TEAM.map((member, i) => (
             <li key={member.name}>
               <img
                 src={member.portrait.src}
                 srcSet={member.portrait.srcSet}
-                sizes="(min-width: 1280px) 340px, (min-width: 1024px) 28vw, (min-width: 640px) 44vw, 100vw"
+                sizes="(min-width: 1280px) 260px, (min-width: 1024px) 20vw, (min-width: 640px) 44vw, 100vw"
                 alt={member.portrait.alt}
                 width={member.portrait.width}
                 height={member.portrait.height}
