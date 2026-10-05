@@ -75,6 +75,13 @@ const TEAM = [
     portrait: PORTRAITS.pedro,
   },
   {
+    name: "Mario Garrido Torres",
+    role: "Advisor",
+    bio: "Vice President, Lead Software Engineer en JPMorgan Chase. Antes, ingeniero senior en Clibrain y tech lead en Ninety Nine. Nos ayuda a que la tecnología y la IA aguanten en producción, no solo en la demo.",
+    focus: "Ingeniería · IA · Arquitectura",
+    portrait: PORTRAITS.mario,
+  },
+  {
     name: "José Luis García Benito",
     role: "Business Development Representative",
     bio: "Senior Associate en PwC. Usa su red y sus contactos para identificar clientes potenciales y agendarles la reunión comercial.",
@@ -183,13 +190,13 @@ function Team() {
             estrategia, quienes nos llevan la contraria y quien te abre la puerta.
           </p>
         </div>
-        <ul className="mt-20 grid gap-x-8 gap-y-16 sm:grid-cols-2 lg:grid-cols-4">
+        <ul className="mt-20 grid gap-x-6 gap-y-16 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
           {TEAM.map((member, i) => (
             <li key={member.name}>
               <img
                 src={member.portrait.src}
                 srcSet={member.portrait.srcSet}
-                sizes="(min-width: 1280px) 260px, (min-width: 1024px) 20vw, (min-width: 640px) 44vw, 100vw"
+                sizes="(min-width: 1280px) 200px, (min-width: 1024px) 28vw, (min-width: 640px) 44vw, 100vw"
                 alt={member.portrait.alt}
                 width={member.portrait.width}
                 height={member.portrait.height}
@@ -198,7 +205,7 @@ function Team() {
                 className="aspect-[4/5] w-full object-cover"
               />
               <div className="mt-6 flex items-baseline justify-between gap-4">
-                <h4 className="font-serif text-[1.625rem] leading-[1.1] tracking-[-0.01em]">{member.name}</h4>
+                <h4 className="font-serif text-[1.625rem] leading-[1.1] tracking-[-0.01em] xl:text-[1.375rem]">{member.name}</h4>
                 <span className="font-serif text-base tabular-nums text-muted-ink">
                   {String(i + 1).padStart(2, "0")}
                 </span>

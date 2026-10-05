@@ -185,6 +185,8 @@ Debajo, una red de más de 50 colaboradores senior (SEO, CRM, contenido, datos, 
 
 **Pedro Anós.** Global Marketing Director en LOEWE Perfumes. Dirige el marketing de una marca de lujo en todo el mundo.
 
+**Mario Garrido Torres.** Vice President, Lead Software Engineer en JPMorgan Chase. Antes, ingeniero senior en Clibrain y tech lead en Ninety Nine.
+
 ## Código
 
 1. Te decimos las tres cosas: lo que haces bien, lo que no, y lo que no haces.
