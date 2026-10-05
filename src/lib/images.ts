@@ -21,6 +21,8 @@ function portrait(slug: string, name: string) {
 
 export const PORTRAITS = {
   ignacio: portrait("ignacio-goni", "Ignacio Goñi"),
-  joseLuis: portrait("jose-luis-garcia-benito", "José Luis García Benito"),
   elena: portrait("elena-gonzalez-blanco", "Elena González-Blanco"),
+  pedro: portrait("pedro-anos", "Pedro Anós"),
+  mario: portrait("mario-garrido", "Mario Garrido Torres"),
+  joseLuis: portrait("jose-luis-garcia-benito", "José Luis García Benito"),
 } as const;

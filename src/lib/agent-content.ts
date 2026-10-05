@@ -175,13 +175,17 @@ Somos tu Fractional CMO independiente. Entramos como un director de marketing �
 
 YAMATO no es solo su fundador. Cada uno responde de lo suyo con nombre y apellido.
 
-**José Luis García Benito**, Business Development Representative. Usa su red y sus contactos para identificar clientes potenciales y agendarles la reunión comercial.
+**José Luis García Benito**, Business Development Representative. Senior Associate en PwC. Usa su red y sus contactos para identificar clientes potenciales y agendarles la reunión comercial.
 
 Debajo, una red de más de 50 colaboradores senior (SEO, CRM, contenido, datos, desarrollo, IA, redes) que entran según lo que el proyecto necesita. No pagas una estructura de 50 personas. Te toca el especialista adecuado.
 
-## Advisor
+## Advisors
 
 **Elena González-Blanco.** Head of AI for Digital Natives en Microsoft EMEA. Cofundadora de Clibrain, PhD por Harvard. Nos ayuda a integrar IA donde aporta negocio, no donde hace ruido.
+
+**Pedro Anós.** Global Marketing Director en LOEWE Perfumes. Dirige el marketing de una marca de lujo en todo el mundo.
+
+**Mario Garrido Torres.** Vice President, Lead Software Engineer en JPMorgan Chase. Antes, ingeniero senior en Clibrain y tech lead en Ninety Nine.
 
 ## Código
 
