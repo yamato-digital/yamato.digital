@@ -173,7 +173,9 @@ Somos tu Fractional CMO independiente. Entramos como un director de marketing �
 
 ## El equipo
 
-YAMATO no es solo su fundador. Hay más CMO senior, totalmente independientes: cada uno firma la estrategia de sus clientes y responde por ella. Las decisiones importantes se consensúan dentro de YAMATO.
+YAMATO no es solo su fundador. Cada uno responde de lo suyo con nombre y apellido.
+
+**José Luis García Benito**, Business Development Representative. Usa su red y sus contactos para identificar clientes potenciales y agendarles la reunión comercial.
 
 Debajo, una red de más de 50 colaboradores senior (SEO, CRM, contenido, datos, desarrollo, IA, redes) que entran según lo que el proyecto necesita. No pagas una estructura de 50 personas. Te toca el especialista adecuado.
 
