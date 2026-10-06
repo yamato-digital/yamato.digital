@@ -70,7 +70,7 @@ const TEAM = [
   {
     name: "Pedro Anós",
     role: "Advisor",
-    bio: "Global Marketing Director en LOEWE Perfumes. Dirige el marketing de una marca de lujo en todo el mundo, y nos pone el listón ahí.",
+    bio: "Omnichannel Global Marketing Director en LOEWE Perfumes. Dirige el marketing de una marca de lujo en todo el mundo, y nos pone el listón ahí.",
     focus: "Lujo · Perfumería · Marca",
     portrait: PORTRAITS.pedro,
   },
