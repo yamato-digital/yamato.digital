@@ -13,7 +13,7 @@ export interface AgentDocument {
 
 const PAGES: Record<string, { title: string; description: string; body: string }> = {
   "/": {
-    title: "YAMATO | Agencia de Fractional CMO",
+    title: "YAMATO | Tu Fractional CMO.",
     description:
       "Fractional CMO independiente en Madrid. Un director de marketing a tiempo parcial que se sienta en tu comité y responde del número.",
     body: `# Tu Fractional CMO.
@@ -183,7 +183,7 @@ Debajo, una red de más de 50 colaboradores senior (SEO, CRM, contenido, datos, 
 
 **Elena González-Blanco.** Head of AI for Digital Natives en Microsoft EMEA. Cofundadora de Clibrain, PhD por Harvard. Nos ayuda a integrar IA donde aporta negocio, no donde hace ruido.
 
-**Pedro Anós.** Global Marketing Director en LOEWE Perfumes. Dirige el marketing de una marca de lujo en todo el mundo.
+**Pedro Anós.** Omnichannel Global Marketing Director en LOEWE Perfumes. Dirige el marketing de una marca de lujo en todo el mundo.
 
 **Mario Garrido Torres.** Vice President, Lead Software Engineer en JPMorgan Chase. Antes, ingeniero senior en Clibrain y tech lead en Ninety Nine.
 
