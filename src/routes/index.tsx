@@ -100,7 +100,7 @@ function Hero() {
         as="h1"
         className="mt-16 max-w-[18ch] font-serif text-[clamp(2.75rem,8vw,7.5rem)] leading-[0.95] tracking-[-0.02em] md:mt-24"
       >
-        Tu Fractional CMO.
+        Tu Fractional CMO
       </Reveal>
       <Reveal as="p" delay={150} className="mt-10 max-w-2xl text-lg leading-relaxed text-muted-ink md:text-xl">
         Un director de marketing senior dentro de tu comité. Decide la estrategia, dirige a tu equipo y responde de los
