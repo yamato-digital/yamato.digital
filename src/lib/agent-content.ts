@@ -16,7 +16,7 @@ const PAGES: Record<string, { title: string; description: string; body: string }
     title: "YAMATO | Tu Fractional CMO.",
     description:
       "Fractional CMO independiente en Madrid. Un director de marketing a tiempo parcial que se sienta en tu comité y responde del número.",
-    body: `# Tu Fractional CMO.
+    body: `# Tu Fractional CMO
 
 > Un director de marketing senior dentro de tu comité. Decide la estrategia, dirige a tu equipo y responde de los números. Las horas que necesites.
 
