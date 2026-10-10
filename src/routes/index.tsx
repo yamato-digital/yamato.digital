@@ -4,7 +4,7 @@ import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 import { Reveal } from "@/components/Reveal";
 import { RadiografiaCta } from "@/components/RadiografiaCta";
-import { SERVICE_LEVERS, SERVICE_MODES, SERVICES_INTRO } from "@/lib/services";
+import { HOME_SERVICE_LEVERS, HOME_SERVICES_INTRO, HOME_SERVICES_TITLE, SERVICE_MODES } from "@/lib/services";
 import heroVideoMp4 from "@/assets/yamato-hero.mp4.asset.json";
 import heroPoster from "@/assets/yamato-hero-poster.jpg.asset.json";
 import { IGNACIO_PHOTO } from "@/lib/images";
@@ -82,6 +82,7 @@ const FIT_NO = [
   "Quieres resultados mágicos en 2 semanas.",
   "Te ofende que te digan lo que no funciona.",
   "Regateas.",
+  "No quieres ganar dinero.",
 ];
 
 function Eyebrow({ children }: { children: React.ReactNode }) {
@@ -103,8 +104,10 @@ function Hero() {
         Tu Fractional CMO
       </Reveal>
       <Reveal as="p" delay={150} className="mt-10 max-w-2xl text-lg leading-relaxed text-muted-ink md:text-xl">
-        Un director de marketing senior dentro de tu comité. Decide la estrategia, dirige a tu equipo y responde de los
-        números. Las horas que necesites.
+        YAMATO pone un director de marketing dentro de tu empresa de manera externa e inmediata, por mucho menos de lo
+        que cuesta contratar a uno, con el mismo o mejor servicio, tengas o no tengas equipo de marketing. Las horas que
+        necesites.
+        <em className="mt-3 block text-base italic! md:text-lg">(Aplíquese lo de director con directora a toda la web. Por favor, seamos serios)</em>
       </Reveal>
       <Reveal delay={300} className="mt-10 mb-20">
         <RadiografiaCta location="hero" microcopy="Llamar es gratis (aún)." />
@@ -200,8 +203,7 @@ function Marquee() {
 
   return (
     <section aria-label="Han trabajado con nosotros" className="py-12">
-      <p className="px-6 text-base font-semibold text-ink sm:px-10 lg:px-20 xl:px-28">Han trabajado con nosotros</p>
-      <div className="mt-6">
+      <div>
         {rows.map((row, idx) => {
           const sets = row.featured ? setsPerHalf * 2 : 4;
           const doubled = Array.from({ length: sets }, () => row.items).flat();
@@ -248,18 +250,19 @@ function About() {
           delay={120}
           className="mt-10 font-serif text-[clamp(2rem,4.5vw,4rem)] leading-[1.05] tracking-tight"
         >
-          Dirección de verdad, no un proveedor más.
+          Un CMO externo sin el coste de contratar a uno
         </Reveal>
         <div className="mt-10 space-y-6 text-lg leading-relaxed md:text-xl text-muted-ink">
           <Reveal as="p" delay={200}>
-            La cabeza de un CMO con más de una década dirigiendo + las manos de un equipo senior. Dentro de tu empresa,
-            las horas que necesites.
+            Es un servicio que pone un Fractional CMO (o director de marketing a tiempo parcial para los no
+            familiarizados con los acrónimos) en tu empresa, sin el tiempo y el coste que supone incluir a alguien
+            interno.
           </Reveal>
           <Reveal as="p" delay={280}>
-            Quien piensa tu estrategia es quien la firma, y se sienta en tu comité de dirección.
+            Es muy común con la parte financiera y legal. ¿Por qué no también con el marketing?
           </Reveal>
           <Reveal as="p" delay={360}>
-            Nos medimos por lo que mueves en tu negocio.
+            Calma, nos involucramos incluso más que tu propio equipo.
           </Reveal>
         </div>
       </div>
@@ -332,7 +335,7 @@ function Services() {
           </div>
           <div className="md:col-span-8 md:col-start-5">
             <h3 className="font-serif text-[clamp(2rem,4.5vw,4rem)] leading-[1.05] tracking-tight">
-              Tres formas de trabajar, según lo que ya tienes.
+              {HOME_SERVICES_TITLE}
             </h3>
             <ol className="mt-12">
               {SERVICE_MODES.map((m, i) => (
@@ -342,15 +345,13 @@ function Services() {
                   </span>
                   <span className="mt-3 block h-[2px] w-10 bg-current" />
                   <span className="mt-4 block font-serif text-[clamp(1.5rem,2.8vw,2.5rem)] leading-[1.1]">
-                    {m.problem}
+                    {m.situation}
                   </span>
                 </Reveal>
               ))}
             </ol>
-            <p className="mt-10 text-lg leading-relaxed text-muted-ink md:text-xl">{SERVICES_INTRO}</p>
-            <p className="mt-4 text-base font-semibold leading-relaxed text-ink">
-              {SERVICE_LEVERS.map((s) => s.lever).join(" · ")}
-            </p>
+            <p className="mt-10 text-lg leading-relaxed text-muted-ink md:text-xl">{HOME_SERVICES_INTRO}</p>
+            <p className="mt-4 text-base font-semibold leading-relaxed text-ink">{HOME_SERVICE_LEVERS}</p>
           </div>
           <div className="mt-10 md:col-span-8 md:col-start-5">
             <Link
@@ -372,23 +373,22 @@ function Process() {
     {
       n: "01",
       title: "Llamada",
-      body: "Llamada de 30 minutos. Si en ese tiempo no te convencemos de trabajar juntos, YAMATO no es para ti.",
+      body: "Llamada de 30 minutos donde te escucharemos. Si en ese tiempo no te convencemos de trabajar juntos, YAMATO no es para ti.",
     },
     {
       n: "02",
       title: "Radiografía (gratis)",
-      // TODO(Ignacio): confirmar alcance de la Radiografía (30 minutos y tres conclusiones por escrito).
-      body: "30 minutos y tres conclusiones por escrito: lo que haces bien, lo que no tanto y lo que todavía no haces. La auditoría con tus datos es la primera fase del trabajo.",
+      body: "Si en esos primeros minutos te hemos convencido, habremos cerrado una segunda reunión donde te diremos lo que haces bien, lo que no haces tan bien y, sobre todo, lo que no haces. Esto nos servirá como punto de partida.",
     },
     {
       n: "03",
       title: "Arrancamos",
-      body: "Si hay encaje, arrancamos en una semana. Sin permanencias.",
+      body: "Sin onboardings raros ni mierdas raras, en una semana estamos trabajando para ti. Sin permanencias.",
     },
     {
       n: "04",
       title: "Nos vamos",
-      body: "Cuando sobremos, te lo diremos nosotros. Y te ayudamos a fichar a quien nos sustituya.",
+      body: "Cuando sobremos, te lo diremos nosotros. Y te ayudamos a fichar a quien nos sustituya. Muchas veces nos hemos quedado incluso junto al nuevo equipo fichado.",
     },
   ];
 
@@ -405,15 +405,35 @@ function Process() {
             </Reveal>
           ))}
         </div>
-        <Reveal
-          as="p"
-          className="mt-20 max-w-3xl font-serif text-[clamp(1.75rem,3.5vw,3rem)] leading-[1.1] tracking-tight"
-        >
-          “Te diremos 3 cosas: lo que haces bien, lo que no haces tan bien y, sobre todo, lo que no haces.”
-        </Reveal>
         <Reveal delay={150} className="mt-16">
           <RadiografiaCta location="proceso" microcopy="¿Nos sentamos?" microcopyPosition="before" />
         </Reveal>
+      </div>
+    </section>
+  );
+}
+
+function TresCosas() {
+  const lines = ["lo que haces bien", "lo que no haces tan bien", "y, sobre todo, lo que no haces."];
+
+  return (
+    <section className="bg-cream">
+      <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
+        <Reveal as="p" className="font-serif text-[clamp(2rem,4.5vw,4rem)] leading-[1.05] tracking-tight">
+          Te diremos 3 cosas:
+        </Reveal>
+        <ul className="mt-8 space-y-2">
+          {lines.map((line, i) => (
+            <Reveal
+              as="li"
+              key={line}
+              delay={120 + i * 120}
+              className="font-serif text-[clamp(1.75rem,3.5vw,3rem)] leading-[1.1] tracking-tight text-muted-ink"
+            >
+              {line}
+            </Reveal>
+          ))}
+        </ul>
       </div>
     </section>
   );
@@ -424,7 +444,7 @@ function PriceQuote() {
     <section className="bg-paper">
       <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-20 xl:px-28 py-28">
         <Reveal>
-          <Eyebrow>Inversión</Eyebrow>
+          <Eyebrow>¿Cuánto cuesta YAMATO?</Eyebrow>
         </Reveal>
         <Reveal
           as="h3"
@@ -497,8 +517,8 @@ function Fit() {
         <div className="mt-16 grid gap-16 md:grid-cols-2">
           <ul className="space-y-5 text-muted-ink">
             {FIT_YES.map((t, i) => (
-              <Reveal as="li" delay={i * 70} key={t} className="flex gap-4 text-lg leading-relaxed md:text-xl">
-                <span aria-hidden className="mt-[0.7em] inline-block h-[2px] w-6 shrink-0 bg-current" />
+              <Reveal as="li" delay={i * 70} key={t} className="flex gap-4 text-lg leading-[29px] md:text-xl md:leading-8">
+                <span aria-hidden className="mt-[13px] inline-block h-[2px] w-6 shrink-0 bg-current md:mt-[14px]" />
                 <span>{t}</span>
               </Reveal>
             ))}
@@ -513,9 +533,9 @@ function Fit() {
                   as="li"
                   delay={i * 70}
                   key={t}
-                  className="flex gap-4 text-lg leading-relaxed text-muted-ink md:text-xl"
+                  className="flex gap-4 text-lg leading-[29px] text-muted-ink md:text-xl md:leading-8"
                 >
-                  <span aria-hidden className="mt-[0.7em] inline-block h-[2px] w-6 shrink-0 bg-current" />
+                  <span aria-hidden className="mt-[13px] inline-block h-[2px] w-6 shrink-0 bg-current md:mt-[14px]" />
                   <span>{t}</span>
                 </Reveal>
               ))}
@@ -568,6 +588,7 @@ function Home() {
       <About />
       <Services />
       <Process />
+      <TresCosas />
       <PriceQuote />
       <EnterpriseBlock />
       <Fit />

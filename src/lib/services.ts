@@ -27,6 +27,8 @@ export interface ServiceMode {
   name: string;
   /** Titular: la situación del cliente. */
   problem: string;
+  /** Situación del cliente tal como se cuenta en la home. */
+  situation: string;
   body: string;
 }
 
@@ -35,23 +37,36 @@ export const SERVICE_MODES: ServiceMode[] = [
     id: "fractional-cmo",
     name: "Fractional CMO",
     problem: "Tienes equipo o proveedores y te falta dirección.",
+    situation: "Tienes equipo de marketing o agencia y te falta que alguien los dirija.",
     body: "Un responsable senior que prioriza, lidera y mide. Se sienta en tu comité y responde de los números.",
   },
   {
     id: "fractional-cmo-con-equipo",
     name: "Fractional CMO con equipo",
     problem: "Necesitas dirección y manos.",
+    situation: "No tienes equipo de marketing y necesitas tanto manos como dirección.",
     body: "Tu CMO y los especialistas que pide el plan, con el alcance definido desde el primer día.",
   },
   {
     id: "proyecto-estrategico",
     name: "Proyecto estratégico",
     problem: "Ya tienes liderazgo y un reto concreto.",
+    situation:
+      "Tienes equipo y dirección pero tenéis un proyecto entre las manos demasiado grande o ambicioso y necesitáis asesoría externa. No venimos a quitarle la silla a nadie.",
     body: "Un lanzamiento, un mercado nuevo, una unidad de negocio sin foco. Entregables, plazo y cierre.",
   },
 ];
 
 export const SERVICES_INTRO = "Sea cual sea la modalidad, tu responsable decide qué palancas activar. Y quién las ejecuta.";
+
+export const HOME_SERVICES_TITLE = "Tres formas de trabajar que se adaptan a tu estructura de empresa";
+
+export const HOME_SERVICES_INTRO =
+  "Una vez que sepamos cuál de las 3 situaciones se adapta a tu negocio, metemos las palancas que hacen falta activar:";
+
+// Ejecución nombra Paid Media a petición de Ignacio; ver TODO de paid arriba.
+export const HOME_SERVICE_LEVERS =
+  "Estrategia y dirección · Mentoría y gestión de equipos · Go-to-Market · Growth · IA aplicada · Ejecución (Paid Media, CRM, Social Media y un largo etcétera).";
 
 export interface ServiceLever {
   /** Titular: el problema que resuelve. */

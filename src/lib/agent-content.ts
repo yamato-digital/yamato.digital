@@ -1,5 +1,12 @@
 import { getAllPosts, getPost } from "@/lib/blog";
-import { SERVICE_LEVERS, SERVICE_MODES, SERVICES_INTRO } from "@/lib/services";
+import {
+  HOME_SERVICE_LEVERS,
+  HOME_SERVICES_INTRO,
+  HOME_SERVICES_TITLE,
+  SERVICE_LEVERS,
+  SERVICE_MODES,
+  SERVICES_INTRO,
+} from "@/lib/services";
 import { DIRECTION_CASES, OTHER_PROJECTS } from "@/lib/clients";
 import { CONTACT_BOOKING_LABEL, CTA_LINKS } from "@/lib/cta";
 import { FIRST_90_DAYS } from "@/lib/fractional-cmo";
@@ -18,34 +25,38 @@ const PAGES: Record<string, { title: string; description: string; body: string }
       "Fractional CMO independiente en Madrid. Un director de marketing a tiempo parcial que se sienta en tu comité y responde del número.",
     body: `# Tu Fractional CMO
 
-> Un director de marketing senior dentro de tu comité. Decide la estrategia, dirige a tu equipo y responde de los números. Las horas que necesites.
+> YAMATO pone un director de marketing dentro de tu empresa de manera externa e inmediata, por mucho menos de lo que cuesta contratar a uno, con el mismo o mejor servicio, tengas o no tengas equipo de marketing. Las horas que necesites.
+>
+> *(Aplíquese lo de director con directora a toda la web. Por favor, seamos serios)*
 
-La cabeza de un CMO con más de una década dirigiendo, más las manos de un equipo senior. Dentro de tu empresa, las horas que necesites.
+## Un CMO externo sin el coste de contratar a uno
 
-Quien piensa tu estrategia es quien la firma, y se sienta en tu comité de dirección.
+Es un servicio que pone un Fractional CMO (o director de marketing a tiempo parcial para los no familiarizados con los acrónimos) en tu empresa, sin el tiempo y el coste que supone incluir a alguien interno.
 
-Nos medimos por lo que mueves en tu negocio.
+Es muy común con la parte financiera y legal. ¿Por qué no también con el marketing?
+
+Calma, nos involucramos incluso más que tu propio equipo.
 
 No cobramos un porcentaje de lo que inviertes en publicidad. Ganamos cuando tú ganas.
 
 ## Servicios
 
-### Tres formas de trabajar, según lo que ya tienes.
+### ${HOME_SERVICES_TITLE}
 
-${SERVICE_MODES.map((m) => `- **${m.name}.** ${m.problem}`).join("\n")}
+${SERVICE_MODES.map((m) => `- **${m.name}.** ${m.situation}`).join("\n")}
 
-${SERVICES_INTRO}
+${HOME_SERVICES_INTRO}
 
-**Palancas:** ${SERVICE_LEVERS.map((s) => s.lever).join(" · ")}.
+${HOME_SERVICE_LEVERS}
 
 Más detalle: [Servicios](${SITE_URL}/servicios/index.md) · [Fractional CMO](${SITE_URL}/fractional-cmo/index.md)
 
 ## Cómo lo hacemos
 
-1. **Llamada** — 30 minutos. Si en ese tiempo no te convencemos, YAMATO no es para ti.
-2. **Radiografía (gratis)** — 30 minutos y tres conclusiones por escrito: lo que haces bien, lo que no tanto y lo que todavía no haces. La auditoría con tus datos es la primera fase del trabajo.
-3. **Arrancamos** — Si aceptas, estamos en tu proyecto en 1 semana.
-4. **Nos vamos** — Cuando sobremos, te lo diremos nosotros. Y te ayudamos a fichar a quien nos sustituya.
+1. **Llamada** — Llamada de 30 minutos donde te escucharemos. Si en ese tiempo no te convencemos de trabajar juntos, YAMATO no es para ti.
+2. **Radiografía (gratis)** — Si en esos primeros minutos te hemos convencido, habremos cerrado una segunda reunión donde te diremos lo que haces bien, lo que no haces tan bien y, sobre todo, lo que no haces. Esto nos servirá como punto de partida.
+3. **Arrancamos** — Sin onboardings raros ni mierdas raras, en una semana estamos trabajando para ti. Sin permanencias.
+4. **Nos vamos** — Cuando sobremos, te lo diremos nosotros. Y te ayudamos a fichar a quien nos sustituya. Muchas veces nos hemos quedado incluso junto al nuevo equipo fichado.
 
 ## Encajarás si
 
@@ -62,6 +73,7 @@ Más detalle: [Servicios](${SITE_URL}/servicios/index.md) · [Fractional CMO](${
 - Quieres resultados mágicos en 2 semanas.
 - Te ofende que te digan lo que no funciona.
 - Regateas.
+- No quieres ganar dinero.
 
 ## Contacto
 
