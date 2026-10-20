@@ -206,6 +206,18 @@
     background-position: 100% 100%;
   }
 }
+/* Inverso de link-underline: la línea aparece al pasar el ratón (menú a pantalla completa). */
+@utility link-underline-reveal {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 0% 1px;
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.4s ease;
+  &:hover {
+    background-size: 100% 1px;
+    background-position: 0 100%;
+  }
+}
 
 em,
 i {
