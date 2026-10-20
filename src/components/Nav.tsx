@@ -42,7 +42,7 @@ export function Nav() {
           <Link to="/" className="inline-block">
             <img src={logoBlack} alt="YAMATO" className="h-8 w-auto" />
           </Link>
-          <div className="flex items-center gap-2 sm:gap-3">
+          <div className="flex items-center gap-5 sm:gap-8">
             <Link
               to="/contacto"
               activeProps={{ className: "font-semibold" }}
