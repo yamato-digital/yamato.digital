@@ -56,13 +56,11 @@ export function Nav() {
               aria-expanded={isOpen}
               aria-controls="menu-principal"
               onClick={() => setIsOpen(true)}
-              className="grid h-10 w-10 place-items-center"
+              className="grid h-11 w-[45px] place-items-center text-ink"
             >
-              <span className="relative block h-[14px] w-6">
-                <span className="absolute inset-x-0 top-0 border-t border-ink" />
-                <span className="absolute inset-x-0 top-[6px] border-t border-ink" />
-                <span className="absolute inset-x-0 top-3 border-t border-ink" />
-              </span>
+              <svg width="45" height="7" viewBox="0 0 45 7" aria-hidden="true">
+                <path d="M0 0h45v1H0zM0 6h45v1H0z" fill="currentColor" />
+              </svg>
             </button>
           </div>
         </div>
