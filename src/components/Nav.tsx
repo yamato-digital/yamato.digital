@@ -105,7 +105,7 @@ export function Nav() {
               className="flex flex-1 flex-col items-start justify-center py-10 text-[44px] font-normal leading-none tracking-[-0.02em] md:text-[clamp(44px,4.17vw,90px)]"
             >
               {menuItems.map((item) => (
-                <Link key={item.to} to={item.to} onClick={close} className={HOVER}>
+                <Link key={item.to} to={item.to} onClick={close} className="link-underline-reveal">
                   {item.label}
                 </Link>
               ))}
