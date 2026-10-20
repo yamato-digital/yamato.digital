@@ -25,9 +25,7 @@ const PAGES: Record<string, { title: string; description: string; body: string }
       "Fractional CMO independiente en Madrid. Un director de marketing a tiempo parcial que se sienta en tu comité y responde del número.",
     body: `# Tu Fractional CMO
 
-> YAMATO pone un director de marketing dentro de tu empresa de manera externa e inmediata, por mucho menos de lo que cuesta contratar a uno, con el mismo o mejor servicio, tengas o no tengas equipo de marketing. Las horas que necesites.
->
-> *(Aplíquese lo de director con directora a toda la web. Por favor, seamos serios)*
+> YAMATO pone un director/a de marketing dentro de tu empresa de manera externa e inmediata, por mucho menos de lo que cuesta contratar a uno, con el mismo o mejor servicio, tengas o no tengas equipo de marketing. Las horas que necesites.
 
 ## Un CMO externo sin el coste de contratar a uno
 

@@ -104,10 +104,9 @@ function Hero() {
         Tu Fractional CMO
       </Reveal>
       <Reveal as="p" delay={150} className="mx-auto mt-10 max-w-2xl text-center text-lg leading-relaxed text-muted-ink md:text-xl">
-        YAMATO pone un director de marketing dentro de tu empresa de manera externa e inmediata, por mucho menos de lo
+        YAMATO pone un director/a de marketing dentro de tu empresa de manera externa e inmediata, por mucho menos de lo
         que cuesta contratar a uno, con el mismo o mejor servicio, tengas o no tengas equipo de marketing. Las horas que
         necesites.
-        <em className="mt-3 block text-base italic! md:text-lg">(Aplíquese lo de director con directora a toda la web. Por favor, seamos serios)</em>
       </Reveal>
       <Reveal delay={300} className="mt-10 mb-20">
         <RadiografiaCta location="hero" microcopy="Llamar es gratis (aún)." className="items-center! text-center" />
