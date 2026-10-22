@@ -157,6 +157,7 @@
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
+    scrollbar-gutter: stable;
   }
 
   body {
@@ -222,5 +223,14 @@
 em,
 i {
   font-style: inherit;
+}
+
+/* Ocultar el widget de privacidad de Cookiebot solo en pantallas móviles */
+@media screen and (max-width: 768px) {
+  #CookiebotWidget-body,
+  #CookiebotWidget,
+  .CookiebotWidget {
+    display: none !important;
+  }
 }
 

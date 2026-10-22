@@ -14,6 +14,7 @@ import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
+import { DevViewportSwitch } from "@/components/DevViewportSwitch";
 
 function NotFoundComponent() {
   useEffect(() => {
@@ -186,7 +187,9 @@ function RootComponent() {
   return (
     <QueryClientProvider client={queryClient}>
       {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
-      <Outlet />
+      <DevViewportSwitch>
+        <Outlet />
+      </DevViewportSwitch>
     </QueryClientProvider>
   );
 }
