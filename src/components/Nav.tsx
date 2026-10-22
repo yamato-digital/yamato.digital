@@ -38,15 +38,21 @@ export function Nav() {
   return (
     <>
       <header className="sticky top-0 z-40 bg-paper/85 backdrop-blur">
-        <div className={`grid grid-cols-[minmax(0,1fr)_auto] items-center gap-4 py-6 ${GUTTER}`}>
-          <Link to="/" className="inline-block">
-            <img src={logoBlack} alt="YAMATO" className="h-8 w-auto" />
+        <div className={`flex items-center gap-3 py-6 min-[30rem]:gap-4 ${GUTTER}`}>
+          <Link to="/" className="min-w-0 shrink">
+            <img
+              src={logoBlack}
+              alt="YAMATO"
+              width={1907}
+              height={296}
+              className="h-auto max-h-8 w-auto max-w-full"
+            />
           </Link>
-          <div className="flex items-center gap-5 sm:gap-8">
+          <div className="ml-auto flex shrink-0 items-center gap-5 sm:gap-8">
             <Link
               to="/contacto"
               activeProps={{ className: "font-semibold" }}
-              className="inline-flex items-center rounded-full border border-ink px-5 py-2 text-sm leading-none text-ink sm:px-6 sm:py-2.5 sm:text-base"
+              className="hidden min-[30rem]:inline-flex items-center rounded-full border border-ink px-5 py-2 text-sm leading-none text-ink sm:px-6 sm:py-2.5 sm:text-base"
             >
               Contacto
             </Link>
@@ -72,13 +78,13 @@ export function Nav() {
           role="dialog"
           aria-modal="true"
           aria-label="Menú principal"
-          className={`fixed inset-0 z-50 grid grid-cols-1 overflow-y-auto bg-paper text-ink md:grid-cols-2 ${GUTTER}`}
+          className={`fixed inset-0 z-50 grid grid-cols-1 grid-rows-[auto_minmax(0,1fr)] overflow-y-auto bg-paper text-ink md:grid-cols-2 md:grid-rows-1 ${GUTTER}`}
         >
           <button
             type="button"
             aria-label="Cerrar menú"
             onClick={close}
-            className={`absolute right-6 top-6 grid h-10 w-10 place-items-center sm:right-10 lg:right-16 xl:right-28 ${HOVER}`}
+            className={`absolute top-6 right-6 grid h-11 w-[45px] place-items-center sm:right-10 lg:right-16 xl:right-28 ${HOVER}`}
           >
             <svg width="26" height="26" viewBox="0 0 32.527 32.527" aria-hidden="true">
               <path d="M0 31.819L31.82-.001l.707.707-31.82 31.82z" fill="currentColor" />
@@ -86,21 +92,27 @@ export function Nav() {
             </svg>
           </button>
 
-          <div className="border-b border-ink py-6 md:border-b-0 md:border-r md:pr-[34px]">
+          <div className="py-6 md:border-r md:border-ink md:pr-[34px]">
             <Link
               to="/"
               onClick={close}
               aria-label="YAMATO, inicio"
-              className="block w-3/5 md:w-2/3"
+              className="flex h-11 w-max max-w-full items-center md:h-auto md:w-2/3 md:items-start md:pt-1.5"
             >
-              <img src={logoBlack} alt="YAMATO" className="block h-auto w-full" />
+              <img
+                src={logoBlack}
+                alt="YAMATO"
+                width={1907}
+                height={296}
+                className="block h-auto max-h-8 w-auto max-w-full md:max-h-none md:w-full"
+              />
             </Link>
           </div>
 
-          <div className="flex flex-col py-6 md:pl-[34px]">
+          <div className="flex min-h-0 flex-col py-6 md:pl-[34px]">
             <nav
               aria-label="Principal"
-              className="flex flex-1 flex-col items-start justify-center py-10 text-[44px] font-normal leading-none tracking-[-0.02em] md:text-[clamp(44px,4.17vw,90px)]"
+              className="flex flex-1 flex-col items-start justify-center text-[44px] font-normal leading-none tracking-[-0.02em] md:py-10 md:text-[clamp(44px,4.17vw,90px)]"
             >
               {menuItems.map((item) => (
                 <Link key={item.to} to={item.to} onClick={close} className="link-underline-reveal">
