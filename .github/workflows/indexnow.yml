@@ -1,0 +1,43 @@
+# Cuando Vercel termina un despliegue de producción, avisa a IndexNow
+# (Bing y compañía) de las URLs que han cambiado desde el despliegue anterior.
+name: IndexNow
+
+on: deployment_status
+
+permissions:
+  contents: read
+  deployments: read
+
+jobs:
+  ping:
+    if: >-
+      github.event.deployment_status.state == 'success' &&
+      github.event.deployment.environment == 'Production'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Commit del despliegue anterior
+        id: base
+        env:
+          GH_TOKEN: ${{ github.token }}
+          HEAD_SHA: ${{ github.event.deployment.sha }}
+          DEPLOY_ID: ${{ github.event.deployment.id }}
+        run: |
+          # El despliegue de producción justo anterior a este.
+          prev=$(gh api "repos/${{ github.repository }}/deployments?environment=Production&per_page=20" \
+            --jq "[.[] | select(.id < $DEPLOY_ID)][0].sha // empty")
+          # Si no hay o no es antecesor (p. ej. un rollback), comparamos con el commit padre.
+          if [ -z "$prev" ] || ! git merge-base --is-ancestor "$prev" "$HEAD_SHA"; then
+            prev=$(git rev-parse "$HEAD_SHA^1")
+          fi
+          echo "sha=$prev" >> "$GITHUB_OUTPUT"
+
+      - name: Avisar a IndexNow
+        run: node scripts/indexnow.mjs "${{ steps.base.outputs.sha }}" "${{ github.event.deployment.sha }}"
