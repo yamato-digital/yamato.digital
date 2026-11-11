@@ -16,6 +16,7 @@ import { SITE_URL, getPageDocument } from "@/lib/agent-content";
 import { getAllPosts, getPostRedirect } from "@/lib/blog";
 import { CTA_LINKS } from "@/lib/cta";
 import { FIRST_90_DAYS } from "@/lib/fractional-cmo";
+import { MCP_TOOL_DEFS } from "@/lib/mcp-tools";
 import { EXECUTION_MODEL, SERVICE_LEVERS, SERVICE_MODES, SERVICES_INTRO } from "@/lib/services";
 
 const MCP_PATH = "/mcp";
@@ -52,8 +53,6 @@ const READ_ONLY = {
   idempotentHint: true,
   openWorldHint: false,
 };
-
-const NO_ARGS = { type: "object", properties: {}, additionalProperties: false };
 
 /** Respuesta de una pregunta frecuente de la página en Markdown: "**Pregunta** respuesta". */
 function faq(pagePath: string, question: string): string | null {
@@ -211,61 +210,19 @@ Llamada de 30 minutos con Ignacio Goñi: se revisa la situación de la empresa y
 5. Plazo o fecha clave, si la hay.`;
 }
 
-const TOOLS: Tool[] = [
-  {
-    name: "servicios",
-    title: "Servicios de YAMATO",
-    description:
-      "Qué hace YAMATO: sus tres modalidades (Fractional CMO, Fractional CMO con equipo y proyecto estratégico), sus seis palancas y qué pasa en los primeros 90 días.",
-    inputSchema: NO_ARGS,
-    run: servicios,
-  },
-  {
-    name: "precios",
-    title: "Precio orientativo",
-    description:
-      "Cuánto cuesta YAMATO de forma orientativa frente a un CMO en plantilla, cuánto suele durar y cuándo tiene sentido. El precio exacto se concreta en una llamada.",
-    inputSchema: NO_ARGS,
-    run: precios,
-  },
-  {
-    name: "buscar_en_el_blog",
-    title: "Buscar en el blog",
-    description:
-      "Busca artículos del blog de YAMATO sobre marketing, dirección de marketing, Fractional CMO, IA aplicada, Google Ads, Meta Ads, SEO y GEO. Sin consulta, devuelve los más recientes.",
-    inputSchema: {
-      type: "object",
-      properties: {
-        consulta: { type: "string", description: "Palabras clave en español. Opcional." },
-        limite: { type: "integer", minimum: 1, maximum: 10, default: 5, description: "Número de resultados." },
-      },
-      additionalProperties: false,
-    },
-    run: buscarEnElBlog,
-  },
-  {
-    name: "leer_post",
-    title: "Leer un artículo",
-    description: "Devuelve el texto completo en Markdown de un artículo del blog de YAMATO a partir de su slug.",
-    inputSchema: {
-      type: "object",
-      properties: {
-        slug: { type: "string", description: "Slug del artículo, por ejemplo `fractional-cmo-primeros-90-dias`." },
-      },
-      required: ["slug"],
-      additionalProperties: false,
-    },
-    run: leerPost,
-  },
-  {
-    name: "reservar_llamada",
-    title: "Cómo reservar una llamada",
-    description:
-      "Enlaces para reservar una llamada de 30 minutos con YAMATO o contactar por WhatsApp, email o LinkedIn, y qué preparar. No reserva nada: devuelve los enlaces para que la persona reserve.",
-    inputSchema: NO_ARGS,
-    run: reservarLlamada,
-  },
-];
+const RUNNERS: Record<string, (args: ToolArgs) => string> = {
+  servicios,
+  precios,
+  buscar_en_el_blog: buscarEnElBlog,
+  leer_post: leerPost,
+  reservar_llamada: reservarLlamada,
+};
+
+const TOOLS: Tool[] = MCP_TOOL_DEFS.map((def) => {
+  const run = RUNNERS[def.name];
+  if (!run) throw new Error(`mcp: falta la implementación de ${def.name}`);
+  return { ...def, run };
+});
 
 const toolByName = new Map(TOOLS.map((t) => [t.name, t]));
 
