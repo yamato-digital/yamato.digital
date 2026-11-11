@@ -2,7 +2,6 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
-import { Reveal } from "@/components/Reveal";
 import { getAllPosts, formatDate } from "@/lib/blog";
 
 const PAGE_SIZE = 6;
@@ -44,7 +43,6 @@ export const Route = createFileRoute("/blog/")({
 function BlogPage() {
   const posts = getAllPosts();
   const [visible, setVisible] = useState(PAGE_SIZE);
-  const shown = posts.slice(0, visible);
   const hasMore = visible < posts.length;
 
   return (
@@ -69,13 +67,13 @@ function BlogPage() {
               <p className="text-muted-ink">Pronto habrá algo aquí.</p>
             ) : (
               <ul className="grid grid-cols-1 gap-x-10 gap-y-16 md:grid-cols-2">
-                {shown.map((post, i) => (
-                  <Reveal
-                    as="li"
-                    key={post.slug}
-                    variant="fade-up"
-                    delay={(i % PAGE_SIZE) * 60}
-                  >
+                {/*
+                  Todos los posts van en el HTML para que Google, Bing y los rastreadores
+                  de IA los encuentren (no pulsan "Cargar más"). Los que aún no se han
+                  cargado se ocultan con `hidden`; el visitante ve lo mismo que antes.
+                */}
+                {posts.map((post, i) => (
+                  <li key={post.slug} hidden={i >= visible}>
                     <Link
                       to="/blog/$slug"
                       params={{ slug: post.slug }}
@@ -103,7 +101,7 @@ function BlogPage() {
                         </h2>
                       </div>
                     </Link>
-                  </Reveal>
+                  </li>
                 ))}
               </ul>
             )}
