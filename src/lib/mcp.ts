@@ -367,13 +367,22 @@ const legacyServerCard = {
   capabilities: { tools: { listChanged: false } },
 };
 
+// AI Catalog: lo leen tanto los clientes MCP (SEP-2127) como ARD (Agentic Resource Discovery).
 const aiCatalog = {
   specVersion: "1.0",
+  host: { displayName: "YAMATO", identifier: "did:web:yamato.digital" },
   entries: [
     {
       identifier: "urn:air:yamato.digital:mcp:yamato",
+      displayName: SERVER_TITLE,
       type: "application/mcp-server-card+json",
       url: `${MCP_URL}/server-card`,
+      representativeQueries: [
+        "qué es un Fractional CMO y cuánto cuesta en España",
+        "servicios de YAMATO para dirigir el marketing de una startup",
+        "artículos de YAMATO sobre Google Ads, IA aplicada o GEO",
+        "cómo reservar una llamada con YAMATO",
+      ],
     },
   ],
 };
@@ -432,7 +441,17 @@ export async function handleMcpRequest(request: Request): Promise<Response | nul
     return cardResponse(request, legacyServerCard);
   }
   if (pathname === "/.well-known/ai-catalog.json" && isGetLike) {
-    return json(aiCatalog, 200, "application/ai-catalog+json", "public, max-age=3600");
+    // ARD pide application/json; SEP-2127 sugiere application/ai-catalog+json. Se da el
+    // específico solo a quien lo pide.
+    const wantsCatalogType = (request.headers.get("accept") ?? "").includes("application/ai-catalog+json");
+    const response = json(
+      aiCatalog,
+      200,
+      wantsCatalogType ? "application/ai-catalog+json" : "application/json; charset=utf-8",
+      "public, max-age=3600",
+    );
+    response.headers.set("Vary", "Accept");
+    return response;
   }
 
   if (pathname !== MCP_PATH && pathname !== `${MCP_PATH}/`) return null;
