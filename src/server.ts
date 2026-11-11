@@ -1,6 +1,8 @@
 import "./lib/error-capture";
 
 import { handleAgentRequest, withDiscoveryHeaders } from "./lib/agent-request";
+import { handleAgentSkillsRequest } from "./lib/agent-skills";
+import { handleMcpRequest } from "./lib/mcp";
 import { consumeLastCapturedError } from "./lib/error-capture";
 import { renderErrorPage } from "./lib/error-page";
 
@@ -41,6 +43,12 @@ async function normalizeCatastrophicSsrResponse(response: Response): Promise<Res
 export default {
   async fetch(request: Request, env: unknown, ctx: unknown) {
     try {
+      const mcpResponse = await handleMcpRequest(request);
+      if (mcpResponse) return mcpResponse;
+
+      const skillsResponse = await handleAgentSkillsRequest(request);
+      if (skillsResponse) return skillsResponse;
+
       const agentResponse = handleAgentRequest(request);
       if (agentResponse) return agentResponse;
 

@@ -1,10 +1,15 @@
 import { createStart, createMiddleware } from "@tanstack/react-start";
 
 import { handleAgentRequest, withDiscoveryHeaders } from "./lib/agent-request";
+import { handleAgentSkillsRequest } from "./lib/agent-skills";
+import { handleMcpRequest } from "./lib/mcp";
 import { renderErrorPage } from "./lib/error-page";
 
 const agentMiddleware = createMiddleware().server(async ({ next, request }) => {
-  const early = handleAgentRequest(request);
+  const early =
+    (await handleMcpRequest(request)) ??
+    (await handleAgentSkillsRequest(request)) ??
+    handleAgentRequest(request);
   if (early) return early;
   const result = await next();
   const response = result instanceof Response ? result : result.response;
