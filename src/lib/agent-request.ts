@@ -32,6 +32,17 @@ function prefersJson(request: Request): boolean {
   return jsonIndex < htmlIndex;
 }
 
+/**
+ * Las URLs de página devuelven HTML o Markdown según la cabecera Accept. Sin
+ * `Vary: Accept`, la caché de Vercel guarda la primera versión que ve y se la da a
+ * todos: un agente pedía la portada en Markdown y los navegadores recibían Markdown.
+ */
+function withVaryAccept(headers: Headers): void {
+  const vary = headers.get("Vary");
+  if (!vary) headers.set("Vary", "Accept");
+  else if (!/(^|,)\s*(accept|\*)\s*(,|$)/i.test(vary)) headers.set("Vary", `${vary}, Accept`);
+}
+
 function tokenCount(text: string): string {
   return String(text.trim().split(/\s+/).filter(Boolean).length);
 }
@@ -61,6 +72,7 @@ function textResponse(
     headers.set("x-markdown-tokens", tokenCount(body));
   }
   withDiscoveryLink(headers, pagePath);
+  withVaryAccept(headers);
   return new Response(body, { status: 200, headers });
 }
 
@@ -100,7 +112,7 @@ export function handleAgentRequest(request: Request): Response | null {
     if (md) return md;
     return new Response("Not found\n", {
       status: 404,
-      headers: { "Content-Type": MARKDOWN_TYPE },
+      headers: { "Content-Type": MARKDOWN_TYPE, Vary: "Accept" },
     });
   }
 
@@ -127,6 +139,7 @@ export function withDiscoveryHeaders(request: Request, response: Response): Resp
   const pagePath = pagePathFromRequestPath(new URL(request.url).pathname) ?? "/";
   const headers = new Headers(response.headers);
   withDiscoveryLink(headers, pagePath);
+  withVaryAccept(headers);
   return new Response(response.body, {
     status: response.status,
     statusText: response.statusText,
