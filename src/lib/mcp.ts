@@ -382,7 +382,10 @@ function cardResponse(request: Request, card: object): Response {
   // Se devuelve el tipo específico solo si el cliente lo pide; si no, JSON normal.
   const wantsCardType = (request.headers.get("accept") ?? "").includes("application/mcp-server-card+json");
   const type = wantsCardType ? "application/mcp-server-card+json" : "application/json; charset=utf-8";
-  return json(card, 200, type, "public, max-age=3600");
+  const response = json(card, 200, type, "public, max-age=3600");
+  // Sin esto, la caché de Vercel sirve el primer tipo que guardó a todos los clientes.
+  response.headers.set("Vary", "Accept");
+  return response;
 }
 
 async function handlePost(request: Request): Promise<Response> {
