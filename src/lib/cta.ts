@@ -3,6 +3,8 @@ export const CTA_LINKS = {
   /** "calendar" si bookingUrl abre una agenda; "form" si abre un formulario (Tally, etc.). Cambia los textos. */
   bookingType: "calendar" as "calendar" | "form",
   whatsappUrl: "https://wa.me/34696977968",
+  email: "hola@yamato.digital",
+  linkedinUrl: "https://www.linkedin.com/company/yamatodigital/",
   fallback: "/contacto",
 } as const;
 

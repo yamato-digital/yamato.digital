@@ -14,6 +14,7 @@ Cada página de yamato.digital tiene una versión en Markdown sin navegación, s
 | Índice | https://yamato.digital/llms.txt | Páginas y artículos del blog con un resumen de cada uno |
 | Índice ampliado | https://yamato.digital/llms-full.txt | Más contexto por página |
 | Sitemap | https://yamato.digital/sitemap.xml | Todas las URLs con fecha |
+| Servidor MCP | https://yamato.digital/mcp | Solo lectura (Streamable HTTP): servicios, precios, blog y contacto |
 
 ## Pedir una página en Markdown
 
