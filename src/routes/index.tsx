@@ -5,13 +5,12 @@ import { Footer } from "@/components/Footer";
 import { Reveal } from "@/components/Reveal";
 import { RadiografiaCta } from "@/components/RadiografiaCta";
 import { HOME_SERVICE_LEVERS, HOME_SERVICES_INTRO, HOME_SERVICES_TITLE, SERVICE_MODES } from "@/lib/services";
-import heroVideoMp4 from "@/assets/yamato-hero.mp4.asset.json";
-import heroPoster from "@/assets/yamato-hero-poster.jpg.asset.json";
 import { IGNACIO_PHOTO } from "@/lib/images";
 
 const SITE_URL = "https://yamato.digital";
-const ASSET_ORIGIN = "https://yamato-digital.lovable.app";
-const assetUrl = (url: string) => `${ASSET_ORIGIN}${url}`;
+// Vídeo y póster del hero, servidos desde public/media (antes venían del alojamiento de Lovable).
+const HERO_VIDEO = "/media/yamato-hero.mp4";
+const HERO_POSTER = "/media/yamato-hero-poster.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -32,15 +31,15 @@ export const Route = createFileRoute("/")({
 
 
       { property: "og:url", content: SITE_URL },
-      { property: "og:video", content: `${SITE_URL}${heroVideoMp4.url}` },
-      { property: "og:video:secure_url", content: `${SITE_URL}${heroVideoMp4.url}` },
+      { property: "og:video", content: `${SITE_URL}${HERO_VIDEO}` },
+      { property: "og:video:secure_url", content: `${SITE_URL}${HERO_VIDEO}` },
       { property: "og:video:type", content: "video/mp4" },
       { property: "og:video:width", content: "1920" },
       { property: "og:video:height", content: "1080" },
     ],
     links: [
       { rel: "canonical", href: SITE_URL },
-      { rel: "preload", as: "image", href: assetUrl(heroPoster.url), fetchpriority: "high" },
+      { rel: "preload", as: "image", href: HERO_POSTER, fetchpriority: "high" },
     ],
     scripts: [
       {
@@ -50,8 +49,8 @@ export const Route = createFileRoute("/")({
           "@type": "VideoObject",
           name: "YAMATO | Fractional CMO independiente en Madrid",
           description: "Dirigimos, asesoramos y ejecutamos lo que mueve tu negocio. De la startup a la corporación.",
-          thumbnailUrl: assetUrl(heroPoster.url),
-          contentUrl: assetUrl(heroVideoMp4.url),
+          thumbnailUrl: `${SITE_URL}${HERO_POSTER}`,
+          contentUrl: `${SITE_URL}${HERO_VIDEO}`,
           uploadDate: "2026-06-23",
           duration: "PT10S",
           width: 1920,
@@ -120,7 +119,7 @@ function HeroMedia() {
     <section>
       <Reveal variant="scale" className="relative aspect-[16/9] w-full overflow-hidden bg-ink/95">
         <img
-          src={assetUrl(heroPoster.url)}
+          src={HERO_POSTER}
           alt="YAMATO | Fractional CMO independiente en Madrid"
           className="absolute inset-0 h-full w-full object-cover"
           loading="eager"
@@ -129,15 +128,15 @@ function HeroMedia() {
           className="relative z-10 h-full w-full object-cover"
           width={1920}
           height={1080}
-          poster={assetUrl(heroPoster.url)}
+          poster={HERO_POSTER}
           autoPlay
           muted
           loop
           playsInline
-          preload="auto"
+          preload="metadata"
           aria-label="YAMATO | Fractional CMO independiente en Madrid"
         >
-          <source src={assetUrl(heroVideoMp4.url)} type="video/mp4" />
+          <source src={HERO_VIDEO} type="video/mp4" />
         </video>
       </Reveal>
     </section>
