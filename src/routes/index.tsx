@@ -15,7 +15,7 @@ const HERO_POSTER = "/media/yamato-hero-poster.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "YAMATO | Tu Fractional CMO." },
+      { title: "YAMATO | Tu Fractional CMO" },
       {
         name: "description",
         content:
