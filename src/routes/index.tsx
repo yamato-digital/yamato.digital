@@ -16,7 +16,7 @@ const assetUrl = (url: string) => `${ASSET_ORIGIN}${url}`;
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "YAMATO | Tu Fractional CMO." },
+      { title: "YAMATO | Tu Fractional CMO" },
       {
         name: "description",
         content:
