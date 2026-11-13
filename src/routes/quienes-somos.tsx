@@ -132,8 +132,8 @@ const PRINCIPLES = [
   },
   {
     n: "07",
-    title: "Sin permanencias.",
-    body: "Si te quedas, es porque quieres. El día que dejemos de aportar, te vas sin penalización y sin drama. Atar a un cliente con un contrato es admitir que no lo retienes con resultados.",
+    title: "Tres meses. Luego, mes a mes.",
+    body: "Los tres primeros meses son el mínimo, porque antes no hay nada que medir. A partir de ahí, si te quedas es porque quieres: el día que dejemos de aportar, te vas sin penalización y sin drama.",
   },
   {
     n: "08",

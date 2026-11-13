@@ -53,7 +53,7 @@ Más detalle: [Servicios](${SITE_URL}/servicios/index.md) · [Fractional CMO](${
 
 1. **Llamada** — Llamada de 30 minutos donde te escucharemos. Si en ese tiempo no te convencemos de trabajar juntos, YAMATO no es para ti.
 2. **Radiografía (gratis)** — Si en esos primeros minutos te hemos convencido, habremos cerrado una segunda reunión donde te diremos lo que haces bien, lo que no haces tan bien y, sobre todo, lo que no haces. Esto nos servirá como punto de partida.
-3. **Arrancamos** — Sin onboardings raros ni mierdas raras, en una semana estamos trabajando para ti. Sin permanencias.
+3. **Arrancamos** — Sin onboardings raros ni mierdas raras, en una semana estamos trabajando para ti. Tres meses para empezar, porque antes no hay nada que medir. Después, mes a mes: te vas cuando quieras.
 4. **Nos vamos** — Cuando sobremos, te lo diremos nosotros. Y te ayudamos a fichar a quien nos sustituya. Muchas veces nos hemos quedado incluso junto al nuevo equipo fichado.
 
 ## Encajarás si
@@ -143,7 +143,7 @@ Cada CMO lleva dos clientes como máximo. Con más, nadie piensa tu marketing: s
 | Decide la estrategia | Sí | Sí | No |
 | Dirige a tu equipo | Sí | Sí | No |
 | Tiempo de arranque | Días | 3–6 meses | Semanas |
-| Compromiso | El que necesites | Indefinido | Permanencia habitual |
+| Compromiso | Tres meses, luego mes a mes | Indefinido | Permanencia habitual |
 
 ## Los primeros 90 días
 
@@ -205,7 +205,7 @@ Debajo, una red de más de 50 colaboradores senior (SEO, CRM, contenido, datos, 
 4. Quien piensa, firma.
 5. La IA es para lo aburrido.
 6. Solo ejecutamos lo que hemos marcado.
-7. Sin permanencias.
+7. Tres meses. Luego, mes a mes.
 8. Esto va de ganar dinero.
 `,
   },

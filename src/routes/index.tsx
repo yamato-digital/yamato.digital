@@ -381,7 +381,7 @@ function Process() {
     {
       n: "03",
       title: "Arrancamos",
-      body: "Sin onboardings raros ni mierdas raras, en una semana estamos trabajando para ti. Sin permanencias.",
+      body: "Sin onboardings raros ni mierdas raras, en una semana estamos trabajando para ti. Tres meses para empezar, porque antes no hay nada que medir. Después, mes a mes: te vas cuando quieras.",
     },
     {
       n: "04",
