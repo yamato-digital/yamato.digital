@@ -102,7 +102,7 @@ Tienes tres opciones:
 
 **Seguir como hasta ahora.** Puedes. Nadie te obliga a cambiar. Pero si estás leyendo este artículo, probablemente ya sabes cómo termina esa historia.
 
-**Buscar un CMO externo que se integre en tu equipo.** Alguien que se siente en tu mesa directiva, asuma la responsabilidad del marketing, dirija a tu equipo (o ponga uno) y te diga las cosas como son. Sin permanencias, sin contratos trampa y sin vender humo.
+**Buscar un CMO externo que se integre en tu equipo.** Alguien que se siente en tu mesa directiva, asuma la responsabilidad del marketing, dirija a tu equipo (o ponga uno) y te diga las cosas como son. Tres meses para empezar y, después, mes a mes. Sin contratos trampa y sin vender humo.
 
 No vamos a decirte cuál elegir. Bueno, sí. Pero primero te diremos tres cosas: lo que haces bien, lo que no haces bien, y lo que no haces y deberías.
 

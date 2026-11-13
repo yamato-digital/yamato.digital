@@ -67,7 +67,7 @@ El campo "Target ROAS" ha dejado de ser un detalle técnico que el algoritmo int
 
 Y eso obliga a lo que muchas startups llevan años posponiendo: decidir cuánto vale un cliente y que alguien responda de ese número. No un porcentaje de la inversión publicitaria. Criterio. Un CMO por el precio de un junior, en vez de un gestor de pujas que gana más cuanto más gastas tú.
 
-Si quieres saber cuáles de tus targets tienen dueño y cuáles son una plantilla de 2023, te lo decimos en media hora y gratis. Sin permanencias, porque tampoco hacen falta.
+Si quieres saber cuáles de tus targets tienen dueño y cuáles son una plantilla de 2023, te lo decimos en media hora y gratis. Sin compromiso, porque tampoco hace falta.
 
 [¿Hablamos?](https://yamato.digital/contacto)
 

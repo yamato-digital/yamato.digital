@@ -227,7 +227,7 @@ function FractionalCmoPage() {
                   </tr>
                   <tr>
                     <th scope="row" className="py-4 pr-4 font-semibold text-ink">Compromiso</th>
-                    <td className="py-4 pr-4">El que necesites</td>
+                    <td className="py-4 pr-4">Tres meses, luego mes a mes</td>
                     <td className="py-4 pr-4">Indefinido</td>
                     <td className="py-4">Permanencia habitual</td>
                   </tr>
