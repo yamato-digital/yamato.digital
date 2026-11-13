@@ -66,7 +66,7 @@ export const HOME_SERVICES_INTRO =
 
 // Ejecución nombra Paid Media a petición de Ignacio; ver TODO de paid arriba.
 export const HOME_SERVICE_LEVERS =
-  "Estrategia y dirección · Mentoría y gestión de equipos · Go-to-Market · Growth · IA aplicada · Ejecución (Paid Media, CRM, Social Media y un largo etcétera).";
+  "Estrategia y dirección · Mentoría y gestión de equipos · Go-to-Market · Growth marketing · IA aplicada · Ejecución (Paid Media, CRM, Social Media y un largo etcétera).";
 
 export interface ServiceLever {
   /** Titular: el problema que resuelve. */
@@ -78,6 +78,10 @@ export interface ServiceLever {
   body: string;
   /** Métrica de negocio que mueve la palanca. Sin valor, no se pinta. */
   moves?: string;
+  /** Página propia de la palanca, si la tiene. */
+  href?: "/growth-marketing";
+  /** Texto del enlace a esa página. */
+  hrefLabel?: string;
 }
 
 export const SERVICE_LEVERS: ServiceLever[] = [
@@ -104,8 +108,10 @@ export const SERVICE_LEVERS: ServiceLever[] = [
   },
   {
     problem: "Creces, pero no sabes por qué. Ni cómo repetirlo.",
-    lever: "Growth",
-    serviceName: "Growth",
+    lever: "Growth marketing",
+    serviceName: "Growth marketing",
+    href: "/growth-marketing",
+    hrefLabel: "Cómo hacemos growth marketing",
     body: "Buscamos la palanca que de verdad hace crecer tu negocio, la probamos rápido y escalamos solo lo que funciona. Experimentos con hipótesis y número, no ocurrencias de lunes por la mañana.",
     moves: "adquisición, conversión y retención",
   },

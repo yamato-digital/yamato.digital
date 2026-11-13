@@ -1,5 +1,6 @@
 import { getAllPosts, getPost } from "@/lib/blog";
 import {
+  EXECUTION_MODEL,
   HOME_SERVICE_LEVERS,
   HOME_SERVICES_INTRO,
   HOME_SERVICES_TITLE,
@@ -10,6 +11,21 @@ import {
 import { DIRECTION_CASES, OTHER_PROJECTS } from "@/lib/clients";
 import { CONTACT_BOOKING_LABEL, CTA_LINKS } from "@/lib/cta";
 import { FIRST_90_DAYS } from "@/lib/fractional-cmo";
+import {
+  GROWTH_CASE_NAMES,
+  GROWTH_CYCLE,
+  GROWTH_DEFINITION,
+  GROWTH_DESCRIPTION,
+  GROWTH_FAQ,
+  GROWTH_H1,
+  GROWTH_HYPOTHESIS_EXAMPLE,
+  GROWTH_METRICS,
+  GROWTH_PATH,
+  GROWTH_SUBTITLE,
+  GROWTH_SYMPTOMS,
+  GROWTH_TITLE,
+  GROWTH_WHO_LEADS,
+} from "@/lib/growth-marketing";
 
 export const SITE_URL = "https://yamato.digital";
 
@@ -83,7 +99,7 @@ Más detalle: [Servicios](${SITE_URL}/servicios/index.md) · [Fractional CMO](${
   },
   "/servicios": {
     title: "Servicios — YAMATO",
-    description: "Seis cosas. Bien hechas. Estrategia, mentoría, Go-to-Market, Growth, IA aplicada y ejecución.",
+    description: "Seis cosas. Bien hechas. Estrategia, mentoría, Go-to-Market, Growth marketing, IA aplicada y ejecución.",
     body: `# Servicios — YAMATO
 
 Tres formas de trabajar. *Seis palancas.*
@@ -105,7 +121,9 @@ ${SERVICE_MODES.map((m) => `### ${m.problem}\n\n*${m.name}.* ${m.body}`).join("\
 ${SERVICES_INTRO}
 
 ${SERVICE_LEVERS.map(
-  (s) => `### ${s.problem}\n\n*${s.lever}.* ${s.body}${s.moves ? `\n\n**Mueve:** ${s.moves}.` : ""}`,
+  (s) => `### ${s.problem}\n\n*${s.lever}.* ${s.body}${s.moves ? `\n\n**Mueve:** ${s.moves}.` : ""}${
+    s.href && s.hrefLabel ? `\n\n[${s.hrefLabel}](${SITE_URL}${s.href}/index.md)` : ""
+  }`,
 ).join("\n\n")}
 `,
   },
@@ -162,6 +180,76 @@ ${FIRST_90_DAYS.map((r) => `| ${r.period} | ${r.work} | ${r.outcome} |`).join("\
 **¿Qué hace un Fractional CMO con mis agencias?** Decide qué hay que pedir, a quién y por qué, y las dirige. También a tus proveedores actuales. Y responde del número.
 
 **¿Cuánto dura?** Lo normal son 6–12 meses. Si a los 12 meses seguimos siendo imprescindibles, algo hemos hecho mal.
+
+[Hablemos](${SITE_URL}/contacto/index.md) · [Ver servicios](${SITE_URL}/servicios/index.md)
+`,
+  },
+  [GROWTH_PATH]: {
+    title: GROWTH_TITLE,
+    description: GROWTH_DESCRIPTION,
+    body: `# ${GROWTH_H1}
+
+${GROWTH_SUBTITLE}
+
+## Qué es growth marketing
+
+${GROWTH_DEFINITION}
+
+La palabra importante es «repetible». Crecer un trimestre lo consigue cualquiera con presupuesto. Saber por qué has crecido, y volver a hacerlo, es otra cosa.
+
+## Por qué casi nunca funciona
+
+Se compra como ejecución y es un problema de criterio.
+
+${GROWTH_SYMPTOMS.map((s) => `- ${s}`).join("\n")}
+
+Nadie ha decidido qué se prueba, qué se para y con qué número se juzga. Sin eso, lo que tienes es actividad.
+
+## Cómo lo hacemos
+
+${GROWTH_CYCLE.map((c, i) => `${i + 1}. **${c.step}.** ${c.body}`).join("\n")}
+
+### Cómo es una hipótesis de verdad
+
+Una hipótesis no es «vamos a probar TikTok». Es una frase que se puede dar por falsa.
+
+> «${GROWTH_HYPOTHESIS_EXAMPLE}»
+
+Tiene una causa, un cambio, un número y un plazo. Si a las cuatro semanas no ha subido, se descarta y se pasa a la siguiente.
+
+### Qué se mide en cada fase
+
+| Fase | La pregunta | Lo que se mira |
+|---|---|---|
+${GROWTH_METRICS.map((m) => `| ${m.phase} | ${m.question} | ${m.metrics} |`).join("\n")}
+
+Impresiones, seguidores y «alcance» no están en la tabla. No es un olvido.
+
+### Quién lo dirige y quién lo ejecuta
+
+${GROWTH_WHO_LEADS.replace("Fractional CMO", `[Fractional CMO](${SITE_URL}/fractional-cmo/index.md)`)}
+
+${EXECUTION_MODEL}
+
+## Growth marketing no es growth hacking
+
+El growth hacking persigue un atajo: un truco, un canal virgen, un hack de un mes. Funciona hasta que lo copia el siguiente.
+
+Y tampoco es lo que vende una agencia de growth. Una agencia vende horas de campaña y, a menudo, cobra un porcentaje de los medios: gana más cuanto más gastas.
+
+## Lo que sí podemos citar
+
+${DIRECTION_CASES.filter((c) => GROWTH_CASE_NAMES.includes(c.name) && c.result)
+  .map((c) => `- **${c.name}:** ${c.result}`)
+  .join("\n")}
+
+## Cuánto tiempo hace falta
+
+Tres meses para empezar, porque antes no hay nada que medir. Después, mes a mes: te vas cuando quieras.
+
+## Preguntas frecuentes
+
+${GROWTH_FAQ.map((f) => `**${f.q}** ${f.a}`).join("\n\n")}
 
 [Hablemos](${SITE_URL}/contacto/index.md) · [Ver servicios](${SITE_URL}/servicios/index.md)
 `,
@@ -330,6 +418,7 @@ export function buildLlmsTxt(): string {
     ["Inicio", "/", PAGES["/"].description],
     ["Servicios", "/servicios", PAGES["/servicios"].description],
     ["Fractional CMO", "/fractional-cmo", PAGES["/fractional-cmo"].description],
+    ["Growth marketing", GROWTH_PATH, PAGES[GROWTH_PATH].description],
     ["Quiénes somos", "/quienes-somos", PAGES["/quienes-somos"].description],
     ["Clientes", "/clientes", PAGES["/clientes"].description],
     ["Partners", "/partners", PAGES["/partners"].description],
@@ -347,7 +436,7 @@ export function buildLlmsTxt(): string {
 
   return `# YAMATO
 
-> YAMATO es un Fractional CMO independiente en Madrid: un director de marketing a tiempo parcial para empresas con producto validado. Desde ahí activa lo que haga falta: mentoría de equipos, Go-to-Market, Growth, IA aplicada y ejecución.
+> YAMATO es un Fractional CMO independiente en Madrid: un director de marketing a tiempo parcial para empresas con producto validado. Desde ahí activa lo que haga falta: mentoría de equipos, Go-to-Market, Growth marketing, IA aplicada y ejecución.
 
 Si eres un agente o un LLM, pide las páginas en Markdown: añade \`/index.md\` a la URL o envía \`Accept: text/markdown\`. Índice ampliado: ${SITE_URL}/llms-full.txt
 
@@ -366,6 +455,7 @@ export function buildLlmsFullTxt(): string {
     PAGES["/"].body,
     PAGES["/servicios"].body,
     PAGES["/fractional-cmo"].body,
+    PAGES[GROWTH_PATH].body,
     PAGES["/quienes-somos"].body,
     PAGES["/clientes"].body,
     PAGES["/partners"].body,
