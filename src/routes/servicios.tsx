@@ -10,12 +10,12 @@ export const Route = createFileRoute("/servicios")({
       {
         name: "description",
         content:
-          "Seis cosas. Bien hechas. Estrategia, mentoría, Go-to-Market, Growth, IA aplicada y ejecución para empresas que quieren resultados.",
+          "Seis cosas. Bien hechas. Estrategia, mentoría, Go-to-Market, Growth marketing, IA aplicada y ejecución para empresas que quieren resultados.",
       },
       { property: "og:title", content: "Servicios — YAMATO" },
       {
         property: "og:description",
-        content: "Seis cosas. Bien hechas. Estrategia, mentoría, Go-to-Market, Growth, IA aplicada y ejecución.",
+        content: "Seis cosas. Bien hechas. Estrategia, mentoría, Go-to-Market, Growth marketing, IA aplicada y ejecución.",
       },
       { property: "og:url", content: "https://yamato.digital/servicios" },
     ],
@@ -126,6 +126,17 @@ function ServiciosPage() {
                     <p className="mt-4 text-base">
                       <span className="font-semibold">Mueve:</span> <span className="font-serif text-xl">{s.moves}</span>
                     </p>
+                  ) : null}
+                  {s.href && s.hrefLabel ? (
+                    <Link
+                      to={s.href}
+                      className="group mt-6 inline-flex items-baseline font-serif text-xl link-underline link-underline-hover"
+                    >
+                      {s.hrefLabel}
+                      <span aria-hidden className="ml-2 inline-block transition-transform group-hover:translate-x-1">
+                        →
+                      </span>
+                    </Link>
                   ) : null}
                 </li>
               ))}
