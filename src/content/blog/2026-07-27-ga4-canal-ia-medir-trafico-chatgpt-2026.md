@@ -2,7 +2,7 @@
 slug: "ga4-canal-ia-medir-trafico-chatgpt-2026"
 title: "GA4 ya mide tu tráfico de ChatGPT. La cifra que te enseña es mentira."
 date: "2026-07-27"
-cover: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1600&q=80"
+cover: "/assets/blog/ga4-ya-mide-tu-trafico-de-chatgpt-la-cifra-que-te-ensena-es-mentira.webp"
 excerpt: "GA4 ya tiene un canal para el tráfico de IA, pero parte tus visitas de ChatGPT en tres y se deja Perplexity fuera. Qué mide de verdad y cómo arreglarlo."
 ---
 

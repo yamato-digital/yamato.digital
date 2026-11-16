@@ -2,7 +2,7 @@
 slug: "startups-espana-no-escalan-y-no-es-el-producto"
 title: "El 95% de las startups españolas no escala. Y no es un problema de producto."
 date: "2026-10-05"
-cover: "https://images.unsplash.com/photo-1730382624709-81e52dd294d4?ixlib=rb-4.1.0&q=90&fm=jpg&crop=entropy&cs=srgb&w=1920"
+cover: "/assets/blog/el-95-de-las-startups-espanolas-no-escala-y-no-es-un-problema-de-producto.webp"
 excerpt: "El 95% de las startups españolas no logra escalar. Los datos de 2026 apuntan a ventas y caja, no a producto. Así se decide el GTM desde arriba."
 keywords: "go-to-market España, ICP, canal de ventas, pricing, growth partner, Fractional CMO, startups España 2026"
 ---

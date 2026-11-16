@@ -2,7 +2,7 @@
 slug: "tu-marketing-no-funciona"
 title: "Tu marketing no funciona y no es culpa de tu agencia (bueno, un poco sí)"
 date: "2026-02-23"
-cover: "https://images.unsplash.com/photo-1711725637816-b0755c582c86?ixlib=rb-4.1.0&q=90&fm=jpg&crop=entropy&cs=srgb&w=1920"
+cover: "/assets/blog/tu-marketing-no-funciona-y-no-es-culpa-de-tu-agencia-bueno-un-poco-si.webp"
 excerpt: "Gastas en Google Ads pero no tienes ni idea de si funciona. Publicas en redes como si fuera una obligación moral y nadie interactúa. Tu web tiene tres años y parece de diez. No sal…"
 ---
 

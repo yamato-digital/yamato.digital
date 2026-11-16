@@ -2,7 +2,7 @@
 slug: "anuncios-para-ia-time-agent-ads-2026"
 title: "Ya hay anuncios escritos para que los lea la IA"
 date: "2026-08-24"
-cover: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.1.0&q=90&fm=jpg&crop=entropy&cs=srgb&w=1920"
+cover: "/assets/blog/ya-hay-anuncios-escritos-para-que-los-lea-la-ia.webp"
 excerpt: "Time sirve anuncios que solo leen ClaudeBot, OAI-SearchBot y PerplexityBot. Qué significa para tu marca que la publicidad ya no se dirija a personas."
 keywords: "agent ads, publicidad para IA, GEO, marketing con IA, crawlers de IA, visibilidad en ChatGPT, cloaking, Time Mobian"
 ---

@@ -2,7 +2,7 @@
 slug: "agentes-ia-marketing-descuentos-no-funcionan"
 title: "Tu mejor cliente es un agente de IA. No le importan tus descuentos."
 date: "2026-05-18"
-cover: "https://images.spr.so/cdn-cgi/imagedelivery/j42No7y-dcokJuNgXeA0ig/b28d96ca-7de3-4798-99a8-5e811d2a2465/tu_mejor_cliente_es_un_agente_de_ia._no_le_importan_tus_descuentos/w=1920,quality=90,fit=scale-down"
+cover: "/assets/blog/tu-mejor-cliente-es-un-agente-de-ia-no-le-importan-tus-descuentos.webp"
 excerpt: "Mientras lees esto, alguien le está comprando algo a tu marca sin haber visitado tu web. No es magia. Es un agente de IA decidiendo por una persona real, en una conversación con Ch…"
 ---
 

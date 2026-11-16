@@ -2,7 +2,7 @@
 slug: "growth-marketing-no-es-growth-hacking"
 title: "Growth marketing no es growth hacking"
 date: "2026-11-16"
-cover: "https://yamato.digital/assets/blog/growth-marketing-no-es-growth-hacking.webp"
+cover: "/assets/blog/growth-marketing-no-es-growth-hacking.webp"
 excerpt: "El hack se agota. El sistema se dirige. Qué es growth marketing de verdad y por qué no se parece en nada al truco que te vendieron."
 keywords: "growth marketing vs growth hacking, qué es growth marketing, growth hacking, diferencia growth marketing y growth hacking, experimentos de crecimiento, startups España"
 ---

@@ -2,7 +2,7 @@
 slug: "fractional-cmo-no-te-vende-horas-te-vende-un-no"
 title: "Un fractional CMO no te vende horas. Te vende un 'no'."
 date: "2026-09-28"
-cover: "https://images.unsplash.com/photo-1431540015161-0bf868a2d407?ixlib=rb-4.1.0&q=90&fm=jpg&crop=entropy&cs=srgb&w=1920"
+cover: "/assets/blog/un-fractional-cmo-no-te-vende-horas-te-vende-un-no.webp"
 excerpt: "El 31% del S&P 500 ya no tiene CMO y el mercado fractional se ha llenado de oferta. Lo que compras no son horas de señor senior: es quién puede decir que no."
 keywords: "fractional CMO, direccion de marketing externa, comite de direccion, interim CMO, Spencer Stuart, ownership marketing, marketing 2026"
 ---

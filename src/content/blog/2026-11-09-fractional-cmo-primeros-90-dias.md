@@ -2,7 +2,7 @@
 slug: "fractional-cmo-primeros-90-dias"
 title: "Los primeros 90 días con un Fractional CMO: qué debería pasar y qué no"
 date: "2026-11-09"
-cover: "https://images.unsplash.com/photo-1435527173128-983b87201f4d?ixlib=rb-4.1.0&q=90&fm=jpg&crop=entropy&cs=srgb&w=1920"
+cover: "/assets/blog/los-primeros-90-dias-con-un-fractional-cmo-que-deberia-pasar-y-que-no.webp"
 excerpt: "Qué tiene que estar hecho al final del mes 1, del 2 y del 3 con un Fractional CMO, y las señales de que pagas entregables en vez de decisiones."
 keywords: "Fractional CMO primeros 90 días, qué hace un Fractional CMO, contratar un Fractional CMO, plan 30-60-90 marketing, dirección de marketing externa, startups España"
 ---

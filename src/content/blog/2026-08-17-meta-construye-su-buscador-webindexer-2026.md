@@ -2,7 +2,7 @@
 slug: "meta-construye-su-buscador-webindexer-2026"
 title: "Meta está construyendo su propio buscador. Tu robots.txt ya está votando."
 date: "2026-08-17"
-cover: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.1.0&q=90&fm=jpg&crop=entropy&cs=srgb&w=1920"
+cover: "/assets/blog/meta-esta-construyendo-su-propio-buscador-tu-robots-txt-ya-esta-votando.webp"
 excerpt: "En agosto de 2026 Meta-WebIndexer pasó del 2% al 38% del rastreo de IA. Meta monta su propio buscador y tu robots.txt decide si apareces."
 keywords: "Meta-WebIndexer, buscador de Meta, Meta AI, robots.txt, rastreadores de IA, GEO, visibilidad en IA, SEO 2026"
 ---

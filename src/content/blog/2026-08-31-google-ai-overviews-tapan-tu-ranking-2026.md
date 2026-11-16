@@ -2,7 +2,7 @@
 slug: "google-ai-overviews-tapan-tu-ranking-2026"
 title: "Google te acaba de tapar. Estás el tercero"
 date: "2026-08-31"
-cover: "https://images.unsplash.com/photo-1586125674857-4eb86880905d?ixlib=rb-4.1.0&q=90&fm=jpg&crop=entropy&cs=srgb&w=1920"
+cover: "/assets/blog/google-te-acaba-de-tapar-estas-el-tercero.webp"
 excerpt: "Google confirma que los AI Overviews se expanden solos y tapan los resultados orgánicos. Tu informe dice que estás el tercero. La pantalla dice otra cosa."
 keywords: "AI Overviews, Google Search, ranking SEO, GEO, AI Mode, visibilidad en Google, zero-click, spam update"
 ---

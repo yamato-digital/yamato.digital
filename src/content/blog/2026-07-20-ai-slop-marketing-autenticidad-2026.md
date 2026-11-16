@@ -2,7 +2,7 @@
 slug: "ai-slop-marketing-autenticidad-2026"
 title: 'El "AI slop" ya tiene nombre y está espantando a tus clientes (con datos)'
 date: "2026-07-20"
-cover: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1600&q=80"
+cover: "/assets/blog/el-ai-slop-ya-tiene-nombre-y-esta-espantando-a-tus-clientes-con-datos.webp"
 excerpt: "El 52% de tus clientes deja de prestarte atención al detectar contenido generado por IA. Qué aprender del error de McDonald's y Coca-Cola antes de repetirlo."
 keywords: "AI slop, marketing con inteligencia artificial, contenido generado por IA, autenticidad de marca, backlash IA marketing, IA en marketing digital, contenido humano vs IA"
 ---

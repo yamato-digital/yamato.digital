@@ -2,7 +2,7 @@
 slug: "marketing-en-chatgpt"
 title: "Marketing en ChatGPT: el nuevo canal que tu marca no puede ignorar"
 date: "2026-04-06"
-cover: "https://images.spr.so/cdn-cgi/imagedelivery/j42No7y-dcokJuNgXeA0ig/50c71bbd-3d4f-4f85-8641-862a9e3180f0/freepik_2735440745/w=1920,quality=90,fit=scale-down"
+cover: "/assets/blog/marketing-en-chatgpt-el-nuevo-canal-que-tu-marca-no-puede-ignorar.webp"
 excerpt: "Llevas años optimizando campañas en Google Ads. Ajustando audiencias en Meta. Probando creatividades en TikTok. Y de repente, el canal más importante del marketing digital en 2026…"
 ---
 

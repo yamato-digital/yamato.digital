@@ -2,7 +2,7 @@
 slug: "social-seo-redes-sociales-nuevo-buscador"
 title: "Tu cliente ya no te busca en Google: las redes sociales son el nuevo buscador"
 date: "2026-04-20"
-cover: "https://images.unsplash.com/photo-1683721003111-070bcc053d8b?ixlib=rb-4.1.0&q=90&fm=jpg&crop=entropy&cs=srgb&w=1920"
+cover: "/assets/blog/tu-cliente-ya-no-te-busca-en-google-las-redes-sociales-son-el-nuevo-buscador.webp"
 excerpt: "Hay algo que probablemente ya has hecho esta semana sin darte cuenta: abrir TikTok o Instagram para buscar un restaurante, una receta, o ese producto que viste en un reel. No abris…"
 ---
 

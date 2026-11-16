@@ -2,7 +2,7 @@
 slug: "no-sales-en-google-ni-en-chatgpt"
 title: "No sales en Google. No sales en ChatGPT. No sales, en general."
 date: "2026-03-16"
-cover: "https://images.unsplash.com/photo-1713345248737-2698000f143d?ixlib=rb-4.1.0&q=90&fm=jpg&crop=entropy&cs=srgb&w=1920"
+cover: "/assets/blog/no-sales-en-google-no-sales-en-chatgpt-no-sales-en-general.webp"
 excerpt: "Haz una prueba ahora mismo. Abre ChatGPT y pregúntale quién hace lo que tú haces en tu sector. O ve a Perplexity y busca la mejor solución para el problema que resuelve tu producto…"
 ---
 
