@@ -2,7 +2,7 @@
 slug: "google-ads-ai-max-migracion-automatica-2026"
 title: "Google te quitó el volante. Y dijo que no hagas nada"
 date: "2026-09-07"
-cover: "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?ixlib=rb-4.1.0&q=90&fm=jpg&crop=entropy&cs=srgb&w=1920"
+cover: "/assets/blog/google-te-quito-el-volante-y-dijo-que-no-hagas-nada.webp"
 excerpt: "Desde el 1 de septiembre Google migra campañas de Search a AI Max sin que pulses nada. El problema no es la IA. Es que nadie en tu empresa se ha enterado."
 keywords: "Google Ads, AI Max, migración automática, campañas Search, Broad Match, publicidad digital, paid media, automatización"
 ---

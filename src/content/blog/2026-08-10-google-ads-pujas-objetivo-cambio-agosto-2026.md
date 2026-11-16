@@ -2,7 +2,7 @@
 slug: "google-ads-pujas-objetivo-cambio-agosto-2026"
 title: "El 17 de agosto Google Ads te dará exactamente lo que pediste. Ahí está el problema."
 date: "2026-08-10"
-cover: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.1.0&q=90&fm=jpg&crop=entropy&cs=srgb&w=1920"
+cover: "/assets/blog/el-17-de-agosto-google-ads-te-dara-exactamente-lo-que-pediste-ahi-esta-el-problema.webp"
 excerpt: "El 17 de agosto Google Ads deja de superar tus objetivos de CPA y ROAS en campañas limitadas por presupuesto. Te dará justo lo que pediste. ¿Y si pediste mal?"
 keywords: "Google Ads, Target CPA, Target ROAS, Smart Bidding, campañas limitadas por presupuesto, pujas automáticas, CPA objetivo, publicidad digital"
 ---

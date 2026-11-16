@@ -2,7 +2,7 @@
 slug: "first-party-data-datos-propios-marketing"
 title: "First-party data: la ventaja definitiva de 2026"
 date: "2026-04-27"
-cover: "https://images.unsplash.com/photo-1640158615573-cd28feb1bf4e?ixlib=rb-4.1.0&q=90&fm=jpg&crop=entropy&cs=srgb&w=1920"
+cover: "/assets/blog/first-party-data-la-ventaja-definitiva-de-2026.webp"
 excerpt: "Hay activos en tu negocio que no aparecen en el balance contable, pero que en 2026 valen más que cualquier partida presupuestaria. Uno de ellos son tus datos propios: la informació…"
 ---
 

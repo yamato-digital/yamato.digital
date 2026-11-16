@@ -2,7 +2,7 @@
 slug: "dark-social-comunidades-marketing-2026"
 title: "Tus mejores ventas se cierran en grupos de WhatsApp a los que no estás invitado"
 date: "2026-05-04"
-cover: "https://images.unsplash.com/photo-1678329886668-6f44024b9ae6?ixlib=rb-4.1.0&q=90&fm=jpg&crop=entropy&cs=srgb&w=1920"
+cover: "/assets/blog/tus-mejores-ventas-se-cierran-en-grupos-de-whatsapp-a-los-que-no-estas-invitado.webp"
 excerpt: "La mayoría de marcas con las que hablamos siguen midiendo lo mismo que en 2018: impresiones, alcance, CTR, engagement rate. Indicadores limpios, fáciles de exportar a un PowerPoint…"
 ---
 

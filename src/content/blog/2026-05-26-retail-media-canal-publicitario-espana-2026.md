@@ -2,7 +2,7 @@
 slug: "retail-media-canal-publicitario-espana-2026"
 title: "Carrefour ya no es un súper. Es un medio publicitario (y tu marca no aparece)"
 date: "2026-05-26"
-cover: "https://images.spr.so/cdn-cgi/imagedelivery/j42No7y-dcokJuNgXeA0ig/e5eefc2f-93e0-41d4-abd4-59a6fcee802a/carrefour/w=1920,quality=90,fit=scale-down"
+cover: "/assets/blog/carrefour-ya-no-es-un-super-es-un-medio-publicitario-y-tu-marca-no-aparece.webp"
 excerpt: "Si tu marca vende un producto que está en el lineal de Carrefour, El Corte Inglés o Amazon, tu peor pesadilla ya no es Meta subiendo el CPM. Es que tu competidor pague para aparece…"
 ---
 

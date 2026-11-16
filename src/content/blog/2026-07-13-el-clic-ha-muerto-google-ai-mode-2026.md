@@ -2,7 +2,7 @@
 slug: "el-clic-ha-muerto-google-ai-mode-2026"
 title: "El clic ha muerto. Google lo acaba de confirmar (y ahora te vende la solución)"
 date: "2026-07-13"
-cover: "https://images.unsplash.com/photo-1745674684539-d90293d659a9?q=80&w=1920&auto=format&fit=crop"
+cover: "/assets/blog/el-clic-ha-muerto-google-lo-acaba-de-confirmar-y-ahora-te-vende-la-solucion.webp"
 excerpt: "Google confirmó en Marketing Live 2026 que el 92-94% de sesiones en AI Mode no generan clic. Qué implica para tu SEO y paid media, y qué hace YAMATO."
 ---
 

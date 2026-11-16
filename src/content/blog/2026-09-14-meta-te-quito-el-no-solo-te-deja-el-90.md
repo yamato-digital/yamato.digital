@@ -2,7 +2,7 @@
 slug: "meta-te-quito-el-no-solo-te-deja-el-90"
 title: "Meta te quitó el 'no'. Solo te deja el 90%"
 date: "2026-09-14"
-cover: "https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?ixlib=rb-4.1.0&q=90&fm=jpg&crop=entropy&cs=srgb&w=1920"
+cover: "/assets/blog/meta-te-quito-el-no-solo-te-deja-el-90.webp"
 excerpt: "Algunas cuentas de Meta Ads pierden las exclusiones de placements. Las value rules solo bajan la puja un 90%: ya no apagas Audience Network, lo abaratas."
 keywords: "Meta Ads, exclusiones placements, value rules, Advantage+ placements, Audience Network, publicidad Meta, paid media, automatización"
 ---

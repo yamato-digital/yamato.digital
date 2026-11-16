@@ -2,7 +2,7 @@
 slug: "email-marketing-newsletter-canal-mas-rentable-2026"
 title: "El email no ha muerto. Ha estado esperando a que tú lo mataras."
 date: "2026-06-15"
-cover: "https://images.unsplash.com/photo-1596526131083-e8c633c948d2?w=1920&q=90"
+cover: "/assets/blog/el-email-no-ha-muerto-ha-estado-esperando-a-que-tu-lo-mataras.webp"
 excerpt: "Hay una historia que el sector del marketing lleva repitiendo desde 2014: el email está muerto. Que nadie abre los correos. Que la gente solo usa redes sociales. Que la newsletter…"
 ---
 

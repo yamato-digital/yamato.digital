@@ -16,6 +16,8 @@ export const Route = createFileRoute("/blog/$slug")({
     const post = loaderData?.post;
     if (!post) return {};
     const url = `https://yamato.digital/blog/${post.slug}`;
+    // og:image y JSON-LD necesitan URL absoluta; las portadas viven en /assets/blog/.
+    const cover = post.cover?.startsWith("/") ? `https://yamato.digital${post.cover}` : post.cover;
     return {
       meta: [
         { title: `${post.title} — YAMATO` },
@@ -25,7 +27,7 @@ export const Route = createFileRoute("/blog/$slug")({
         { property: "og:description", content: post.excerpt },
         { property: "og:type", content: "article" },
         { property: "og:url", content: url },
-        ...(post.cover ? [{ property: "og:image", content: post.cover }] : []),
+        ...(cover ? [{ property: "og:image", content: cover }] : []),
         { property: "article:published_time", content: post.date },
       ],
       links: [{ rel: "canonical", href: url }],
@@ -38,7 +40,7 @@ export const Route = createFileRoute("/blog/$slug")({
             headline: post.title,
             description: post.excerpt,
             datePublished: post.date,
-            image: post.cover,
+            image: cover,
             author: { "@type": "Organization", name: "YAMATO" },
             publisher: { "@type": "Organization", name: "YAMATO" },
             mainEntityOfPage: url,

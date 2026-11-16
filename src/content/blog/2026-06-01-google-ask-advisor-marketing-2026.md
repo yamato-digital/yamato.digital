@@ -2,7 +2,7 @@
 slug: "google-ask-advisor-marketing-2026"
 title: "Google acaba de poner un agente IA al mando de tu marketing. Es muy cómodo. Y muy peligroso."
 date: "2026-06-01"
-cover: "https://images.unsplash.com/photo-1638136264464-2711f0078d1e?ixlib=rb-4.1.0&q=90&fm=jpg&crop=entropy&cs=srgb&w=1920"
+cover: "/assets/blog/google-acaba-de-poner-un-agente-ia-al-mando-de-tu-marketing-es-muy-comodo-y-muy-peligroso.webp"
 excerpt: "Google Marketing Live 2026 trajo el anuncio que llevábamos meses esperando. O temiendo. Depende de a quién preguntes."
 ---
 

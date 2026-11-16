@@ -2,7 +2,7 @@
 slug: "el-problema-actual-del-marketing"
 title: "El problema actual del marketing"
 date: "2026-03-02"
-cover: "https://images.unsplash.com/photo-1519581706005-e1b7e2de264c?ixlib=rb-4.1.0&q=90&fm=jpg&crop=entropy&cs=srgb&w=1920"
+cover: "/assets/blog/el-problema-actual-del-marketing.webp"
 excerpt: "El 30 % de los nuevos CMOs duran menos de  18 meses. Es el c-level menos longevo."
 ---
 

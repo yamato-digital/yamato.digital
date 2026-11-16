@@ -2,7 +2,7 @@
 slug: "tiktok-shop-espana-200-millones-marca"
 title: "TikTok Shop ya factura 200 millones en España. ¿Debes abrirte una cuenta?"
 date: "2026-06-08"
-cover: "https://images.unsplash.com/photo-1646446855655-451a3a8f19b6?ixlib=rb-4.1.0&q=90&fm=jpg&crop=entropy&cs=srgb&w=1920"
+cover: "/assets/blog/tiktok-shop-ya-factura-200-millones-en-espana-debes-abrirte-una-cuenta.webp"
 excerpt: "En diciembre de 2024, TikTok lanzó TikTok Shop en España. Año y medio después, la plataforma factura 200 millones de euros al año, tiene 21.000 vendedores activos y es el retailer…"
 ---
 

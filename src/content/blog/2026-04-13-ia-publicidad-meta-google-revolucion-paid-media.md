@@ -2,7 +2,7 @@
 slug: "ia-publicidad-meta-google-revolucion-paid-media"
 title: "La IA se come la publicidad digital: lo que Meta y Google han cambiado en 2026 (y cómo te afecta)"
 date: "2026-04-13"
-cover: "https://images.unsplash.com/photo-1678483790053-71367bc7a02c?ixlib=rb-4.1.0&q=90&fm=jpg&crop=entropy&cs=srgb&w=1920"
+cover: "/assets/blog/la-ia-se-come-la-publicidad-digital-lo-que-meta-y-google-han-cambiado-en-2026-y-como-te-afecta.webp"
 excerpt: "Si llevas unos meses sin tocar tus campañas de paid media, tenemos una noticia buena y una mala. La buena: la inteligencia artificial puede hacer ahora cosas que antes requerían un…"
 ---
 

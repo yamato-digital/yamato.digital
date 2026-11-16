@@ -2,7 +2,7 @@
 slug: "cuanto-cuesta-fractional-cmo-2026-cmo-interno-agencia"
 title: "Cuánto cuesta un Fractional CMO en 2026 (y qué estás pagando de verdad)"
 date: "2026-10-19"
-cover: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.1.0&q=90&fm=jpg&crop=entropy&cs=srgb&w=1920"
+cover: "/assets/blog/cuanto-cuesta-un-fractional-cmo-en-2026-y-que-estas-pagando-de-verdad.webp"
 excerpt: "CMO en plantilla, agencia o Fractional CMO: en 2026 no compras lo mismo a distinto precio. Compras cosas distintas. Qué paga cada factura."
 keywords: "cuanto cuesta un fractional CMO, fractional CMO precio, CMO interno vs agencia, coste director de marketing España 2026, fee agencia marketing, growth partner"
 ---

@@ -2,7 +2,7 @@
 slug: "deja-de-publicar-en-redes-sociales"
 title: "Deja de publicar en redes sociales (hasta que leas esto)"
 date: "2026-03-23"
-cover: "https://images.unsplash.com/photo-1554177255-61502b352de3?ixlib=rb-4.1.0&q=90&fm=jpg&crop=entropy&cs=srgb&w=1920"
+cover: "/assets/blog/deja-de-publicar-en-redes-sociales-hasta-que-leas-esto.webp"
 excerpt: "Publicas en Instagram los martes. Un carrusel los jueves. Una frase inspiracional los viernes. Llevas meses así. Quizás años."
 ---
 

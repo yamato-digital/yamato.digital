@@ -2,7 +2,7 @@
 slug: "agentic-marketing-ia-agentes-autonomos-2026"
 title: "Agentic marketing: la IA ya ejecuta campañas enteras sola. Y ese no es el problema."
 date: "2026-05-11"
-cover: "https://images.unsplash.com/photo-1589254065878-42c9da997008?ixlib=rb-4.1.0&q=90&fm=jpg&crop=entropy&cs=srgb&w=1920"
+cover: "/assets/blog/agentic-marketing-la-ia-ya-ejecuta-campanas-enteras-sola-y-ese-no-es-el-problema.webp"
 excerpt: "La promesa es tan vieja como nueva: la IA va a hacer tu marketing por ti. Ahora con un giro. Ya no se trata de que te escriba el copy o te recomiende segmentaciones. Se trata de un…"
 ---
 

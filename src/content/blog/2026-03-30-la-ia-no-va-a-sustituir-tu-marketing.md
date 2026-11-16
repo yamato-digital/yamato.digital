@@ -2,7 +2,7 @@
 slug: "la-ia-no-va-a-sustituir-tu-marketing"
 title: "La IA no va a sustituir tu marketing. Va a dejar en evidencia que no tenías uno."
 date: "2026-03-30"
-cover: "https://images.unsplash.com/photo-1694903089438-bf28d4697d9a?ixlib=rb-4.1.0&q=90&fm=jpg&crop=entropy&cs=srgb&w=1920"
+cover: "/assets/blog/la-ia-no-va-a-sustituir-tu-marketing-va-a-dejar-en-evidencia-que-no-tenias-uno.webp"
 excerpt: "Llevas meses escuchando que la inteligencia artificial va a revolucionar el marketing. Que los agentes de IA van a crear campañas solas. Que la hiperpersonalización va a hacer que…"
 ---
 
