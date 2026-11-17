@@ -1,4 +1,12 @@
+import { Link } from "@tanstack/react-router";
+
 const logoWhite = { url: "/assets/logo-yamato-white.png" };
+
+const legalLinks = [
+  { label: "Aviso legal", to: "/aviso-legal" },
+  { label: "Privacidad", to: "/politica-privacidad" },
+  { label: "Cookies", to: "/politica-cookies" },
+] as const;
 
 export function Footer() {
   return (
@@ -23,6 +31,15 @@ export function Footer() {
             LinkedIn
           </a>
           <p className="mt-6 text-paper/40">© {new Date().getFullYear()} YAMATO</p>
+          <ul className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-paper/40 md:justify-end">
+            {legalLinks.map((link) => (
+              <li key={link.to}>
+                <Link to={link.to} className="link-underline link-underline-hover hover:text-paper/70">
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </footer>
