@@ -12,6 +12,12 @@ const menuItems = [
   { label: "Contacto", to: "/contacto" },
 ] as const;
 
+// Accesos directos visibles en la cabecera de escritorio (lg+): qué hacemos y prueba social.
+const headerLinks = [
+  { label: "Fractional CMO", to: "/fractional-cmo" },
+  { label: "Clientes", to: "/clientes" },
+] as const;
+
 const GUTTER = "px-6 sm:px-10 lg:px-16 xl:px-28";
 const HOVER =
   "transition-colors duration-500 ease-[cubic-bezier(0.165,0.84,0.44,1)] hover:text-[#0000FF]";
@@ -49,6 +55,16 @@ export function Nav() {
             />
           </Link>
           <div className="ml-auto flex shrink-0 items-center gap-5 sm:gap-8">
+            {headerLinks.map((item) => (
+              <Link
+                key={item.to}
+                to={item.to}
+                activeProps={{ className: "font-semibold" }}
+                className={`hidden lg:inline text-base leading-none text-ink ${HOVER}`}
+              >
+                {item.label}
+              </Link>
+            ))}
             <Link
               to="/contacto"
               activeProps={{ className: "font-semibold" }}

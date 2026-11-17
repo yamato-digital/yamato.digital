@@ -180,6 +180,22 @@ function FractionalCmoPage() {
             <p className="mt-12 max-w-2xl font-serif text-[clamp(1.5rem,2.6vw,2.25rem)] leading-[1.15] tracking-[-0.01em]">
               Cada CMO lleva dos clientes como máximo. Con más, nadie piensa tu marketing: solo lo atiende.
             </p>
+            <div className="mt-12 flex flex-col items-start gap-10">
+              <p className="max-w-xl text-lg leading-relaxed text-muted-ink md:text-xl">
+                Se contrata de tres formas: solo CMO, CMO con equipo o un proyecto cerrado.
+              </p>
+              <Link
+                to="/servicios"
+                data-cta="servicios"
+                data-cta-location="fractional-que-hace"
+                className="group inline-flex items-baseline font-serif text-[clamp(1.25rem,2vw,1.75rem)] leading-tight link-underline link-underline-hover"
+              >
+                Ver servicios
+                <span aria-hidden className="ml-2 inline-block transition-transform group-hover:translate-x-1">
+                  →
+                </span>
+              </Link>
+            </div>
           </div>
         </section>
 
