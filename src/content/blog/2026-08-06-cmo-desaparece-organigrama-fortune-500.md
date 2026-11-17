@@ -1,6 +1,6 @@
 ---
 slug: "cmo-desaparece-organigrama-fortune-500"
-title: "El Fortune 500 está borrando el título de CMO. Y tú ni siquiera lo tenías."
+title: "El Fortune 500 está borrando al CMO. Tú ni lo tenías."
 date: "2026-08-06"
 cover: "/assets/blog/el-fortune-500-esta-borrando-el-titulo-de-cmo-y-tu-ni-siquiera-lo-tenias.webp"
 excerpt: "Solo el 36% de las Fortune 500 mantiene el cargo de CMO, frente al 49% hace un año. No es rotación: es borrado. Y lo que dice de tu empresa incomoda más."

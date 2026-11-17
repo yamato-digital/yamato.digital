@@ -3,7 +3,8 @@ slug: "deja-de-publicar-en-redes-sociales"
 title: "Deja de publicar en redes sociales (hasta que leas esto)"
 date: "2026-03-23"
 cover: "/assets/blog/deja-de-publicar-en-redes-sociales-hasta-que-leas-esto.webp"
-excerpt: "Publicas en Instagram los martes. Un carrusel los jueves. Una frase inspiracional los viernes. Llevas meses así. Quizás años."
+excerpt: "El alcance orgánico en redes ha muerto y publicar por publicar te cuesta horas y dinero. Cinco síntomas de que pierdes el tiempo y qué hacer en su lugar."
+keywords: "dejar de publicar en redes sociales, no publicar en redes sociales, alcance orgánico, estrategia de redes sociales, redes sociales para empresas"
 ---
 
 Publicas en Instagram los martes. Un carrusel los jueves. Una frase inspiracional los viernes. Llevas meses así. Quizás años.
