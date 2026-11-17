@@ -11,11 +11,11 @@ import {
 import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
-import { reportLovableError } from "../lib/lovable-error-reporting";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 import { DevViewportSwitch } from "@/components/DevViewportSwitch";
 import { WebMcp } from "@/components/WebMcp";
+import { Analytics } from "@vercel/analytics/react";
 
 function NotFoundComponent() {
   useEffect(() => {
@@ -61,9 +61,6 @@ function NotFoundComponent() {
 function ErrorComponent({ error, reset }: ErrorComponentProps) {
   console.error(error);
   const router = useRouter();
-  useEffect(() => {
-    reportLovableError(error, { boundary: "tanstack_root_error_component" });
-  }, [error]);
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
@@ -176,6 +173,7 @@ function RootShell({ children }: { children: ReactNode }) {
       <body>
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PSHW2P5S" height="0" width="0" style={{ display: 'none', visibility: 'hidden' }}></iframe></noscript>
         {children}
+        <Analytics />
         <Scripts />
       </body>
     </html>

@@ -8,7 +8,7 @@ import { HOME_SERVICE_LEVERS, HOME_SERVICES_INTRO, HOME_SERVICES_TITLE, SERVICE_
 import { IGNACIO_PHOTO } from "@/lib/images";
 
 const SITE_URL = "https://yamato.digital";
-// Vídeo y póster del hero, servidos desde public/media (antes venían del alojamiento de Lovable).
+// Vídeo y póster del hero, servidos desde public/media.
 const HERO_VIDEO = "/media/yamato-hero.mp4";
 const HERO_POSTER = "/media/yamato-hero-poster.jpg";
 
