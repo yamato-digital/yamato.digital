@@ -98,9 +98,9 @@ Más detalle: [Servicios](${SITE_URL}/servicios/index.md) · [Fractional CMO](${
 `,
   },
   "/servicios": {
-    title: "Servicios — YAMATO",
+    title: "Servicios | YAMATO",
     description: "Seis cosas. Bien hechas. Estrategia, mentoría, Go-to-Market, Growth marketing, IA aplicada y ejecución.",
-    body: `# Servicios — YAMATO
+    body: `# Servicios | YAMATO
 
 Tres formas de trabajar. *Seis palancas.*
 
@@ -128,7 +128,7 @@ ${SERVICE_LEVERS.map(
 `,
   },
   "/fractional-cmo": {
-    title: "Fractional CMO en España — Dirección de marketing externa | YAMATO",
+    title: "Fractional CMO en España: dirección de marketing externa | YAMATO",
     description:
       "Qué es un Fractional CMO, cuánto cuesta en España y cuándo compensa frente a un CMO en plantilla o una agencia.",
     body: `# Fractional CMO. Dirección de marketing sin contratar a un CMO.
@@ -255,9 +255,9 @@ ${GROWTH_FAQ.map((f) => `**${f.q}** ${f.a}`).join("\n\n")}
 `,
   },
   "/quienes-somos": {
-    title: "Quiénes somos — YAMATO",
+    title: "Quiénes somos | YAMATO",
     description: "Un CMO que firma lo que piensa y un equipo senior que no tienes que fichar.",
-    body: `# Quiénes somos — YAMATO
+    body: `# Quiénes somos | YAMATO
 
 Un CMO que firma lo que piensa. Y un equipo que no tienes que fichar.
 
@@ -298,9 +298,9 @@ Debajo, una red de más de 50 colaboradores senior (SEO, CRM, contenido, datos, 
 `,
   },
   "/clientes": {
-    title: "Clientes — YAMATO",
+    title: "Clientes | YAMATO",
     description: "Empresas con las que hemos trabajado. Estrategia, dirección y ejecución de marketing.",
-    body: `# Clientes — YAMATO
+    body: `# Clientes | YAMATO
 
 Algunos de ellos.
 
@@ -319,9 +319,9 @@ ${OTHER_PROJECTS.map((p) => `- **${p.name}** — ${p.line}`).join("\n")}
 `,
   },
   "/partners": {
-    title: "Partners — YAMATO",
+    title: "Partners | YAMATO",
     description: "Presenta clientes y cobra el 15% de la primera mensualidad. Sin pipeline, sin reuniones.",
-    body: `# Partners — YAMATO
+    body: `# Partners | YAMATO
 
 Conoces a alguien que necesita un CMO. Nos lo presentas. Cobras. Fin.
 
@@ -343,9 +343,9 @@ Sin pipeline, sin reuniones, sin seguimientos. Tú haces la intro, nosotros el r
 `,
   },
   "/contacto": {
-    title: "Contacto | Fractional CMO independiente | YAMATO",
+    title: "Contacto con tu Fractional CMO | YAMATO",
     description: "Hablemos. Reserva, WhatsApp, email y LinkedIn.",
-    body: `# Contacto — YAMATO
+    body: `# Contacto | YAMATO
 
 Hablemos. Te responde Ignacio. En la llamada vemos tu situación y te decimos qué haríamos primero.
 
@@ -362,7 +362,7 @@ function blogIndexMarkdown(): string {
   const items = posts
     .map((p) => `- [${p.title}](${SITE_URL}/blog/${p.slug}/index.md) (${p.date}) — ${p.excerpt}`)
     .join("\n");
-  return `# Blog — YAMATO
+  return `# Blog | YAMATO
 
 Ideas, opiniones y notas sobre marketing, dirección, IA aplicada y ejecución. Publicado semanalmente.
 

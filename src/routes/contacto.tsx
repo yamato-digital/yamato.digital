@@ -13,12 +13,12 @@ import { CONTACT_BOOKING_LABEL, CTA_LINKS } from "@/lib/cta";
 export const Route = createFileRoute("/contacto")({
   head: () => ({
     meta: [
-      { title: "Contacto | Fractional CMO independiente | YAMATO" },
+      { title: "Contacto con tu Fractional CMO | YAMATO" },
       {
         name: "description",
         content: "Hablemos. YAMATO es tu dirección de marketing independiente. Reserva, WhatsApp, email y LinkedIn.",
       },
-      { property: "og:title", content: "Contacto | Fractional CMO independiente | YAMATO" },
+      { property: "og:title", content: "Contacto con tu Fractional CMO | YAMATO" },
       {
         property: "og:description",
         content: "Hablemos. YAMATO es tu dirección de marketing independiente.",

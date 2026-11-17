@@ -64,7 +64,8 @@ Candidatos = posts del blog (`/blog/<slug>`) con señal. Descarta los que incump
 
 Lee el `.md` en `src/content/blog/` y sus consultas.
 
-- `title`: ≤ 55 caracteres (la web añade " — YAMATO"), con la consulta principal al principio si cabe de forma natural.
+- `title`: ≤ 55 caracteres (la web añade " | YAMATO"), con la consulta principal al principio si cabe de forma natural.
+- Separadores: nunca «—» ni «-» para separar partes del title; si hace falta dividir, dos puntos. La marca va siempre tras « | ».
 - `excerpt`: 140–155 caracteres, responde a la intención de la consulta y da un motivo para hacer clic.
 - `keywords`: alinéalas con las consultas reales que traen impresiones.
 - Enlaces internos: como mucho 1–2, naturales, hacia o desde posts relacionados.
