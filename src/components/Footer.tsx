@@ -4,8 +4,8 @@ const logoWhite = { url: "/assets/logo-yamato-white.png" };
 
 const legalLinks = [
   { label: "Aviso legal", to: "/aviso-legal" },
-  { label: "Privacidad", to: "/politica-privacidad" },
-  { label: "Cookies", to: "/politica-cookies" },
+  { label: "Política de privacidad", to: "/politica-privacidad" },
+  { label: "Política de cookies", to: "/politica-cookies" },
 ] as const;
 
 export function Footer() {
@@ -18,6 +18,18 @@ export function Footer() {
             Tu Fractional CMO ·&nbsp;Desde Madrid para el mundo entero
           </p>
         </div>
+        <nav aria-label="Información legal" className="text-sm">
+          <p className="mb-3 text-xs uppercase tracking-[0.01em] text-paper/40">Lo aburrido</p>
+          <ul className="grid gap-2 text-paper/70">
+            {legalLinks.map((link) => (
+              <li key={link.to}>
+                <Link to={link.to} className="link-underline link-underline-hover">
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
         <div className="grid gap-2 text-sm text-paper/70 md:text-right">
           <a href="mailto:hola@yamato.digital" className="link-underline link-underline-hover">
             hola@yamato.digital
@@ -31,15 +43,6 @@ export function Footer() {
             LinkedIn
           </a>
           <p className="mt-6 text-paper/40">© {new Date().getFullYear()} YAMATO</p>
-          <ul className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-paper/40 md:justify-end">
-            {legalLinks.map((link) => (
-              <li key={link.to}>
-                <Link to={link.to} className="link-underline link-underline-hover hover:text-paper/70">
-                  {link.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
         </div>
       </div>
     </footer>
