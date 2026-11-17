@@ -5,6 +5,7 @@ export const CTA_LINKS = {
   whatsappUrl: "https://wa.me/34696977968",
   email: "hola@yamato.digital",
   linkedinUrl: "https://www.linkedin.com/company/yamatodigital/",
+  instagramUrl: "https://www.instagram.com/yamato.digital/",
   fallback: "/contacto",
 } as const;
 
