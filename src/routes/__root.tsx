@@ -19,7 +19,7 @@ import { Analytics } from "@vercel/analytics/react";
 
 function NotFoundComponent() {
   useEffect(() => {
-    document.title = "Página no encontrada — YAMATO";
+    document.title = "Página no encontrada | YAMATO";
   }, []);
 
   return (

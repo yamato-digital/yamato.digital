@@ -6,13 +6,13 @@ import { SERVICE_LEVERS, SERVICE_MODES, SERVICES_INTRO } from "@/lib/services";
 export const Route = createFileRoute("/servicios")({
   head: () => ({
     meta: [
-      { title: "Servicios — YAMATO" },
+      { title: "Servicios | YAMATO" },
       {
         name: "description",
         content:
           "Seis cosas. Bien hechas. Estrategia, mentoría, Go-to-Market, Growth marketing, IA aplicada y ejecución para empresas que quieren resultados.",
       },
-      { property: "og:title", content: "Servicios — YAMATO" },
+      { property: "og:title", content: "Servicios | YAMATO" },
       {
         property: "og:description",
         content: "Seis cosas. Bien hechas. Estrategia, mentoría, Go-to-Market, Growth marketing, IA aplicada y ejecución.",
