@@ -41,7 +41,7 @@ const FAQ = [
 export const Route = createFileRoute("/fractional-cmo")({
   head: () => ({
     meta: [
-      { title: "Fractional CMO en España — Dirección de marketing externa | YAMATO" },
+      { title: "Fractional CMO en España: dirección de marketing externa | YAMATO" },
       {
         name: "description",
         content:

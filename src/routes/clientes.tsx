@@ -6,12 +6,12 @@ import { DIRECTION_CASES, OTHER_PROJECTS } from "@/lib/clients";
 export const Route = createFileRoute("/clientes")({
   head: () => ({
     meta: [
-      { title: "Clientes — YAMATO" },
+      { title: "Clientes | YAMATO" },
       {
         name: "description",
         content: "Empresas con las que hemos trabajado. Estrategia, dirección y ejecución de marketing.",
       },
-      { property: "og:title", content: "Clientes — YAMATO" },
+      { property: "og:title", content: "Clientes | YAMATO" },
       {
         property: "og:description",
         content: "Empresas con las que hemos trabajado. Estrategia, dirección y ejecución de marketing.",

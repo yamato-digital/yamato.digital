@@ -8,13 +8,13 @@ import { EXECUTION_MODEL } from "@/lib/services";
 export const Route = createFileRoute("/quienes-somos")({
   head: () => ({
     meta: [
-      { title: "Quiénes somos — YAMATO" },
+      { title: "Quiénes somos | YAMATO" },
       {
         name: "description",
         content:
           "Un CMO que firma lo que piensa y un equipo senior que no tienes que fichar. Fractional CMO independiente en Madrid.",
       },
-      { property: "og:title", content: "Quiénes somos — YAMATO" },
+      { property: "og:title", content: "Quiénes somos | YAMATO" },
       {
         property: "og:description",
         content: "Un CMO que firma lo que piensa y un equipo senior que no tienes que fichar.",

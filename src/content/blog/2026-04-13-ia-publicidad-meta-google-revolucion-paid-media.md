@@ -1,9 +1,10 @@
 ---
 slug: "ia-publicidad-meta-google-revolucion-paid-media"
-title: "La IA se come la publicidad digital: lo que Meta y Google han cambiado en 2026 (y cómo te afecta)"
+title: "IA en publicidad: qué cambiaron Meta y Google en 2026"
 date: "2026-04-13"
 cover: "/assets/blog/la-ia-se-come-la-publicidad-digital-lo-que-meta-y-google-han-cambiado-en-2026-y-como-te-afecta.webp"
-excerpt: "Si llevas unos meses sin tocar tus campañas de paid media, tenemos una noticia buena y una mala. La buena: la inteligencia artificial puede hacer ahora cosas que antes requerían un…"
+excerpt: "Meta Advantage+ produce tus anuncios y Google AI Mode cambia cómo se busca. Qué ha cambiado en paid media en 2026 y qué decidir antes de tocar campañas."
+keywords: "IA en publicidad, Meta Advantage+, Google AI Mode, paid media 2026, publicidad digital con IA, AI Overviews anuncios"
 ---
 
 Si llevas unos meses sin tocar tus campañas de paid media, tenemos una noticia buena y una mala. La buena: la inteligencia artificial puede hacer ahora cosas que antes requerían un equipo de producción entero. La mala: si no estás adaptando tu estrategia, la IA de tus competidores ya lo está haciendo por ellos.

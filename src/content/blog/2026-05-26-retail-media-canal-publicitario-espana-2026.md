@@ -12,7 +12,7 @@ Y la mayoría de marcas se acaba de enterar.
 
 ## Qué es esto del retail media (sin jerga)
 
-Retail media es publicidad dentro de las plataformas de los retailers. Cuando buscas "champú" en la app de Carrefour y la primera marca que aparece está ahí porque ha pagado, eso es retail media. Cuando entras en [elcorteingles.es](http://elcorteingles.es) y ves un banner de Nespresso justo encima del café, eso es retail media. Cuando Amazon te enseña "patrocinados" antes que los resultados orgánicos, eso es retail media desde 2012, pero ahora todo el mundo está copiando el modelo.
+Retail media es publicidad dentro de las plataformas de los retailers. Cuando buscas "champú" en la app de Carrefour y la primera marca que aparece está ahí porque ha pagado, eso es retail media. Cuando entras en elcorteingles.es y ves un banner de Nespresso justo encima del café, eso es retail media. Cuando Amazon te enseña "patrocinados" antes que los resultados orgánicos, eso es retail media desde 2012, pero ahora todo el mundo está copiando el modelo.
 
 La diferencia con Google o Meta es brutal. En Google compras intención ("alguien busca esto, sírveme"). En Meta compras interrupción ("alguien hace scroll, métete por medio"). En retail media compras **el momento exacto de la decisión de compra**, dentro de un entorno donde el usuario ya tiene la cartera fuera.
 

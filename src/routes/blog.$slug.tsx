@@ -20,7 +20,7 @@ export const Route = createFileRoute("/blog/$slug")({
     const cover = post.cover?.startsWith("/") ? `https://yamato.digital${post.cover}` : post.cover;
     return {
       meta: [
-        { title: `${post.title} — YAMATO` },
+        { title: `${post.title} | YAMATO` },
         { name: "description", content: post.excerpt },
         ...(post.keywords ? [{ name: "keywords", content: post.keywords }] : []),
         { property: "og:title", content: post.title },

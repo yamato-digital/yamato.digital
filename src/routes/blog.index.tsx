@@ -9,13 +9,13 @@ const PAGE_SIZE = 6;
 export const Route = createFileRoute("/blog/")({
   head: () => ({
     meta: [
-      { title: "Blog — YAMATO" },
+      { title: "Blog | YAMATO" },
       {
         name: "description",
         content:
           "Ideas, opiniones y notas sobre marketing, dirección, IA aplicada y ejecución. Publicado semanalmente.",
       },
-      { property: "og:title", content: "Blog — YAMATO" },
+      { property: "og:title", content: "Blog | YAMATO" },
       {
         property: "og:description",
         content:
@@ -30,7 +30,7 @@ export const Route = createFileRoute("/blog/")({
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Blog",
-          name: "Blog — YAMATO",
+          name: "Blog | YAMATO",
           url: "https://yamato.digital/blog",
           inLanguage: "es",
         }),

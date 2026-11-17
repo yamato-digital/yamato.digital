@@ -5,13 +5,13 @@ import { Footer } from "@/components/Footer";
 export const Route = createFileRoute("/partners")({
   head: () => ({
     meta: [
-      { title: "Partners — YAMATO" },
+      { title: "Partners | YAMATO" },
       {
         name: "description",
         content:
           "Programa de partners de YAMATO: presenta clientes y cobra el 15% de la primera mensualidad. Sin pipeline, sin reuniones, sin seguimientos.",
       },
-      { property: "og:title", content: "Partners — YAMATO" },
+      { property: "og:title", content: "Partners | YAMATO" },
       {
         property: "og:description",
         content:
