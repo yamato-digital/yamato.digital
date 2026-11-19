@@ -64,7 +64,7 @@ export const Route = createFileRoute("/")({
 
 const CLIENTS_ROW_1 = ["Cedrion", "Kincode", "Bindu Events", "Beedigital", "Contasimple by Shine"];
 const CLIENTS_ROW_2 = ["LOEWE", "APODEMIA", "Airamana", "1forAll", "IEB", "Grupo Alquila"];
-const CLIENTS_ROW_3 = ["Clicollege", "Vivas Psicología", "SomosNLP", "Rem83"];
+const CLIENTS_ROW_3 = ["Clicollege", "Vivas Psicología", "SomosNLP", "Rem83", "Kirion"];
 
 const FIT_YES = [
   "Quieres crecer y nadie piensa tu marketing a nivel estratégico.",

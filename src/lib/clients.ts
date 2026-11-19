@@ -55,7 +55,8 @@ export const DIRECTION_CASES: DirectionCase[] = [
 
 export const OTHER_PROJECTS: OtherProject[] = [
   { name: "IEB", line: "Auditoría completa de su marketing y su comunicación global." },
-  { name: "Cedrion", line: "Narrativa para su levantamiento de capital: investor deck, one-pager y pitch." },
+  { name: "Cedrion", line: "Web corporativa y narrativa para su levantamiento de capital: investor deck, one-pager y pitch." },
+  { name: "Kirion", line: "Web nueva y bilingüe para su bioseguridad del aire, con simulaciones 3D de su tecnología." },
   { name: "Rem83", line: "Consultoría estratégica y de marca para un producto de hardware técnico." },
   { name: "Bindu Events", line: "Auditoría y rediseño integral de su web: diseño, contenidos, UX e implementación." },
   { name: "Fundación Airamana", line: "Web corporativa y comunicación de Airamana ESCUCHA, su proyecto de salud mental joven." },
