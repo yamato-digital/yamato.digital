@@ -1,10 +1,10 @@
 ---
 slug: "fractional-cmo-vs-agencia-incentivos"
-title: "Fractional CMO o agencia. ¿Cuál elegir?"
+title: "Fractional CMO o agencia de marketing: ¿cuál elegir?"
 date: "2026-10-26"
 cover: "/assets/blog/fractional-cmo-o-agencia-cual-elegir.webp"
-excerpt: "Una agencia gana cuando haces más. Un Fractional CMO debería ganar cuando vendes más. Elegir entre los dos es elegir qué incentivo metes."
-keywords: "fractional CMO vs agencia, agencia o fractional CMO, incentivos agencia marketing, dirección de marketing externa, growth partner, startups España"
+excerpt: "Una agencia gana cuando haces más. Un Fractional CMO debería ganar cuando vendes más. Cuándo te conviene cada uno y cinco preguntas antes de firmar."
+keywords: "fractional CMO o agencia de marketing, fractional CMO vs agencia, agencia o fractional CMO, incentivos agencia marketing, dirección de marketing externa, growth partner, startups España"
 ---
 
 Hay un dato de este año que resume bastante bien la relación de las empresas con sus agencias. Según el <a href="https://www.agencycore.org/agency-core-2026/" target="_blank" rel="noopener noreferrer">estudio Agency Core 2026</a>, hecho sobre 579 responsables de agencia y 400 de sus clientes, el **91%** de los clientes dice que su agencia les hace más probable cumplir sus objetivos. Y el **42%** piensa reducir esa relación en los próximos doce meses.
