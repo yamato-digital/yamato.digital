@@ -11,6 +11,8 @@
     { "source": "/faq", "destination": "/fractional-cmo", "permanent": true },
     { "source": "/lp1", "destination": "/fractional-cmo", "permanent": true },
     { "source": "/cmo", "destination": "/fractional-cmo", "permanent": true },
+    { "source": "/que-hacemos", "destination": "/servicios", "permanent": true },
+    { "source": "/que-hacemos/", "destination": "/servicios", "permanent": true },
     { "source": "/equipo", "destination": "/quienes-somos", "permanent": true },
     { "source": "/yamafesto", "destination": "/quienes-somos", "permanent": true },
     { "source": "/2551a0478c02805f88f2ec4b00cd1729", "destination": "/", "permanent": true },
