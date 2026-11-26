@@ -3,6 +3,16 @@
     { "source": "/pulso-diario", "destination": "https://pulsodiario.igonigonzalez.com/", "permanent": true },
     { "source": "/pulso-diario/", "destination": "https://pulsodiario.igonigonzalez.com/", "permanent": true },
     { "source": "/blog/blog-yamato", "destination": "/blog", "permanent": true },
-    { "source": "/clientes/:path+", "destination": "/clientes", "permanent": true }
+    { "source": "/clientes/:path+", "destination": "/clientes", "permanent": true },
+    { "source": "/en", "destination": "/", "permanent": true },
+    { "source": "/en/", "destination": "/", "permanent": true },
+    { "source": "/casos", "destination": "/clientes", "permanent": true },
+    { "source": "/cookies", "destination": "/politica-cookies", "permanent": true },
+    { "source": "/faq", "destination": "/fractional-cmo", "permanent": true },
+    { "source": "/lp1", "destination": "/fractional-cmo", "permanent": true },
+    { "source": "/equipo", "destination": "/quienes-somos", "permanent": true },
+    { "source": "/yamafesto", "destination": "/quienes-somos", "permanent": true },
+    { "source": "/2551a0478c02805f88f2ec4b00cd1729", "destination": "/", "permanent": true },
+    { "source": "/24d1a0478c0280adb34cc5c33b715d18", "destination": "/", "permanent": true }
   ]
 }
