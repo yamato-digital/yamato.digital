@@ -1,6 +1,6 @@
 ---
 name: seo-agent
-description: Agente SEO semanal de yamato.digital. Lee Google Search Console desde Chrome (sesión de Ignacio), detecta posts del blog con oportunidades (CTR bajo, caídas, consultas sin buena página), reescribe title/excerpt (máx. 3 posts por ciclo) con la voz de YAMATO y abre un PR con el informe. Úsalo cuando pidan "pasa el agente SEO", "ciclo SEO semanal", "revisa Search Console", "qué posts están cayendo" o desde la tarea programada.
+description: Agente SEO semanal de yamato.digital. Lee Google Search Console y Bing Webmaster Tools desde Chrome (sesión de Ignacio), detecta posts del blog con oportunidades (CTR bajo, caídas, consultas sin buena página), revisa por qué hay páginas sin indexar y propone cómo arreglarlo, reescribe title/excerpt (máx. 3 posts por ciclo) con la voz de YAMATO y abre un PR con el informe. Úsalo cuando pidan "pasa el agente SEO", "ciclo SEO semanal", "revisa Search Console", "revisa Bing Webmaster", "páginas sin indexar", "qué posts están cayendo" o desde la tarea programada.
 ---
 
 # Agente SEO semanal — yamato.digital
@@ -17,7 +17,8 @@ Agente de flujo con aprobación humana: **propone en un PR, nunca publica**. Tod
 - Las páginas que no son del blog (`/`, `/servicios`, `/fractional-cmo`…) solo se **comentan** en el informe; no se editan.
 - Nunca push a `main`, nunca merge, nunca `--force`.
 - `title` es también el H1, el `og:title` y el schema; `excerpt` es la meta description y la tarjeta del índice. Toda reescritura pasa por la skill **yamato-voice** (español de España, sin clickbait, sin AI slop).
-- En Search Console **solo leer**: no cambiar configuración, usuarios, sitemaps ni pedir indexación.
+- En Search Console y en Bing Webmaster Tools **solo leer**: no cambiar configuración, usuarios ni sitemaps, no pedir indexación, no enviar URLs, no pulsar «Validar corrección» ni activar IndexNow. Si algo de eso hace falta, se propone en el informe para que lo haga Ignacio.
+- Los problemas de indexación (redirecciones, `vercel.json`, `noindex`, sitemap, canonicals) **solo se proponen** en el informe con el cambio exacto; no se aplican en el PR.
 
 ## Ciclo
 
@@ -46,6 +47,48 @@ Para cada ventana:
 Para las consultas de un post concreto: en la ventana actual, haz clic en la URL del post en la tabla de páginas (filtra por esa página) y lee la pestaña CONSULTAS.
 
 Cierra las pestañas que hayas abierto al terminar.
+
+### 1b. Indexación en Search Console: «¿Por qué hay páginas que no se indexan?»
+
+En una pestaña nueva abre `https://search.google.com/search-console/index?resource_id=sc-domain%3Ayamato.digital` (Indexación → Páginas), espera ~5 s y lee con `get_page_text`:
+
+1. Los totales de páginas **indexadas** y **sin indexar**.
+2. La tabla «¿Por qué hay páginas que no se indexan?»: cada motivo con su origen (Sitio web / Google), el estado de validación y el número de páginas.
+3. Para cada motivo con páginas, haz clic en su fila y lee la tabla «Ejemplos» (URL y último rastreo). Si hay más de 10, sube las filas por página igual que en Rendimiento. Vuelve atrás o abre otra pestaña para el siguiente motivo.
+
+Después, **comprueba cada URL de ejemplo en producción** (sin seguir y siguiendo redirecciones), porque el informe de Google suele ir semanas por detrás:
+
+```bash
+curl -s -o /dev/null -w '%{http_code} %{redirect_url}' "<url>"
+curl -sL -o /dev/null -w '%{http_code} %{url_effective}' -A "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)" "<url>"
+```
+
+Clasifica cada URL:
+
+- **Ya resuelta** (redirige a una página que responde 200, o vuelve a dar 200): propón a Ignacio pulsar «Validar corrección» en ese motivo si la validación no está iniciada.
+- **Esperada, sin acción**: «Página con redirección» de redirecciones que existen a propósito (las de `vercel.json` y `REDIRECTED_POSTS`), «Página alternativa con etiqueta canónica adecuada», `noindex` intencionado, URLs técnicas (parámetros, `/.md` de agentes). Comprueba si ese `noindex` o esa redirección son a propósito en el código antes de darlo por bueno.
+- **Problema real**, con propuesta concreta según el motivo:
+  - «No encontrada (404)» / «Soft 404»: destino de redirección 301 (busca el equivalente actual en `src/routes/` y en el blog; si hace falta, mira qué era en Wayback Machine con `https://archive.org/wayback/available?url=yamato.digital/<ruta>`) y la línea exacta para `vercel.json`. Si no hay equivalente, propón la home o dejarla en 404/410 y explica por qué.
+  - «Rastreada: actualmente sin indexar» / «Descubierta: actualmente sin indexar» en posts o páginas que importan: comprueba que está en `sitemap.xml`, cuántos enlaces internos recibe y si el contenido es corto o duplica otro post; propone enlaces internos concretos (desde qué post y con qué texto) o un refresco.
+  - «Duplicada: Google ha elegido una canónica diferente» / «Duplicada sin canónica seleccionada»: qué canónica declara la página y cuál ha elegido Google; propone unificar.
+  - «Error de servidor (5xx)», «Bloqueada por robots.txt», «Excluida por etiqueta noindex» no intencionada: causa probable y corrección.
+- **Novedades**: compara los recuentos por motivo con el último informe en `seo-agent/reports/` y señala lo que ha aparecido o crecido.
+
+### 1c. Bing Webmaster Tools (Claude in Chrome)
+
+Bing alimenta también a ChatGPT Search, Copilot y DuckDuckGo, así que se revisa cada semana con la misma regla de solo lectura. Usa la sesión de Ignacio en Chrome. Si Bing pide iniciar sesión, el sitio no aparece o no está verificado, **no pares el ciclo**: anótalo en el informe («Bing sin datos: <motivo>») y sigue con el resto.
+
+Entrada: `https://www.bing.com/webmasters/home?siteUrl=https://yamato.digital/` (si el sitio está dado de alta como dominio o con otra URL, elígelo en el selector de sitios). Si alguna URL directa no carga, entra desde el menú lateral. Cuando confirmes las URLs que funcionan, déjalas anotadas en esta sección en el mismo PR (como se hizo con Search Console).
+
+Lee, una pestaña nueva por sección, con `get_page_text`:
+
+1. **Rendimiento de búsqueda** (Search Performance): rango de 1 mes y, si se puede, comparado con el periodo anterior. Totales de clics, impresiones, CTR y posición media, y las pestañas de **Páginas** y **Palabras clave**.
+2. **Recomendaciones** (SEO): cada problema con su gravedad y número de páginas afectadas.
+3. **Explorador de sitios** (Site Explorer): URLs con errores 4xx/5xx, redirecciones, bloqueadas por robots.txt y excluidas. Comprueba en producción las URLs con error, igual que en 1b.
+4. **Mapas del sitio** (Sitemaps): estado del sitemap, fecha del último rastreo y URLs descubiertas.
+5. **IndexNow**: si está activo y cuántas URLs ha recibido. Si no lo está, apúntalo como propuesta, no lo actives.
+
+Los datos de Bing complementan a los de Google: una consulta o un post con señal en Bing puede reforzar la elección de los 3 posts, pero no basta por sí sola para tocar uno sin señal en Google. Lo exclusivo de Bing (errores, recomendaciones, sitemap) va al informe con su propuesta.
 
 ### 2. Detectar oportunidades
 
@@ -99,9 +142,11 @@ En el worktree:
   1. Resumen (clics, impresiones, CTR y posición vs. periodo anterior).
   2. Cambios de este PR (antes → después, motivo, consultas que lo justifican).
   3. Resultado de cambios anteriores.
-  4. Pendiente: posts descartados, páginas no-blog, refrescos sugeridos, ideas de posts.
+  4. Indexación en Google: indexadas / sin indexar (vs. el último informe), tabla por motivo con estado en producción de cada URL (ya resuelta, esperada o problema) y la propuesta concreta para cada problema (línea de `vercel.json`, enlaces internos, canonical…), más qué motivos conviene «Validar corrección».
+  5. Bing Webmaster Tools: rendimiento (vs. periodo anterior), páginas y palabras clave destacadas, recomendaciones, errores del explorador de sitios, sitemap e IndexNow, cada problema con su propuesta. O «Bing sin datos: <motivo>».
+  6. Pendiente: posts descartados, páginas no-blog, refrescos sugeridos, ideas de posts.
 
-Solo si hay al menos un cambio en un post:
+Si hay al menos un cambio en un post:
 
 ```bash
 git add src/content/blog/<ficheros tocados> seo-agent/changes.jsonl seo-agent/reports/$FECHA.md
@@ -110,13 +155,22 @@ git push -u origin "seo-agent/$FECHA"
 gh pr create --base main --head "seo-agent/$FECHA" --title "SEO agent $FECHA: <n> posts" --body-file seo-agent/reports/$FECHA.md
 ```
 
-`git add` solo con rutas explícitas, nunca `-A` ni `.`. Si no hay cambios, no abras PR.
+Si no hay cambios en posts pero el informe trae propuestas de indexación (Google o Bing) que requieren acción, abre igualmente el PR solo con el informe:
+
+```bash
+git add seo-agent/reports/$FECHA.md
+git commit -m "SEO agent: informe de indexación ($FECHA)"
+git push -u origin "seo-agent/$FECHA"
+gh pr create --base main --head "seo-agent/$FECHA" --title "SEO agent $FECHA: informe sin cambios en posts" --body-file seo-agent/reports/$FECHA.md
+```
+
+`git add` solo con rutas explícitas, nunca `-A` ni `.`. Si no hay cambios en posts ni propuestas que requieran acción, no abras PR.
 
 Al terminar: `cd "<raíz del repo>" && git worktree remove "$WT"` (si no hubo PR, borra también la rama local con `git branch -D "seo-agent/$FECHA"`).
 
 ### 7. Respuesta final
 
-3–5 líneas: enlace al PR (o "sin cambios"), posts tocados y lo más relevante del informe.
+3–6 líneas: enlace al PR (o "sin cambios"), posts tocados, lo más relevante del informe, cuántas páginas sin indexar hay y qué acciones de indexación quedan para Ignacio (en Google y en Bing).
 
 ## Pendiente de configurar
 
