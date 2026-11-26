@@ -28,7 +28,7 @@ Traducción: el canal que Google te vende como "tu tráfico de IA" ni siquiera i
 
 Todo lo anterior es un problema de clasificación. Este es un problema de que el dato directamente no llega. Buena parte del tráfico de IA entra sin referente. Las apps móviles de ChatGPT y sus navegadores internos no le pasan a GA4 nada que leer, así que la visita aterriza en "Directo", sin fuente que rastrear. Se estima que el 60-70% de las sesiones de IA llegan así, sin etiqueta posible.
 
-Y por si fuera poco: las visitas que llegan desde los resúmenes de IA de Google (los AI Overviews) y desde AI Mode se cuentan como "Búsqueda orgánica", no como IA. Google lo hace a propósito. Para muchas webs esa es la mayor superficie de IA que tienen, y es invisible como tal en los informes. Lo comentamos cuando [el clic prácticamente desapareció de las búsquedas de Google](https://yamato.digital/blog/el-clic-ha-muerto-google-ai-mode-2026): el tráfico no ha muerto, se ha vuelto opaco.
+Y por si fuera poco: las visitas que llegan desde los resúmenes de IA de Google ([los AI Overviews](https://yamato.digital/blog/google-ai-overviews-tapan-tu-ranking-2026)) y desde AI Mode se cuentan como "Búsqueda orgánica", no como IA. Google lo hace a propósito. Para muchas webs esa es la mayor superficie de IA que tienen, y es invisible como tal en los informes. Lo comentamos cuando [el clic prácticamente desapareció de las búsquedas de Google](https://yamato.digital/blog/el-clic-ha-muerto-google-ai-mode-2026): el tráfico no ha muerto, se ha vuelto opaco.
 
 ## ¿Y por qué molestarse en medir bien esto?
 

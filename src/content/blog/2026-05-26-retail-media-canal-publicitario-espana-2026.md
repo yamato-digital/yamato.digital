@@ -36,9 +36,9 @@ Y eso sin contar a Mercadona (que aún no ha abierto su red), Inditex (que monet
 
 Tres razones, ninguna sorprendente si llevas dos años leyendo este blog.
 
-**Uno: las cookies de terceros han muerto** y Google llevaba prometiendo enterrarlas desde 2020. Las marcas necesitan datos propios para segmentar bien, y los retailers tienen el dato más caro del mercado: lo que sus clientes compran realmente, no lo que dicen que les interesa.
+**Uno: las cookies de terceros han muerto** y Google llevaba prometiendo enterrarlas desde 2020. Las marcas necesitan [datos propios para segmentar bien](https://yamato.digital/blog/first-party-data-datos-propios-marketing), y los retailers tienen el dato más caro del mercado: lo que sus clientes compran realmente, no lo que dicen que les interesa.
 
-**Dos: la IA ha hundido el CTR orgánico**. Si la posición uno en Google ha pasado de un 27% de CTR a un 11% en los últimos meses por culpa de las AI Overviews, las marcas necesitan otro sitio donde aparecer cuando alguien busca su categoría. Retail media es ese sitio.
+**Dos: la IA ha hundido el CTR orgánico**. Si la posición uno en Google ha pasado de un 27% de CTR a un 11% en los últimos meses por culpa de las AI Overviews, las marcas necesitan [otro sitio donde aparecer cuando alguien busca](https://yamato.digital/blog/social-seo-redes-sociales-nuevo-buscador) su categoría. Retail media es ese sitio.
 
 **Tres: el ROAS es comparable o mejor**. Las primeras campañas que hemos visto en retail media en España están dando retornos un 1,5x – 1,8x mejores que el equivalente en Meta o Google Ads para categorías de gran consumo. No porque sea mágico, sino porque el embudo es más corto: la persona ya está en el carrito.
 

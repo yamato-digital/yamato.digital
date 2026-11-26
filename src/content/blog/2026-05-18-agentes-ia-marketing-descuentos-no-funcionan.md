@@ -20,7 +20,7 @@ El resultado: la escasez no funciona. Los contadores de tiempo, tampoco. Los pre
 
 Solo dos cosas afectan al agente de forma fiable: las valoraciones con estrellas (sí, suben la elección) y el precio (si es más alto, baja). Lo demás, ruido.
 
-Léelo otra vez. Cada euro que has invertido este año en banners con "OFERTA POR TIEMPO LIMITADO", en pop-ups con countdowns, en hacks de urgencia o en bundles "irresistibles" — para el agente de IA es transparente. Y como una parte cada vez mayor de tus clientes va a delegar parte de la decisión en estos asistentes, la pregunta es seria: ¿estás invirtiendo en tácticas que solo convencen a quien ya no decide?
+Léelo otra vez. Cada euro que has invertido este año en banners con "OFERTA POR TIEMPO LIMITADO", en pop-ups con countdowns, en [hacks de urgencia](https://yamato.digital/blog/growth-marketing-no-es-growth-hacking) o en bundles "irresistibles" — para el agente de IA es transparente. Y como una parte cada vez mayor de tus clientes va a delegar parte de la decisión en estos asistentes, la pregunta es seria: ¿estás invirtiendo en tácticas que solo convencen a quien ya no decide?
 
 ## El nuevo embudo no acaba en tu landing
 

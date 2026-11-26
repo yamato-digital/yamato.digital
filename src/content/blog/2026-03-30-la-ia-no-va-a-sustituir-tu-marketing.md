@@ -6,7 +6,7 @@ cover: "/assets/blog/la-ia-no-va-a-sustituir-tu-marketing-va-a-dejar-en-evidenci
 excerpt: "Llevas meses escuchando que la inteligencia artificial va a revolucionar el marketing. Que los agentes de IA van a crear campañas solas. Que la hiperpersonalización va a hacer que…"
 ---
 
-Llevas meses escuchando que la inteligencia artificial va a revolucionar el marketing. Que los agentes de IA van a crear campañas solas. Que la hiperpersonalización va a hacer que cada cliente reciba el mensaje perfecto en el momento exacto.
+Llevas meses escuchando que la inteligencia artificial va a revolucionar el marketing. Que [los agentes de IA van a crear campañas solas](https://yamato.digital/blog/agentic-marketing-ia-agentes-autonomos-2026). Que la hiperpersonalización va a hacer que cada cliente reciba el mensaje perfecto en el momento exacto.
 
 Y tú mientras, mandando el mismo email a toda tu base de datos con el asunto "Newsletter de marzo".
 
@@ -42,7 +42,7 @@ Pero montar este ecosistema requiere pensar antes de hacer. Requiere una estrate
 
 Y aquí viene la paradoja más interesante de 2026: cuanto más contenido genera la IA, más valora la audiencia lo auténtico.
 
-El contenido genérico producido por IA sin supervisión humana está creando un ruido enorme. Los feeds están llenos de posts que suenan igual, artículos que dicen lo mismo y emails que parecen escritos por el mismo robot. Y la audiencia lo nota.
+El [contenido genérico producido por IA sin supervisión humana](https://yamato.digital/blog/ai-slop-marketing-autenticidad-2026) está creando un ruido enorme. Los feeds están llenos de posts que suenan igual, artículos que dicen lo mismo y emails que parecen escritos por el mismo robot. Y la audiencia lo nota.
 
 Las marcas que conectan son las que combinan la eficiencia de la IA con una voz humana real. Las que usan la IA para analizar datos, optimizar y automatizar lo repetitivo, pero mantienen la estrategia, el criterio y la personalidad en manos de personas que entienden el negocio.
 

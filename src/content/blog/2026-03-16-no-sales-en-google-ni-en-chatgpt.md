@@ -10,7 +10,7 @@ Haz una prueba ahora mismo. Abre ChatGPT y pregúntale quién hace lo que tú ha
 
 Si no apareces, tienes un problema. Y si aparece tu competencia, tienes un problema gordo.
 
-Porque tus potenciales clientes ya no buscan solo en Google. Buscan en ChatGPT, en Perplexity, en Gemini, en los AI Overviews que Google pone encima de los resultados de toda la vida. Y si las IAs no saben que existes, para un porcentaje creciente de tu mercado, no existes.
+Porque tus potenciales clientes [ya no buscan solo en Google](https://yamato.digital/blog/social-seo-redes-sociales-nuevo-buscador). Buscan en ChatGPT, en Perplexity, en Gemini, en los AI Overviews que Google pone encima de los resultados de toda la vida. Y si las IAs no saben que existes, para un porcentaje creciente de tu mercado, no existes.
 
 El SEO tradicional ya no es suficiente. Ahora también tienes que convencer a las inteligencias artificiales de que mereces ser citado. Bienvenido a la era de la visibilidad IA.
 

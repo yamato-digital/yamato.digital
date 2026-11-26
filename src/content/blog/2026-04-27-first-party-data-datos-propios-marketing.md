@@ -8,7 +8,7 @@ excerpt: "Hay activos en tu negocio que no aparecen en el balance contable, pero
 
 Hay activos en tu negocio que no aparecen en el balance contable, pero que en 2026 valen más que cualquier partida presupuestaria. Uno de ellos son tus datos propios: la información que tus clientes y usuarios te han entregado directamente, de forma voluntaria, mientras interactuaban contigo. Y la gran paradoja es esta: la mayoría de las marcas tienen esa mina de oro y no saben cómo explotarla.
 
-No es un problema de tecnología. Tampoco de presupuesto. Es, casi siempre, un problema de estrategia — o de ausencia de ella.
+No es un problema de tecnología. Tampoco de presupuesto. Es, casi siempre, [un problema de estrategia — o de ausencia de ella](https://yamato.digital/blog/la-ia-no-va-a-sustituir-tu-marketing).
 
 ## ¿Por qué se acabó el marketing apoyado en cookies de terceros?
 
@@ -30,7 +30,7 @@ Tres fuerzas convergen este año para convertir los datos propios en el activo m
 
 **La personalización ya no es opcional.** El [38% de los marketers globales planea invertir en personalización en 2026](https://www.hubspot.com/state-of-marketing), según el State of Marketing de HubSpot, no porque sea una tendencia bonita, sino porque el consumidor espera experiencias relevantes. Y no puedes personalizar sin datos. Es físicamente imposible.
 
-**El tráfico orgánico está bajo presión.** Con los motores de búsqueda respondiendo directamente mediante IA ([Google AI Overviews](https://blog.google/products/search/generative-ai-search/)), los canales propios están recuperando protagonismo. Tu lista de email es tuya. Nadie puede quitártela ni cambiar el algoritmo que la regula. Y eso, hoy, tiene un valor enorme.
+**El tráfico orgánico está bajo presión.** Con los motores de búsqueda respondiendo directamente mediante IA ([Google AI Overviews](https://blog.google/products/search/generative-ai-search/)), los canales propios están recuperando protagonismo. [Tu lista de email es tuya](https://yamato.digital/blog/email-marketing-newsletter-canal-mas-rentable-2026). Nadie puede quitártela ni cambiar el algoritmo que la regula. Y eso, hoy, tiene un valor enorme.
 
 ## ¿Cuál es el error más común al trabajar con datos propios?
 

@@ -15,7 +15,7 @@ El tuyo cabe en una página. Si no cabe, todavía no es un plan.
 
 ## Los planes largos no aguantan el primer susto
 
-Según <a href="https://cmosurvey.org/cmosurvey_results/The_CMO_Survey-Highlights_and_Insights_Report-2026.pdf" target="_blank" rel="noopener noreferrer">The CMO Survey 2026</a> de Duke, Deloitte y la AMA, cuando los beneficios no llegan a lo previsto, el 53,1% de las direcciones se pone a recortar gastos en vez de buscar crecimiento. Hace un año era el 46%. Y cuando se recorta, marketing es la partida que cae el 45,4% de las veces, más que ninguna otra. La conclusión del propio informe es seca: las decisiones de gasto en marketing siguen siendo más reactivas que estratégicas.
+Según <a href="https://cmosurvey.org/cmosurvey_results/The_CMO_Survey-Highlights_and_Insights_Report-2026.pdf" target="_blank" rel="noopener noreferrer">The CMO Survey 2026</a> de Duke, Deloitte y la AMA, cuando los beneficios no llegan a lo previsto, el 53,1% de las direcciones se pone a recortar gastos en vez de [buscar crecimiento](https://yamato.digital/blog/growth-marketing-no-es-growth-hacking). Hace un año era el 46%. Y cuando se recorta, marketing es la partida que cae el 45,4% de las veces, más que ninguna otra. La conclusión del propio informe es seca: las decisiones de gasto en marketing siguen siendo más reactivas que estratégicas.
 
 El mismo estudio deja otra contradicción encima de la mesa. Casi la mitad de los responsables de marketing dice que su respuesta a la incertidumbre es cuidar a los clientes que ya tiene. Mientras tanto, el presupuesto de captación ya es un 26% mayor que el de retención, y la distancia crece. Lo que se dice en el plan y lo que se hace con el dinero van por carreteras distintas.
 

@@ -18,7 +18,7 @@ Esto es lo que ha pasado en 18 meses, según NielsenIQ y los propios datos de Ti
 
 * TikTok Shop España tiene **21.000 vendedores locales activos**. Un 75% más que en octubre de 2025.
 * Ya es el **retailer online número 16** del país por volumen de ventas.
-* En belleza está en el **top 7 de retailers online**, con un crecimiento del 200% en seis meses.
+* En belleza está en el **top 7 de [retailers online](https://yamato.digital/blog/retail-media-canal-publicitario-espana-2026)**, con un crecimiento del 200% en seis meses.
 * El **18,7% de los vendedores ecommerce españoles** ya operan en la plataforma.
 * Arganour Cosmetics genera el **90% de sus ingresos** desde TikTok Shop, con un +50% de facturación en seis meses.
 * El **40% de la Gen X, el 30% de millennials y el 23% de la Gen Z** ya han comprado allí.
