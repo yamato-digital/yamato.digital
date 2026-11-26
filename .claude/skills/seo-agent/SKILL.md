@@ -90,6 +90,19 @@ Lee, una pestaña nueva por sección, con `get_page_text`:
 
 Los datos de Bing complementan a los de Google: una consulta o un post con señal en Bing puede reforzar la elección de los 3 posts, pero no basta por sí sola para tocar uno sin señal en Google. Lo exclusivo de Bing (errores, recomendaciones, sitemap) va al informe con su propuesta.
 
+### 1d. Revisión URL a URL de las páginas sin indexar (Google y Bing)
+
+El informe de páginas de 1b va semanas por detrás y solo enseña ejemplos, así que cada semana se comprueba también, **URL a URL**, qué páginas del sitemap no están todavía en los índices. Solo lectura, como el resto.
+
+1. **Lista de URLs**: descarga `https://yamato.digital/sitemap.xml` y quédate con todas sus `<loc>`. Para no inspeccionar todo cada semana, revisa: las URLs que el último informe no daba como indexadas en Google, las publicadas o añadidas al sitemap desde entonces y, una vez al mes (primer ciclo del mes) o si no hay informe anterior, todas.
+2. **Google, Inspección de URLs**: las URLs directas `/search-console/inspect?id=` dan 404; usa el cuadro «Inspeccionar cualquier URL» de la barra superior de Search Console (clic triple, escribe la URL, Enter y espera ~14 s). Lee el estado con `get_page_text`: «La URL está en Google», «La URL no está en Google» con su motivo («Descubierta/Rastreada: actualmente sin indexar», «Google no reconoce esta URL», etc.), último rastreo y canónica elegida por Google. Tras cada inspección cierra el resultado o vuelve a la portada antes de la siguiente para no leer un resultado anterior. **No pulses «Solicitar indexación».**
+3. **Bing, Explorador de sitios**: en `https://www.bing.com/webmasters/siteexplorer?siteUrl=https://yamato.digital/&filter=0` abre las carpetas (`blog`, `clientes`…) y saca la lista de URLs indexadas de `document.body.textContent` (la tabla es virtual y no todo sale en `get_page_text`). Cruza con el sitemap: lo que está en el sitemap y no aparece, o aparece sin indexar o con aviso, es «sin indexar en Bing». El operador `site:` de Bing no sirve para esto.
+4. **Diagnóstico de cada URL sin indexar** (en Google o en Bing): código en producción con los `curl` de 1b, que esté en el sitemap, canónica propia, sin `noindex`, cuántos enlaces internos recibe (`grep -rl "<slug>" src/content/blog src/routes`) y días desde su publicación. Clasifica:
+   - **Reciente** (menos de 14 días publicada): normal, sin acción.
+   - **Lista para pedir indexación**: responde 200, canónica propia, enlazada; propón a Ignacio solicitarla en Google (cuota ~10 al día, ordénalas por prioridad: páginas de servicio y posts con impresiones primero) y enviarla en Bing desde «Envío de URL» (`https://www.bing.com/webmasters/submiturl?siteUrl=https://yamato.digital/`).
+   - **Con problema**: huérfana o con pocos enlaces, contenido corto o duplicado, canónica distinta, error… con la propuesta concreta (enlaces internos desde qué post y con qué texto, redirección, canonical).
+   - **Atascada**: ya se propuso pedir indexación en un informe anterior y sigue fuera tras 3 semanas; señálala aparte y propone mejoras de contenido o enlazado, no repetir la solicitud.
+
 ### 2. Detectar oportunidades
 
 El sitio tiene poco volumen (del orden de 300–400 impresiones y 10–20 clics cada 28 días a finales de 2026). Con estos números las caídas semana a semana son ruido: **no actúes por variaciones pequeñas**. Señales que sí cuentan (umbral mínimo: 15 impresiones en la ventana actual):
@@ -143,6 +156,7 @@ En el worktree:
   2. Cambios de este PR (antes → después, motivo, consultas que lo justifican).
   3. Resultado de cambios anteriores.
   4. Indexación en Google: indexadas / sin indexar (vs. el último informe), tabla por motivo con estado en producción de cada URL (ya resuelta, esperada o problema) y la propuesta concreta para cada problema (línea de `vercel.json`, enlaces internos, canonical…), más qué motivos conviene «Validar corrección».
+  4b. URLs sin indexar (revisión URL a URL): tabla con URL, estado en Google, estado en Bing, días publicada, enlaces internos, clasificación (reciente, lista para pedir indexación, con problema, atascada) y acción; al final, la lista priorizada de URLs para que Ignacio pida indexación en Google y envíe en Bing.
   5. Bing Webmaster Tools: rendimiento (vs. periodo anterior), páginas y palabras clave destacadas, recomendaciones, errores del explorador de sitios, sitemap e IndexNow, cada problema con su propuesta. O «Bing sin datos: <motivo>».
   6. Pendiente: posts descartados, páginas no-blog, refrescos sugeridos, ideas de posts.
 
