@@ -72,4 +72,4 @@ Después:
 
 ## ¿Hablamos?
 
-Si quieres montar tu estrategia de TikTok Shop (o decidir si tiene sentido para tu marca antes de quemar dinero), [escríbenos en](https://yamato.digital/contacto) [yamato.digital/contacto](http://yamato.digital/contacto).
+Si quieres montar tu estrategia de TikTok Shop (o decidir si tiene sentido para tu marca antes de quemar dinero), [escríbenos](/contacto).
