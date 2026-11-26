@@ -62,7 +62,7 @@ No estamos diciendo que apagues Meta y abras un Discord mañana. Sería estúpid
 
 Hay un patrón claro en las startups que crecen rápido en 2026 y no tiene nada que ver con su CAC: tienen gente que las defiende sin cobrar. Clientes que las recomiendan en privado. Profesionales que las citan en LinkedIn sin que les paguen. Esa es la única ventaja competitiva que no se compra con presupuesto de Meta.
 
-Tu marca puede tener 200.000 seguidores en Instagram y cero comunidad. O 1.500 personas que se levantan los martes pendientes de tu newsletter, recomiendan tu producto en sus Slacks de trabajo y abren tus emails en el primer minuto.
+Tu marca puede tener 200.000 seguidores en Instagram y cero comunidad. O 1.500 personas que se levantan los martes [pendientes de tu newsletter](https://yamato.digital/blog/email-marketing-newsletter-canal-mas-rentable-2026), recomiendan tu producto en sus Slacks de trabajo y abren tus emails en el primer minuto.
 
 Lo segundo gana. Siempre.
 

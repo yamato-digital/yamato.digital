@@ -63,7 +63,7 @@ Hay un matiz más, y lo decimos aunque nos toque de lleno. Una de las salidas qu
 
 Cuatro pasos. Se hacen en una tarde.
 
-1. **Filtra.** Localiza las campañas con estado "Limitada por presupuesto" que usen Target CPA o Target ROAS. Solo esas están afectadas. El resto puede esperar a septiembre.
+1. **Filtra.** Localiza las campañas con estado "Limitada por presupuesto" que usen Target CPA o [Target ROAS](https://yamato.digital/blog/target-roas-ya-no-es-un-setting-es-una-decision). Solo esas están afectadas. El resto puede esperar a septiembre.
 2. **Compara.** Objetivo declarado contra rendimiento real de los últimos 30-60 días. La brecha entre esos dos números es tu exposición.
 3. **Calcula antes de tocar nada.** Margen, tasa de cierre, recurrencia. El CPA que tu negocio aguanta, no el que alguien escribió en 2024 para poder guardar la campaña.
 4. **Decide campaña por campaña.** Bajar el objetivo a tu rendimiento real y mantener la eficiencia actual. Subir presupuesto y mantener volumen al objetivo declarado. O cambiar a Maximizar conversiones, asumiendo que entonces el CPA fluctuará cada vez que muevas el presupuesto.

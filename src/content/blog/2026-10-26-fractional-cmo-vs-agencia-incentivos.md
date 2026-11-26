@@ -17,7 +17,7 @@ Si estás dudando entre una agencia y un Fractional CMO, la pregunta útil no es
 
 Una agencia vende capacidad: personas, herramientas y oficio para producir campañas, contenidos, gestión de medios y SEO. Se paga por horas, por equipo asignado o por entregables. Y es una compra muy buena cuando sabes exactamente qué pedirle.
 
-Un Fractional CMO vende otra cosa: decisión y ownership. Alguien con silla en el comité que fija a quién le vendes, por qué canal, con qué presupuesto y qué se deja de hacer. No ejecuta tus campañas. Dirige a quien las ejecuta.
+Un Fractional CMO vende otra cosa: decisión y ownership. Alguien con silla en el comité que fija [a quién le vendes, por qué canal, con qué presupuesto y qué se deja de hacer](https://yamato.digital/blog/plan-de-marketing-2027-una-pagina). No ejecuta tus campañas. Dirige a quien las ejecuta.
 
 Lo que cuesta cada opción, con cifras de 2026, [ya lo desmontamos aquí](https://yamato.digital/blog/cuanto-cuesta-fractional-cmo-2026-cmo-interno-agencia). Hoy toca lo que no sale en la factura.
 
@@ -37,7 +37,7 @@ Pero el Fractional CMO no viene limpio. También tiene su incentivo de fábrica:
 
 **El de la agencia sola: el vacío se llena solo.** Si nadie en tu empresa decide la estrategia, la decide la agencia por defecto. Y la estrategia acaba pareciéndose mucho a lo que esa agencia sabe vender. La agencia de paid media te propone más medios. La de contenidos, más contenido. Ninguna te va a decir que tu problema es el precio o el ICP, porque eso no está en su catálogo.
 
-El síntoma se ve desde fuera: cambias de agencia cada año o dos y el problema sigue en el mismo sitio. Según Basis, el 54% de los profesionales de agencia nota más tensión con sus clientes que hace dos años, y el 65,3% de las agencias ha visto a algún cliente llevarse trabajo a casa en el último año. Muchas de esas rupturas no son culpa de la agencia. Son de un cliente que le pidió dirección a quien vendía ejecución.
+El síntoma se ve desde fuera: cambias de agencia cada año o dos y el problema sigue en el mismo sitio. Según Basis, el 54% de los profesionales de agencia nota más tensión con sus clientes que hace dos años, y el 65,3% de las agencias ha visto a algún cliente llevarse trabajo a casa en el último año. Muchas de esas rupturas [no son culpa de la agencia](https://yamato.digital/blog/tu-marketing-no-funciona). Son de un cliente que le pidió dirección a quien vendía ejecución.
 
 **El del Fractional CMO: criterio sin manos y sin autoridad.** El primer riesgo es práctico: un Fractional CMO no te monta campañas. Si no tienes a nadie que ejecute, tendrás un plan precioso parado en un Notion. El segundo es peor: contratar dirección y quedarte tú con la decisión. Eso ya lo contamos cuando dijimos que [lo que compras es la capacidad de decir que no](https://yamato.digital/blog/fractional-cmo-no-te-vende-horas-te-vende-un-no). Si no la cedes, has comprado un asesor caro.
 

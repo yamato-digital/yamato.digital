@@ -19,7 +19,7 @@ A mediados de julio de 2026, un rastreador llamado `meta-webindexer` representab
 
 Más de un tercio de todo el rastreo de IA. Un solo bot. Multiplicado por diecisiete en menos de un mes.
 
-No es un dato aislado. El informe <a href="https://datadome.co/threat-research/ai-traffic-report-q2-2026/" target="_blank" rel="noopener noreferrer">AI Traffic Report del segundo trimestre de 2026 de DataDome</a>, que analiza 17.700 millones de peticiones de agentes de IA (un 45% más que el trimestre anterior), cuenta la misma historia con otros números: `meta-webindexer` creció un 163% trimestre contra trimestre, de 1.400 a 3.750 millones de peticiones. Y en junio de 2026 superó por primera vez a `meta-externalagent`, el bot con el que Meta entrena sus modelos.
+No es un dato aislado. El informe <a href="https://datadome.co/threat-research/ai-traffic-report-q2-2026/" target="_blank" rel="noopener noreferrer">AI Traffic Report del segundo trimestre de 2026 de DataDome</a>, que analiza 17.700 millones de [peticiones de agentes de IA](https://yamato.digital/blog/agentes-ia-marketing-descuentos-no-funcionan) (un 45% más que el trimestre anterior), cuenta la misma historia con otros números: `meta-webindexer` creció un 163% trimestre contra trimestre, de 1.400 a 3.750 millones de peticiones. Y en junio de 2026 superó por primera vez a `meta-externalagent`, el bot con el que Meta entrena sus modelos.
 
 Ese último detalle es el que importa. Son dos bots con dos trabajos distintos: uno lee la web para aprender, el otro la lee para responder. Cuando el segundo adelanta al primero, la empresa ha dejado de estudiar y ha empezado a indexar.
 

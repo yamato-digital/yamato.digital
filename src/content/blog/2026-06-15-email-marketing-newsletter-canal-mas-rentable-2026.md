@@ -18,7 +18,7 @@ El email no solo no ha muerto. Está ganando por goleada a todo lo demás. Y el 
 
 A finales de 2023 empezó algo interesante. Creadores, periodistas, expertos en industria y empresas de todo tipo empezaron a migrar a plataformas como Beehiiv o Substack, o a invertir en sus propias listas de email. El motivo era sencillo: las redes sociales habían cambiado las reglas del juego demasiadas veces.
 
-Alcance orgánico en caída libre en Instagram. Cambios de algoritmo en LinkedIn que nadie entiende. TikTok con incertidumbre regulatoria. Twitter/X convertido en un experimento social de alto riesgo.
+[Alcance orgánico en caída libre en Instagram](https://yamato.digital/blog/deja-de-publicar-en-redes-sociales). [Cambios de algoritmo en LinkedIn que nadie entiende](https://yamato.digital/blog/linkedin-360brew-algoritmo-2026). TikTok con incertidumbre regulatoria. Twitter/X convertido en un experimento social de alto riesgo.
 
 El email, en cambio, es tuyo. Nadie te puede quitar el acceso a tu lista. No hay algoritmo que decida si tu mensaje llega o no. Si alguien te dio su dirección, es porque quiso.
 

@@ -51,7 +51,7 @@ En abril ya escribimos sobre cómo [la IA se come la operativa de Meta y Google]
 
 **Haz la foto antes de que se borre.** Filtra tus Search con Broad Match a nivel de campaña o con Automatically Created Assets. Anota cuáles tenían AI Max apagado el 31 de agosto. Sin esa lista, en octubre no podrás distinguir lo que cambió Google de lo que cambió tu equipo.
 
-**Guarda un baseline sucio pero real.** CPA, ROAS, conversiones y términos nuevos de las dos últimas semanas de agosto. Cuando alguien diga "AI Max funciona", que lo compare contra ese suelo y no contra la sensación del viernes.
+**Guarda un baseline sucio pero real.** CPA, [ROAS](https://yamato.digital/blog/target-roas-ya-no-es-un-setting-es-una-decision), conversiones y términos nuevos de las dos últimas semanas de agosto. Cuando alguien diga "AI Max funciona", que lo compare contra ese suelo y no contra la sensación del viernes.
 
 **Decide qué apagas a propósito.** Matching, texto y expansión de URL se pueden desactivar por separado. Si tienes landings sensibles o un reporting que depende de la URL del anuncio, "equivalente" no es una estrategia. Escribe qué apagas y por qué.
 

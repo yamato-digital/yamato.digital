@@ -34,7 +34,7 @@ Invertir en Ads sin una estrategia clara de medición, atribución y objetivos d
 
 Enhorabuena. También lo hacen otras 47 millones de empresas. Y la mayoría, igual que tú, publican porque "hay que estar en redes" sin tener ni idea de por qué ni para quién.
 
-Vamos a ser directos: si tu estrategia de redes sociales consiste en que alguien (o peor, tú mismo) publica un carrusel los martes, un reel los jueves y una frase inspiracional los viernes, no tienes una estrategia de redes sociales. Tienes un calendario de contenidos que no le importa a nadie.
+Vamos a ser directos: si tu estrategia de redes sociales consiste en que alguien (o peor, tú mismo) publica un carrusel los martes, un reel los jueves y una frase inspiracional los viernes, no tienes una estrategia de redes sociales. Tienes [un calendario de contenidos que no le importa a nadie](https://yamato.digital/blog/deja-de-publicar-en-redes-sociales).
 
 ¿Por qué no le importa a nadie? Porque hablas de ti. De tu producto. De tu empresa. De lo buenos que sois. De los premios que habéis ganado.
 
@@ -62,11 +62,11 @@ Hemos visto webs preciosas que no convierten absolutamente nada. Y hemos visto w
 
 Normal. Tu competencia lleva tres años invirtiendo en SEO y tú llevas tres años diciendo "ya lo haremos". Mientras tanto, cuando alguien busca lo que vendes, encuentra a todos menos a ti.
 
-Pero es que ahora el problema es doble. Ya no basta con salir en Google. Ahora tienes que salir también en ChatGPT, en Perplexity, en Gemini y en cualquier IA que tu potencial cliente use para buscar soluciones.
+Pero es que ahora el problema es doble. Ya no basta con salir en Google. Ahora [tienes que salir también en ChatGPT, en Perplexity, en Gemini](https://yamato.digital/blog/no-sales-en-google-ni-en-chatgpt) y en cualquier IA que tu potencial cliente use para buscar soluciones.
 
 Pregúntale a ChatGPT quién hace lo que tú haces en tu sector. Si no apareces, tienes un problema de visibilidad que va más allá del SEO clásico.
 
-El tráfico orgánico de toda la vida está cayendo. Las AI Overviews de Google responden directamente a las preguntas sin que el usuario tenga que hacer clic en ningún resultado. Los datos dicen que los clics al primer resultado han caído casi un 60% cuando aparece una respuesta de IA.
+El tráfico orgánico de toda la vida está cayendo. [Las AI Overviews de Google](https://yamato.digital/blog/google-ai-overviews-tapan-tu-ranking-2026) responden directamente a las preguntas sin que el usuario tenga que hacer clic en ningún resultado. Los datos dicen que los clics al primer resultado han caído casi un 60% cuando aparece una respuesta de IA.
 
 ¿Significa eso que el SEO ha muerto? No. Significa que ha cambiado. Y que si sigues haciendo SEO como en 2020 (escribir artículos genéricos de 2.000 palabras sobre "qué es el marketing digital"), estás tirando el dinero.
 

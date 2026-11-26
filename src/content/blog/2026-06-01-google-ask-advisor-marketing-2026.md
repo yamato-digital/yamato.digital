@@ -26,7 +26,7 @@ Aquí viene la parte que casi nadie cuenta.
 
 Meta acaba de superar a Google en ingresos publicitarios globales por primera vez en la historia. 243.000 millones de dólares frente a los 239.000 de Google, según EMARKETER. El crecimiento de Meta es del 24%. El de Google, del 12%. La mitad.
 
-¿Por qué? Porque Advantage+ de Meta lleva dos años convenciendo a anunciantes de que la automatización funciona. Le das una URL y un presupuesto, te calzas las palomitas y dejas que la máquina haga el resto.
+¿Por qué? Porque [Advantage+ de Meta](https://yamato.digital/blog/meta-te-quito-el-no-solo-te-deja-el-90) lleva dos años convenciendo a anunciantes de que la automatización funciona. Le das una URL y un presupuesto, te calzas las palomitas y dejas que la máquina haga el resto.
 
 Google va por detrás. Ask Advisor es su respuesta: si el mercado quiere automatización total, aquí la tienes. Pero ojo con lo que estás regalando a cambio.
 
@@ -74,7 +74,7 @@ Si no tienes ese alguien, contrátalo. Si no te puedes permitir un CMO en planti
 
 ## Lo que esto significa de verdad
 
-La era de la automatización publicitaria total ya está aquí. Eso no es opinable. Lo que sí lo es: si vas a ser la marca que delega ciegamente y reza, o la que entiende el juego, marca los límites y usa la herramienta sin convertirse en ella.
+La era de la [automatización publicitaria total](https://yamato.digital/blog/agentic-marketing-ia-agentes-autonomos-2026) ya está aquí. Eso no es opinable. Lo que sí lo es: si vas a ser la marca que delega ciegamente y reza, o la que entiende el juego, marca los límites y usa la herramienta sin convertirse en ella.
 
 Ask Advisor no es ni un milagro ni un demonio. Es una palanca poderosa con un sesgo enorme. Igual que cualquier herramienta que regale el propio canal que te cobra.
 

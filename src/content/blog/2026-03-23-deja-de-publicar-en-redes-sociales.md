@@ -91,7 +91,7 @@ El algoritmo de 2026 prioriza una cosa por encima de todas: las interacciones re
 
 ### El CEO como cara visible (no como community manager)
 
-Si eres founder, tu cuenta personal de LinkedIn es probablemente más potente que la cuenta de empresa. Las personas confían en personas, no en logos.
+Si eres founder, [tu cuenta personal de LinkedIn es probablemente más potente](https://yamato.digital/blog/linkedin-360brew-algoritmo-2026) que la cuenta de empresa. Las personas confían en personas, no en logos.
 
 Pero tiene que ser estratégico. No se trata de escribir diarios personales ni de copiar los posts de liderazgo motivacional que ya has visto 4.000 veces. Se trata de compartir lo que aprendes liderando tu empresa, las decisiones difíciles, lo que funciona y lo que no. Eso genera confianza. Y la confianza genera negocio.
 

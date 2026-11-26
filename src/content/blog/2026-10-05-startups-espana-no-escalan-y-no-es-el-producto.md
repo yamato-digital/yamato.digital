@@ -17,7 +17,7 @@ Fíjate en lo que no dice ese dato. No dice que el producto fuera malo. Dice que
 
 ## El go-to-market no es una fase. Es una decisión que alguien evita tomar
 
-En la mayoría de startups españolas, el "plan de go-to-market" vive en un documento que nadie actualiza desde la ronda anterior. Tiene un slide de buyer persona, una lista de canales "a probar" y un pricing que se copió del competidor que más ruido hace en LinkedIn.
+En la mayoría de startups españolas, el "plan de go-to-market" [vive en un documento que nadie actualiza](https://yamato.digital/blog/plan-de-marketing-2027-una-pagina) desde la ronda anterior. Tiene un slide de buyer persona, una lista de canales "a probar" y un pricing que se copió del competidor que más ruido hace en LinkedIn.
 
 Eso no es estrategia. Es un documento que existe para que los inversores no pregunten.
 

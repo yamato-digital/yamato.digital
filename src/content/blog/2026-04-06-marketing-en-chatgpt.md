@@ -6,7 +6,7 @@ cover: "/assets/blog/marketing-en-chatgpt-el-nuevo-canal-que-tu-marca-no-puede-i
 excerpt: "Llevas años optimizando campañas en Google Ads. Ajustando audiencias en Meta. Probando creatividades en TikTok. Y de repente, el canal más importante del marketing digital en 2026…"
 ---
 
-Llevas años optimizando campañas en Google Ads. Ajustando audiencias en Meta. Probando creatividades en TikTok. Y de repente, el canal más importante del marketing digital en 2026 no es una red social ni un buscador. Es una conversación.
+Llevas años optimizando campañas en Google Ads. Ajustando audiencias en Meta. [Probando creatividades en TikTok](https://yamato.digital/blog/tiktok-shop-espana-200-millones-marca). Y de repente, el canal más importante del marketing digital en 2026 no es una red social ni un buscador. Es una conversación.
 
 ChatGPT ya tiene publicidad. Desde febrero de este año, los usuarios del plan gratuito y ChatGPT Go ven anuncios integrados directamente en las respuestas de la IA. No banners laterales. No pop-ups. Anuncios dentro de la conversación, justo cuando estás preguntando algo que necesitas resolver.
 
@@ -28,7 +28,7 @@ Porque la intención es radicalmente diferente. Cuando alguien busca en Google, 
 
 No es casual que WPP, Omnicom y Dentsu —tres de las mayores redes de agencias del mundo— ya estén en el programa de pruebas. Según un análisis de Truist, 2026 es el "año de inflexión" para la publicidad en modelos de lenguaje, con una proyección de menos de 1.000 millones de dólares en ingresos publicitarios este año que podría superar los 30.000 millones en 2030.
 
-Estamos ante el nacimiento de un nuevo pilar publicitario, al nivel de Search, Social y Retail Media.
+Estamos ante el nacimiento de un nuevo pilar publicitario, al nivel de Search, Social y [Retail Media](https://yamato.digital/blog/retail-media-canal-publicitario-espana-2026).
 
 ## ¿Qué significa esto para tu marca?
 

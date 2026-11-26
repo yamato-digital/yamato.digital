@@ -6,7 +6,7 @@ cover: "/assets/blog/tu-cliente-ya-no-te-busca-en-google-las-redes-sociales-son-
 excerpt: "Hay algo que probablemente ya has hecho esta semana sin darte cuenta: abrir TikTok o Instagram para buscar un restaurante, una receta, o ese producto que viste en un reel. No abris…"
 ---
 
-Hay algo que probablemente ya has hecho esta semana sin darte cuenta: abrir TikTok o Instagram para buscar un restaurante, una receta, o ese producto que viste en un reel. No abriste Google. No escribiste en la barra de direcciones. Fuiste directo a la red social.
+Hay algo que probablemente ya has hecho esta semana sin darte cuenta: abrir TikTok o Instagram para buscar un restaurante, una receta, o [ese producto que viste en un reel](https://yamato.digital/blog/tiktok-shop-espana-200-millones-marca). No abriste Google. No escribiste en la barra de direcciones. Fuiste directo a la red social.
 
 Y no, no eres raro. Eres parte de un cambio de comportamiento que está redefiniendo cómo las marcas deben plantearse su estrategia digital. Bienvenido a la era del Social SEO.
 
@@ -47,7 +47,7 @@ Aquí es donde la cosa se pone interesante. Según los datos de Adobe, el 14% de
 
 Es decir, no solo están cambiando las plataformas donde la gente busca, sino la naturaleza misma de la búsqueda. Las consultas son cada vez más conversacionales, más largas, más específicas. «Zapatillas running» se convierte en «qué zapatillas me recomiendas para correr un maratón si tengo pie plano y un presupuesto de 120 euros».
 
-Para las marcas, esto significa que el contenido superficial y genérico tiene los días contados en todos los canales — no solo en Google. Las redes sociales premian lo específico, lo útil y lo auténtico. Exactamente lo mismo que el SEO lleva predicando años, pero ahora en formato vertical y de 60 segundos.
+Para las marcas, esto significa que el [contenido superficial y genérico](https://yamato.digital/blog/ai-slop-marketing-autenticidad-2026) tiene los días contados en todos los canales — no solo en Google. Las redes sociales premian lo específico, lo útil y lo auténtico. Exactamente lo mismo que el SEO lleva predicando años, pero ahora en formato vertical y de 60 segundos.
 
 ## Qué puede hacer tu marca esta semana
 

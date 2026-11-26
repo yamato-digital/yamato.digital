@@ -36,7 +36,7 @@ Lo que todavía nadie tiene resuelto es cómo se mide esto. Si no hay clic, ¿c�
 
 Es tentador leer todo esto como un problema exclusivo del equipo de paid media. No lo es. Si el 92-94% de las conversaciones en AI Mode no generan clic, tu SEO tradicional -el que persigue posición uno para "mejor CRM para startups"- está optimizando para una porción cada vez más pequeña de la tarta.
 
-Lo que sí importa, y cada vez más, es si Gemini te cita cuando alguien pregunta directamente. Eso no se consigue con un artículo genérico de 2.000 palabras ni con diez enlaces internos bien colocados. Se consigue con contenido estructurado, con datos verificables, con una marca que Google ya reconoce como fuente fiable en tu categoría. A esto lo llaman GEO (Generative Engine Optimization) y hace un año era una palabra de moda en LinkedIn. Hoy es un requisito de entrada.
+Lo que sí importa, y cada vez más, es si Gemini te cita cuando alguien pregunta directamente. Eso no se consigue con un artículo genérico de 2.000 palabras ni con diez enlaces internos bien colocados. Se consigue con contenido estructurado, con datos verificables, con una marca que Google ya reconoce como fuente fiable en tu categoría. A esto lo llaman [GEO (Generative Engine Optimization)](https://yamato.digital/blog/no-sales-en-google-ni-en-chatgpt) y hace un año era una palabra de moda en LinkedIn. Hoy es un requisito de entrada.
 
 ## Qué hacemos con esto en YAMATO
 

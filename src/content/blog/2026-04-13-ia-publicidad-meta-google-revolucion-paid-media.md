@@ -21,7 +21,7 @@ Si todavía estás creando manualmente cada variación de tus anuncios para dist
 
 **Creatividades adaptadas por persona.** La IA crea variantes de tus imágenes de producto adaptadas a diferentes segmentos demográficos. El mismo producto, presentado en contextos relevantes para cada audiencia, sin necesidad de sesiones fotográficas adicionales.
 
-El dato que importa: el 65% de los anunciantes en Meta ya escalan sus campañas a través de Advantage+. Si todavía estás configurando todo manualmente, no es que estés haciendo algo mal —es que estás compitiendo con un brazo atado a la espalda.
+El dato que importa: el 65% de los anunciantes en Meta ya [escalan sus campañas a través de Advantage+](https://yamato.digital/blog/meta-te-quito-el-no-solo-te-deja-el-90). Si todavía estás configurando todo manualmente, no es que estés haciendo algo mal —es que estás compitiendo con un brazo atado a la espalda.
 
 ## Google AI Mode: las búsquedas ya no son lo que eran
 
@@ -51,13 +51,13 @@ Todo esto suena muy bien en un artículo, pero lo que de verdad importa es la ac
 
 **Revisa tu estrategia SEO para el mundo de AI Overviews.** El contenido superficial ya no genera tráfico. Necesitas contenido profundo, con datos estructurados y respuestas que la IA de Google quiera citar (no sustituir).
 
-**Invierte en datos propios.** Tanto Meta como Google premian cada vez más las señales de first-party data. Si tu estrategia depende de cookies de terceros o de audiencias genéricas, el reloj corre en tu contra.
+**Invierte en [datos propios](https://yamato.digital/blog/first-party-data-datos-propios-marketing).** Tanto Meta como Google premian cada vez más las señales de first-party data. Si tu estrategia depende de cookies de terceros o de audiencias genéricas, el reloj corre en tu contra.
 
 **No confíes ciegamente en la automatización.** Que la IA haga más no significa que debas supervisar menos. Los algoritmos optimizan métricas, no estrategia de marca. Necesitas humanos que definan el "hacia dónde" mientras la IA acelera el "cómo".
 
 ## El papel de una agencia en la era de la IA publicitaria
 
-Puede que estés pensando: "Si la IA lo automatiza todo, ¿para qué necesito una agencia?". Buena pregunta. La respuesta es que la IA es una herramienta extraordinaria, pero sin estrategia detrás es como tener un coche de Fórmula 1 sin piloto.
+Puede que estés pensando: "Si la IA lo automatiza todo, ¿para qué necesito una agencia?". Buena pregunta. La respuesta es que [la IA es una herramienta extraordinaria, pero sin estrategia detrás](https://yamato.digital/blog/la-ia-no-va-a-sustituir-tu-marketing) es como tener un coche de Fórmula 1 sin piloto.
 
 En YAMATO llevamos años integrando IA en nuestras estrategias de paid media, SEO y redes sociales — no como moda, sino como palanca real de resultados. Ayudamos a nuestros clientes a entender qué automatizar, qué personalizar y qué decisiones siguen necesitando un cerebro humano con contexto de marca.
 

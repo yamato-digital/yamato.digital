@@ -47,7 +47,7 @@ Nadie ha resuelto eso todavía. Y mientras no se resuelva, el incentivo es evide
 
 Aquí viene la parte honesta, que es la que casi nadie escribe.
 
-**No vas a comprar esto este trimestre.** El formato existe en un medio, con una adtech, para dos anunciantes. Si alguien te llama la semana que viene a venderte "publicidad para agentes de IA", cuelga.
+**No vas a comprar esto este trimestre.** El formato existe en un medio, con una adtech, para dos anunciantes. Si alguien te llama la semana que viene a venderte "[publicidad para agentes de IA](https://yamato.digital/blog/agentes-ia-marketing-descuentos-no-funcionan)", cuelga.
 
 **Pero el marco sí te aplica ya.** Y el marco es este: hay una capa de tu propia web que solo leen las máquinas, y probablemente nadie en tu empresa es responsable de ella. La semana pasada escribimos sobre [el bot de Meta indexando la web para su propio buscador](https://yamato.digital/blog/meta-construye-su-buscador-webindexer-2026) y la conclusión era la misma: la decisión ya está tomada, la tomó un fichero de texto que nadie ha vuelto a abrir.
 

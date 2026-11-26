@@ -70,7 +70,7 @@ Ejecución también hacemos (Google Ads, Social Ads, SEO, CRM), pero solo cuando
 
 Ninguna de las tres opciones es cara si compra lo que te falta. Las tres lo son si no.
 
-Un CMO en plantilla sin decisiones que tomar es un coste de seis cifras haciendo de coordinador. Una agencia sin estrategia es un presupuesto de medios buscando dueño. Y un Fractional CMO sin autoridad es un asesor caro con calendario compartido.
+Un CMO en plantilla sin decisiones que tomar es un coste de seis cifras haciendo de coordinador. [Una agencia sin estrategia](https://yamato.digital/blog/tu-marketing-no-funciona) es un presupuesto de medios buscando dueño. Y un Fractional CMO sin autoridad es un asesor caro con calendario compartido.
 
 Antes de preguntar cuánto cuesta, pregunta quién va a decidir. El precio viene después, y suele ser bastante más fácil de defender.
 
