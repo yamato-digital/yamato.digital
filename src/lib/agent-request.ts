@@ -4,6 +4,7 @@ import {
   getPageDocument,
   markdownPathForPage,
   pagePathFromRequestPath,
+  SITE_URL,
 } from "@/lib/agent-content";
 import { getPostRedirect } from "@/lib/blog";
 
@@ -85,7 +86,12 @@ function markdownForPath(pathname: string, origin: string): Response | null {
   }
   const doc = getPageDocument(pagePath);
   if (!doc) return null;
-  return textResponse(doc.markdown, MARKDOWN_TYPE, pagePath);
+  // La versión Markdown es para agentes; la canónica es la página HTML. Sin esto,
+  // Google puede tratar /blog/x/index.md y /blog/x.md como duplicados del post.
+  const canonical = pagePath === "/" ? SITE_URL : `${SITE_URL}${pagePath}`;
+  return textResponse(doc.markdown, MARKDOWN_TYPE, pagePath, {
+    Link: `<${canonical}>; rel="canonical"`,
+  });
 }
 
 /**
